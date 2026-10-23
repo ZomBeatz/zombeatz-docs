@@ -22,7 +22,10 @@ Download `zomello-server-…` for Windows, Linux or macOS from the [latest relea
 
 ## In the Zomello app
 
-**Settings > Servers > Add server** (or **Find servers on this network**). The server then has its own heading in the menu.
+**Settings > Servers > Add server** (or **Find servers on this network**).
+
+- **On a computer**, the server opens in its own window.
+- **In the phone and tablet apps**, a server with an **https** address gets its own heading in the menu and opens right in the app. A plain `http://` server opens in the phone's web browser instead, so set up https (below) for the best experience on phones.
 
 ## https, backups and more
 

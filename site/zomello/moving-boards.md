@@ -25,7 +25,7 @@ Files attached to a phone's board live on the phone. Bringing that board over fr
 
 ## Good to know
 
-- A move only removes the board from the old place after it has safely arrived.
+- A move only removes the board from the old place once it has been safely handed over.
 - If the other place can't be reached, nothing changes and you get a message.
 - Copying a board that already exists there makes "Board name (2)".
 

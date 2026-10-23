@@ -6,16 +6,16 @@ The phone and tablet apps keep their own boards, and can also open the boards on
 
 ## On the computer (once)
 
-1. Open Zomello > **Settings > Phones & tablets** and turn it on.
-2. **Install the certificate on your phone.** It's what makes the connection encrypted and trusted. The page shows a QR code and the steps for Android, iPhone and iPad. You only do this once per phone.
-3. If Windows asks about the firewall, allow it (or use **Allow through firewall** on that page).
+1. Open Zomello > **Settings > Phones & tablets** and tick **Allow access from phones and tablets on this network**.
+2. **Let it through the firewall:** click **Allow through firewall** and confirm (Windows asks for an OK; Linux asks for your password). If the page says no firewall is blocking it, skip this.
+3. Turn on **Settings > Desktop app > Keep running in the tray**, so phones still connect after you close the window.
 
-## On the phone
+## On the phone (once per phone)
 
-1. Open **Settings > Servers**, under **Boards on your computer**.
-2. On the computer, click **Pair a device**. A QR code and a six-digit code appear.
-3. On the phone, tap **Scan the QR code on your computer** and point the camera at it. (Or type the `https://` address it shows, or paste the whole pairing link.)
-4. Android 17 and iPhone/iPad ask to let Zomello find devices on your network: allow it.
+1. **Install the computer's certificate.** It's what makes the connection secure. On the computer, under **Security certificate**, click **Put it on a device** and scan the QR code with the phone's camera app. The page that opens has the download and the steps for Android, iPhone and iPad.
+2. **Pair:** on the computer, click **Pair a device**. A QR code and a six-digit code appear (they expire after 10 minutes).
+3. In the Zomello app on the phone: **Settings > Servers > Scan the QR code on your computer**, and scan it. (Or type the `https://` address it shows, or paste the whole pairing link, then tap **Connect**.)
+4. If the phone asks to let Zomello find devices on your local network, allow it.
 
 That's it. The menu now has a heading for each place: **This phone** and **Computer** (plus any [Zomello Servers](./server)). Tap a board under **Computer** to open it there.
 
@@ -27,8 +27,8 @@ That's it. The menu now has a heading for each place: **This phone** and **Compu
 
 - Your computer's boards stay on the computer. The phone shows them while it can reach the computer; otherwise it opens its own boards and offers **Try again**.
 - The app reopens wherever you were last.
-- Your phone keeps its own look (theme, colors, text size) even on the computer's boards.
-- While the phone is connected, its boards also show in the computer's sidebar under the phone's name, so you can open and edit them on the computer. Hide them with **Show its boards on this computer** in **Settings > Phones & tablets**.
+- Your phone keeps its own look (theme, colors, density and accessibility settings) even on the computer's boards.
+- While the phone is connected, its boards also show in the computer's sidebar under the phone's name, so you can open and edit them on the computer. To hide a phone's boards there, untick **Show its boards on this computer while it's connected** for that phone in **Settings > Phones & tablets**.
 
 ## Related
 

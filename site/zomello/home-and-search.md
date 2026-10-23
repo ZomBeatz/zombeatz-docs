@@ -43,7 +43,7 @@ Pick the **board** and **bucket**, optionally a **due date** and **priority**, a
 
 ## Focus timer
 
-**Focus timer** in the menu starts a countdown: 5 to 60 minutes, or your own length. Start one from a card (**Time > Focus**, or right-click > **Focus countdown**) and it also tracks the time on that card. You get a chime and a notification at the end. The countdown shows in the menu while it runs.
+**Focus timer** in the menu starts a countdown: 5, 10, 15, 25, 30, 45 or 60 minutes, or your own length (like `20`, `1h` or `1:15`), with an optional note of what you're focusing on. Start one from a card (**Time > Focus**, or right-click > **Focus countdown**) and it also tracks the time on that card. You get a chime and a notification at the end. The countdown shows in the menu while it runs.
 
 ## Undo
 

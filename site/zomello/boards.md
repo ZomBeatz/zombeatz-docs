@@ -39,7 +39,7 @@ Sections group boards in the menu and on Home, like notebooks: Work, Home, Schoo
 - **Make one:** **+ Section** at the bottom of the menu.
 - **Put a board in it:** drag the board onto the section, or right-click > **Category…**.
 - **Fold it:** click the arrow next to its name.
-- **Rename or remove:** right-click the section's name. Removing a section keeps its boards; they move to **Other boards**.
+- **Rename or remove:** right-click the section's name > **Rename category** or **Remove category (keeps the boards)**. Its boards then move to **Other boards**.
 - A section stays in the menu when its last board leaves, so you can fill it again later.
 
 ## Reorder boards

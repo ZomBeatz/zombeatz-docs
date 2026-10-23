@@ -30,7 +30,7 @@ A small people icon in the menu marks boards that are shared.
 
 **Admin** in the menu:
 
-- **Server:** its address, version and backups; **Download a backup now**.
+- **Server:** how many people, boards and cards, how much is stored, the version, and where the data lives. A database backup is kept every day (the last 14); **Download a backup now** gives you one.
 - **People:** **Add a person** (Zomello suggests a password and gives you sign-in details to send), rename, make admin or remove admin rights, set a new password, turn an account off (signs them out everywhere) or back on, delete an account (their boards are handed to you).
 - **Boards:** every board on the server. Change its owner, add or remove people, or delete it for everyone.
 

@@ -8,8 +8,8 @@ Everything you need for your first day with Zomello, in about ten minutes. When 
 |---|---|
 | **Windows 10/11** | Download `Zomello_…_x64-setup.exe` from the [latest release](https://github.com/ZomBeatz/Zomello/releases/latest) and open it. If Windows says "Windows protected your PC", click **More info > Run anyway**. |
 | **Linux** | Download the `.deb` (Ubuntu, Mint, Debian), `.rpm` (Fedora, openSUSE) or `.AppImage` (any) and open it. |
-| **Android** | Install from Google Play, or download `Zomello.apk` from the release. |
-| **iPhone and iPad** | Install from the App Store. |
+| **Android** | Download `Zomello.apk` from the release and open it (Google Play coming soon). |
+| **iPhone and iPad** | The App Store (coming soon). |
 | **Just looking?** | Try the [online demo](https://zombeatz.github.io/Zomello/) in your browser. Nothing to install. |
 
 There's no account to make and nothing to sign up for. Your boards are saved on the device you're using.
