@@ -1,3 +1,6 @@
+---
+description: "Zomello is a planner for any occasion. Boards hold buckets (columns) of cards you drag along as work moves, like Trello, with the task details of Microsoft…"
+---
 # Zomello
 
 Zomello is a planner for any occasion. Boards hold buckets (columns) of cards you drag along as work moves, like Trello, with the task details of Microsoft Planner. It runs on Windows, Linux, Android, iPhone and iPad, keeps your boards on your own devices, and has no ads, no tracking and no account.

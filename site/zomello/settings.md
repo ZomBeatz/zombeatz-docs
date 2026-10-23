@@ -1,3 +1,6 @@
+---
+description: "Everything in Settings (bottom of the menu), section by section. The buttons at the top jump to each section."
+---
 # Settings
 
 Everything in **Settings** (bottom of the menu), section by section. The buttons at the top jump to each section.

@@ -1,3 +1,6 @@
+---
+description: "The phone and tablet apps keep their own boards, and can also open the boards on your computer while both are on the same Wi‑Fi. The connection is encrypted…"
+---
 # Your computer's boards on your phone
 
 The phone and tablet apps keep their own boards, and can also open the boards on your computer while both are on the same Wi‑Fi. The connection is encrypted, and nothing passes through the internet or ZomBeatz Media.

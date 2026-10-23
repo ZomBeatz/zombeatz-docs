@@ -1,3 +1,6 @@
+---
+description: "What the Windows and Linux app adds: several windows, running in the tray, starting at login, file drag and drop, zoom, spell check and notifications."
+---
 # The desktop app (Windows and Linux)
 
 Extra things the computer version of Zomello can do.

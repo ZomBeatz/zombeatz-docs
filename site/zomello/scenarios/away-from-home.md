@@ -1,3 +1,6 @@
+---
+description: "Use your computer's boards on your phone from anywhere, not just on your home Wi‑Fi. The simplest safe way is Tailscale, a free private network for your own…"
+---
 # Away from home
 
 Use your computer's boards on your phone from anywhere, not just on your home Wi‑Fi. The simplest safe way is **Tailscale**, a free private network for your own devices. Nothing is opened to the internet.

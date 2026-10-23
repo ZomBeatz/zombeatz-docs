@@ -1,3 +1,6 @@
+---
+description: "How accounts, shared boards and the Admin page work once a Zomello Server is running."
+---
 # Zomello Server: people and sharing
 
 How accounts, shared boards and the Admin page work once a [Zomello Server](./server) is running.

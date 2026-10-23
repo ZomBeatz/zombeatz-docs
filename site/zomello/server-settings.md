@@ -1,3 +1,6 @@
+---
+description: "Every Zomello Server setting (port, address, https, names, network discovery) and where to put it, with Docker or without."
+---
 # Server settings
 
 Settings are environment variables.

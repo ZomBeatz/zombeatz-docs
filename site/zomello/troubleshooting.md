@@ -1,3 +1,6 @@
+---
+description: "Fixes for common problems: installing, connecting your phone to your computer, missing boards, notifications, servers, calendars and lost changes."
+---
 # Troubleshooting
 
 ## Installing

@@ -60,6 +60,7 @@ export default defineConfig({
             { text: "Accessibility", link: "/zomello/accessibility" },
             { text: "The desktop app", link: "/zomello/desktop-app" },
             { text: "Phones and tablets", link: "/zomello/phones-and-tablets" },
+            { text: "iPhone and iPad", link: "/zomello/iphone-ipad" },
           ],
         },
         {
@@ -106,9 +107,11 @@ export default defineConfig({
         {
           text: "More",
           items: [
+            { text: "What's new", link: "/zomello/whats-new" },
             { text: "Data and backups", link: "/zomello/data-and-backups" },
             { text: "Troubleshooting", link: "/zomello/troubleshooting" },
             { text: "Words used in Zomello", link: "/zomello/glossary" },
+            { text: "Contact and feedback", link: "/zomello/contact" },
           ],
         },
       ],
@@ -127,7 +130,8 @@ export default defineConfig({
       text: "Suggest a change to this page",
     },
     footer: {
-      message: "Made by ZomBeatz Media · info@zombeatzmedia.com",
+      message:
+        'Made by ZomBeatz Media · <a href="mailto:info@zombeatzmedia.com">info@zombeatzmedia.com</a> · <a href="https://zombeatz.github.io/Zomello/privacy.html">Privacy policy</a>',
     },
     docFooter: { prev: "Previous", next: "Next" },
   },

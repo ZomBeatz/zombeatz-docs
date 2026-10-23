@@ -1,3 +1,6 @@
+---
+description: "Zomello works fully on its own on an Android phone, iPhone or iPad. No computer, account or internet needed."
+---
 # Just a phone
 
 Zomello works fully on its own on an Android phone, iPhone or iPad. No computer, account or internet needed.

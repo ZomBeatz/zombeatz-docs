@@ -1,3 +1,6 @@
+---
+description: "Zomello can be adjusted to how you see, read and move. Everything here is in Settings > Accessibility unless noted."
+---
 # Accessibility
 
 Zomello can be adjusted to how you see, read and move. Everything here is in **Settings > Accessibility** unless noted.

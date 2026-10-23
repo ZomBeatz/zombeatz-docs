@@ -1,3 +1,6 @@
+---
+description: "The words Zomello uses, from bucket and section to place, private board, pairing and certificate, explained in one line each."
+---
 # Words used in Zomello
 
 | Word | Means |

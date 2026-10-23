@@ -1,3 +1,6 @@
+---
+description: "A card is one task. Click it to open it; everything saves as you type, and Esc (or clicking outside) closes it."
+---
 # Cards
 
 A card is one task. Click it to open it; everything saves as you type, and **Esc** (or clicking outside) closes it.

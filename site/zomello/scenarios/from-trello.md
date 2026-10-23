@@ -1,3 +1,6 @@
+---
+description: "Moving from Trello or Microsoft Planner: what things are called in Zomello, how to bring your boards over, and what you'll gain."
+---
 # Switching from Trello or Planner
 
 ## What things are called

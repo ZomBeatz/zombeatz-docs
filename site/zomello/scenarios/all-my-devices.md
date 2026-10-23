@@ -1,3 +1,6 @@
+---
+description: "An Android phone, an iPad and a computer that can all see and edit each other's boards while they're at home, with some boards kept private to one device."
+---
 # All my devices together
 
 An Android phone, an iPad and a computer that can all see and edit each other's boards while they're at home, with some boards kept private to one device.

@@ -1,3 +1,6 @@
+---
+description: "Bring your boards over in a minute. Imports always make a new board, so nothing you already have changes, and Ctrl Z undoes an import."
+---
 # Coming from Trello or Planner
 
 Bring your boards over in a minute. Imports always make a **new** board, so nothing you already have changes, and **Ctrl Z** undoes an import.

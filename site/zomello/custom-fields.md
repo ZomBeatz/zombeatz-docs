@@ -1,3 +1,6 @@
+---
+description: "Custom fields add your own information to every card on a board: a client, a cost, a version number, \"approved\"."
+---
 # Custom fields
 
 Custom fields add your own information to every card on a board: a client, a cost, a version number, "approved".

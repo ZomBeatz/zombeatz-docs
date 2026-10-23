@@ -1,3 +1,6 @@
+---
+description: "How to install, update and uninstall Zomello on Windows, Linux, Android, iPhone and iPad, and how to try it in your browser first."
+---
 # Installing and updating
 
 ## Windows 10 and 11

@@ -1,3 +1,6 @@
+---
+description: "Keep your boards on your computer and use them on your phone too, over your home Wi‑Fi, encrypted. The phone app also keeps its own boards."
+---
 # My computer and my phone
 
 Keep your boards on your computer and use them on your phone too, over your home Wi‑Fi, encrypted. The phone app also keeps its own boards.

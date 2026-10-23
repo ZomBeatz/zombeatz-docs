@@ -1,3 +1,6 @@
+---
+description: "Boards hold one project, area or list each. How to make, rename, star, group into sections, archive and delete them, and everything in the board menu."
+---
 # Boards and sections
 
 A **board** is one project, area or list: "Website Launch", "Home Projects", "Weekly Chores". You can have as many as you like.

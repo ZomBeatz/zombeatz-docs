@@ -1,3 +1,6 @@
+---
+description: "Buckets are the columns on a board. Add, rename and move them, sort cards, set WIP limits and auto-progress, and collapse or archive them."
+---
 # Buckets
 
 Buckets are the columns on a board: steps in a process ("To do, Doing, Done"), categories ("Groceries, Hardware") or anything else.

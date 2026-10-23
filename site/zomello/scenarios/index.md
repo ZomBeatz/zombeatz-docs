@@ -1,3 +1,6 @@
+---
+description: "Step-by-step recipes for common situations: just a phone, computer and phone, all your devices, a family, a small team, switching from Trello and more."
+---
 # Set-up scenarios
 
 Pick the one closest to you. Each is a short, start-to-finish recipe.

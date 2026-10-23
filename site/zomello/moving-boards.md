@@ -1,3 +1,6 @@
+---
+description: "Move a board (or copy it) from your computer to your phone, or back. It brings its buckets, cards and attached files."
+---
 # Moving boards between devices
 
 Move a board (or copy it) from your computer to your phone, or back. It brings its buckets, cards and attached files.

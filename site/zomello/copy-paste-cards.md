@@ -1,3 +1,6 @@
+---
+description: "Copy cards from one board and paste them into another, on the same device or a different one."
+---
 # Copying and pasting cards
 
 Copy cards from one board and paste them into another, on the same device or a different one.
