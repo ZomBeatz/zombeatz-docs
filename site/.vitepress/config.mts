@@ -118,7 +118,15 @@ export default defineConfig({
       "/harm/": [
         {
           text: "Zom's HaRM",
-          items: [{ text: "Guide", link: "/harm/" }],
+          items: [
+            { text: "Overview", link: "/harm/" },
+            { text: "Installing HaRM", link: "/harm/install" },
+            { text: "First start and your phone", link: "/harm/first-start" },
+            { text: "Everyday use", link: "/harm/everyday-use" },
+            { text: "Backups, updates and uninstalling", link: "/harm/backups-and-updates" },
+            { text: "Troubleshooting", link: "/harm/troubleshooting" },
+            { text: "Security", link: "/harm/security" },
+          ],
         },
       ],
     },

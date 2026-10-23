@@ -36,3 +36,8 @@
 .vp-doc img { border-radius: var(--zb-radius); box-shadow: var(--zb-shadow); }
 .vp-doc img.plain { box-shadow: none; border-radius: 0; }
 .vp-doc .phone { max-width: 300px; }
+/* Home page sections under the hero and tiles */
+.zb-home { max-width: 1152px; margin: 48px auto 0; padding: 0 24px 64px; }
+.zb-home h2 { margin: 40px 0 12px; font-size: 24px; border: 0; }
+.zb-home table { display: table; width: 100%; }
+@media (min-width: 960px) { .zb-home { padding: 0 64px 64px; } }
