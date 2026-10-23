@@ -4,6 +4,8 @@ Everything you need for your first day with Zomello, in about ten minutes. When 
 
 ## 1. Install Zomello
 
+Full details for each system, updating and uninstalling: [Installing and updating](./installing).
+
 | Device | What to do |
 |---|---|
 | **Windows 10/11** | Download `Zomello_…_x64-setup.exe` from the [latest release](https://github.com/ZomBeatz/Zomello/releases/latest) and open it. If Windows says "Windows protected your PC", click **More info > Run anyway**. |
@@ -24,6 +26,8 @@ The first time Zomello opens, a short welcome guide asks:
 You can change both later in **Settings > People** and **Settings > Appearance**. A **Getting started** board is waiting with one feature per card: open them in order, then delete the board (right-click it in the menu > **Delete**).
 
 ## 3. Find your way around
+
+Lost at any point? **Help** at the bottom of the menu shows the welcome tour again and links back to this guide.
 
 ![Zomello's main window](/img/zomello/board.png)
 

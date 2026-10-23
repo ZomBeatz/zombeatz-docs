@@ -31,6 +31,16 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 
 The rest (repeating, reminders, sub-tasks, linked tasks, files, covers, time tracking, custom fields) is in [Cards in depth](./cards-in-depth).
 
+## Labels
+
+Labels are colored tags (Bug, Idea, Urgent, Groceries…) that belong to a board.
+
+- **On a card:** open it > the **+** under Labels, then pick one, or type a new name to create it. The pencil next to a label edits it.
+- **Manage a board's labels:** **Labels** at the top of the board. Rename a label, click its color to change it, delete it (it's removed from every card), or **Add label**.
+- **How they look on cards:** named pills or thin color bars ([Customizing a board](./customize-board)).
+- **Filter by label:** **Filter** at the top of the board, or **Group by > Label**.
+- New boards start with Bug, Feature, Design, Research, Blocked and Idea; change them freely.
+
 ## Formatting text
 
 The description and notes support **Markdown**, with a toolbar: bold (**Ctrl B**), italic (**Ctrl I**), strikethrough, heading, bulleted and numbered lists, checklist, quote, inline code (**Ctrl E**), code block, link (**Ctrl K**), table and divider.

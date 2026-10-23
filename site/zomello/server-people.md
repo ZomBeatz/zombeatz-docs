@@ -36,4 +36,4 @@ A small people icon in the menu marks boards that are shared.
 
 ## Forgotten admin password
 
-On the server: `docker exec -it zomello zomello-server reset-password <username>`. More in the [server guide](https://github.com/ZomBeatz/Zomello/blob/main/docs/server.md).
+On the server: `docker exec -it zomello zomello-server reset-password <username>`. More in [Server backups, recovery and security](./server-backups).
