@@ -27,3 +27,9 @@ Download `zomello-server-…` for Windows, Linux or macOS from the [latest relea
 ## https, backups and more
 
 Phones need https to install the server as an app. Options (Tailscale, a reverse proxy with your own domain, or the server's own certificate), all settings, backups and password recovery are in the full server guide: [docs/server.md on GitHub](https://github.com/ZomBeatz/Zomello/blob/main/docs/server.md).
+
+## Related
+
+- [People and sharing](./server-people): accounts, shared boards and the Admin page
+- [Scenario: a family or roommates](./scenarios/family-server)
+- [Scenario: a small team](./scenarios/small-team)
