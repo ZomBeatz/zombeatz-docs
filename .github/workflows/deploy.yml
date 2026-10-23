@@ -1,0 +1,57 @@
+# Publishes the docs site to GitHub Pages on every push to main.
+# One-time setup: repository Settings > Pages > Source: "GitHub Actions".
+# Custom domain: once the DNS record (CNAME docs -> zombeatz.github.io) is in place, set the
+# repository variable DOCS_DOMAIN (Settings > Secrets and variables > Actions > Variables), e.g.
+# docs.zombeatzmedia.com, and enter the same domain under Settings > Pages.
+name: Docs site
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # "Last updated" dates on pages
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+      - run: npm ci
+      - name: Build
+        run: |
+          if [ -n "$DOCS_DOMAIN" ]; then
+            export DOCS_BASE=/
+            echo "$DOCS_DOMAIN" > site/public/CNAME
+          else
+            export DOCS_BASE=/${{ github.event.repository.name }}/
+          fi
+          npm run build
+        env:
+          DOCS_DOMAIN: ${{ vars.DOCS_DOMAIN }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/.vitepress/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
