@@ -11,6 +11,8 @@ Move a board (or copy it) from your computer to your phone, or back. It brings i
 2. Press and hold a board, then drag it onto another place's heading and let go.
 3. Choose **Move** (it leaves where it was) or **Copy** (it stays there too).
 
+![Dragging a board from Personal and choosing Move or Copy](/img/zomello/move-board.webp){.phone}
+
 Zomello briefly switches to the other place, adds the board there, and opens it.
 
 You can also press and hold a board (without dragging) and choose **Move to…** or **Copy to…**.
@@ -18,6 +20,8 @@ You can also press and hold a board (without dragging) and choose **Move to…**
 ## On the computer
 
 When your phone is connected (same Wi‑Fi, Zomello open on it), it shows in the computer's sidebar with its boards.
+
+![A connected phone in the computer's sidebar](/img/zomello/computer-sidebar-phone.png)
 
 - **Computer to phone:** drag one of your boards onto the phone's name, then choose **Move** or **Copy**. Or right-click the board > **Move to (phone)** / **Copy to (phone)**.
 - **Phone to computer:** drag one of the phone's boards into your own boards. Or right-click it > **Move to this computer** / **Copy to this computer**.

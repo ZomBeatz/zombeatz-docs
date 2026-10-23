@@ -13,12 +13,16 @@ Keep your boards on your computer and use them on your phone too, over your home
 2. **Let it through the firewall:** click **Allow through firewall** and confirm (Windows asks; Linux asks for your password).
 3. **Settings > Desktop app > Keep running in the tray**, so the phone can connect even after you close the window.
 
+![Settings > Phones & tablets on the computer](/img/zomello/phones-tablets-settings.png)
+
 ## On the phone (once)
 
 1. **Install the computer's certificate.** It's what makes the connection secure. On the computer, under **Security certificate**, click **Put it on a device**, and scan that QR code with the phone's camera app. The page that opens has the download and the steps for Android or iPhone/iPad.
 2. **Pair:** on the computer, click **Pair a device**. A new QR code appears (it works once and lasts 10 minutes).
 3. In the Zomello app: **Settings > Servers > Scan the QR code on your computer**, and scan it.
 4. Allow Zomello to find devices on your network if the phone asks.
+
+![The certificate QR code on the computer](/img/zomello/certificate-qr.png)
 
 ## Every day
 

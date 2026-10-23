@@ -12,6 +12,8 @@ On each phone or tablet that should share its boards:
 1. Open **Settings > Servers**.
 2. Under **Boards on your computer**, tick **Let my other devices see this phone's boards** (or "this iPad's").
 
+![Settings > Servers on a phone](/img/zomello/phone-servers-settings.png){.phone}
+
 It's off until you turn it on.
 
 ## Where shared boards show up
