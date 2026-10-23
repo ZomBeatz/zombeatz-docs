@@ -30,6 +30,23 @@ That's it. The menu now has a heading for each place: **This phone** and **Compu
 - Your phone keeps its own look (theme, colors, density and accessibility settings) even on the computer's boards.
 - While the phone is connected, its boards also show in the computer's sidebar under the phone's name, so you can open and edit them on the computer. To hide a phone's boards there, untick **Show its boards on this computer while it's connected** for that phone in **Settings > Phones & tablets**.
 
+## Managing phones and tablets (on the computer)
+
+**Settings > Phones & tablets** on the computer lists every paired device:
+
+- **Rename** it (click its name), and see when it was last used.
+- **Show its boards on this computer while it's connected:** untick to keep its boards out of the computer's sidebar.
+- **Unlink** disconnects it right away; it would need to pair again.
+
+The same page also has:
+
+- **Devices connect to:** which of the computer's addresses phones use (pick another if it has Wi‑Fi and a cable, or a VPN like Tailscale, or type a name your router gives it), and the **port** (change it only if something else uses 7311).
+- **Security certificate:** **Put it on a device** (a QR code for the certificate's setup page), **Save certificate file** (to install it by hand: send it to the device by cable, email, AirDrop or a cloud drive), and **Make a new certificate** (every device then installs the new one).
+
+## Using a browser instead of the app
+
+Any phone's browser can open your computer's boards too: scan the **Pair a device** QR code with the camera. The page installs the certificate and pairs the browser. On Android, Chrome then offers **Install app**; on iPhone and iPad, **Share > Add to Home Screen**.
+
 ## Related
 
 - [Moving boards between devices](./moving-boards)

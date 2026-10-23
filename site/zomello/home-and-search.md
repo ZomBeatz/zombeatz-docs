@@ -45,6 +45,18 @@ Pick the **board** and **bucket**, optionally a **due date** and **priority**, a
 
 **Focus timer** in the menu starts a countdown: 5, 10, 15, 25, 30, 45 or 60 minutes, or your own length (like `20`, `1h` or `1:15`), with an optional note of what you're focusing on. Start one from a card (**Time > Focus**, or right-click > **Focus countdown**) and it also tracks the time on that card. You get a chime and a notification at the end. The countdown shows in the menu while it runs.
 
+## Help
+
+**Help** at the bottom of the menu (or **?** on a computer) opens:
+
+- **Show the welcome guide** again, for a one-minute tour.
+- **Open the full guide** (this site).
+- Answers to common questions, and every keyboard shortcut.
+
+## Fold the menu
+
+On a computer, the **«** button at the top of the menu (or **[**) folds it into a slim strip of icons; click again to bring it back.
+
 ## Undo
 
 **Ctrl Z** undoes the last change (**Ctrl Shift Z** or **Ctrl Y** redoes it). Deleting or archiving something also shows a message with an **Undo** button.

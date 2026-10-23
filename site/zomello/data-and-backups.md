@@ -22,7 +22,7 @@ The Zomello apps (computer, phone and tablet) save a backup copy every 30 minute
 
 ## Zomello Server
 
-On a server, the data lives in the server's data folder (or Docker volume), with a backup every day; admins can **Download a backup now** on the Admin page. See the [server guide](https://github.com/ZomBeatz/Zomello/blob/main/docs/server.md).
+On a server, the data lives in the server's data folder (or Docker volume), with a backup every day; admins can **Download a backup now** on the Admin page. See [Server backups, recovery and security](./server-backups).
 
 ## Before uninstalling a phone app
 

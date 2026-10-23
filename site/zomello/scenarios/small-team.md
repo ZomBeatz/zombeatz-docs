@@ -20,7 +20,7 @@ Pick one:
   }
   ```
 
-Don't expose port 7311 directly to the internet. Details: [server guide](https://github.com/ZomBeatz/Zomello/blob/main/docs/server.md).
+Don't expose port 7311 directly to the internet. Details: [Turning on https](../server-https).
 
 ## 3. Set up people
 
@@ -36,5 +36,5 @@ Don't expose port 7311 directly to the internet. Details: [server guide](https:/
 
 ## 5. Look after it
 
-- Daily backups happen automatically; download one now and then (**Admin > Download a backup now**) and keep it elsewhere.
+- Daily backups happen automatically; download one now and then (**Admin > Download a backup now**) and keep it elsewhere ([Backups, recovery and security](../server-backups)).
 - Updating: `docker compose pull && docker compose up -d`.

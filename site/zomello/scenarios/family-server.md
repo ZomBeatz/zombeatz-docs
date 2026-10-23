@@ -31,7 +31,7 @@ Open `http://<that-machine's-address>:7311` in a browser and create the admin ac
   Then in the app: **Settings > Servers > Add server** with the `https://` address.
 - **Any browser:** the server's address works too.
 
-All options are in the [server guide](https://github.com/ZomBeatz/Zomello/blob/main/docs/server.md).
+Every option: [Turning on https](../server-https).
 
 ## 5. Share the family boards
 

@@ -30,6 +30,7 @@ export default defineConfig({
           items: [
             { text: "Overview", link: "/zomello/" },
             { text: "Quick start", link: "/zomello/quick-start" },
+            { text: "Installing and updating", link: "/zomello/installing" },
             { text: "Questions", link: "/zomello/faq" },
           ],
         },
@@ -77,7 +78,10 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Setting up a server", link: "/zomello/server" },
+            { text: "Turning on https", link: "/zomello/server-https" },
             { text: "People and sharing", link: "/zomello/server-people" },
+            { text: "Server settings", link: "/zomello/server-settings" },
+            { text: "Backups, recovery and security", link: "/zomello/server-backups" },
           ],
         },
         {
@@ -104,6 +108,7 @@ export default defineConfig({
           items: [
             { text: "Data and backups", link: "/zomello/data-and-backups" },
             { text: "Troubleshooting", link: "/zomello/troubleshooting" },
+            { text: "Words used in Zomello", link: "/zomello/glossary" },
           ],
         },
       ],
