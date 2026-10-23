@@ -1,0 +1,38 @@
+/* VitePress, dressed in the ZomBeatz design tokens (design/tokens.css). VitePress switches themes
+   with a .dark class, so the light and dark values are set here directly (same values as the tokens). */
+:root {
+  --vp-c-brand-1: var(--zb-blue);
+  --vp-c-brand-2: #1f6fab;
+  --vp-c-brand-3: var(--zb-blue);
+  --vp-c-brand-soft: color-mix(in srgb, var(--zb-blue) 14%, transparent);
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f4f5f8;
+  --vp-c-bg-soft: #eef0f4;
+  --vp-c-divider: #dcdfe6;
+  --vp-c-text-1: #1c2030;
+  --vp-c-text-2: #4b5266;
+  --vp-c-text-3: #7a8196;
+  --vp-font-family-base: var(--zb-font);
+  --vp-font-family-mono: var(--zb-font-mono);
+  --vp-button-brand-bg: var(--zb-blue);
+  --vp-button-brand-hover-bg: #1f6fab;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, var(--zb-blue) 20%, var(--zb-blue-light));
+  --vp-home-hero-image-background-image: linear-gradient(135deg, color-mix(in srgb, var(--zb-orange) 45%, transparent), color-mix(in srgb, var(--zb-blue) 45%, transparent));
+  --vp-home-hero-image-filter: blur(56px);
+}
+.dark {
+  --vp-c-brand-1: var(--zb-blue-light);
+  --vp-c-brand-2: #7cc4f1;
+  --vp-c-brand-3: var(--zb-blue);
+  --vp-c-bg: #14161c;
+  --vp-c-bg-alt: #101216;
+  --vp-c-bg-soft: #1d2028;
+  --vp-c-divider: #303544;
+  --vp-c-text-1: #e6e8ef;
+  --vp-c-text-2: #b4b9c8;
+  --vp-c-text-3: #868c9f;
+}
+.vp-doc img { border-radius: var(--zb-radius); box-shadow: var(--zb-shadow); }
+.vp-doc img.plain { box-shadow: none; border-radius: 0; }
+.vp-doc .phone { max-width: 300px; }

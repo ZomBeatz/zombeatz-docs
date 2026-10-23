@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- The ZomBeatz suite mark: the shared icon base (dark tile, orange headphones) around a plain
+       equalizer. Each product swaps the equalizer for its own symbol in its own accent color. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232833"/>
+      <stop offset="1" stop-color="#12151b"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4fb0ec"/>
+      <stop offset="1" stop-color="#2580c3"/>
+    </linearGradient>
+  </defs>
+  <rect x="48" y="48" width="928" height="928" rx="208" fill="url(#bg)"/>
+  <path d="M 214 600 A 298 298 0 0 1 810 600" fill="none" stroke="#0a0c10" stroke-width="64" stroke-linecap="round"/>
+  <path d="M 214 600 A 298 298 0 0 1 810 600" fill="none" stroke="#ec6a3f" stroke-width="30" stroke-linecap="round"/>
+  <rect x="196" y="500" width="84" height="264" rx="30" fill="#ec6a3f"/>
+  <rect x="150" y="522" width="86" height="220" rx="30" fill="#0a0c10"/>
+  <rect x="744" y="500" width="84" height="264" rx="30" fill="#ec6a3f"/>
+  <rect x="788" y="522" width="86" height="220" rx="30" fill="#0a0c10"/>
+  <rect x="322" y="560" width="56" height="150" rx="28" fill="url(#blue)" opacity=".7"/>
+  <rect x="402" y="470" width="56" height="240" rx="28" fill="url(#blue)" opacity=".85"/>
+  <rect x="484" y="400" width="56" height="310" rx="28" fill="url(#blue)"/>
+  <rect x="566" y="470" width="56" height="240" rx="28" fill="url(#blue)" opacity=".85"/>
+  <rect x="646" y="560" width="56" height="150" rx="28" fill="url(#blue)" opacity=".7"/>
+</svg>
