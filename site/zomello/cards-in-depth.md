@@ -11,13 +11,13 @@ Everything a card can do beyond the basics. Open any card to follow along.
 - **Daily**, **Weekdays**, **Weekly**, **Every 2 weeks**, **Monthly**, **Yearly**, or **Custom…**
 - Custom: **every N** days, weeks, months or years; for weekly, the **days of the week**; and optionally **until** a date.
 
-When you complete a repeating card, Zomello makes the next one with the next due date, so chores never fall off the board. The card shows a repeat symbol and the rule.
+When you complete a repeating card, Zomello makes the next one with the next due date (and start date, if it had one), so chores never fall off the board. The finished one stays under **Show completed**; the new one starts fresh: checklist unticked, no notes or tracked time, same title, description, labels, people and priority. Repeating stops after the **until** date. Cards show the rule when **Dates** is set to Details.
 
 ## Reminders and the daily summary
 
 - **Reminder** (in the card) picks a date and time. Right-click > **Remind me** has shortcuts: **In 1 hour**, **In 3 hours**, **Tomorrow 9:00**, **Next Monday 9:00**.
 - **Settings > Reminders > Daily summary** sends one notification a day (at the time you choose) listing what's late and due today.
-- Notifications appear while Zomello is running. On a computer, turn on **Settings > Desktop app > Keep running in the tray** so they keep coming after you close the window.
+- Notifications appear while Zomello is running. On a computer, turn on **Settings > Desktop app > Keep running in the tray** so they keep coming after you close the window. On a phone or tablet, they currently arrive while the app is open.
 - **Send a test notification** in Settings checks they work.
 
 ## Checklists and sub-tasks

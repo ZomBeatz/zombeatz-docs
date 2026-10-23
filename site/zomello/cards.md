@@ -21,7 +21,7 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 | **Mark complete** | Finishes it. Completed cards fold under **Show completed** |
 | **Bucket** | Which column it's in |
 | **Progress** | Not started, In progress, Waiting (on someone else), On hold (paused on purpose), Completed |
-| **Priority** | Urgent, Important, Medium, Low. Urgent and Important show a colored flag |
+| **Priority** | Urgent, Important, Medium, Low. Every priority except Medium shows a colored flag on the card |
 | **Start date / Due date** | Cards show "in 3 days", "today" or "2 days late" |
 | **Assigned to** | People from **Settings > People**. Yours show on Home and in My Tasks |
 | **Labels** | Colored tags. **Labels** at the top of the board manages them |

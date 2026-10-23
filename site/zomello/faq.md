@@ -39,3 +39,7 @@ Yes: a board's menu > **Private: only on this device**. See [Sharing between you
 ## What does ZomBeatz Media make besides Zomello?
 
 [Zom's HaRM](../harm/), a hardware and rack manager. More tools are coming.
+
+## What's new in the latest version?
+
+See the [changelog on GitHub](https://github.com/ZomBeatz/Zomello/blob/main/CHANGELOG.md). Downloads are on the [releases page](https://github.com/ZomBeatz/Zomello/releases/latest).

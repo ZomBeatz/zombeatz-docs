@@ -12,13 +12,17 @@ The folder holds `zomello.json` (your boards), `attachments/` (files on cards) a
 
 ## Automatic backups
 
-On a computer, Zomello saves a backup copy every 30 minutes while you work and keeps the last 30. **Settings > Data & backups > Automatic backups** lists them; **Restore** brings one back.
+The Zomello apps (computer, phone and tablet) save a backup copy every 30 minutes while you work and keep the last 30. **Settings > Data & backups > Automatic backups** lists them; **Restore** brings one back.
 
 ## Export and restore everything
 
 - **Export JSON**: all boards and settings in one file.
-- **Restore from Zomello JSON**: replace everything with an export (asks first).
+- **Restore from Zomello JSON**: replace everything with an export. It asks first, and **Ctrl Z** undoes it.
 - **Clean up unused files**: deletes attached files no card uses anymore.
+
+## Zomello Server
+
+On a server, the data lives in the server's data folder (or Docker volume), with a backup every day; admins can **Download a backup now** on the Admin page. See the [server guide](https://github.com/ZomBeatz/Zomello/blob/main/docs/server.md).
 
 ## Before uninstalling a phone app
 
