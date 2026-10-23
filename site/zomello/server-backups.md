@@ -1,3 +1,6 @@
+---
+description: "What a Zomello Server stores and where, daily and manual backups, restoring, resetting passwords, and how accounts are kept safe."
+---
 # Server backups, recovery and security
 
 ## What's stored where

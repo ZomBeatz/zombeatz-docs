@@ -1,3 +1,6 @@
+---
+description: "Everyone gets their own account and boards, and shared boards (chores, groceries, trips) update live for everyone. It runs on one always-on machine at home…"
+---
 # A family or roommates
 
 Everyone gets their own account and boards, and shared boards (chores, groceries, trips) update live for everyone. It runs on one always-on machine at home: a spare PC, a NAS (Synology, Unraid, TrueNAS) or a Raspberry Pi 4/5.

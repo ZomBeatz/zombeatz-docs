@@ -1,3 +1,6 @@
+---
+description: "Home shows what's late, due today and coming up across every board. Plus My Tasks, search, Quick add, the focus timer, Help and undo."
+---
 # Home, My Tasks and search
 
 ## Home

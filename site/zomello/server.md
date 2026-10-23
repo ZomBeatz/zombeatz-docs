@@ -1,3 +1,6 @@
+---
+description: "Zomello Server is for a team or family sharing boards. It runs on one always-on computer (a home server, NAS, Raspberry Pi or VPS), and everyone signs in…"
+---
 # Setting up a Zomello Server
 
 Zomello Server is for a team or family sharing boards. It runs on one always-on computer (a home server, NAS, Raspberry Pi or VPS), and everyone signs in from a browser, their phone or the Zomello app.

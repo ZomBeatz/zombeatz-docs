@@ -1,3 +1,6 @@
+---
+description: "Show your calendar's events next to your cards in a board's Calendar view: appointments, school dates, shifts. Events are read-only; Zomello never changes…"
+---
 # Calendar feeds
 
 Show your calendar's events next to your cards in a board's **Calendar** view: appointments, school dates, shifts. Events are read-only; Zomello never changes your calendar.

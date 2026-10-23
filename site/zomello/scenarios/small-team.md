@@ -1,3 +1,6 @@
+---
+description: "A shared planning space for a small business, club or project team, on your own server, reachable from anywhere."
+---
 # A small team
 
 A shared planning space for a small business, club or project team, on your own server, reachable from anywhere.

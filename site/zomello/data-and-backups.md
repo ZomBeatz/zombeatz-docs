@@ -1,3 +1,6 @@
+---
+description: "Where Zomello keeps your boards on each device, how automatic backups work, and how to export, restore or clean up your data."
+---
 # Data and backups
 
 ## Where your boards are

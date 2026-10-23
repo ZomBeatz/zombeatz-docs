@@ -1,3 +1,6 @@
+---
+description: "Plan something with stages and dates: a website, a move, an event."
+---
 # A project with a deadline
 
 Plan something with stages and dates: a website, a move, an event.

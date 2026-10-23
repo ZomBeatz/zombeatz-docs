@@ -1,3 +1,6 @@
+---
+description: "Templates are ready-made cards for things you do often: a bug report, a weekly review, a packing list."
+---
 # Templates
 
 Templates are ready-made cards for things you do often: a bug report, a weekly review, a packing list.

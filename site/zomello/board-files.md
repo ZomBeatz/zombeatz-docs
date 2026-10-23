@@ -1,3 +1,6 @@
+---
+description: "A board file is one board, with its buckets, cards and attached files, in a single file you can send to anyone. Opening it adds the board as a new board; it…"
+---
 # Board files (.zomello)
 
 A board file is one board, with its buckets, cards and attached files, in a single file you can send to anyone. Opening it adds the board as a new board; it doesn't need a server or an account.

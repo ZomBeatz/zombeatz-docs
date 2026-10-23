@@ -1,3 +1,6 @@
+---
+description: "Quick answers: is Zomello free, does it need an account or the internet, does it use AI, where are boards stored, and more."
+---
 # Questions
 
 ## Is Zomello free?
@@ -42,4 +45,8 @@ Yes: a board's menu > **Private: only on this device**. See [Sharing between you
 
 ## What's new in the latest version?
 
-See the [changelog on GitHub](https://github.com/ZomBeatz/Zomello/blob/main/CHANGELOG.md). Downloads are on the [releases page](https://github.com/ZomBeatz/Zomello/releases/latest).
+See [What's new](./whats-new). Downloads are on the [releases page](https://github.com/ZomBeatz/Zomello/releases/latest).
+
+## How do I report a bug or suggest something?
+
+See [Contact and feedback](./contact).

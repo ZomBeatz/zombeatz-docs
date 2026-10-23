@@ -1,3 +1,6 @@
+---
+description: "The Android, iPhone and iPad apps have everything the computer has, arranged for touch."
+---
 # Using Zomello on a phone or tablet
 
 The Android, iPhone and iPad apps have everything the computer has, arranged for touch.

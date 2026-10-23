@@ -1,3 +1,6 @@
+---
+description: "Zomello works fully with a mouse or touch; these are shortcuts for when your hands are on the keyboard. Press ? in the app to see them anytime (they're also…"
+---
 # Keyboard shortcuts and selecting cards
 
 Zomello works fully with a mouse or touch; these are shortcuts for when your hands are on the keyboard. Press **?** in the app to see them anytime (they're also listed at the bottom of **Settings**).

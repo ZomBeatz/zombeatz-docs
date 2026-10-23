@@ -1,3 +1,6 @@
+---
+description: "Zomello has no AI inside. Its optional AI tools only write prompts you can copy into an assistant you choose, and read its reply back if you paste it in."
+---
 # AI tools (optional)
 
 ::: info There's no AI inside Zomello

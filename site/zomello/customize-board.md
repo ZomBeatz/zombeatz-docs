@@ -1,3 +1,6 @@
+---
+description: "Each board can look and behave its own way. Open a board and click Customize at the top (or press B, or right-click the board > Customize…)."
+---
 # Customizing a board
 
 Each board can look and behave its own way. Open a board and click **Customize** at the top (or press **B**, or right-click the board > **Customize…**).

@@ -1,3 +1,6 @@
+---
+description: "If your Android phone and your iPad are both connected to your computer, they can see and edit each other's boards, while all of them are on the same Wi‑Fi.…"
+---
 # Sharing between your devices
 
 If your Android phone and your iPad are both connected to your computer, they can see and edit each other's boards, while all of them are on the same Wi‑Fi. Each device decides for itself whether to share.

@@ -1,3 +1,6 @@
+---
+description: "Keep track of classes, homework and exams."
+---
 # School or studying
 
 Keep track of classes, homework and exams.

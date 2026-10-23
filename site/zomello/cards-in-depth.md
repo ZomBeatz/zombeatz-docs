@@ -1,3 +1,6 @@
+---
+description: "Everything a card can do: repeating tasks, reminders, checklists and sub-tasks, linked tasks, files and covers, notes, time tracking, focus and activity."
+---
 # Cards in depth
 
 Everything a card can do beyond the basics. Open any card to follow along.

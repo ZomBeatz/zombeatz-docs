@@ -1,3 +1,6 @@
+---
+description: "The simplest setup: Zomello on your Windows or Linux computer, nothing else."
+---
 # Just me, on one computer
 
 The simplest setup: Zomello on your Windows or Linux computer, nothing else.

@@ -1,3 +1,6 @@
+---
+description: "https encrypts the connection, and it's what phones need: the Zomello phone app opens a server inside the app only over https, and browsers only offer…"
+---
 # Turning on https
 
 https encrypts the connection, and it's what phones need: the Zomello phone app opens a server inside the app only over https, and browsers only offer **Install app** on https sites. Pick one of these.

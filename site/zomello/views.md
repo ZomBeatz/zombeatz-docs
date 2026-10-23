@@ -1,3 +1,6 @@
+---
+description: "Every board can be shown five ways. Switch with the buttons next to the board's name; each board remembers its own view. New boards use the view chosen in…"
+---
 # Views
 
 Every board can be shown five ways. Switch with the buttons next to the board's name; each board remembers its own view. New boards use the view chosen in **Settings > Appearance > New boards open in**.

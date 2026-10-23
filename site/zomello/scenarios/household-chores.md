@@ -1,3 +1,6 @@
+---
+description: "A chores board that refills itself, assigns jobs, and reminds people. Works on one device, or shared on a family server."
+---
 # Household chores
 
 A chores board that refills itself, assigns jobs, and reminds people. Works on one device, or shared on a [family server](./family-server).

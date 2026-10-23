@@ -1,3 +1,6 @@
+---
+description: "Share a board with anyone who has Zomello, without a server or an account. They get their own copy."
+---
 # Sending a board to a friend
 
 Share a board with anyone who has Zomello, without a server or an account. They get their own copy.
