@@ -30,7 +30,7 @@ The computer's address may have changed (routers sometimes hand out new ones). O
 
 ### "This certificate doesn't cover…"
 
-The computer's address is outside what its certificate vouches for (for example after switching to a Tailscale address). Click **Make a new certificate**, then install it on each phone again with **Put it on a device**.
+The computer's address is outside what its certificate vouches for (for example after picking a VPN's address). Click **Make a new certificate**, then install it on each phone again with **Put it on a device**.
 
 ### The pairing code doesn't work
 

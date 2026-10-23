@@ -14,6 +14,8 @@ The Android, iPhone and iPad apps have everything the computer has, arranged for
 - **Search** (magnifier) and **Quick add** (**+**) are at the top right.
 - **Back:** the phone's back gesture or button closes windows and menus first, then goes back a page.
 
+![The menu, with a heading for each place](/img/zomello/phone-places-menu.png){.phone}
+
 ## Touch gestures
 
 | Gesture | Does |

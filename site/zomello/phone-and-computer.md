@@ -13,6 +13,8 @@ The phone and tablet apps keep their own boards, and can also open the boards on
 2. **Let it through the firewall:** click **Allow through firewall** and confirm (Windows asks for an OK; Linux asks for your password). If the page says no firewall is blocking it, skip this.
 3. Turn on **Settings > Desktop app > Keep running in the tray**, so phones still connect after you close the window.
 
+![Settings > Phones & tablets on the computer](/img/zomello/phones-tablets-settings.png)
+
 ## On the phone (once per phone)
 
 1. **Install the computer's certificate.** It's what makes the connection secure. On the computer, under **Security certificate**, click **Put it on a device** and scan the QR code with the phone's camera app. The page that opens has the download and the steps for Android, iPhone and iPad.
@@ -20,7 +22,11 @@ The phone and tablet apps keep their own boards, and can also open the boards on
 3. In the Zomello app on the phone: **Settings > Servers > Scan the QR code on your computer**, and scan it. (Or type the `https://` address it shows, or paste the whole pairing link, then tap **Connect**.)
 4. If the phone asks to let Zomello find devices on your local network, allow it.
 
+![The Pair a device window, with its QR code and six-digit code](/img/zomello/pair-a-device.png)
+
 That's it. The menu now has a heading for each place: **This phone** and **Computer** (plus any [Zomello Servers](./server)). Tap a board under **Computer** to open it there.
+
+![The phone menu with This phone and Computer](/img/zomello/phone-places-menu.png){.phone}
 
 ::: tip If it can't connect
 "Couldn't reach your computer" almost always means one of three things: the computer's certificate isn't installed on the phone yet, the two aren't on the same Wi‑Fi, or Zomello isn't open on the computer. After scanning, Zomello offers **Install your computer's certificate** if that's the problem.
@@ -43,7 +49,7 @@ That's it. The menu now has a heading for each place: **This phone** and **Compu
 
 The same page also has:
 
-- **Devices connect to:** which of the computer's addresses phones use (pick another if it has Wi‑Fi and a cable, or a VPN like Tailscale, or type a name your router gives it), and the **port** (change it only if something else uses 7311).
+- **Devices connect to:** which of the computer's addresses phones use (pick another if it has Wi‑Fi and a cable, or a VPN, or type a name your router gives it), and the **port** (change it only if something else uses 7311).
 - **Security certificate:** **Put it on a device** (a QR code for the certificate's setup page), **Save certificate file** (to install it by hand: send it to the device by cable, email, AirDrop or a cloud drive), and **Make a new certificate** (every device then installs the new one).
 
 ## Using a browser instead of the app

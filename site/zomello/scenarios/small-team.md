@@ -14,7 +14,7 @@ A shared planning space for a small business, club or project team, on your own 
 
 Pick one:
 
-- **Tailscale** (easiest and safest): install it on the server and on everyone's devices, then on the server run `tailscale serve --bg 7311`. The team opens `https://<server>.<your-tailnet>.ts.net`. Nothing is exposed to the internet.
+- **A VPN** into the network the server is on (an office router's VPN, for example). Turn on the server's own certificate (`ZOMELLO_TLS: "self"`) and everyone uses its normal address. Nothing is exposed to the internet.
 - **Your own domain** with a reverse proxy such as Caddy:
 
   ```

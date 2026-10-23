@@ -28,10 +28,8 @@ Open `http://<that-machine's-address>:7311` in a browser and create the admin ac
 ## 4. Get everyone connected
 
 - **Computers with the Zomello app:** **Settings > Servers > Add server** (or **Find servers on this network**), then sign in.
-- **Phones and tablets:** these need the server on **https** to open it inside the app (a plain `http://` server opens in the browser instead). The easiest ways:
-  - **The server's own certificate:** add `ZOMELLO_TLS: "self"` under `environment:` in `docker-compose.yml` and restart. The sign-in page then offers **Download this server's certificate** with steps for each kind of phone; install it once per phone.
-  - **Tailscale** (also gives access from anywhere): `tailscale serve --bg 7311` on the server, then use its `https://….ts.net` address.
-  Then in the app: **Settings > Servers > Add server** with the `https://` address.
+- **Phones and tablets:** these need the server on **https** to open it inside the app (a plain `http://` server opens in the browser instead). The easiest way is the server's own certificate: add `ZOMELLO_TLS: "self"` under `environment:` in `docker-compose.yml` and restart. The sign-in page then offers **Download this server's certificate** with steps for each kind of phone; install it once per phone. Then in the app: **Settings > Servers > Add server** with the `https://` address.
+- **Away from home:** connect to your home network with a VPN, as in [Away from home](./away-from-home).
 - **Any browser:** the server's address works too.
 
 Every option: [Turning on https](../server-https).
