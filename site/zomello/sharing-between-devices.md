@@ -24,7 +24,7 @@ On your other device, open your computer's boards. The menu shows each other dev
 
 Any board can be kept to one device: open its menu (right-click, or press and hold) and choose **Private: only on this device**. A small lock shows next to it.
 
-- A private board on a phone is never sent to your computer or your other devices.
+- A private board on a phone is never sent to your computer or your other devices. The one exception is if you choose to include private boards in [device backups](./device-backups). They then travel locked with a password your computer can't open.
 - A private board on your computer never shows on your phones.
 
 Use it for anything personal, or when several people share a computer.

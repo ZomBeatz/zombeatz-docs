@@ -41,6 +41,7 @@ Your card templates: rename or delete them. See [Templates](./templates).
 
 - **Zomello Servers:** add one by address, or **Find servers on this network**. Each opens in its own window on a computer, or under its own heading in the phone app's menu. See [Zomello Server](./server).
 - **Boards on your computer** (phone and tablet apps): connect to your computer, scan its QR code, and **Let my other devices see this phone's boards**. See [Your computer's boards on your phone](./phone-and-computer).
+- **Back up this phone's boards on my computer** (phone and tablet apps), optionally with private boards locked by a password. See [Device backups](./device-backups).
 
 ## Desktop app (computer only)
 
@@ -49,7 +50,7 @@ Your card templates: rename or delete them. See [Templates](./templates).
 
 ## Phones & tablets (computer only)
 
-Let your phones and tablets use this computer's boards: turn it on, allow it through the firewall, install the certificate on each device, pair devices, and manage paired devices. Step by step: [Your computer's boards on your phone](./phone-and-computer).
+Let your phones and tablets use this computer's boards: turn it on, allow it through the firewall, install the certificate on each device, pair devices, and manage paired devices. Step by step: [Your computer's boards on your phone](./phone-and-computer). **Device backups** lists the copies your phones and tablets asked this computer to keep: see [Device backups](./device-backups).
 
 ## Data & backups
 

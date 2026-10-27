@@ -30,6 +30,16 @@ When your phone is connected (same Wi‑Fi, Zomello open on it), it shows in the
 Files attached to a phone's board live on the phone. Bringing that board over from the computer copies everything except those files. To move them too, do it from the phone (it sends them along).
 :::
 
+## Moving cards
+
+Single cards (or a selection) can go to a board on another device too. In the card's menu, choose **Move to device** or **Copy to device**, then the device and the board.
+
+- The cards go into the bucket with the same name on that board, or its first bucket. Labels come along by name (missing ones are added), and custom fields that match by name and type keep their values.
+- From a phone, you can send cards to your computer or a Zomello Server; from your computer, to a phone that's connected right now.
+- On a phone, Zomello then opens the other place and shows the board with the cards in it.
+
+New in version 0.5.4.
+
 ## Good to know
 
 - A move only removes the board from the old place once it has been safely handed over.

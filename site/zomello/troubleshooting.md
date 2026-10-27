@@ -54,7 +54,7 @@ If it's marked **Private: only on this device**, it stays where it was marked. O
 
 1. **Settings > Reminders:** **Notifications** is on; try **Send a test notification**.
 2. Your device allows notifications from Zomello (system settings).
-3. Zomello is running. On a computer, turn on **Settings > Desktop app > Keep running in the tray**. On a phone or tablet, reminders currently arrive while Zomello is open; they don't come while the app is closed.
+3. Zomello is running. On a computer, turn on **Settings > Desktop app > Keep running in the tray**. On a phone or tablet, open Zomello once after setting a reminder, so it can hand it to the phone; from version 0.5.4 it then arrives even when the app is closed. Also check that the phone allows notifications from Zomello (and, on Android, that battery saving doesn't stop it).
 
 ## Servers
 

@@ -43,7 +43,7 @@ For each kind of detail, choose **Hidden**, **Icon** (a small symbol or count) o
 | **Files & links** | Count | File names |
 | **Time tracked** | Total | Total and estimate |
 
-**Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details. A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**).
+**Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details, and **Checklist items shown on a card** sets how many show before "+3 more" (3 to 25, or All; 6 unless you change it). A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**).
 
 ## Card details window
 

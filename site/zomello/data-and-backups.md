@@ -29,4 +29,4 @@ On a server, the data lives in the server's data folder (or Docker volume), with
 
 ## Before uninstalling a phone app
 
-Everything on the phone is deleted with the app. Move the boards you want to your computer first ([Moving boards between devices](./moving-boards)), or save them as [board files](./board-files).
+Everything on the phone is deleted with the app. Move the boards you want to your computer first ([Moving boards between devices](./moving-boards)), or save them as [board files](./board-files). With [device backups](./device-backups) turned on, your computer already has a copy to send back after you reinstall.

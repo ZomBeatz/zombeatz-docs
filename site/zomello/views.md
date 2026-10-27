@@ -27,13 +27,19 @@ Every card in a table with its bucket, progress, priority, dates, people, labels
 
 ![Calendar view](/img/zomello/calendar.png)
 
-A month of cards by due date.
+Your cards by date, as a **Month**, a **Week** or a single **Day** (switch at the top; Zomello remembers your choice). **Today** jumps back to now.
 
-- Drag a card to another day to change its due date.
-- The **+** on a day adds a card due that day.
+- **Month:** each day lists its cards. A card that runs over several days (a start and a due date) is one bar across those days.
+![The Week view, with timed cards at their hours](/img/zomello/calendar-week.png)
+
+- **Week and Day:** an **All day** row at the top, then the hours. Cards with a time sit at their hours, side by side when they overlap; a red line marks the time now. Click a day's name in Week to open that day.
+- **Drag a card** to another day to change its date, or (in Week and Day) onto a time to schedule it then. It keeps its length; a card without times becomes an hour long. Drop it on the **All day** row to make it all day again.
+- **Add a card:** the **+** on a day in Month, or double-click an empty time (or the All day row) in Week and Day.
 - **Unscheduled** lists cards without a date: drag one onto a day to give it a date, or drag a card back to clear it.
 - Events from your own calendars (Google, Outlook, Apple) can appear here too: see [Calendar feeds](./calendar-feeds).
-- On a phone the month fills the screen and unscheduled cards are underneath.
+- On a phone the calendar fills the screen and unscheduled cards are underneath. Day works best on a phone.
+
+Day, Week and card times are new in version 0.5.4.
 
 ## Timeline
 

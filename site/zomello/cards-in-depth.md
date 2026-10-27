@@ -20,7 +20,7 @@ When you complete a repeating card, Zomello makes the next one with the next due
 
 - **Reminder** (in the card) picks a date and time. Right-click > **Remind me** has shortcuts: **In 1 hour**, **In 3 hours**, **Tomorrow 9:00**, **Next Monday 9:00**.
 - **Settings > Reminders > Daily summary** sends one notification a day (at the time you choose) listing what's late and due today.
-- Notifications appear while Zomello is running. On a computer, turn on **Settings > Desktop app > Keep running in the tray** so they keep coming after you close the window. On a phone or tablet, they currently arrive while the app is open.
+- Notifications appear while Zomello is running. On a computer, turn on **Settings > Desktop app > Keep running in the tray** so they keep coming after you close the window. On a phone or tablet, they arrive even when the app is closed (from version 0.5.4; before that, only while it was open). The daily summary there counts your cards as they were when you last opened Zomello.
 - **Send a test notification** in Settings checks they work.
 
 ## Checklists and sub-tasks

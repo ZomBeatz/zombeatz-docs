@@ -80,12 +80,14 @@ const shrink = (file, width) => execFileSync("magick", [file, "-resize", `${widt
 // ---- Computer-size pictures ----
 const desktop = [
   ["board", `#/board/${WEB}`],
-  ["calendar", `#/board/${WEB}`, click(".view-tabs button", "Calendar")],
+  ["calendar", `#/board/${WEB}`, `localStorage.setItem("zomello-calendar-view", "month"); ${click(".view-tabs button", "Calendar")}`],
+  ["calendar-week", `#/board/${WEB}`, `${click(".view-tabs button", "Calendar")} await new Promise((r) => setTimeout(r, 400)); ${click(".cal-views button", "Week")}`],
   ["timeline", `#/board/${WEB}`, click(".view-tabs button", "Timeline")],
   ["list", `#/board/${WEB}`, click(".view-tabs button", "List")],
   ["charts", `#/board/${WEB}`, click(".view-tabs button", "Charts")],
   ["home", "#/home"],
   ["my-tasks", "#/mytasks"],
+  ["my-day", "#/myday"],
   ["settings", "#/settings"],
   ["card", `#/board/${WEB}`, `${store} st.openCard(${JSON.stringify(cardId("Homepage redesign"))});`],
   ["customize", `#/board/${WEB}`, `${store} st.setOverlay({ customizeBoardId: ${JSON.stringify(WEB)} });`],
