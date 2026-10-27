@@ -12,6 +12,16 @@ Zomello on iPhone and iPad works like the Android app, with a few things done th
 - On an iPad, the menu stays open beside the board, like on a computer.
 - Each iPhone and iPad keeps its own look and accessibility settings.
 
+![Zomello on an iPad, with the menu beside the board](/img/zomello/ipad.png)
+
+Open a card and it slides in beside the board, so you can still see where it sits:
+
+![A card open on an iPad](/img/zomello/ipad-card.png)
+
+Turn the iPad sideways for more room, for example in the Calendar view:
+
+![The Calendar view on an iPad in landscape](/img/zomello/ipad-landscape.png)
+
 ## Permissions Zomello asks for
 
 | Permission | When | Why |
