@@ -119,6 +119,19 @@ const phone = [
 ];
 for (const [name, hash, prep] of phone) shrink(await shot(name, hash, prep), 585);
 
+// ---- iPad pictures (iPad 10.2", 810 × 1080) ----
+await cdp("Emulation.setUserAgentOverride", {
+  userAgent: "Mozilla/5.0 (iPad; CPU OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1",
+});
+await size(810, 1080, 2, true);
+const ipad = [
+  ["ipad", `#/board/${WEB}`],
+  ["ipad-card", `#/board/${WEB}`, `${store} st.openCard(${JSON.stringify(cardId("Homepage redesign"))});`],
+];
+for (const [name, hash, prep] of ipad) shrink(await shot(name, hash, prep), 810);
+await size(1080, 810, 2, true);
+shrink(await shot("ipad-landscape", `#/board/${HOME}`, click(".view-tabs button", "Calendar")), 1080);
+
 ws.close();
 chrome.kill();
 await sleep(800);
