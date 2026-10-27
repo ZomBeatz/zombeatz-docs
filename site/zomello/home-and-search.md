@@ -58,6 +58,8 @@ Add a task to any board without leaving what you're doing: **N** on a computer, 
 
 Pick the **board** and **bucket**, optionally a **due date** and **priority**, and whether to **assign it to you**. **Add task** saves it; **Add & open** opens it right away. Your templates are offered here too.
 
+**Type the date in the title.** End it with a day or time and Zomello sets it for you: "Dentist tomorrow 3pm", "Call Sam friday at 2:30", "Report due Oct 28", "Pay rent on the 1st", "Taxes in 3 days". It shows what it found under the title; the × keeps those words in the title instead. Only the end of the title is read, so "Plan Friday party" stays as it is. This works wherever you add a task: Quick add, **Add card** in a bucket, List, My Day and My Tasks. New in version 0.5.4.
+
 ## Focus timer
 
 **Focus timer** in the menu starts a countdown: 5, 10, 15, 25, 30, 45 or 60 minutes, or your own length (like `20`, `1h` or `1:15`), with an optional note of what you're focusing on. Start one from a card (**Time > Focus**, or right-click > **Focus countdown**) and it also tracks the time on that card. You get a chime and a notification at the end. The countdown shows in the menu while it runs.

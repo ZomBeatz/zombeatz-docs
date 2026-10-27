@@ -15,8 +15,9 @@ The more of these you include, the faster it can be fixed:
 4. **Your Zomello version:** **Settings > About**.
 5. **A screenshot** if something looks wrong. Please use example data, not anything private.
 
-Send it one of two ways:
+Send it one of these ways:
 
+- **In Zomello:** **Help > Send feedback** (or **Settings > About**). It starts an email with your Zomello version and device already filled in.
 - **GitHub:** [open an issue](https://github.com/ZomBeatz/Zomello/issues/new). You can see what others reported and follow the fix.
 - **Email:** [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com)
 

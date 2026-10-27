@@ -33,6 +33,14 @@ The Android, iPhone and iPad apps have everything the computer has, arranged for
 - Keyboard hints are left out on touch screens.
 - Your phone keeps its own theme and accessibility settings, even when it shows your computer's boards.
 
+## Share to Zomello (Android)
+
+In any app, **Share** a link or some text and pick **Add to Zomello**. Zomello opens Quick add with it filled in: a page's title becomes the task, and the link goes in its description. New in version 0.5.4; iPhone and iPad are coming.
+
+## My Day widget (Android)
+
+Put **My Day** on your home screen: press and hold an empty spot > **Widgets** > **Zomello** > **My Day**. It shows what's late, due and planned today (times first), updates when your boards change, and moves to the new day at midnight. Tap it to open My Day. New in version 0.5.4; iPhone and iPad are coming.
+
 ## Saving and sharing files
 
 - **Save as board file…** opens the system's Save screen (Android) or share sheet (iPhone and iPad). Afterwards **Share** sends it by email or chat.

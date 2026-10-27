@@ -31,6 +31,15 @@ These links let anyone who has them see the calendar. Zomello only keeps it on t
 - They refresh every 15 minutes. The refresh button next to the month fetches them right away.
 - Add several calendars to one board, or different calendars to different boards.
 
+## Your Zomello dates in your calendar app
+
+The other way around: your dated cards in Google Calendar, Outlook or Apple Calendar.
+
+- **A calendar file:** a board's menu > **Save dates as a calendar file…**, or **Settings > Data & backups > Calendar file (.ics)** for every board. Import it in your calendar app (Google Calendar: **Settings > Import & export**). It's a snapshot: export again after changes.
+- **A calendar link that stays up to date** (Zomello Server): **Settings > Account > Your dates in your calendar app > Make my calendar link**. Subscribe to it (Google Calendar: **Other calendars > + > From URL**; Outlook: **Add calendar > Subscribe from web**; Apple Calendar: the link opens it). Google and Outlook fetch it from the internet, so the server must be reachable from outside your home network, for example with your own domain. Anyone with the link sees those cards: keep it to yourself, and **Make a new link** if it gets out.
+
+Both leave out completed and archived cards. New in version 0.5.4.
+
 ## Related
 
 - [Views](./views)

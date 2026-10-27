@@ -34,6 +34,7 @@ Your cards by date, as a **Month**, a **Week** or a single **Day** (switch at th
 
 - **Week and Day:** an **All day** row at the top, then the hours. Cards with a time sit at their hours, side by side when they overlap; a red line marks the time now. Click a day's name in Week to open that day.
 - **Drag a card** to another day to change its date, or (in Week and Day) onto a time to schedule it then. It keeps its length; a card without times becomes an hour long. Drop it on the **All day** row to make it all day again.
+- **Change how long:** in Week and Day, drag the bottom edge of a timed card.
 - **Add a card:** the **+** on a day in Month, or double-click an empty time (or the All day row) in Week and Day.
 - **Unscheduled** lists cards without a date: drag one onto a day to give it a date, or drag a card back to clear it.
 - Events from your own calendars (Google, Outlook, Apple) can appear here too: see [Calendar feeds](./calendar-feeds).
