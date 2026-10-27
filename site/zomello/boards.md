@@ -10,6 +10,7 @@ A **board** is one project, area or list: "Website Launch", "Home Projects", "We
 - **+ Board** at the bottom of the menu, type a name, **Enter**.
 - Or the **+** next to a section's name, to make it inside that section.
 - Or **⋯ > New board with this layout** on an existing board to reuse its buckets, labels and settings without the cards.
+- Or start from a **template**: **Start from a template** on Home (or **Or start from a template…** under **+ Board**). There are ready-made boards for a weekly plan, moving house, a school term, a trip, a project, household chores, an event and a job search, each with buckets, labels and a few starter cards. Change anything afterwards. New in version 0.5.4.
 
 New boards start with **To do**, **In progress** and **Done**, and open in the view chosen in **Settings > Appearance > New boards open in**.
 

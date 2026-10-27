@@ -13,7 +13,7 @@ Your computer can keep a copy of a phone's or tablet's boards, so a reinstall or
 That's it. While the two are connected (same Wi‑Fi, both apps open), your computer saves a copy, one a day, and keeps the last two weeks.
 
 ::: info What's in a backup
-The boards, buckets and cards, with everything on them: checklists, notes, dates, labels and links. **Attached files** stay on the phone and aren't in it.
+The boards, buckets and cards, with everything on them: checklists, notes, dates, labels, links and **attached files**. Files go over a few at a time while the two are connected, so a phone with many files takes a little while for the first backup.
 :::
 
 ## Private boards, locked

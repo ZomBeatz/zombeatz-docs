@@ -41,3 +41,10 @@
 .zb-home h2 { margin: 40px 0 12px; font-size: 24px; border: 0; }
 .zb-home table { display: table; width: 100%; }
 @media (min-width: 960px) { .zb-home { padding: 0 64px 64px; } }
+
+/* A big call-to-action button inside a page (e.g. Help test Zomello). */
+.vp-doc a.zb-cta {
+  display: inline-block; margin: 8px 0 4px; padding: 10px 22px; border-radius: 10px;
+  background: var(--vp-button-brand-bg); color: var(--vp-button-brand-text); font-weight: 600; text-decoration: none;
+}
+.vp-doc a.zb-cta:hover { background: var(--vp-button-brand-hover-bg); color: var(--vp-button-brand-hover-text); }
