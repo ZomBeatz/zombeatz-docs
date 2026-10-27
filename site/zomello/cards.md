@@ -12,7 +12,7 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 - **Add:** **+ Add card** under a bucket. Press **Enter** to add it and start the next; **Esc** to stop.
 - **Move:** drag it to another bucket or position. On a phone, press and hold briefly, then drag.
 - **Complete:** click the circle next to its title.
-- **Right-click** (press and hold on a phone) for the card menu: progress, priority, labels, people, due date, repeat, reminders, timers, move, link, copy, template, archive and delete.
+- **Right-click** (press and hold on a phone) for the card menu: progress, **Add to My Day**, priority, labels, people, due date, repeat, reminders, timers, move (to a bucket, a board, or [another device](./moving-boards#moving-cards)), link, copy, template, archive and delete.
 
 ![The card menu](/img/zomello/card-menu.png)
 
@@ -25,7 +25,7 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 | **Bucket** | Which column it's in |
 | **Progress** | Not started, In progress, Waiting (on someone else), On hold (paused on purpose), Completed |
 | **Priority** | Urgent, Important, Medium, Low. Every priority except Medium shows a colored flag on the card |
-| **Start date / Due date** | Cards show "in 3 days", "today" or "2 days late" |
+| **Start date / Due date** | Cards show "in 3 days", "today" or "2 days late". Once a date is set, you can add a time next to it (leave it empty for all day): the calendar's Week and Day views put the card at those hours |
 | **Assigned to** | People from **Settings > People**. Yours show on Home and in My Tasks |
 | **Labels** | Colored tags. **Labels** at the top of the board manages them |
 | **Description** | Longer details, with formatting (see below) |

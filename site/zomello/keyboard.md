@@ -15,6 +15,7 @@ Zomello works fully with a mouse or touch; these are shortcuts for when your han
 | **Ctrl Shift Z** or **Ctrl Y** | Redo |
 | **H** | Home |
 | **M** | My Tasks |
+| **D** | My Day |
 | **[** | Fold or unfold the menu |
 | **Ctrl +** / **Ctrl −** (or Ctrl and scroll) | Zoom in or out |
 | **Ctrl 0** | Reset zoom |

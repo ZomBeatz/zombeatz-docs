@@ -1,7 +1,7 @@
 ---
-description: "Home shows what's late, due today and coming up across every board. Plus My Tasks, search, Quick add, the focus timer, Help and undo."
+description: "Home shows what's late, due today and coming up across every board. Plus My Day, My Tasks, search, Quick add, the focus timer, Help and undo."
 ---
-# Home, My Tasks and search
+# Home, My Day, My Tasks and search
 
 ## Home
 
@@ -16,6 +16,20 @@ Home gathers what needs attention across every board:
 - **Boards:** every board by section, with how much is done and how much is late
 
 Click any task to open it, or a board to go there. On a computer, **H** goes Home from anywhere.
+
+## My Day
+
+![My Day](/img/zomello/my-day.png)
+
+What to do today, from every board, in one list:
+
+- **Late:** past their due date.
+- **Today:** due today, or running across today (a start date before and a due date after). Cards with a time come first, in time order.
+- **Added by you:** anything you add with **Add to My Day** (in a card's menu) or the box at the top. Added cards leave My Day at midnight, so each morning starts fresh.
+- **Done today:** what you finished today.
+- **Suggestions:** cards due or starting tomorrow, in progress, or important with no date. **+ My Day** adds one.
+
+It shows cards assigned to you (set who you are in **Settings > People**) or to no one. On a computer, **D** opens My Day. New in version 0.5.4.
 
 ## My Tasks
 

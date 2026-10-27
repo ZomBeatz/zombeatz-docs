@@ -70,6 +70,7 @@ export default defineConfig({
             { text: "Your computer's boards on your phone", link: "/zomello/phone-and-computer" },
             { text: "Moving boards between devices", link: "/zomello/moving-boards" },
             { text: "Sharing between your devices", link: "/zomello/sharing-between-devices" },
+            { text: "Device backups", link: "/zomello/device-backups" },
             { text: "Board files (.zomello)", link: "/zomello/board-files" },
             { text: "Coming from Trello or Planner", link: "/zomello/import" },
           ],
