@@ -18,13 +18,27 @@ Buckets are the columns on a board: steps in a process ("To do, Doing, Done"), c
 |---|---|
 | **Collapse** | Folds the bucket into a slim strip to save room |
 | **Sort** | Due date, priority, name, progress, newest or recently updated, with **Reverse order** and **Use this sort for every bucket on the board**. Your own order underneath is never lost |
-| **Cards moved here become…** | Sets the progress of cards dropped here. Common: "In progress" for a Doing bucket, "Completed" for Done |
+| **Bucket rules…** | What happens to cards made in, or moved into, this bucket. See [Bucket rules](#bucket-rules) |
+| **Select all cards** | Selects every card in the bucket, to change them all at once ([Select several cards](./keyboard#select-several-cards)) |
 | **WIP limit** | "Work in progress" limit: the bucket shows "3 / 5" and is highlighted when it holds more cards than this |
 | **Card display…** | What cards show in this bucket only (overrides the board's choice) |
 | **Ticked checklist items** | Show or hide finished checklist items on this bucket's cards |
 | **Ask AI for cards here…**, **Export bucket for AI…**, **Copy work order** | Optional AI helpers ([AI tools](./ai-tools)) |
 | **Paste cards here…** | Adds cards you copied |
 | **Archive bucket** / **Delete bucket** | With its cards; Undo works right after |
+
+## Bucket rules
+
+**Bucket rules…** in the bucket menu sets what happens to cards automatically. The menu shows **(on)** when a bucket has any.
+
+| Rule | What it does |
+|---|---|
+| **When a card is made here: Add labels** | New cards made in this bucket get these labels, and keep them when they move on. Handy for remembering where a card came from, like a "From testing" label on a Testing bucket |
+| **When a card is made here: Set priority** | New cards made here start with this priority |
+| **When a card is moved or made here: Set progress** | Common: "In progress" for a Doing bucket, "Completed" for Done |
+| **When a card is moved or made here: Add labels** | Cards dropped here get these labels, for example "Needs review" on a Review bucket |
+
+Rules only add labels: moving a card out of a bucket doesn't take them off. **Turn off all rules** clears them.
 
 ## Show completed
 

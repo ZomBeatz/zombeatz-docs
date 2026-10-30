@@ -9,6 +9,10 @@ Before it goes live in Google Play and the App Store, we're looking for a small 
 
 <a class="zb-cta" href="https://forms.gle/q9XuPyY55MmLki9BA">Sign up to test</a>
 
+![A Zomello board with buckets and cards](/img/zomello/board.png)
+
+![Zomello on a phone](/img/zomello/phone.png){.phone}
+
 ## What it involves
 
 - **About two weeks.** Google asks that testers keep the app installed for 14 days in a row. A few minutes a day is plenty: plan your week, a trip, chores or a project.

@@ -60,10 +60,14 @@ Zomello works fully with a mouse or touch; these are shortcuts for when your han
 
 ## Select several cards
 
-**Ctrl click** cards to select them (Ctrl click again to unselect). A bar appears with:
+**Ctrl click** a card to start selecting, or choose **Select** in a card's menu (on a phone, press and hold the card). After that, a plain click or tap on more cards adds them, and clicking one again unselects it. A bucket's menu has **Select all cards**.
 
-- **Copy work order**: the selected cards as text (see [Copying and pasting cards](./copy-paste-cards))
-- **Hand to AI…**: optional, see [AI tools](./ai-tools)
-- **Complete** and **Archive**: all of them at once
+A bar appears with changes for all the selected cards at once:
 
-**Esc** clears the selection.
+- **Progress** and **Priority**: set them for every card
+- **Labels**: tick a label to add it to every card, untick it to take it off every card
+- **Move**: to another bucket, or to a bucket on another board
+- **Archive** and **Delete**
+- **⋯**: **Copy work order** (the cards as text, see [Copying and pasting cards](./copy-paste-cards)) and **Hand to AI…** (optional, see [AI tools](./ai-tools))
+
+**Undo** works right after any of these. **Esc**, the **×** on the bar, or a click on an empty part of the board clears the selection.
