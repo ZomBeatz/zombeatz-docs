@@ -114,6 +114,7 @@ const desktop = [
   ["actions", "#/actions"],
   ["action-form", "#/actions", `editAction({ ...ACTION_TEMPLATES.find((t) => t.name.startsWith("Quiet")), device_id: ${ids.pve2}, hosts: "10.30.0.11" });`, { settle: 1200 }],
   ["device-actions", `#/devices/${ids.pve2}`, tab("actions")],
+  ["alerts", "#/settings", `editAlerts(); ${wait(400)} for (const k of ["enabled", "ntfy_on"]) { const c = document.querySelector(\`.modal [data-k=\${k}] input\`); c.checked = true; c.dispatchEvent(new Event("change", { bubbles: true })); } document.querySelector(".modal [data-k=ntfy_url] input").value = "https://ntfy.sh/harm-garage-7f3k2";`],
   ["tasks", "#/tasks"],
   ["vault", "#/vault"],
   ["export", "#/export"],

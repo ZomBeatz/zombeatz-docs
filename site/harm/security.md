@@ -37,6 +37,7 @@ HaRM is made for your home network. Don't forward its port to the internet. To u
 - [Actions](./actions) connect with your saved logins, so they only run while HaRM is unlocked. Their results are kept encrypted, like your logins.
 - Passwords reach SSH through a helper for that one connection, never on a command line. Extra SSH settings are limited to connection settings, so nothing can make SSH run a program on the HaRM computer.
 - The [Status](./status) page only contacts the addresses you've recorded, on your own network.
+- [Alerts](./alerts) are sent while HaRM is locked, so their secrets (email password, ntfy token, webhook address) are encrypted with a separate key in `alerts.key` in the data folder, not with your master password. Use an app password for email, and a topic name nobody could guess for ntfy.
 
 ## The audit log
 

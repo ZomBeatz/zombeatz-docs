@@ -32,7 +32,7 @@ Connect to your home network with a VPN, and HaRM works as usual. Don't forward 
 
 ## Can HaRM tell me when something goes down?
 
-Yes. The [Status](./status) page shows which devices answer, by room, with the last 24 hours, and devices that stop answering show on **Home**. HaRM doesn't send emails or phone alerts.
+Yes. The [Status](./status) page shows which devices and services answer, by room, with the last 24 hours. [Alerts](./alerts) send you a message by ntfy, email or a webhook when one stops answering, and when it's back.
 
 ## Can several people use it?
 
