@@ -182,7 +182,7 @@ export default defineConfig({
     },
     footer: {
       message:
-        'Made by ZomBeatz Media · <a href="mailto:info@zombeatzmedia.com">info@zombeatzmedia.com</a> · <a href="https://zombeatz.github.io/Zomello/privacy.html">Privacy policy</a>',
+        'Made by ZomBeatz Media · <a href="mailto:info@zombeatzmedia.com">info@zombeatzmedia.com</a> · <a href="https://zombeatz.github.io/Zomello/privacy.html">Privacy policy</a> · Text and pictures <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>',
     },
     docFooter: { prev: "Previous", next: "Next" },
   },
