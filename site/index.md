@@ -21,7 +21,7 @@ hero:
       text: Download Zomello
       link: https://github.com/ZomBeatz/Zomello/releases/latest
     - theme: alt
-      text: Beta test Zomello
+      text: Join the Zomello beta
       link: /zomello/help-test
 
 features:
@@ -60,7 +60,7 @@ ZomBeatz Media makes practical tools that run on your own computers, phones and 
 
 | | What it's for | Runs on | |
 |---|---|---|---|
-| **Zomello** | Boards, cards, checklists, calendar and timeline, for projects, chores, school and teams | Windows, Linux, Android, iPhone and iPad (coming soon), your own server | [Guide](./zomello/) · [Download](https://github.com/ZomBeatz/Zomello/releases/latest) · [Try online](https://zombeatz.github.io/Zomello/) · [Beta test](./zomello/help-test) · [GitHub](https://github.com/ZomBeatz/Zomello) |
+| **Zomello** | Boards, cards, checklists, calendar and timeline, for projects, chores, school and teams | Windows, Linux, Android, iPhone and iPad (coming soon), your own server | [Guide](./zomello/) · [Download](https://github.com/ZomBeatz/Zomello/releases/latest) · [Try online](https://zombeatz.github.io/Zomello/) · [Zomello beta](./zomello/help-test) · [GitHub](https://github.com/ZomBeatz/Zomello) |
 | **Zom's HaRM** | Tracking hardware, racks, spare parts, networks, cables and logins in a home lab | Windows, Linux, Docker; phones over your Wi‑Fi | [Guide](./harm/) · [Download](https://github.com/ZomBeatz/Zoms-HaRM/releases/latest) · [GitHub](https://github.com/ZomBeatz/Zoms-HaRM) |
 
 ## Not sure where to start?

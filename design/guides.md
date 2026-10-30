@@ -44,7 +44,7 @@ Every page is one of these kinds. Each kind has a set shape.
 - **Shape:**
   1. The `# Product` title, then 2 or 3 sentences: what it is, like what well-known tools, where it runs, and the privacy promise.
   2. The hero picture (the main screen, dark theme).
-  3. A row of buttons (`<div class="zb-ctas">`): **Try the live demo** (`zb-cta`), **Sign up to beta test** (`zb-cta`, while a test is running), then **View on GitHub** (the quieter `zb-cta zb-cta-2`). External ones open in a new tab. Then one sentence on what the demo is.
+  3. A row of buttons (`<div class="zb-ctas">`): **Try the live demo** (`zb-cta`), **Join the (Product) beta** (`zb-cta`, while a test is running), then **View on GitHub** (the quieter `zb-cta zb-cta-2`). External ones open in a new tab. Then one sentence on what the demo is.
   4. `## Start here`: 3 to 5 bullets, each starting with a bold question ("**New?**", "**Just looking?**", "**Your situation, step by step:**", "**Want everything?**", and "**Want to help?**" while a beta test is running).
   5. `## What you can do`: a two-column table with an empty header, 8 to 12 rows. Bold area name on the left; one line on the right, ending with the pages that cover it in parentheses.
   6. Optionally `## Where it runs` (a platform table) and `## Related`.
@@ -181,6 +181,6 @@ These follow the deep-dive shape. They also need:
 ## New product checklist
 
 1. Make `site/<product>/` with at least: `index.md`, `quick-start.md`, `installing.md`, `faq.md`, 4 basics pages, `settings.md`, `troubleshooting.md`, `glossary.md`, `whats-new.md`, `contact.md`.
-2. Add its sidebar to `site/.vitepress/config.mts` in the group order above, its nav link at the top, and a card for it on the site's front page. While a beta test runs, add a **Beta test** link to the top nav and the front page.
+2. Add its sidebar to `site/.vitepress/config.mts` in the group order above, its nav link at the top, and a card for it on the site's front page. While a beta test runs, add a **(Product) beta** link to the top nav, right after the product's own link, a **Join the (Product) beta** button on the front page, and the sign-up page under **Start here** in the sidebar. Always name the product: a beta link never just says "Beta test".
 3. Add a screenshot script and take the pictures from its demo.
 4. Link the guide from the product's README (the **Read the guide** badge) and from its **Help** menu.

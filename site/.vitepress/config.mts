@@ -41,8 +41,8 @@ export default defineConfig({
     siteTitle: "ZomBeatz Docs",
     nav: [
       { text: "Zomello", link: "/zomello/", activeMatch: "/zomello/" },
+      { text: "Zomello beta", link: "/zomello/help-test" },
       { text: "Zom's HaRM", link: "/harm/", activeMatch: "/harm/" },
-      { text: "Beta test", link: "/zomello/help-test" },
       { text: "Design", link: "/design/", activeMatch: "/design/" },
     ],
     sidebar: {
@@ -53,6 +53,7 @@ export default defineConfig({
             { text: "Overview", link: "/zomello/" },
             { text: "Live demo", link: "https://zombeatz.github.io/Zomello/" },
             { text: "GitHub", link: "https://github.com/ZomBeatz/Zomello" },
+            { text: "Help test Zomello", link: "/zomello/help-test" },
             { text: "Quick start", link: "/zomello/quick-start" },
             { text: "Installing and updating", link: "/zomello/installing" },
             { text: "Questions", link: "/zomello/faq" },
@@ -137,7 +138,6 @@ export default defineConfig({
             { text: "Troubleshooting", link: "/zomello/troubleshooting" },
             { text: "Words used in Zomello", link: "/zomello/glossary" },
             { text: "Contact and feedback", link: "/zomello/contact" },
-            { text: "Help test Zomello", link: "/zomello/help-test" },
           ],
         },
       ],
