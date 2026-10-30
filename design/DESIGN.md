@@ -208,9 +208,9 @@ The voice is a helpful person explaining something plainly, not a marketing page
 
 ## 8. Guides and docs
 
-- Every product's guide lives in this repository under `site/<product>/` and uses the same layout: **Overview**, **Getting started**, then task pages ("How do I…"), then **Reference** (every setting and feature), then **Troubleshooting**.
-- Task pages: start with one sentence saying what you'll achieve, then numbered steps, a screenshot, and "Related" links at the end.
-- Link generously between pages and between products when they connect.
+- Every product's guide lives in this repository under `site/<product>/`, laid out the same way: **Start here** (Overview, Live demo, Quick start, Installing, Questions), **The basics**, **Advanced features**, the **Server**, **Set-up scenarios**, then **More** (What's new, Troubleshooting, the glossary, Contact).
+- Every feature is explained in full on exactly one page; everywhere else links to it.
+- The full spec (sidebar order, every kind of page with its shape and length, how pages look, pictures, and keeping the guide up to date) is in [guides.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/guides.md).
 - Keep the same wording rules as the apps (section 6).
 
 ### Product README (the GitHub page)
