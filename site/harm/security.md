@@ -32,9 +32,15 @@ HaRM holds the keys to your network, so it's built to keep them safe even if som
 
 HaRM is made for your home network. Don't forward its port to the internet. To use it away from home, connect to your home network with a VPN (for example your router's VPN) and use HaRM as usual.
 
+## Actions and online checks
+
+- [Actions](./actions) connect with your saved logins, so they only run while HaRM is unlocked. Their results are kept encrypted, like your logins.
+- Passwords reach SSH through a helper for that one connection, never on a command line. Extra SSH settings are limited to connection settings, so nothing can make SSH run a program on the HaRM computer.
+- The [Status](./status) page only contacts the addresses you've recorded, on your own network.
+
 ## The audit log
 
-**Audit log** (under **More**) records every change, sign-in, failed sign-in, login reveal, export, backup and import, with the time and the address it came from.
+**Audit log** (under **More**) records every change, sign-in, failed sign-in, login reveal, action run, export, backup and import, with the time and the address it came from.
 
 ## Related
 

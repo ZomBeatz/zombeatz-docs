@@ -149,6 +149,34 @@ Tick **Use sudo** (Linux), or run the command as administrator (Windows).
 
 Turn on Windows' **OpenSSH Server** (**Settings > System > Optional features**), or use **Run it yourself**.
 
+## Status and actions
+
+### A device says Offline, but it's on
+
+Its firewall blocks every port HaRM tries, and ping. Add a service with a port that's open on its **Network** tab (HaRM tries those first), or allow ping. Windows blocks ping until you allow it in its firewall.
+
+### A device says Online, but it's off
+
+Something else answers on that address: another device took the IP, or a router answers for it. Check the address on its **Network** tab.
+
+### Wake doesn't wake it
+
+1. Turn on Wake-on-LAN in the device's BIOS and its network card settings.
+2. Check its MAC address on the **Network** tab is the wired port's.
+3. HaRM has to be on the same network or VLAN as the device. In Docker, use `network_mode: host`.
+
+### An action says the machine "only speaks an older kind of SSH"
+
+Edit the action and tick **Older SSH**. If it still fails, paste the `-o …` settings from an `ssh` command that works into **Other SSH settings** (under **More details**).
+
+### An action says "Login refused"
+
+Check the login's username and password, and that the action sends to the right address: an iLO or iDRAC login only works on the iLO or iDRAC address, in **Send to**.
+
+### An action stops at the first line
+
+With **One command per line**, HaRM stops at the first command that fails. **Show output** shows which one, and what it printed.
+
 ## AI Assist
 
 ### "The AI answered, but not in HaRM's format"

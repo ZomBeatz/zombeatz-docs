@@ -37,6 +37,7 @@ The live demo is the real HaRM with a made-up home lab, running in your browser.
 | **Map the network** | Subnets and VLANs, an IP map, ports, services and cables ([Networks and cables](./networks)) |
 | **Virtual machines** | VMs and containers on their hosts, clusters, and how full each host is ([Virtual machines and clusters](./virtual-and-clusters)) |
 | **Log in faster** | Encrypted passwords and 2FA codes, with one tap to the iDRAC, iLO or web page ([Logins](./logins)) |
+| **See what's online, fix it fast** | Every device answering or not, by room, with Wake-on-LAN, and one-click commands like quieting a server's fans ([Status](./status), [Actions](./actions)) |
 | **Fill it in without typing** | Specs over SSH, your router's device list, Proxmox, label scanning and photos ([Import specs](./import-specs), [Discover](./discover), [Scanning and labels](./scanning-and-labels), [AI Assist](./ai-assist)) |
 | **Remember what you did** | Notes and tasks on every device, rack and room ([Notes and tasks](./notes-and-tasks)) |
 | **Share and sell** | Text for a person or an AI, CSV, spec sheets, sell sheets and QR labels ([Export and share](./export-and-share)) |
