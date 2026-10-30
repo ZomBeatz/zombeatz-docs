@@ -43,6 +43,7 @@ Bay groups accept several connections at once: a SAS backplane takes SATA drives
 
 ## Related
 
-- [AI Assist](./ai-assist) to catalog a box of parts from photos
-- [PC Builder](./pc-builder)
-- [Export and share](./export-and-share) to make a sell sheet
+- [AI Assist](./ai-assist): a box of parts from photos
+- [PC Builder](./pc-builder): building with your spares
+- [Export and share](./export-and-share): sell sheets for what you don't need
+- [A pile of spare parts](./scenarios/spare-parts): cataloging boxes, step by step

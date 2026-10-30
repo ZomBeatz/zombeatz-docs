@@ -1,56 +1,76 @@
 ---
-description: "Every setting in Zom's HaRM, and the environment settings for servers."
+description: "Every setting in Zom's HaRM, in the same groups as the app: appearance, locking, phones, AI Assist, data, shortcuts and About."
 ---
 
 # Settings
 
-Everything under **Settings**, plus the desktop app's settings and the options for servers.
+Every option under **Settings** in HaRM, in the same order as the app, plus the control panel's settings. A server's own settings (address, port, backups kept) are on [Server settings](./server-settings).
 
 ![Settings](/img/harm/settings.png)
 
-## In HaRM: Settings
+## Appearance
 
-| Section | What it does |
-|---|---|
-| **Appearance** | Light or dark, or match your system (dark is the default). Saved per device, so your phone and computer can differ. There may be another look to find if you click the logo enough. |
-| **AI Assist** | Which AI service AI Assist sends photos to, its API key, model, address (for local services) and whether it may search the web. Off by default. See [AI Assist](./ai-assist). |
-| **Master password** | Change it. Your stored logins stay intact, and every other signed-in device is signed out. |
-| **Two-factor authentication** | Require a code from an authenticator app (Aegis, 2FAS, Bitwarden, 1Password, Google Authenticator…) when unlocking. |
-| **Recovery code** | Make a new one if you lost the old one. The old code stops working right away. |
-| **Phone & scanning** | Whether this connection is secure, whether the camera and server-side barcode and text reading are available, and the address to use. |
-| **Phone app** | QR codes and steps to connect a phone. See [Phones and tablets](./phones-and-tablets). |
-| **Session** | How long HaRM waits before locking (30 minutes idle), and **Lock** to lock now. |
-| **Backup** | **Download backup (.db)**: the whole database. Logins inside stay encrypted. |
-| **Automatic backups** | The latest daily snapshots and where they're kept. |
-| **Export CSV** | A spreadsheet of each list: devices, parts, racks, locations, networks, interfaces, services, cables, slots. Logins are never included. |
-| **Guides** | The setup guide and Help & guide. |
+- **Match my computer** (or **Match my phone**, **Match my tablet**): light or dark, following the device's own setting. This is the default.
+- **Light** and **Dark**: always that look.
 
-The light look:
+The choice is kept on each device, so your phone and computer can differ. The light look:
 
-![HaRM in light mode](/img/harm/home-light.png)
+![HaRM in the light look](/img/harm/home-light.png)
 
-## In the desktop app
+## Locking and security
 
-See [Desktop app](./desktop-app#settings): share on the network, HTTPS, port, start at login, keep running in the tray.
+- **Locking**: says how long HaRM waits before it locks (30 minutes without use, unless a server sets otherwise), and that it locks when the HaRM server restarts. **Lock now** locks it straight away.
+- **Master password > Change password…**: a new master password. Saved logins are kept, and every other device is signed out.
+- **Two-factor authentication > Set up 2FA**: unlocking also asks for a 6-digit code from an authenticator app (Aegis, 2FAS, Bitwarden, 1Password, Google Authenticator and others). **Turn off 2FA** asks for the master password.
+- **Recovery code > New recovery code…**: makes a new code after asking for the master password. The old one stops working at once.
 
-## For servers
+How it all protects your logins: [Security and privacy](./security).
 
-Environment settings, set in `docker-compose.yml` or before `./run.sh`:
+## Phones & tablets
 
-| Setting | Default | What it does |
-|---|---|---|
-| `HARM_HOST` | `127.0.0.1` | `0.0.0.0` shares HaRM on your network (`run.sh` only; Docker always shares). |
-| `HARM_PORT` | `8077` | The port. |
-| `HARM_TLS` | `1` in Docker | `1` serves HTTPS with HaRM's own certificate. |
-| `HARM_CERT_NAMES` | | Names and IPs the certificate covers (Docker). |
-| `HARM_IDLE_MINUTES` | `30` | Minutes idle before HaRM locks. |
-| `HARM_MAX_SESSION_HOURS` | `12` | Longest a sign-in lasts. |
-| `HARM_AUTO_BACKUP` | `1` | `0` turns daily backups off. |
-| `HARM_BACKUP_KEEP` | `14` | Daily backups kept. |
-| `HARM_DB` | `data/harm.db` | Where the database lives (the `data` folder sits next to it). |
-| `HARM_TRUSTED_PROXIES` | `127.0.0.1` | Reverse proxies allowed to pass on visitors' addresses. |
+- **Phone app > How to connect a phone…**: the QR codes and steps for each kind of phone. See [Phones and tablets](./phones-and-tablets).
+- **Install on this device**: shows on browsers that can install HaRM as an app right away.
+- **Certificate**: downloads `harm-ca.crt`, for devices that need to trust HaRM.
+- **Camera and scanning**: whether this connection is secure (the camera needs it), whether live camera scanning, server-side barcode reading and text recognition are available, and the address this device uses.
+
+## AI Assist
+
+- **AI service**: Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), or **Other / local** for any OpenAI-compatible service such as Ollama, LM Studio or OpenRouter. Off until you pick one.
+- **API key**: your own key for that service, kept encrypted in your vault. **Remove saved key** deletes it.
+- **Model**: which model to use. Leave it blank for the recommended one; it must be able to see images.
+- **Service address**: for **Other / local** only, for example `http://localhost:11434/v1` for Ollama.
+- **Let it search the web for prices and specs**: the AI looks up what parts cost new and what they sell for now.
+
+Photos go only to the service you pick, and logins are never sent. Without a service, AI Assist still works by copy and paste with any AI app. See [AI Assist](./ai-assist).
+
+## Data & backups
+
+- **Automatic backups**: the newest daily backups and where they're kept.
+- **Download backup (.db)**: the whole database in one file. Logins stay encrypted inside.
+- **Export CSV**: a spreadsheet of each list. The logins file has names and usernames only, never passwords.
+
+More in [Data and backups](./data-and-backups) and [Export and share](./export-and-share).
+
+## Shortcuts (computers only)
+
+The keyboard shortcuts, the same as on [Keyboard shortcuts](./keyboard). Phones and tablets don't show this group.
+
+## About
+
+![Settings > About, with Send feedback](/img/harm/settings-about.png)
+
+- The version of HaRM, and its license (MIT, free and open source).
+- **See the code** and **What's new** open the project on GitHub.
+- **Send feedback** starts an email to ZomBeatz Media with your version and device filled in. See [Contact and feedback](./contact).
+- **Read the guide** opens this guide, and **Setup guide** runs the first-time guide again.
+
+## The control panel (computer only)
+
+The desktop app's own settings: **Let phones and other devices connect**, **Use HTTPS**, **Port**, **Start HaRM when I log in** and **Keep running in the tray when this window is closed**. See [The desktop app](./desktop-app#settings).
 
 ## Related
 
-- [Security](./security)
-- [Running on a server](./server)
+- [Server settings](./server-settings): settings for a server, in docker-compose.yml
+- [Security and privacy](./security): what the locking settings protect
+- [Keyboard shortcuts](./keyboard): the full list
+- [The desktop app](./desktop-app): the control panel on your computer

@@ -63,7 +63,7 @@ ZomBeatz Media makes practical tools that run on your own computers, phones and 
 ## Not sure where to start?
 
 - **Planning anything:** [Zomello's quick start](./zomello/quick-start), or pick your situation in [set-up scenarios](./zomello/scenarios/).
-- **Running a home lab:** [HaRM's quick start](./harm/quick-start), or pick your situation in [set-up scenarios](./harm/scenarios).
+- **Running a home lab:** [HaRM's quick start](./harm/quick-start), or pick your situation in [set-up scenarios](./harm/scenarios/).
 - **Questions or ideas:** [Contact and feedback](./zomello/contact), or email [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com).
 
 </div>

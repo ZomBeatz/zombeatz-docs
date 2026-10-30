@@ -35,7 +35,8 @@ Open a rack from **Racks & Storage** to see it front and rear.
 ![A rack, front and rear](/img/harm/rack.png)
 
 - **Click an empty U** to add a device there, or to place one you already have.
-- Each device shows its type and status. Broken devices get a red outline, spares and standby devices are dimmed, and a flag shows open issues.
+- Each device shows its name, type and status. Its color says what kind of device it is (servers and computers, network, storage, power, other gear, accessories), and a key under the rack names each color. New in version 0.3.2.
+- Broken devices get a red outline, spares and standby devices are dimmed, and a flag shows open issues.
 - Devices can be half depth and mounted at the front or rear, so a front and a rear device can share a U.
 - HaRM refuses overlaps and positions outside the rack, and says which device is in the way.
 - Notes and tasks for the rack itself sit beside the picture ("Rear door sticks").
@@ -52,5 +53,7 @@ To move a device, open it, **Edit**, and change **Rack / holder** and **Lowest r
 
 ## Related
 
-- [Devices](./devices)
-- [Parts and storage](./parts-and-storage)
+- [Devices](./devices): what goes in the racks
+- [Parts and storage](./parts-and-storage): spares kept in holders
+- [Scanning and labels](./scanning-and-labels#qr-labels): QR labels for each device
+- [A small office closet](./scenarios/office-closet): a whole closet, step by step

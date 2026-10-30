@@ -36,6 +36,6 @@ You see a preview first. Already-recorded serials and MAC addresses are unticked
 
 ## Related
 
-- [Devices](./devices)
-- [Logins](./logins)
-- [Troubleshooting](./troubleshooting#import-specs)
+- [Devices](./devices): the Hardware tab it fills in
+- [Logins](./logins): saved SSH logins it can use
+- [Troubleshooting](./troubleshooting#import-specs): when it can't connect

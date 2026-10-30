@@ -61,6 +61,7 @@ Values are estimates: check the sources saved with each item before you rely on 
 
 ## Related
 
-- [Parts and storage](./parts-and-storage)
-- [Scanning and labels](./scanning-and-labels)
-- [Settings](./settings)
+- [Parts and storage](./parts-and-storage): where the parts go
+- [Scanning and labels](./scanning-and-labels): reading one label at a time
+- [Settings](./settings#ai-assist): choosing a service
+- [A pile of spare parts](./scenarios/spare-parts): step by step

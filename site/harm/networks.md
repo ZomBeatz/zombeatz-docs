@@ -36,5 +36,7 @@ What each device runs: name, protocol and port, its web address, version and sta
 
 ## Related
 
-- [Discover](./discover)
-- [Logins](./logins)
+- [Discover](./discover): bringing in what's on the network
+- [Devices](./devices#the-main-address): the main address
+- [Logins](./logins): the logins for each service
+- [Virtual machines and clusters](./virtual-and-clusters): VM addresses

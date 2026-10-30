@@ -18,9 +18,11 @@ description: "Home shows what needs your attention and your open tasks. Search f
 
 ## Search
 
-Press `/` or click the search box at the top, and type at least two letters: a name, IP, MAC, serial, part number, login name, note text, network or cluster.
+Press <kbd>Ctrl</kbd> <kbd>K</kbd> (<kbd>⌘</kbd> <kbd>K</kbd> on a Mac) or click the search box at the top, and type at least two letters: a name, IP, MAC, serial, part number, login name, note text, network or cluster.
 
 ![Search results as you type](/img/harm/search.png)
+
+On pages with a list (devices, parts, logins), <kbd>/</kbd> filters just that list instead. Every key: [Keyboard shortcuts](./keyboard).
 
 ::: tip On a phone
 Search sits at the top of every page, so it's the quickest way to find a device while you're standing in front of it.
@@ -46,5 +48,7 @@ On a phone, the scan items at the top open the camera straight away.
 
 ## Related
 
-- [Notes and tasks](./notes-and-tasks)
-- [Scanning and labels](./scanning-and-labels)
+- [Keyboard shortcuts](./keyboard): search and add without the mouse
+- [Notes and tasks](./notes-and-tasks): what fills the Home page
+- [Scanning and labels](./scanning-and-labels): the scan items in **+ New**
+- [Devices](./devices): what a search result opens

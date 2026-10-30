@@ -28,5 +28,6 @@ HaRM checks the CPU socket against the motherboard and cooler; memory type, slot
 
 ## Related
 
-- [Parts and storage](./parts-and-storage)
-- [Devices](./devices)
+- [Parts and storage](./parts-and-storage): the spares a build can use
+- [Devices](./devices): turning a build into a device
+- [Export and share](./export-and-share): spec sheets for a build

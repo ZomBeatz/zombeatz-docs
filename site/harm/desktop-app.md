@@ -2,7 +2,7 @@
 description: "The Zom's HaRM desktop app: start and stop the server, see its addresses, set up phones, fix the certificate, and keep it running in the tray."
 ---
 
-# Desktop app
+# The desktop app
 
 The desktop app (the control panel) starts and stops HaRM, shows the addresses to use, and helps connect phones. HaRM itself runs in your browser; the control panel just looks after the server.
 
@@ -35,6 +35,14 @@ If the computer's IP address changes and the certificate doesn't cover it, the p
 
 Changes to sharing, HTTPS or the port take effect after **Restart**.
 
+## Looks
+
+The control panel follows your computer's light or dark setting, with the same colors as HaRM itself. New in version 0.3.2.
+
+## Bringing in an older HaRM's data
+
+Versions before 0.3.2 kept data next to the app. Until the installed app has data of its own, the panel shows **Used HaRM before?** with **Bring in data from an older HaRM…**: pick the old HaRM folder, and its devices, logins, certificates and backups are copied into the [data folder](./data-and-backups#where-your-data-is). The old folder isn't changed.
+
 ## Phone setup
 
 **Phone setup** opens a step-by-step guide with QR codes and a checklist that follows your phone's progress. See [Phones and tablets](./phones-and-tablets).
@@ -45,5 +53,6 @@ Changes to sharing, HTTPS or the port take effect after **Restart**.
 
 ## Related
 
-- [First start](./first-start)
-- [Troubleshooting](./troubleshooting)
+- [Installing and updating](./installing): installing and the first start
+- [Phones and tablets](./phones-and-tablets): Phone setup, step by step
+- [Troubleshooting](./troubleshooting#starting-harm): when it won't start

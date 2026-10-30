@@ -38,5 +38,6 @@ Deleting a cluster keeps its hosts and VMs; they just leave the cluster. Deletin
 
 ## Related
 
-- [Discover](./discover)
-- [Devices](./devices)
+- [Discover](./discover#proxmox): importing a Proxmox cluster
+- [Devices](./devices): VMs are devices too
+- [A Proxmox home lab](./scenarios/proxmox-lab): the whole setup, step by step

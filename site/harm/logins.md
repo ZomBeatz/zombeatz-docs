@@ -29,15 +29,18 @@ On a phone the same window fills the screen. It's useful at a console or crash c
 - **Web pages** (iDRAC, iLO, a service's address, the device's management page): one button opens the page and copies the password on the same tap, so you just paste it into the sign-in box. Let your browser save it after the first time for one-click sign-in.
 - **SSH:** a ready-made `ssh user@host` command to copy, and an `ssh://` link for SSH apps.
 - **Windows:** a `.rdp` file for Remote Desktop.
-- The password (hidden until you press **Show**), the username, secret notes, and a live **2FA code** if the login has a 2FA secret.
+- The password, hidden as dots until you press the eye button. It hides again by itself after 30 seconds.
+- The username and secret notes, each with **Copy**.
+- A live **2FA code**, if the login has a 2FA secret: six digits in two groups of three, with a ring showing the seconds left. **Copy** copies it without the space.
 
 The window closes by itself after 60 seconds. Every reveal is recorded in the audit log. Devices show up to three logins in their summary row, so you can open them straight from the device.
 
 ## How they're protected
 
-Passwords, 2FA secrets and secret notes are encrypted with a key that only your master password or recovery code unlocks. They're never exported, never kept in form drafts, and never stored on phones. See [Security](./security).
+Passwords, 2FA secrets and secret notes are encrypted with a key that only your master password or recovery code unlocks. They're never exported, never kept in form drafts, and never stored on phones. See [Security and privacy](./security).
 
 ## Related
 
-- [Devices](./devices)
-- [Settings](./settings)
+- [Security and privacy](./security): how logins are encrypted
+- [Devices](./devices): where each login belongs
+- [Settings](./settings#locking-and-security): locking, 2FA and the recovery code

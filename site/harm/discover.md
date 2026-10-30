@@ -67,6 +67,7 @@ Sweeps a private range (for example `192.168.1.0/24`, up to a /22) from the HaRM
 
 ## Related
 
-- [Virtual machines and clusters](./virtual-and-clusters)
-- [Networks and cables](./networks)
-- [Troubleshooting](./troubleshooting#discover)
+- [Virtual machines and clusters](./virtual-and-clusters): what a Proxmox import brings
+- [Networks and cables](./networks): the networks it fills in
+- [A Proxmox home lab](./scenarios/proxmox-lab): step by step
+- [Troubleshooting](./troubleshooting#discover): UniFi and Proxmox errors
