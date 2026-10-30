@@ -66,6 +66,7 @@ export default defineConfig({
             { text: "Buckets", link: "/zomello/buckets" },
             { text: "Cards", link: "/zomello/cards" },
             { text: "Views", link: "/zomello/views" },
+            { text: "Filters", link: "/zomello/filters" },
             { text: "Home, My Tasks and search", link: "/zomello/home-and-search" },
           ],
         },
