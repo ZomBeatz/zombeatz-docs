@@ -1,4 +1,7 @@
 ---
+next:
+  text: Quick start
+  link: /zomello/quick-start
 description: "Zomello is a planner for any occasion. Boards hold buckets (columns) of cards you drag along as work moves, like Trello, with the task details of Microsoft…"
 ---
 # Zomello
