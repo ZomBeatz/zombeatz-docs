@@ -13,6 +13,7 @@ description: What changed in each version of Zomello.
 
 **My Day**
 - A new page (in the menu, or press D) with what to do today on every board: what's late, what's due or scheduled today (timed things in time order), and what you added yourself. Add any card from its menu with **Add to My Day**; added cards leave My Day at midnight. **Suggestions** offers what's coming up.
+- **Not finished from earlier:** tasks you added to My Day in the last week and didn't finish show at the top, with **Add all to today** or **Clear**.
 
 **Your devices**
 - **Move or copy cards to another device:** a card's menu has **Move to device** and **Copy to device**, with the boards on your computer, your phone or a Zomello Server. A selection of cards goes together.
@@ -21,18 +22,21 @@ description: What changed in each version of Zomello.
 
 **Adding tasks**
 - **Type the date in the title:** "Dentist tomorrow 3pm", "Call Sam friday at 2:30", "Report due Oct 28". Zomello sets the date and time and shows what it found; the × keeps the words in the title instead.
+- **Type a repeat in the title too:** "Water plants every monday", "Rent monthly on the 1st", "Standup daily at 9:30 until Dec 20". Turn it off in **Settings > Adding tasks**.
 - **Board templates:** start a board from a weekly plan, moving house, a school term, a trip, a project, household chores, an event or a job search.
+- **Save any board as a template** (its menu > **Save as template**): its buckets, labels and open cards, without dates or people. Your templates show first under **Start from a template**.
 - **Share to Zomello (Android):** share a link or text from any app and pick **Add to Zomello**.
 
 **More**
 - **My Day widget (Android)** for your home screen.
 - **Done and Snooze** on reminders on phones and tablets.
 - **Resize timed cards** in the calendar's Week and Day views by dragging their bottom edge.
-- **Your Zomello dates in your calendar app:** save a calendar file from any board, or (on a Zomello Server) make a private calendar link that Google Calendar, Outlook or Apple Calendar subscribe to.
+- **Your Zomello dates in your calendar app:** save a calendar file from any board, or (on a Zomello Server) make a private calendar link that Google Calendar, Outlook or Apple Calendar subscribe to. The calendar file for every board leaves out private boards.
 - **Device backups include attached files.**
 - **Send feedback** in Help and Settings > About starts an email with your version and device filled in.
 
 **Also**
+- **Zomello is open source** under the MIT license. Settings > About links to the code.
 - **Reminders on phones and tablets arrive even when Zomello is closed.** The app hands each card's reminder and the daily summary to the phone ahead of time.
 - Choose how many checklist items a card shows on the board (Customize > Show on cards).
 - Plainer wording all over the app, and the Help link opens the guide at docs.zombeatzmedia.com.
