@@ -158,7 +158,7 @@ Every product has a demo with made-up data:
 
 ### Desktop windows that aren't web pages
 
-A native window (such as a Qt control panel) uses `tokens.json` for the same colors, radii and spacing, follows the system theme, and uses the product's icon. It has one primary button. If an installer can do the job instead, prefer the installer (see [installers.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/installers.md)).
+A native window (such as a Qt control panel) uses `tokens.json` for the same colors, radii and spacing, follows the system theme, and uses the product's icon. It has one primary button. If an installer can do the job instead, prefer the installer (see [installers.md](installers.md)).
 
 ### Keyboard shortcuts
 
@@ -210,12 +210,12 @@ The voice is a helpful person explaining something plainly, not a marketing page
 
 - Every product's guide lives in this repository under `site/<product>/`, laid out the same way: **Start here** (Overview, Live demo, Quick start, Installing, Questions), **The basics**, **Advanced features**, the **Server**, **Set-up scenarios**, then **More** (What's new, Troubleshooting, the glossary, Contact).
 - Every feature is explained in full on exactly one page; everywhere else links to it.
-- The full spec (sidebar order, every kind of page with its shape and length, how pages look, pictures, and keeping the guide up to date) is in [guides.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/guides.md).
+- The full spec (sidebar order, every kind of page with its shape and length, how pages look, pictures, and keeping the guide up to date) is in [guides.md](guides.md).
 - Keep the same wording rules as the apps (section 6).
 
 ### Product README (the GitHub page)
 
-Every product's `README.md` has the same sections, order and sizes, with Zomello's as the reference. The full spec, with numbers and a template, is in [github-readme.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/github-readme.md).
+Every product's `README.md` has the same sections, order and sizes, with Zomello's as the reference. The full spec, with numbers and a template, is in [github-readme.md](github-readme.md).
 
 ### Versions and changelog
 
@@ -229,8 +229,8 @@ Every product's `README.md` has the same sections, order and sizes, with Zomello
 
 ### Installers and licenses
 
-- **Installers:** one file per platform that installs with a double-click, with no terminal and nothing to install first. See [installers.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/installers.md).
-- **Licenses:** which license each kind of project uses. See [licenses.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/licenses.md).
+- **Installers:** one file per platform that installs with a double-click, with no terminal and nothing to install first. See [installers.md](installers.md).
+- **Licenses:** which license each kind of project uses. See [licenses.md](licenses.md).
 
 ## 9. Accessibility
 

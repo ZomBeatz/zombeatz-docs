@@ -12,7 +12,7 @@ A guide serves three kinds of readers. Each part of the guide is written for one
 | **Using it every day** | To do the common things well | The basics | The 80% everyone uses in their first week. Each page covers one thing people can see in the app. |
 | **Going further** | Every option, every setup, every why | Advanced pages, scenarios, server, reference | Complete. Every setting, every limit, every platform difference. |
 
-**The one-home rule:** every feature is explained in full in **exactly one** page. Basics pages give the short version and link to the deep dive ("More in [Cards in depth](./cards-in-depth#reminders)"). Other pages link to that page, and never explain the feature a second time. When a feature changes, only one page needs the full update.
+**The one-home rule:** every feature is explained in full in **exactly one** page. Basics pages give the short version and link to the deep dive (`More in [Cards in depth](./cards-in-depth#reminders)`). Other pages link to that page, and never explain the feature a second time. When a feature changes, only one page needs the full update.
 
 ## The sidebar
 
@@ -26,7 +26,7 @@ Groups appear in this order. Leave out a group the product doesn't need, but nev
 | 4 | **Topic groups** (optional) | A group for a big area with 3 or more pages, named for what people want to do: "Phones, computers and sharing", "Filling it in fast" | Open |
 | 5 | **Server** | `<Product> Server` or "Running on a server": setting it up, https, people, settings, backups and security | Open |
 | 6 | **Set-up scenarios** | "All scenarios" first, then one recipe per situation | Folded |
-| 7 | **More** | What's new, Data and backups, Troubleshooting, the glossary ("Words used in <Product>"), Contact and feedback | Open |
+| 7 | **More** | What's new, Data and backups, Troubleshooting, the glossary ("Words used in (Product)"), Contact and feedback | Open |
 
 - **Sidebar names** are short and plain, 1 to 5 words, in sentence case, and match the page's title (`# Cards in depth` shows as "Cards in depth").
 - A group has **2 to 13 items**. Past 13, split it into two topic groups.
@@ -108,7 +108,7 @@ These follow the deep-dive shape. They also need:
   - One bullet per option: **its exact name**, then what it does.
   - Platform-only groups say so in the heading: "## Desktop app (computer only)".
 - **Keyboard shortcuts:** the same groups as the app's own list, as tables of Keys | Does, with keys in `<kbd>`.
-- **Glossary** ("Words used in <Product>"):
+- **Glossary** ("Words used in (Product)"):
   - One table of Word | Means, in alphabetical order.
   - Each meaning is one line, linking to the page that explains it.
 
@@ -154,7 +154,7 @@ These follow the deep-dive shape. They also need:
   - `::: danger`: security risks only.
   - Each box has a short title ("::: warning Keep the password somewhere safe").
 - **New features:** end the paragraph or table row with "New in version 0.5.4." Remove the note two minor versions later (in 0.7).
-- **`## Related`:** the last section of every page except the Overview. 3 to 6 links, each with a few words on why ("[Device backups](./device-backups): a copy of your phone's boards on your computer").
+- **`## Related`:** the last section of every page except the Overview. 3 to 6 links, each with a few words on why (`[Device backups](./device-backups): a copy of your phone's boards on your computer`).
 - **Links:**
   - Link to the one home of a feature, to its `#section` when that helps.
   - Inside a product, use relative links (`./cards`).

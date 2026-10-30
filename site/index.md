@@ -38,7 +38,7 @@ features:
       src: /zombeatz-icon.svg
     title: Design system
     details: The shared colors, logos and writing rules that keep every ZomBeatz tool looking like one family.
-    link: /design
+    link: /design/
     linkText: See the rules
 ---
 
