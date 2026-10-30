@@ -51,7 +51,7 @@ One centered `<p>` with three lines separated by `<br>`:
 | 1 to 3 | One per platform | `Windows-Download`, `Linux-Download`, `Android-APK`, `macOS-Download`, `iOS-App_Store` | `2580c3` (blue) | `windows`, `linux`, `android`, `apple` | `releases/latest` (or the store page) |
 | next | The guide | `Read_the-Guide` | `5b6375` (slate) | `readthedocs` | `https://docs.zombeatzmedia.com/<product>/` |
 | next | A demo | `Try_it-Online_demo` or `Try_it-Demo_data` | `22c55e` (green) | `googlechrome` (online) or the language's logo (local) | the demo, or `#try-it-with-demo-data` |
-| next, while a beta test runs | Beta sign-up | `Beta_test-Sign_up` | `8b5cf6` (purple) | `googleforms` | the guide's sign-up page |
+| next, while a beta test runs | Beta sign-up | `(Product)_beta-Sign_up` | `8b5cf6` (purple) | `googleforms` | the guide's sign-up page |
 | last | The server | `Server-Docker` | `ec6a3f` (orange) | `docker` | the server section |
 
 - `alt` text says what clicking does: "Download for Windows", "Read the guide".
@@ -66,7 +66,7 @@ One centered `<p>` with three lines separated by `<br>`:
 ## 5. Quick start
 
 1. If there's an online demo, one bold lead-in line first: **Just want to look around?** Try the online demo...
-   While a beta test is running, a second line: **Want to help test?** linking to the guide's sign-up page. Remove it when the test ends.
+   While a beta test is running, a second line: **Want to help test?** with a **Join the (Product) beta** link to the guide's sign-up page. Remove it when the test ends.
 2. A numbered list of **3 or 4 steps**:
    - Step 1 is **Download** with a link to `releases/latest` and "(under **Assets** at the bottom)", followed by a table:
 
