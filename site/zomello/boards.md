@@ -11,6 +11,7 @@ A **board** is one project, area or list: "Website Launch", "Home Projects", "We
 - Or the **+** next to a section's name, to make it inside that section.
 - Or **⋯ > New board with this layout** on an existing board to reuse its buckets, labels and settings without the cards.
 - Or start from a **template**: **Start from a template** on Home (or **Or start from a template…** under **+ Board**). There are ready-made boards for a weekly plan, moving house, a school term, a trip, a project, household chores, an event and a job search, each with buckets, labels and a few starter cards. Change anything afterwards. New in version 0.5.4.
+- **Your own templates:** in any board's menu, **Save as template** keeps its buckets, labels and open cards (titles, descriptions, labels, priority and checklist items). Dates, people, comments, files and finished cards aren't in it. Your templates show first under **Start from a template**, where you can rename or delete them. New in version 0.5.4.
 
 New boards start with **To do**, **In progress** and **Done**, and open in the view chosen in **Settings > Appearance > New boards open in**.
 
@@ -32,6 +33,8 @@ Right-click a board in the menu (press and hold on a phone), or use **⋯** at t
 | **Move to… / Copy to…** | Another device or server (phone and tablet apps) |
 | **Private: only on this device** | Never shown on your other devices ([Sharing between your devices](./sharing-between-devices)) |
 | **Save as board file…** | A `.zomello` file to send anyone ([Board files](./board-files)) |
+| **Save as template** | Keeps its buckets, labels and open cards for new boards ([above](#make-a-board)) |
+| **Save dates as a calendar file…** | Its dated cards as an `.ics` file for your calendar app ([Calendars](./calendar-feeds)) |
 | **Archive** / **Delete** | Archive hides it (find it under **Archive**); Delete removes it, with **Undo** right after |
 
 ![The board menu](/img/zomello/board-menu.png)

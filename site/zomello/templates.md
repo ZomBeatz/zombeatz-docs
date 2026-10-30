@@ -5,6 +5,8 @@ description: "Templates are ready-made cards for things you do often: a bug repo
 
 Templates are ready-made cards for things you do often: a bug report, a weekly review, a packing list.
 
+For whole boards, see [board templates](./boards#make-a-board).
+
 ## Save a template
 
 Open a card that looks the way you want (title, description, checklist, labels, priority, repeat) and choose **Save as template** (also in its right-click menu).

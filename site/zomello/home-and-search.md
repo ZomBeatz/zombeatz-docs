@@ -26,6 +26,7 @@ What to do today, from every board, in one list:
 - **Late:** past their due date.
 - **Today:** due today, or running across today (a start date before and a due date after). Cards with a time come first, in time order.
 - **Added by you:** anything you add with **Add to My Day** (in a card's menu) or the box at the top. Added cards leave My Day at midnight, so each morning starts fresh.
+- **Not finished from earlier:** tasks you added to My Day in the last week and didn't finish. **+ My Day** adds one back, **Add all to today** adds them all, and **Clear** takes them off the list (they stay on their boards).
 - **Done today:** what you finished today.
 - **Suggestions:** cards due or starting tomorrow, in progress, or important with no date. **+ My Day** adds one.
 
