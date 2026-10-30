@@ -50,7 +50,7 @@ Only connection settings are accepted there: KexAlgorithms, HostKeyAlgorithms, P
 
 ## Running an action
 
-Press **▶ Run** on the **Actions** page, on a device's **Actions** tab, or on the device's tile on the [Status](./status) page.
+Press **▶ Run** on the **Actions** page, on a device's **Actions** tab, or on the device's tile on the [Status](./status) page. An action only runs when you press it: nothing runs on a schedule or by itself.
 
 - A message says whether it worked. **Show output** shows what each machine printed, how long it took and its exit code.
 - With several addresses, it runs on each at the same time, and the message says how many worked.

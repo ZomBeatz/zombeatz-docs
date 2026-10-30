@@ -41,7 +41,18 @@ A device is checked when all of these are true:
 
 A server's iLO, iDRAC or IPMI address is checked too, and shows under the server's main address with its own word. That tells "the server is off" (the management port answers, the server doesn't) from "the whole box lost power" (neither answers). HaRM checks up to 4 addresses per device: the main one first.
 
-The device's own page shows the same thing: its summary row starts with **Online** or **Offline**, and its **Actions** tab lists every address with its answer and the 24 bars. Tap the word to check again.
+## Services
+
+Once a device answers, HaRM checks the services on its **Network** tab too, and each says **Answering** or **Not answering** on its tile:
+
+| A service with | Counts as answering when |
+|---|---|
+| A web address (`https://…` or `http://…`) | It sends any reply below a 500 error. A login page, a 401 or a 404 still means it's there; a 502 from a proxy in front of it means it isn't. Certificates aren't checked, since home-lab services usually have their own. |
+| A port, and no web address | The port accepts a connection. |
+
+Services marked **Stopped**, **Planned** or **Deprecated**, and UDP ones, aren't checked. A service that isn't answering also shows on **Home**, and the room's heading says how many.
+
+The device's own page shows the same thing: its summary row starts with **Online** or **Offline**, and its **Actions** tab lists every address and service with its answer and the 24 bars, and the **Network** tab has an **Answering** column for services. Tap the word to check again.
 
 ## How often it checks
 
@@ -51,7 +62,9 @@ The device's own page shows the same thing: its summary row starts with **Online
 | While the Status page is open | Every minute, and the page updates by itself. |
 | **⟳ Check now** | Right away, every device. On a device's page, **⋯ > Check if it's online** checks just that one. |
 
-When a device goes offline while the page is open, a message says so. Devices that are offline also show on **Home**, under **Needs attention**, with how long they've been down.
+When a device goes offline while the page is open, a message says so. Devices that are offline also show on **Home**, under **Needs attention**, with how long they've been down. To get a message on your phone or by email, set up [Alerts](./alerts).
+
+In the rack drawing, a device that isn't answering is outlined in red and says **Offline** (see [Places and racks](./places-and-racks#the-rack-view)).
 
 ## Waking a device up
 
@@ -83,10 +96,13 @@ On a phone, **Status** is in the bar at the bottom, and the tiles are one per ro
 - **Online, but it's off:** something else answers on that address (a different device took the IP, or a router answers for it). Check the address on its **Network** tab.
 - **A VM shows Offline when its host is off:** that's right; it can't answer without its host.
 
+- **A service says Not answering, but it works in the browser:** its address on the **Network** tab may be different from the one you use (a name instead of an IP, or another port). HaRM checks exactly the address recorded there.
+
 More in [Troubleshooting](./troubleshooting#status-and-actions).
 
 ## Related
 
+- [Alerts](./alerts): a message by ntfy, email or webhook when something stops answering
 - [Actions](./actions): one-click commands, from a tile or a device's page
 - [Settings](./settings#status-and-actions): how often HaRM checks
 - [Networks and cables](./networks): addresses, MACs and services that the checks use

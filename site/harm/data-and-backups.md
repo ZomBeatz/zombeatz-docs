@@ -24,6 +24,7 @@ Inside it:
 | `harm.db` | The database: every place, device, part, network, note and (encrypted) login |
 | `backups/` | The daily backups |
 | `tls/` | HaRM's certificate authority and HTTPS certificate. Phones trust HaRM because of these. |
+| `alerts.key` | The key for [alert](./alerts) passwords. Not in backups: after restoring on another computer, enter them again. |
 | `logs/` | The server log the control panel shows |
 
 The app itself is somewhere else, so updating or reinstalling never touches this folder.

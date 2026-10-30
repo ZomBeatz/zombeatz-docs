@@ -165,6 +165,17 @@ Something else answers on that address: another device took the IP, or a router 
 2. Check its MAC address on the **Network** tab is the wired port's.
 3. HaRM has to be on the same network or VLAN as the device. In Docker, use `network_mode: host`.
 
+### A service says Not answering, but it works in the browser
+
+HaRM checks exactly the web address or port on the device's **Network** tab. If you open it by another name or port, change the service to match.
+
+### Alerts don't arrive
+
+1. Press **Send a test** in **Settings > Status and actions > Alerts**. The list under it shows each attempt and why it failed.
+2. ntfy: check the phone is subscribed to exactly the same topic, on the same server.
+3. Email: for Gmail and Outlook, use an app password. Check **Security** matches the port (STARTTLS with 587, SSL/TLS with 465).
+4. Nothing at all after a real outage: the HaRM computer has to be on, and checks on (**Settings > Status and actions > Check**). Alerts wait as long as you chose before sending.
+
 ### An action says the machine "only speaks an older kind of SSH"
 
 Edit the action and tick **Older SSH**. If it still fails, paste the `-o …` settings from an `ssh` command that works into **Other SSH settings** (under **More details**).
