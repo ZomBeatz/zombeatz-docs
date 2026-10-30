@@ -65,7 +65,10 @@ Cards with dates as bars from start to due date, grouped by bucket. Pick **2 wee
 - **Filter** narrows by due date (late, today, next 7 days, no date), progress, priority, label and person. A dot on the button shows a filter is on.
 - **Show related tasks** (in a card's menu) shows only that card and the cards linked to it.
 
+More, including saved filters and how choices combine: [Filters](./filters).
+
 ## Related
 
+- [Filters](./filters)
 - [Home, My Tasks and search](./home-and-search)
 - [Customizing a board](./customize-board)
