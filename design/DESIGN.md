@@ -122,18 +122,12 @@ The voice is a helpful person explaining something plainly, not a marketing page
 
 ### Product README (the GitHub page)
 
-Every product's `README.md` looks the same on GitHub (Zomello's is the reference):
+Every product's `README.md` has the same sections, order and sizes, with Zomello's as the reference. The full spec, with numbers and a template, is in [github-readme.md](github-readme.md).
 
-1. **Centered wordmark** in a `<picture>`: `*-logo-dark.png` for dark mode, `*-logo.png` otherwise, 460 px wide.
-2. **Three centered lines:** the promise in bold ("A planner for any occasion."), one sentence on what it is, one on where it runs.
-3. **Badges** (shields.io, `style=for-the-badge`, white logos): downloads in ZomBeatz blue `2580c3`, the guide in slate `5b6375`, a demo or "try it" in green `22c55e`, the server in orange `ec6a3f`.
-4. **A hero screenshot** from the demo data, 900 px wide.
-5. **Quick start:** a table of "Your device | File to download | Then", then the first steps in the app, then a link to the guide.
-6. **What it does:** a two-column table with bold row names, then a screenshot grid (two desktop shots beside a phone shot).
-7. **What people use it for**, the **server** section, and short **Questions** with links to the guide.
-8. **For developers** inside `<details>` (building, tests, project layout), then **License** and **Contact** ("Made by **ZomBeatz Media** · info@zombeatzmedia.com").
+### Installers and licenses
 
-Screenshots for the README live in the product repository under `docs/screenshots/`, copied from the guide's pictures.
+- **Installers:** one file per platform that installs with a double-click, with no terminal and nothing to install first. See [installers.md](installers.md).
+- **Licenses:** which license each kind of project uses. See [licenses.md](licenses.md).
 
 ## 9. Accessibility
 
