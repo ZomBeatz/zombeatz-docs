@@ -5,7 +5,7 @@ description: "Quick answers: is Zomello free, does it need an account or the int
 
 ## Is Zomello free?
 
-Yes: the apps and Zomello Server are free, with no ads.
+Yes: the apps and Zomello Server are free, with no ads. Zomello is also open source under the [MIT license](https://github.com/ZomBeatz/Zomello/blob/main/LICENSE): anyone can read, use and change the code.
 
 ## Do I need an account or the internet?
 

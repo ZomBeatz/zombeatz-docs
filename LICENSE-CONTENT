@@ -1,0 +1,14 @@
+The guides' text and pictures (everything under site/ except code) are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt them for any purpose, as long as you credit ZomBeatz Media and link to
+https://docs.zombeatzmedia.com.
+
+Copyright (c) 2026 ZomBeatz Media
+
+The code in this repository (site configuration, theme, scripts, design/tokens.css and
+design/tokens.json) is under the MIT license in LICENSE.
+
+Not covered by either license: the names ZomBeatz Media, Zomello and Zom's HaRM, and their logos
+and icons (design/brand/ and site/public/). They stay ZomBeatz Media's.

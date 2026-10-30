@@ -33,6 +33,10 @@ Each product has a sidebar in [`site/.vitepress/config.mts`](site/.vitepress/con
 2. Add this line to the project's `CLAUDE.md` so AI assistants follow it too:
    > Follow the ZomBeatz design system: https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/DESIGN.md (tokens in design/tokens.css).
 
+## License
+
+The guides' text and pictures are [CC BY 4.0](LICENSE-CONTENT), and the code (site, scripts, design tokens) is [MIT](LICENSE). ZomBeatz Media, Zomello and Zom's HaRM names and logos aren't covered by either.
+
 ## Custom domain
 
 To serve the site at `docs.zombeatzmedia.com`: add a DNS record `CNAME docs → zombeatz.github.io`, then set `DOCS_DOMAIN` (see the workflow in `.github/workflows/deploy.yml`) and the domain under the repository's Settings > Pages.
