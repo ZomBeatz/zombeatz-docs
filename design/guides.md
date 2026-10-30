@@ -20,7 +20,7 @@ Groups appear in this order. Leave out a group the product doesn't need, but nev
 
 | # | Group | What goes in it | Folded? |
 |---|---|---|---|
-| 1 | **Start here** | Overview, **Live demo** (if there is one), Quick start, Installing and updating, Questions | Open |
+| 1 | **Start here** | Overview, **Live demo** (if there is one), **GitHub** (the product's repository), Quick start, Installing and updating, Questions | Open |
 | 2 | **The basics** | 4 to 7 pages, one per main thing in the app (Boards, Cards, Views…) | Open |
 | 3 | **Advanced features** | Deep dives on one feature each, plus Settings, Keyboard shortcuts, Accessibility, and a page per platform (desktop app, phones and tablets) | Open |
 | 4 | **Topic groups** (optional) | A group for a big area with 3 or more pages, named for what people want to do: "Phones, computers and sharing", "Filling it in fast" | Open |
@@ -30,7 +30,7 @@ Groups appear in this order. Leave out a group the product doesn't need, but nev
 
 - **Sidebar names** are short and plain, 1 to 5 words, in sentence case, and match the page's title (`# Cards in depth` shows as "Cards in depth").
 - A group has **2 to 13 items**. Past 13, split it into two topic groups.
-- **Live demo** is an external link, so it opens in a new tab. Pages next to it set `prev` / `next` in their front matter, so the Previous and Next buttons skip it.
+- **Live demo** and **GitHub** are external links, so they open in a new tab. Pages next to it set `prev` / `next` in their front matter, so the Previous and Next buttons skip it.
 - The whole guide has **25 to 50 pages** (scenarios included). Fewer means pages are doing too much; more means split the product's guide into topic groups.
 
 ## Kinds of page
@@ -44,8 +44,8 @@ Every page is one of these kinds. Each kind has a set shape.
 - **Shape:**
   1. The `# Product` title, then 2 or 3 sentences: what it is, like what well-known tools, where it runs, and the privacy promise.
   2. The hero picture (the main screen, dark theme).
-  3. The **Try the live demo** button (`<a class="zb-cta" … target="_blank">`) with one sentence on what the demo is.
-  4. `## Start here`: 3 or 4 bullets, each starting with a bold question ("**New?**", "**Just looking?**", "**Your situation, step by step:**", "**Want everything?**").
+  3. A row of buttons (`<div class="zb-ctas">`): **Try the live demo** (`zb-cta`), **Sign up to beta test** (`zb-cta`, while a test is running), then **View on GitHub** (the quieter `zb-cta zb-cta-2`). External ones open in a new tab. Then one sentence on what the demo is.
+  4. `## Start here`: 3 to 5 bullets, each starting with a bold question ("**New?**", "**Just looking?**", "**Your situation, step by step:**", "**Want everything?**", and "**Want to help?**" while a beta test is running).
   5. `## What you can do`: a two-column table with an empty header, 8 to 12 rows. Bold area name on the left; one line on the right, ending with the pages that cover it in parentheses.
   6. Optionally `## Where it runs` (a platform table) and `## Related`.
 
@@ -181,6 +181,6 @@ These follow the deep-dive shape. They also need:
 ## New product checklist
 
 1. Make `site/<product>/` with at least: `index.md`, `quick-start.md`, `installing.md`, `faq.md`, 4 basics pages, `settings.md`, `troubleshooting.md`, `glossary.md`, `whats-new.md`, `contact.md`.
-2. Add its sidebar to `site/.vitepress/config.mts` in the group order above, its nav link at the top, and a card for it on the site's front page.
+2. Add its sidebar to `site/.vitepress/config.mts` in the group order above, its nav link at the top, and a card for it on the site's front page. While a beta test runs, add a **Beta test** link to the top nav and the front page.
 3. Add a screenshot script and take the pictures from its demo.
 4. Link the guide from the product's README (the **Read the guide** badge) and from its **Help** menu.

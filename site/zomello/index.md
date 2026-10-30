@@ -10,7 +10,11 @@ Zomello is a planner for any occasion. Boards hold buckets (columns) of cards yo
 
 ![A Zomello board](/img/zomello/board.png)
 
+<div class="zb-ctas">
 <a class="zb-cta" href="https://zombeatz.github.io/Zomello/" target="_blank" rel="noopener">Try the live demo</a>
+<a class="zb-cta" href="./help-test">Sign up to beta test</a>
+<a class="zb-cta zb-cta-2" href="https://github.com/ZomBeatz/Zomello" target="_blank" rel="noopener">View on GitHub</a>
+</div>
 
 The demo runs in your browser with made-up boards. Nothing to install, no sign-up, and your changes stay only in your own browser.
 
@@ -20,6 +24,7 @@ The demo runs in your browser with made-up boards. Nothing to install, no sign-u
 - **New?** [Quick start](./quick-start) gets you going in ten minutes.
 - **Your situation, step by step:** [Set-up scenarios](./scenarios/) (just a phone, computer and phone, a family, a team, switching from Trello…).
 - **Want everything?** The [advanced features](./cards-in-depth) cover every option.
+- **Want to help?** [Sign up to beta test](./help-test) on your phone or tablet before Zomello reaches the app stores.
 
 ## What you can do
 
