@@ -31,6 +31,7 @@ Every product has the same three-part identity. Only the product's **symbol** (a
 1. Pick a simple symbol that reads at 32 px and fits between the ear cups.
 2. Use the ZomBeatz blue unless the product needs its own accent; if so, pick one with a light and a dark variant and add it to `tokens.css` under `[data-product="…"]`.
 3. Make: icon (SVG + 1024/512/256 PNG), maskable icon, light and dark wordmark, store feature graphic (1024 × 500, wordmark centered on the `#0b1020` → `#1e3a8a` gradient).
+4. Give its repository the standard GitHub page (see [Product README](#product-readme-the-github-page)) and a guide under `site/<product>/`.
 
 ---
 
@@ -118,6 +119,21 @@ The voice is a helpful person explaining something plainly, not a marketing page
 - Task pages: start with one sentence saying what you'll achieve, then numbered steps, a screenshot, and "Related" links at the end.
 - Link generously between pages and between products when they connect.
 - Keep the same wording rules as the apps (section 6).
+
+### Product README (the GitHub page)
+
+Every product's `README.md` looks the same on GitHub (Zomello's is the reference):
+
+1. **Centered wordmark** in a `<picture>`: `*-logo-dark.png` for dark mode, `*-logo.png` otherwise, 460 px wide.
+2. **Three centered lines:** the promise in bold ("A planner for any occasion."), one sentence on what it is, one on where it runs.
+3. **Badges** (shields.io, `style=for-the-badge`, white logos): downloads in ZomBeatz blue `2580c3`, the guide in slate `5b6375`, a demo or "try it" in green `22c55e`, the server in orange `ec6a3f`.
+4. **A hero screenshot** from the demo data, 900 px wide.
+5. **Quick start:** a table of "Your device | File to download | Then", then the first steps in the app, then a link to the guide.
+6. **What it does:** a two-column table with bold row names, then a screenshot grid (two desktop shots beside a phone shot).
+7. **What people use it for**, the **server** section, and short **Questions** with links to the guide.
+8. **For developers** inside `<details>` (building, tests, project layout), then **License** and **Contact** ("Made by **ZomBeatz Media** · info@zombeatzmedia.com").
+
+Screenshots for the README live in the product repository under `docs/screenshots/`, copied from the guide's pictures.
 
 ## 9. Accessibility
 
