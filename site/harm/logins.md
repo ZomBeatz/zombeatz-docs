@@ -18,6 +18,14 @@ Press **Open** on a login. Its window shows how to get in:
 
 ![A login's Open window](/img/harm/login-open.png)
 
+On a phone the same window fills the screen. It's useful at a console or crash cart: copy the password, or show it to type it in.
+
+<div class="phone-shots">
+
+![A login's Open window on a phone](/img/harm/phone-login-open.png)
+
+</div>
+
 - **Web pages** (iDRAC, iLO, a service's address, the device's management page): one button opens the page and copies the password on the same tap, so you just paste it into the sign-in box. Let your browser save it after the first time for one-click sign-in.
 - **SSH:** a ready-made `ssh user@host` command to copy, and an `ssh://` link for SSH apps.
 - **Windows:** a `.rdp` file for Remote Desktop.

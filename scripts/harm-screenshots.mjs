@@ -139,6 +139,16 @@ const phone = [
   ["phone-device", `#/devices/${ids.pve1}`],
   ["phone-menu", "#/dashboard", `document.querySelector(".tabbar button").click();`],
   ["phone-rack", `#/racks/${ids.rack}`],
+  ["phone-new-menu", "#/dashboard", `document.querySelector(".qa-btn").click();`],
+  ["phone-search", "#/dashboard", `const i = document.querySelector(".topbar input[type=search]"); i.focus(); i.value = "pve"; i.dispatchEvent(new Event("input", { bubbles: true }));`],
+  ["phone-device-network", `#/devices/${ids.pve1}`, tab("network")],
+  ["phone-login-open", `#/devices/${ids.pve1}`, `${tab("logins")} ${wait(300)} ${click("button", "Open")}`],
+  ["phone-location", `#/locations/${ids.garage}`],
+  ["phone-parts", "#/components"],
+  ["phone-part-form", "#/components", `editEntity("components", { status: "In Stock", quantity: 1 });`],
+  ["phone-scanner", "#/components", `scanDialog({ title: "Scan label", targets: [{ k: "serial", label: "Serial" }, { k: "model", label: "Model" }], onPick: () => {} }); ${wait(600)} document.querySelector(".scan-status").textContent = "";`],  // headless Chromium has no camera
+  ["phone-ai-assist", "#/components", `await aiAssist();`],
+  ["phone-tasks", "#/tasks"],
 ];
 for (const [name, hash, prep] of phone) shrink(await shot(name, hash, prep), 585);
 

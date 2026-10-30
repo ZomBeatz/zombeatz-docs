@@ -21,6 +21,14 @@ Tick a task or issue to mark it done. The **⋯** on an entry pins it to the top
 
 ![Tasks & Notes](/img/harm/tasks.png)
 
+On a phone, **Tasks** is in the bottom bar: tick things off as you finish them, right where you're working.
+
+<div class="phone-shots">
+
+![Tasks on a phone](/img/harm/phone-tasks.png)
+
+</div>
+
 **Tasks & Notes** lists every open task and issue, grouped by what it's about, with a box to add a task to any device. Recently done tasks are at the bottom.
 
 ## Related

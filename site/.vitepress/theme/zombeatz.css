@@ -48,3 +48,10 @@
   background: var(--vp-button-brand-bg); color: var(--vp-button-brand-text); font-weight: 600; text-decoration: none;
 }
 .vp-doc a.zb-cta:hover { background: var(--vp-button-brand-hover-bg); color: var(--vp-button-brand-hover-text); }
+
+/* Phone screenshots side by side, at about phone size (HaRM guide). */
+.phone-shots p { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }
+.phone-shots img {
+  width: 220px; max-width: calc(50% - 6px);
+  border: 1px solid var(--vp-c-divider); border-radius: var(--zb-radius-lg);
+}

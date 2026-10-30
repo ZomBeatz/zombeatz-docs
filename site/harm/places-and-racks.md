@@ -14,6 +14,14 @@ Each location's page shows what's inside: rooms within it, its holders, **loose 
 
 ![A location page: holders, loose devices and tasks](/img/harm/location.png)
 
+On a phone, a location is a handy checklist while you walk the room: what each holder has, and what's left to do there.
+
+<div class="phone-shots">
+
+![A location on a phone](/img/harm/phone-location.png)
+
+</div>
+
 ## Holders: racks, shelves, bins and piles
 
 A holder is anything that holds hardware: **Rack**, **Cabinet**, **Wall-mount Rack**, **Open Frame Rack**, **Shelf**, **Wire Shelving**, **Bin**, **Tote**, **Drawer**, **Desk**, **Closet**, **Box**, **Pile** or **Floor**. Give racks a height in U; other holders don't need one.
@@ -34,7 +42,11 @@ Open a rack from **Racks & Storage** to see it front and rear.
 
 On a phone the rack view fits the screen, front first:
 
+<div class="phone-shots">
+
 ![A rack on a phone](/img/harm/phone-rack.png)
+
+</div>
 
 To move a device, open it, **Edit**, and change **Rack / holder** and **Lowest rack unit (U)**.
 
