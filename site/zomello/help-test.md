@@ -28,10 +28,37 @@ Any experience level is welcome. People who have never used a planner app are ju
 
 ## What happens after you sign up
 
-1. You get an email within a day or two with your invitation: a Google Play link for Android, or a TestFlight invite for iPhone and iPad.
+1. You get a welcome email within a few minutes, with the links for the devices you picked: a Google Play link for Android, a TestFlight link for iPhone and iPad. If a test hasn't opened yet, we email that link as soon as it does.
 2. Install Zomello from that link and use it the way you normally would.
-3. Send feedback any time: reply to the email, or use [Contact and feedback](./contact).
+3. About a week in, we send one short email to ask how it's going.
 4. When testing ends, your app keeps working and updates normally from the store.
+
+## Sending feedback
+
+Whatever is easiest for you:
+
+- **In Zomello:** open **Settings > About** and tap **Send feedback**. It starts an email with your Zomello version and device already filled in, so you only write what happened.
+- **Reply** to any email from us about the test.
+- **Email** [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com).
+
+Useful things to tell us: what you tried to do, what happened instead, and anything you went looking for and couldn't find. A screenshot helps when something looks wrong. One sentence is still useful.
+
+## Having trouble?
+
+**The Google Play link says I'm not a tester, or the app isn't found.**
+Open the link while signed in to the same Google account you gave us, and tap **Become a tester** first. If you just signed up, wait 10 to 15 minutes and try again. If you have more than one Google account on your phone, open the link in a browser signed in to the right one.
+
+**The TestFlight link says the beta isn't accepting testers.**
+The iPhone and iPad test hasn't opened yet. You don't need to do anything: we'll email you as soon as it does.
+
+**TestFlight asks me to install TestFlight.**
+Install the free **TestFlight** app from the App Store, then open the link again on the same iPhone or iPad.
+
+**I didn't get the welcome email.**
+Check your spam or promotions folder for mail from ZomBeatz Media. Still nothing? Email [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com) and we'll sort it out.
+
+**I want to stop testing.**
+Uninstall Zomello, or on Android open the Google Play link and tap **Leave the program**. Let us know if you'd also like your sign-up deleted.
 
 ## Your information
 
