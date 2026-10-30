@@ -48,6 +48,13 @@
   background: var(--vp-button-brand-bg); color: var(--vp-button-brand-text); font-weight: 600; text-decoration: none;
 }
 .vp-doc a.zb-cta:hover { background: var(--vp-button-brand-hover-bg); color: var(--vp-button-brand-hover-text); }
+/* A row of call-to-action buttons; zb-cta-2 is the quieter, outlined kind. */
+.vp-doc .zb-ctas { display: flex; flex-wrap: wrap; gap: 8px 10px; margin: 8px 0 4px; }
+.vp-doc .zb-ctas a.zb-cta { margin: 0; }
+.vp-doc a.zb-cta.zb-cta-2 {
+  background: transparent; color: var(--vp-c-brand-1); box-shadow: inset 0 0 0 1px var(--vp-c-brand-1);
+}
+.vp-doc a.zb-cta.zb-cta-2:hover { background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); }
 
 /* Phone screenshots side by side, at about phone size (HaRM guide). */
 .phone-shots p { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-start; }

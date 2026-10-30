@@ -42,6 +42,7 @@ export default defineConfig({
     nav: [
       { text: "Zomello", link: "/zomello/", activeMatch: "/zomello/" },
       { text: "Zom's HaRM", link: "/harm/", activeMatch: "/harm/" },
+      { text: "Beta test", link: "/zomello/help-test" },
       { text: "Design", link: "/design/", activeMatch: "/design/" },
     ],
     sidebar: {
@@ -51,6 +52,7 @@ export default defineConfig({
           items: [
             { text: "Overview", link: "/zomello/" },
             { text: "Live demo", link: "https://zombeatz.github.io/Zomello/" },
+            { text: "GitHub", link: "https://github.com/ZomBeatz/Zomello" },
             { text: "Quick start", link: "/zomello/quick-start" },
             { text: "Installing and updating", link: "/zomello/installing" },
             { text: "Questions", link: "/zomello/faq" },
@@ -157,6 +159,7 @@ export default defineConfig({
           items: [
             { text: "Overview", link: "/harm/" },
             { text: "Live demo", link: "https://zombeatz.github.io/Zoms-HaRM/" },
+            { text: "GitHub", link: "https://github.com/ZomBeatz/Zoms-HaRM" },
             { text: "Quick start", link: "/harm/quick-start" },
             { text: "Installing and updating", link: "/harm/installing" },
             { text: "Questions", link: "/harm/faq" },

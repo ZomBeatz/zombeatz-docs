@@ -13,7 +13,10 @@ It runs on your own computer or server, and your phone uses it over your Wi‑Fi
 
 ![HaRM's Home page with what needs attention and the open tasks](/img/harm/home.png)
 
+<div class="zb-ctas">
 <a class="zb-cta" href="https://zombeatz.github.io/Zoms-HaRM/" target="_blank" rel="noopener">Try the live demo</a>
+<a class="zb-cta zb-cta-2" href="https://github.com/ZomBeatz/Zoms-HaRM" target="_blank" rel="noopener">View on GitHub</a>
+</div>
 
 The live demo is the real HaRM with a made-up home lab, running in your browser. Nothing to install, and your changes stay in that browser.
 
