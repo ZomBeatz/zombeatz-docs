@@ -1,4 +1,7 @@
 ---
+prev:
+  text: Zomello
+  link: /zomello/
 description: "Everything you need for your first day with Zomello, in about ten minutes. When you want more, the advanced features and set-up scenarios are next."
 ---
 # Quick start
