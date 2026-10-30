@@ -15,13 +15,34 @@ export default defineConfig({
     ["link", { rel: "icon", type: "image/svg+xml", href: `${base}zombeatz-icon.svg` }],
     ["meta", { name: "theme-color", content: "#2580c3" }],
   ],
+  // The design pages are the files in design/ (included), with DESIGN.md as the section's front page.
+  rewrites: { "design/DESIGN.md": "design/index.md" },
+  markdown: {
+    // The design files are written for GitHub: point their DESIGN.md links at the section's front page,
+    // and match the site's ids for numbered headings ("#6-writing" on GitHub is "#_6-writing" here).
+    config(md) {
+      md.core.ruler.push("zb-design-links", (state) => {
+        for (const block of state.tokens)
+          for (const t of block.children ?? []) {
+            if (t.type !== "link_open") continue;
+            const href = t.attrGet("href");
+            if (!href || /^[a-z]+:/i.test(href)) continue;
+            const m = href.match(/^(?:\.\/)?([\w-]+\.md)?(#.*)?$/);
+            if (!m || (!m[1] && !m[2])) continue;
+            const page = m[1] === "DESIGN.md" ? "./" : m[1] ?? "";
+            const hash = (m[2] ?? "").replace(/^#(\d)/, "#_$1");
+            t.attrSet("href", page + hash);
+          }
+      });
+    },
+  },
   themeConfig: {
     logo: "/zombeatz-icon.svg",
     siteTitle: "ZomBeatz Docs",
     nav: [
       { text: "Zomello", link: "/zomello/", activeMatch: "/zomello/" },
       { text: "Zom's HaRM", link: "/harm/", activeMatch: "/harm/" },
-      { text: "Design", link: "/design", activeMatch: "/design" },
+      { text: "Design", link: "/design/", activeMatch: "/design/" },
     ],
     sidebar: {
       "/zomello/": [
@@ -117,6 +138,18 @@ export default defineConfig({
           ],
         },
       ],
+      "/design/": [
+        {
+          text: "Design system",
+          items: [
+            { text: "Look and wording", link: "/design/" },
+            { text: "Guides", link: "/design/guides" },
+            { text: "GitHub page", link: "/design/github-readme" },
+            { text: "Installers", link: "/design/installers" },
+            { text: "Licenses", link: "/design/licenses" },
+          ],
+        },
+      ],
       "/harm/": [
         {
           text: "Getting started",
@@ -178,7 +211,9 @@ export default defineConfig({
     outline: { level: [2, 3], label: "On this page" },
     socialLinks: [{ icon: "github", link: "https://github.com/ZomBeatz" }],
     editLink: {
-      pattern: "https://github.com/ZomBeatz/zombeatz-docs/edit/main/site/:path",
+      // The design pages only include files from design/, so suggest changes to those.
+      pattern: ({ filePath }) =>
+        `https://github.com/ZomBeatz/zombeatz-docs/edit/main/${filePath.startsWith("design/") ? filePath : `site/${filePath}`}`,
       text: "Suggest a change to this page",
     },
     footer: {

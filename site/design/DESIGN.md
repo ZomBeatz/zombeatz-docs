@@ -2,7 +2,7 @@
 outline: [2, 2]
 ---
 
-<!--@include: ../design/DESIGN.md-->
+<!--@include: ../../design/DESIGN.md-->
 
 ## Files
 
