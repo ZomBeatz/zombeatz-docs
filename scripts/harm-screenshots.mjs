@@ -61,6 +61,8 @@ const tab = (name) => `document.querySelector('.tabs button[data-tab="${name}"]'
 const type = (sel, text) => `const el = document.querySelector(${JSON.stringify(sel)}); el.value = ${JSON.stringify(text)}; el.dispatchEvent(new Event("input", { bubbles: true }));`;
 
 async function shot(name, hash, prep = "", { settle = 900 } = {}) {
+  // HaRM remembers the last tab per kind of page; every picture starts from the first tab.
+  await ev(`Object.keys(localStorage).filter((k) => k.startsWith("harm-tab-")).forEach((k) => localStorage.removeItem(k));`);
   // A fresh page load for every picture (the same #hash twice wouldn't reload), then wait for it to draw.
   await cdp("Page.navigate", { url: `${APP}/?shot=${name}${hash}` });
   await sleep(1800);
@@ -115,6 +117,7 @@ const desktop = [
   ["search", "#/dashboard", `const i = document.querySelector(".topbar input[type=search]"); i.focus(); i.value = "pve"; i.dispatchEvent(new Event("input", { bubbles: true }));`],
   ["new-menu", "#/dashboard", `document.querySelector(".qa-btn").click();`],
   ["help-troubleshooting", "#/help?s=trouble"],
+  ["settings-about", "#/settings", `document.querySelector(".about-row")?.scrollIntoView({ block: "center" });`],
   ["setup-guide", "#/setup"],
   ["phone-app-help", "#/settings", "phoneAppHelp();"],
   ["unlock", "#/dashboard", "showAuth();", { settle: 1200 }],

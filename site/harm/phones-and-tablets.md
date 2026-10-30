@@ -22,9 +22,9 @@ In the desktop app, press **Phone setup**. (It shows once HaRM is running and sh
 
 ## Without the desktop app (server, Docker)
 
-In HaRM go to **Settings > Phone app**. It shows the same two QR codes and the steps for each phone.
+In HaRM go to **Settings > Phones & tablets > How to connect a phone…**. It shows the same two QR codes and the steps for each phone.
 
-![Settings > Phone app](/img/harm/phone-app-help.png)
+![The phone steps in HaRM](/img/harm/phone-app-help.png)
 
 ## Android (Pixel and most phones)
 
@@ -39,12 +39,7 @@ Same as Android, except step 2: **Settings > Security and privacy > More securit
 
 ## iPhone and iPad
 
-1. **If you opened HaRM on this iPhone or iPad before**, clear it first: **Settings > Apps > Safari > Advanced > Website Data** (older versions: **Settings > Safari > Advanced > Website Data**), search for HaRM's address and delete it. Remove any HaRM icon from the home screen.
-2. Scan the first QR code with the **Camera** and open it in **Safari**. If Safari warns, tap **Show Details > visit this website**. Tap **Allow**, then **Close**.
-3. **Settings > Profile Downloaded** (or **General > VPN & Device Management**) > **Zom's HaRM local CA** > **Install**.
-4. **Settings > General > About > Certificate Trust Settings**: turn on **Zom's HaRM local CA**. Don't skip this one: without it HaRM works in Safari but never from the home screen.
-5. Close Safari completely, then scan the second QR code. HaRM opens with no warning.
-6. Unlock, then **Share > Add to Home Screen > Add**.
+iPhones and iPads need a few more taps (installing a profile and turning on full trust). Every step, and what to do when it won't connect: [iPhone and iPad](./iphone-ipad).
 
 ## On the phone
 
@@ -55,9 +50,7 @@ Same as Android, except step 2: **Settings > Security and privacy > More securit
   ![The full menu on a phone](/img/harm/phone-menu.png)
 
 - Press and hold the HaRM icon on the home screen for **Scan**, **Devices** and **Tasks** shortcuts.
-- On an iPad, HaRM shows the full sidebar like a computer.
-
-  ![HaRM on an iPad](/img/harm/ipad-device.png)
+- On an iPad, HaRM shows the full sidebar like a computer: [iPhone and iPad](./iphone-ipad#on-an-ipad).
 
 - Camera buttons read serials, part numbers and MACs from labels: [Scanning and labels](./scanning-and-labels).
 
@@ -137,6 +130,7 @@ The first setup, **Discover** and other bulk imports, **Import specs**, the PC b
 
 ## Related
 
-- [Troubleshooting](./troubleshooting)
-- [Desktop app](./desktop-app)
-- [Security](./security)
+- [iPhone and iPad](./iphone-ipad): every step for Apple devices
+- [The desktop app](./desktop-app): Phone setup and its checklist
+- [https and certificates](./server-https): connecting phones to a server
+- [Troubleshooting](./troubleshooting#phones-and-tablets): when a phone can't connect

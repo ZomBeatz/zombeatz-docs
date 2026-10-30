@@ -15,7 +15,7 @@ Share details about your hardware: paste a description into a chat, hand someone
    - **Markdown**, **Spreadsheet (.csv)** or **JSON** files.
    - **Spec sheet (PDF):** a printed overview of each device.
    - **Sell sheet (PDF):** hides internal details (location, IPs, hostnames) and adds a title, subtitle, condition, asking prices and a contact line.
-   - **QR labels:** stickers for the selected devices.
+   - **QR labels:** stickers for the selected devices, in the size of your label roll (62 × 29 mm, 2 × 1 in, 1 × 1 in) or a full sheet. See [QR labels](./scanning-and-labels#qr-labels).
 
 PDFs use your browser's print dialog: choose **Save as PDF**.
 
@@ -23,5 +23,6 @@ A single device's **⋯ > Export / PDF / sell sheet** opens this page with just 
 
 ## Related
 
-- [Scanning and labels](./scanning-and-labels)
-- [Backups, updates and uninstalling](./backups-and-updates)
+- [Scanning and labels](./scanning-and-labels#qr-labels): label sizes
+- [Data and backups](./data-and-backups): the whole database
+- [Selling old gear](./scenarios/selling-gear): sell sheets, step by step

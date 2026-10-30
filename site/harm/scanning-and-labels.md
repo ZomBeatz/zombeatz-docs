@@ -38,9 +38,21 @@ On the HaRM computer, installing `zbar` and `tesseract` adds server-side barcode
 
 ## QR labels
 
-Print stickers with the device's name, model, serial, IP and a QR code that opens it in HaRM: **⋯ > Print label…** on a device, or **Export & Share > QR labels** for many at once. They print from your browser; choose your label sheet or printer in the print dialog.
+Print stickers with a QR code that opens the device in HaRM, its name in bold, and one or two lines of facts (make and model, then its main address or serial). Use **⋯ > Print label…** on a device, or **Export & Share > QR labels** for many at once.
+
+HaRM asks for the size of your labels, and remembers it:
+
+| Size | Good for | On the label |
+|---|---|---|
+| **62 × 29 mm roll** | Brother DK-11209 and similar label printers | QR code, name and two lines |
+| **2 × 1 in roll** | Dymo, Zebra and similar | QR code, name and two lines, a little smaller |
+| **1 × 1 in roll** | Small spaces: SFP modules, mini PCs | QR code and the name only |
+| **Full sheet** | A4 or Letter sheets of labels, or plain paper | Two across, as many as fit |
+
+Roll sizes print one label per page, so pick your label printer in the print dialog. Labels are always printed light, whatever look HaRM uses on screen, and the QR code is at least 15 mm wide so phones read it easily. New in version 0.3.2.
 
 ## Related
 
-- [AI Assist](./ai-assist)
-- [Export and share](./export-and-share)
+- [AI Assist](./ai-assist): a whole shelf from photos
+- [Export and share](./export-and-share): labels for many devices at once
+- [Phones and tablets](./phones-and-tablets): the camera needs HTTPS

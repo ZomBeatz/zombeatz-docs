@@ -2,7 +2,7 @@
 description: "How Zom's HaRM protects your logins, secrets and data, and how to keep it safe."
 ---
 
-# Security
+# Security and privacy
 
 HaRM holds the keys to your network, so it's built to keep them safe even if someone copies its files.
 
@@ -15,7 +15,8 @@ HaRM holds the keys to your network, so it's built to keep them safe even if som
 
 ## Signing in
 
-- HaRM locks after 30 minutes idle, and sign-ins last at most 12 hours.
+- HaRM is locked after 30 minutes without use, whenever the HaRM server restarts, and 12 hours after unlocking at the latest. **Lock now** (at the bottom of the menu, and in **Settings > Locking and security**) locks it straight away.
+- The lock screen shows the wordmark, one password field and **Unlock**.
 - Repeated wrong passwords slow down further tries.
 - Optional **two-factor authentication** asks for a code from an authenticator app too ([Settings](./settings)).
 - Changing the master password signs out every other device.
@@ -37,5 +38,7 @@ HaRM is made for your home network. Don't forward its port to the internet. To u
 
 ## Related
 
-- [Logins](./logins)
-- [Backups, updates and uninstalling](./backups-and-updates)
+- [Logins](./logins): saving and opening logins
+- [Data and backups](./data-and-backups): what's in a backup
+- [Backups, recovery and security](./server-backups): keeping a server safe
+- [Settings](./settings#locking-and-security): locking and 2FA

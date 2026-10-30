@@ -1,60 +1,81 @@
 ---
-description: "Run Zom's HaRM on a home server or NAS with Docker, or as a Linux service that starts at boot."
+description: "Run Zom's HaRM on a home server, NAS or Raspberry Pi with Docker, or as a Linux service that starts at boot."
 ---
 
-# Running on a server
+# Setting up a server
 
-Run HaRM on an always-on machine (home server, NAS, mini PC) so every computer and phone in the house can use it. There are two ways; both keep everything in one `data` folder and set up HTTPS by themselves.
+Run HaRM on an always-on machine (a home server, NAS, mini PC or Raspberry Pi) so every computer and phone in the house can use it in a browser. There are two ways. Both keep everything in one `data` folder and set up HTTPS by themselves.
+
+::: danger Keep it on your home network
+Don't forward port 8077 (or any port HaRM uses) to the internet: HaRM holds the logins to your whole network. To use it away from home, connect to your home network with a VPN, such as your router's VPN, and use HaRM as usual.
+:::
 
 ## Docker
 
-Works anywhere Docker runs: Linux servers, Unraid, TrueNAS SCALE, Synology with Container Manager, and others.
+Works anywhere Docker runs: Linux servers, Unraid, TrueNAS SCALE, Synology with Container Manager, Raspberry Pi OS (64-bit) and others. The image is built by GitHub for PCs (amd64) and Raspberry Pis (arm64), so there's nothing to build.
 
-1. Extract the release on the server.
-2. Open `docker-compose.yml` and set **HARM_CERT_NAMES** to the address your phones will use: the server's LAN IP and/or hostname, for example `"192.168.1.50 harm.lan"`. Set **TZ** to your time zone.
-3. Start it:
+1. Make a folder for HaRM on the server, and download [`docker-compose.yml`](https://github.com/ZomBeatz/Zoms-HaRM/raw/main/docker-compose.yml) into it.
+2. Open it and set **HARM_CERT_NAMES** to the address your phones will use: the server's LAN IP and/or hostname, for example `"192.168.1.50 harm.lan"`. Set **TZ** to your time zone, for example `"Europe/London"`.
+3. Start it, in that folder:
    ```bash
-   docker compose up -d --build
+   docker compose up -d
    ```
-4. Open `https://<that address>:8077` and create your master password.
-5. Connect your phones with **Settings > Phone app** in HaRM: [Phones and tablets](./phones-and-tablets).
+4. Open `https://<that address>:8077`, continue past the certificate warning once, and create your master password.
+5. Connect your phones with **Settings > Phones & tablets** in HaRM: [Phones and tablets](./phones-and-tablets).
 
-| Setting in docker-compose.yml | What it does |
+| To | Run |
 |---|---|
-| `HARM_CERT_NAMES` | Names and IPs the HTTPS certificate covers. Change it and run `docker compose up -d`; phones keep trusting HaRM. |
-| `HARM_IDLE_MINUTES` | Minutes of inactivity before HaRM locks (default 30). |
-| `HARM_BACKUP_KEEP` | Daily backups kept in `./data/backups` (default 14). |
-| `TZ` | Your time zone, for backup and log times. |
-| `HARM_TLS: "0"` | Plain HTTP. Only behind your own HTTPS reverse proxy (Caddy, Traefik, Nginx Proxy Manager). |
+| See the log | `docker logs -f zoms-harm` |
+| Stop or start | `docker compose stop` · `docker compose start` |
+| Update to the newest version | `docker compose pull && docker compose up -d` |
+| Remove it (the data stays in `./data`) | `docker compose down` |
 
-- **Your data** (database, certificates, backups) is in `./data` next to the compose file.
-- **Network scan and MAC addresses** in Discover only see your network with host networking: in `docker-compose.yml`, remove `ports:` and uncomment `network_mode: host`. The router list, UniFi and Proxmox imports work either way.
-- **Health:** Docker shows HaRM as healthy once it answers. `docker logs zoms-harm` shows its log.
-- **Updating:** extract the new release over the old one (keep `data`), then `docker compose up -d --build`.
+Docker shows HaRM as **healthy** once it answers. All settings: [Server settings](./server-settings).
+
+### Network scan and MAC addresses
+
+Discover's **Network scan** only sees your network with host networking. In `docker-compose.yml`, remove the `ports:` lines and uncomment `network_mode: host`, then `docker compose up -d`. The router list, UniFi and Proxmox imports work either way.
 
 ## Linux service (no Docker)
 
+On a Linux server without Docker, HaRM runs from its source archive as a system service that starts at boot and restarts if it stops.
+
+On the server (it asks for your sudo password once):
+
 ```bash
+tar xzf zoms-harm-(version).tar.gz && cd zoms-harm-(version)
 ./scripts/install-server.sh --names "192.168.1.50 harm.lan"
 ```
 
-This installs HaRM in its folder, creates the certificate, and adds a system service that starts at boot and restarts if it stops. It asks for your sudo password once. Leave out `--names` to use the server's hostname and IPs.
+Leave out `--names` to use the server's hostname and IPs. The script installs HaRM's parts, creates the certificate and adds the `zoms-harm` service.
 
 | To | Run |
 |---|---|
 | See the log | `journalctl -u zoms-harm -f` |
 | Stop or start | `sudo systemctl stop zoms-harm` · `sudo systemctl start zoms-harm` |
 | Use another port | `./scripts/install-server.sh --port 8443` |
-| Remove the service | `./scripts/install-server.sh --uninstall` (your data stays) |
+| See what it would do, without doing it | `./scripts/install-server.sh --print` |
+| Remove the service (the data stays) | `./scripts/install-server.sh --uninstall` |
 
-If the server's firewall is on, allow the port from your home network, for example `sudo ufw allow from 192.168.1.0/24 to any port 8077 proto tcp`.
+**Updating:** extract the new release over the old folder (keep `data`), run `./scripts/install-server.sh` again, then `sudo systemctl restart zoms-harm`.
 
-::: warning Keep it at home
-HaRM is made for your home network. Don't forward its port to the internet. To reach it away from home, use a VPN into your network, such as your router's VPN.
-:::
+If the server's firewall is on, allow the port from your home network, for example:
+
+```bash
+sudo ufw allow from 192.168.1.0/24 to any port 8077 proto tcp
+```
+
+## Which computer?
+
+| | Good for |
+|---|---|
+| A NAS or home server that's always on | The whole house uses HaRM, from any computer or phone, any time |
+| A Raspberry Pi 4 or 5 (64-bit) | A small, quiet, always-on HaRM |
+| A desktop PC | Use the [installer](./installing) instead: HaRM runs while the PC is on, with the control panel |
 
 ## Related
 
-- [Phones and tablets](./phones-and-tablets)
-- [Backups, updates and uninstalling](./backups-and-updates)
-- [Security](./security)
+- [https and certificates](./server-https): the address phones use, and changing it later
+- [Server settings](./server-settings): every setting in `docker-compose.yml`
+- [Backups, recovery and security](./server-backups): keeping a server's data safe
+- [An always-on home server](./scenarios/home-server): the whole setup, step by step

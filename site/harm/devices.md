@@ -68,6 +68,7 @@ Deleting a device removes its interfaces, services, slots and cables. Parts insi
 
 ## Related
 
-- [Places and racks](./places-and-racks)
-- [Import specs](./import-specs)
-- [Notes and tasks](./notes-and-tasks)
+- [Places and racks](./places-and-racks): putting a device in a rack
+- [Import specs](./import-specs): filling in its hardware without typing
+- [Logins](./logins): its passwords and one-tap open
+- [Notes and tasks](./notes-and-tasks): its history and to-dos

@@ -1,84 +1,178 @@
 ---
-description: "Fixes for common Zom's HaRM problems: phones and tablets, starting the server, Docker, Discover, Import specs and AI Assist."
+description: "Fixes for common Zom's HaRM problems: installing, starting, phones and tablets, servers, Discover, Import specs and AI Assist."
 ---
 
 # Troubleshooting
 
-Find your problem below. HaRM has these steps built in too: **Help & guide > Troubleshooting**, the **Show troubleshooting steps** button when HaRM can't start on a device, and **Still not working?** in the desktop app's Phone setup.
+Find your problem below, in the order you'd meet it. HaRM has the phone fixes built in too: **Help > Troubleshooting: can't connect**, the **Show troubleshooting steps** button when HaRM can't start on a device, and **Still not working?** in the control panel's **Phone setup**.
 
-![Troubleshooting inside HaRM, with the section for this device opened](/img/harm/help-troubleshooting.png)
+## Installing
+
+### "Windows protected your PC"
+
+The installer isn't signed with a paid certificate yet, so Windows doesn't recognize it. Click **More info > Run anyway**. The file is built by GitHub from HaRM's public code.
+
+### The .deb or .rpm won't install
+
+- **A missing package:** install with the package manager instead, so it fetches what's needed: `sudo apt install ./zoms-harm_(version)_amd64.deb` or `sudo dnf install ./zoms-harm-(version)-1.x86_64.rpm`.
+- **An older Linux:** use the AppImage instead.
+
+### The AppImage doesn't open
+
+1. Right-click it > **Properties** > allow running it as a program.
+2. Still nothing? Run it from a terminal (`./Zoms-HaRM_(version)_amd64.AppImage`) to see why. On Ubuntu 22.04 and newer, `sudo apt install libfuse2` is the usual fix.
+
+### My data from an older HaRM isn't there
+
+Versions before 0.3.2 kept data next to the app. Press **Bring in data from an older HaRM…** in the control panel and pick the old folder. See [Installing and updating](./installing#used-harm-before-version-0-3-2).
+
+## Starting HaRM
+
+### "Port in use"
+
+Another program uses port 8077. Change **Port** in the control panel and press **Start**.
+
+### HaRM won't start
+
+Open **Server log** at the bottom of the control panel: the reason is there. If it isn't clear, send it with [Send feedback](./contact).
+
+### The computer's address changed, and phones show a warning
+
+The control panel shows **Fix certificate**. HaRM re-issues the certificate from the same authority, so phones keep trusting it. To avoid it, give the computer a fixed address in your router.
+
+### I forgot the master password
+
+On the unlock screen, choose **Forgot your password? Use the recovery code**.
+
+### I lost the password and the recovery code
+
+Saved logins can't be recovered; that's what keeps them safe. The rest of your inventory is still readable from a backup. See [Backups, recovery and security](./server-backups#a-forgotten-master-password).
 
 ## Phones and tablets
 
 Most connection problems are about trust: a phone only talks to HaRM once it trusts HaRM's certificate. If HaRM opens on one device but not another, HaRM is fine; fix the device that fails.
 
-| Problem | Fix |
-|---|---|
-| "Your connection is not private" | The certificate isn't trusted on this device yet. Follow [Phones and tablets](./phones-and-tablets) for your phone, then close the browser completely and reopen it. |
-| iPhone or iPad works in Safari, but the home-screen app says **Cannot reach the HaRM server** | The certificate is installed but not trusted. **Settings > General > About > Certificate Trust Settings**: turn on **Zom's HaRM local CA**. If it isn't listed, install the profile again. Then delete the home-screen icon and add it again from Safari. |
-| iPhone or iPad keeps showing **Cannot reach the HaRM server** even after reinstalling the certificate | Clear HaRM's saved data first: **Settings > Apps > Safari > Advanced > Website Data**, search HaRM's address, delete it. Then follow the iPhone and iPad steps from the top. |
-| The home-screen icon is just a letter ("H") | iOS couldn't fetch the icon because it didn't trust HaRM yet. Trust the certificate, remove the icon, and add it again from Safari. |
-| It stopped working after HaRM was updated or restarted | Update to the latest HaRM (older versions made certificates iPhones reject), restart it, then close the browser on the phone completely and reopen HaRM. |
-| The phone can't connect at all | Same Wi‑Fi as HaRM, not guest Wi‑Fi or mobile data? In the desktop app, **Phone setup**'s checklist checks sharing, HTTPS, the certificate and the firewall, and offers fixes. |
-| The camera button does nothing | The camera needs HTTPS. Open HaRM with `https://` and trust the certificate. |
+### "Your connection is not private"
 
-## Starting HaRM
+The certificate isn't trusted on this device yet. Follow [Phones and tablets](./phones-and-tablets) (or [iPhone and iPad](./iphone-ipad)) for your phone, then close the browser completely and open HaRM again.
 
-| Problem | Fix |
-|---|---|
-| **Port in use** | Another program uses port 8077. Change **Port** in the desktop app and press **Start**. |
-| HaRM won't start | Open **Server log** at the bottom of the desktop app. It shows the reason. |
-| The computer's IP address changed | The desktop app shows **Fix certificate**. Phones keep trusting HaRM. To avoid it, give the computer a fixed IP in your router. |
-| Windows: phones can't connect | Allow Python through the firewall: **Windows Security > Firewall & network protection > Allow an app through firewall**, tick **Private** for Python. |
-| Linux: phones can't connect | If your firewall is on, allow the port from your network, for example `sudo ufw allow from 192.168.1.0/24 to any port 8077 proto tcp`. Phone setup offers this with **Allow it**. |
-| The desktop app looks out of date after an update | Right-click the tray icon > **Quit**, then open it again. |
-| Forgot the master password | On the unlock screen choose **Forgot your password? Use the recovery code**. |
-| Lost the password and the recovery code | Stored logins can't be recovered; that's what keeps them safe. Everything else is still readable from a backup. |
+### The phone can't connect at all
 
-## Docker and servers
+1. Is the phone on the **same Wi‑Fi** as HaRM? Not guest Wi‑Fi, and not mobile data.
+2. In the control panel, **Phone setup**'s checklist checks sharing, HTTPS, the certificate and the firewall, and offers a fix for each.
+3. **Windows:** allow HaRM through the firewall: **Windows Security > Firewall & network protection > Allow an app through firewall**, and tick **Private** for Zom's HaRM.
+4. **Linux:** if the firewall is on, allow the port from your network (Phone setup offers **Allow it**), for example `sudo ufw allow from 192.168.1.0/24 to any port 8077 proto tcp`.
 
-| Problem | Fix |
-|---|---|
-| Phones warn about the certificate | `HARM_CERT_NAMES` must include the address phones use. Fix it in `docker-compose.yml` and run `docker compose up -d`. |
-| Permission errors on `./data` | HaRM fixes the folder's owner on start. If it still fails, check the folder isn't read-only, or on a network share that doesn't allow changing owners. |
-| Network scan finds nothing, or no MAC addresses | Docker's own network hides your LAN. Use `network_mode: host` (see [Running on a server](./server#docker)), or use **Any router** in Discover instead. |
-| The service won't start | `journalctl -u zoms-harm -n 50` shows why. |
+### iPhone or iPad: "Cannot reach the HaRM server"
+
+The certificate isn't fully trusted, or Safari remembers an old one. See [iPhone and iPad: when it won't connect](./iphone-ipad#when-it-won-t-connect).
+
+### The home-screen icon is just a letter
+
+The phone added the icon before it trusted HaRM. Trust the certificate, remove the icon, and add it again.
+
+### It stopped working after HaRM was updated or restarted
+
+Close the browser on the phone completely and open HaRM again. On an iPhone or iPad, clear HaRM's website data first ([step 1](./iphone-ipad#_1-clear-anything-left-from-before)).
+
+### The camera button does nothing
+
+The camera needs HTTPS. Open HaRM with `https://` and trust the certificate. **Settings > Phones & tablets > Camera and scanning** shows whether the camera is available.
+
+## Servers
+
+### Phones warn about the certificate
+
+`HARM_CERT_NAMES` must include the address phones use. Fix it in `docker-compose.yml` and run `docker compose up -d`. See [https and certificates](./server-https).
+
+### Permission errors on ./data
+
+HaRM fixes the folder's owner when it starts. If it still fails, check the folder isn't read-only, or on a network share that doesn't allow changing owners.
+
+### Network scan finds nothing, or no MAC addresses
+
+Docker's own network hides your LAN. Use `network_mode: host` ([how](./server#network-scan-and-mac-addresses)), or use **Any router** in Discover instead.
+
+### The service won't start
+
+`journalctl -u zoms-harm -n 50` shows why.
+
+### docker compose pull says the image isn't found
+
+Check the `image:` line is `ghcr.io/zombeatz/zoms-harm:latest`. To build it yourself instead, use the `build: .` line in `docker-compose.yml` and `docker compose up -d --build`.
 
 ## Discover
 
-| Problem | Fix |
-|---|---|
-| UniFi: **The gateway rejected the API key** | Make a new key in **Settings > Control Plane > Integrations** and paste it fresh. Keys can expire. |
-| UniFi: **no integration API** | Update UniFi Network to 9.0 or newer, or use **Any router** with the Client Devices list. |
-| UniFi or Proxmox: **certificate isn't trusted** | Untick **Verify certificate**; both use self-signed certificates by default. |
-| Proxmox: **The token isn't allowed to read this** | Give the token the **PVEAuditor** role on `/`, and untick **Privilege Separation** (or give the token the role too). |
-| Proxmox: VMs have no IP addresses | Install the QEMU guest agent in the VMs and turn it on in each VM's Options. |
-| Router list: nothing found | Paste the whole table, including IP and MAC columns. Screenshots don't work; copy the text. |
+### UniFi: "The gateway rejected the API key"
+
+Keys can expire. Make a new one in **Settings > Control Plane > Integrations** and paste it fresh.
+
+### UniFi: "no integration API"
+
+Update UniFi Network to 9.0 or newer, or use **Any router** with the **Client Devices** list.
+
+### UniFi or Proxmox: "certificate isn't trusted"
+
+Untick **Verify certificate**: both use self-signed certificates by default.
+
+### Proxmox: "The token isn't allowed to read this"
+
+Give the token the **PVEAuditor** role on `/`, and untick **Privilege Separation** (or give the token the role too). See [A Proxmox home lab](./scenarios/proxmox-lab).
+
+### Proxmox: VMs have no IP addresses
+
+Install the QEMU guest agent in the VMs and turn it on in each VM's **Options**.
+
+### Any router: nothing found
+
+Paste the whole table, including the IP and MAC columns. Screenshots don't work; copy the text.
 
 ## Import specs
 
-| Problem | Fix |
-|---|---|
-| **Login refused** | Check the username and password, or that the HaRM computer's SSH key is on the machine. |
-| **The machine's SSH host key changed** | Normal after reinstalling the machine: press the button to trust the new key. Otherwise, check nothing is in between. |
-| **sudo refused the password** | Untick **Use sudo**, or use an account that can sudo. |
-| No serial number or memory sticks | Tick **Use sudo** (Linux), or run the command as administrator. |
-| Windows over SSH fails | Turn on Windows' **OpenSSH Server** (Settings > System > Optional features), or use **Run it yourself**. |
+### "Login refused"
+
+Check the username and password, or that the HaRM computer's SSH key is on the machine.
+
+### "The machine's SSH host key changed"
+
+Normal after reinstalling that machine: press the button to trust the new key. Otherwise, check nothing is in between.
+
+### "sudo refused the password"
+
+Untick **Use sudo**, or use an account that can use sudo.
+
+### No serial number or memory sticks
+
+Tick **Use sudo** (Linux), or run the command as administrator (Windows).
+
+### Windows over SSH fails
+
+Turn on Windows' **OpenSSH Server** (**Settings > System > Optional features**), or use **Run it yourself**.
 
 ## AI Assist
 
-| Problem | Fix |
-|---|---|
-| **The AI answered, but not in HaRM's format** | The reply is placed in the copy and paste box: fix it there, or ask the AI again. |
-| **The AI service rejected the API key** | Check the key in **Settings > AI Assist**. Paste a new one to replace it. |
-| The service doesn't know the model | Type a model your account has (one that can see images) into **Model**, or leave it blank. |
-| Values look wrong | They're estimates. Use a model with web search, and check the saved sources. |
+### "The AI answered, but not in HaRM's format"
+
+The reply is placed in the copy and paste box: fix it there, or ask the AI again.
+
+### "The AI service rejected the API key"
+
+Check the key in **Settings > AI Assist**, or paste a new one to replace it.
+
+### The service doesn't know the model
+
+Type a model your account has (one that can see images) into **Model**, or leave it blank for the recommended one.
+
+### The values look wrong
+
+They're estimates. Turn on **Let it search the web for prices and specs**, and check the sources saved with each item.
 
 ## Still stuck?
 
-Ask on the [contact page](/zomello/contact), with what you tried and what the **Server log** or error says.
+Use **Settings > About > Send feedback**, or email [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com). Include what you tried, your HaRM version, what it runs on, and what the **Server log** or error says. See [Contact and feedback](./contact).
 
 ## Related
 
-- [Phones and tablets](./phones-and-tablets)
-- [FAQ](./faq)
+- [Questions](./faq): quick answers
+- [iPhone and iPad](./iphone-ipad): Apple devices, step by step
+- [Contact and feedback](./contact): what to include when asking for help

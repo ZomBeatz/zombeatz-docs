@@ -33,5 +33,6 @@ On a phone, **Tasks** is in the bottom bar: tick things off as you finish them, 
 
 ## Related
 
-- [Home and search](./home-and-search)
-- [Devices](./devices)
+- [Home and search](./home-and-search): where open tasks show
+- [Devices](./devices): the journal on each device
+- [Keyboard shortcuts](./keyboard): adding notes quickly
