@@ -135,6 +135,7 @@ export default defineConfig({
             { text: "Troubleshooting", link: "/zomello/troubleshooting" },
             { text: "Words used in Zomello", link: "/zomello/glossary" },
             { text: "Contact and feedback", link: "/zomello/contact" },
+            { text: "Help test Zomello", link: "/zomello/help-test" },
           ],
         },
       ],
