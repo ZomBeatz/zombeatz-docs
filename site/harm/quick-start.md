@@ -1,5 +1,8 @@
 ---
 description: "Get Zom's HaRM running and your first rack, device and phone set up in about 15 minutes."
+prev:
+  text: Overview
+  link: /harm/
 ---
 
 # Quick start

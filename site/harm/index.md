@@ -1,5 +1,8 @@
 ---
 description: "Zom's HaRM is a self-hosted hardware and rack manager: where every device lives, what's inside it, how it's networked, how to log into it, and what still needs doing."
+next:
+  text: Quick start
+  link: /harm/quick-start
 ---
 
 # Zom's HaRM
