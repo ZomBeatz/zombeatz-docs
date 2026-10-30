@@ -11,7 +11,7 @@ description: "Home shows what needs your attention and your open tasks. Search f
 ## Home
 
 - **The numbers:** devices (and how many are hooked up), open tasks and issues, spare parts, raw storage, CPU cores and memory.
-- **Needs attention**, most urgent first: IP addresses used by more than one device, devices marked **Broken** or **In Repair**, warranties ending within 90 days, active devices marked not hooked up, and logins not changed in over a year. When there's nothing, it says so.
+- **Needs attention**, most urgent first: devices that stopped answering (see [Status](./status)), IP addresses used by more than one device, devices marked **Broken** or **In Repair**, warranties ending within 90 days, active devices marked not hooked up, and logins not changed in over a year. When there's nothing, it says so.
 - **Tasks and issues** from every device, rack and room. Tick one to mark it done.
 - **Rack space**, **Spare parts on hand** and **Storage**, once you have any.
 - **More** at the bottom: devices by status and type, and recent activity.

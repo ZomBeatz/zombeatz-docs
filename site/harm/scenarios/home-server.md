@@ -26,6 +26,7 @@ HaRM runs on a machine that's always on (a NAS, home server, mini PC or Raspberr
 ## Every day
 
 - Every device in the house opens the same HaRM, at the same address.
+- Because the server is always on, the [Status](../status) page keeps a full day of history for every device. Keep it open on a spare screen with **⋯ > Full screen**.
 - Updating is `docker compose pull && docker compose up -d`: [Setting up a server](../server#docker).
 
 ## Good to know

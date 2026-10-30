@@ -33,6 +33,13 @@ How it all protects your logins: [Security and privacy](./security).
 - **Certificate**: downloads `harm-ca.crt`, for devices that need to trust HaRM.
 - **Camera and scanning**: whether this connection is secure (the camera needs it), whether live camera scanning, server-side barcode reading and text recognition are available, and the address this device uses.
 
+## Status and actions
+
+- **Check**: how often HaRM checks which devices answer, from **Every minute** to **Every hour**, or **Never (only when I press Check now)**. Every 5 minutes at first. While the Status page is open, it checks every minute anyway.
+- **Actions** opens your saved one-click commands.
+
+To leave one device out of the checks, edit it and untick **Check if it's online**. See [Status](./status) and [Actions](./actions). New in version 0.3.2.
+
 ## AI Assist
 
 - **AI service**: Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), or **Other / local** for any OpenAI-compatible service such as Ollama, LM Studio or OpenRouter. Off until you pick one.
@@ -62,6 +69,7 @@ The keyboard shortcuts, the same as on [Keyboard shortcuts](./keyboard). Phones 
 - The version of HaRM, and its license (MIT, free and open source).
 - **See the code** and **What's new** open the project on GitHub.
 - **Send feedback** starts an email to ZomBeatz Media with your version and device filled in. See [Contact and feedback](./contact).
+- **Check for new versions**: off unless you tick it. HaRM then asks GitHub about twice a day, says here whether you have the newest version, and shows a note on **Home** when a newer one is out. Nothing else is sent. New in version 0.3.2.
 - **Read the guide** opens this guide, and **Setup guide** runs the first-time guide again.
 
 ## The control panel (computer only)

@@ -27,7 +27,7 @@ Faster ways: [Import specs](./import-specs) fills in hardware from the machine i
 
 ![A device page](/img/harm/device.png)
 
-The top row is a summary: where it is, its cluster, its **main address** (tap to copy, or open the list of all its addresses), the management page, up to three logins to open in one tap, and open tasks.
+The top row is a summary: whether it's **Online** or **Offline** (tap to check again), where it is, its cluster, its **main address** (tap to copy, or open the list of all its addresses), the management page, up to three logins to open in one tap, and open tasks.
 
 The tabs:
 
@@ -36,6 +36,7 @@ The tabs:
 - **Hardware:** processors, memory, storage and drive bays, all installed parts, and expansion slots. See [Parts and storage](./parts-and-storage).
 - **Network:** interfaces, services, and cables. See [Networks and cables](./networks).
 - **Logins:** see [Logins](./logins).
+- **Actions:** its one-click commands, and whether each of its addresses answers. See [Actions](./actions) and [Status](./status).
 
 A **Finish setting up** box lists what's missing (serial, where it lives, CPU and memory, drives, network, a login) with a button for each; hide it when you don't need it.
 
@@ -60,7 +61,7 @@ To choose, tap the address in the summary and pick **Main** next to the right on
 
 ## More actions
 
-The **⋯** button holds the less common actions: **Import specs…**, **Add note or task**, **Export / PDF / sell sheet**, **Print label…**, **Clone…** (a new device like this one, with the next number: *R515 #2* becomes *R515 #3*) and **Delete**.
+The **⋯** button holds the less common actions: **Import specs…**, **Check if it’s online**, **Wake up (Wake-on-LAN)** (when it has a MAC address), **New action…**, **Add note or task**, **Export / PDF / sell sheet**, **Print label…**, **Clone…** (a new device like this one, with the next number: *R515 #2* becomes *R515 #3*) and **Delete**.
 
 ![The ⋯ menu](/img/harm/device-menu.png)
 

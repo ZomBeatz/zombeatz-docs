@@ -182,6 +182,8 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Virtual machines and clusters", link: "/harm/virtual-and-clusters" },
+            { text: "Status", link: "/harm/status" },
+            { text: "Actions", link: "/harm/actions" },
             { text: "Export and share", link: "/harm/export-and-share" },
             { text: "PC Builder", link: "/harm/pc-builder" },
             { text: "Keyboard shortcuts", link: "/harm/keyboard" },

@@ -26,6 +26,8 @@ You run Proxmox and want its hosts, VMs and containers in HaRM without typing th
 
 - **Virtual & Clusters** shows every host, how full it is, and every guest: [Virtual machines and clusters](../virtual-and-clusters).
 - After adding VMs, run **Discover > Proxmox** again. It updates what changed instead of adding duplicates.
+- **Status** shows which hosts, VMs and iDRAC or iLO ports answer, with the last 24 hours: [Status](../status).
+- Save the things you type over and over (updating a host, quieting a loud server's fans after a reboot) as one-click commands: [Actions](../actions).
 
 ## Good to know
 

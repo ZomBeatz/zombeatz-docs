@@ -34,7 +34,7 @@ Docker shows HaRM as **healthy** once it answers. All settings: [Server settings
 
 ### Network scan and MAC addresses
 
-Discover's **Network scan** only sees your network with host networking. In `docker-compose.yml`, remove the `ports:` lines and uncomment `network_mode: host`, then `docker compose up -d`. The router list, UniFi and Proxmox imports work either way.
+Discover's **Network scan** and [Wake-on-LAN](./status#waking-a-device-up) only reach your network with host networking. In `docker-compose.yml`, remove the `ports:` lines and uncomment `network_mode: host`, then `docker compose up -d`. The router list, UniFi and Proxmox imports work either way.
 
 ## Linux service (no Docker)
 

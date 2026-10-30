@@ -50,7 +50,7 @@ const ids = await ev(`
   const get = (p) => fetch("/api" + p, { headers: { "X-HaRM": "1" } }).then((r) => r.json());
   const [d, r, l, c, n, b] = await Promise.all(["/devices", "/racks", "/locations", "/clusters", "/networks", "/builds"].map(get));
   const by = (list, name) => list.find((x) => x.name === name)?.id;
-  return { pve1: by(d, "pve1"), oldR610: by(d, "Old R610"), rack: by(r, "Main rack"), garage: by(l, "Garage"),
+  return { pve1: by(d, "pve1"), pve2: by(d, "pve2"), oldR610: by(d, "Old R610"), rack: by(r, "Main rack"), garage: by(l, "Garage"),
            cluster: by(c, "homelab"), lan: by(n, "Home LAN"), build: b[0]?.id };`);
 
 const click = (sel, text) =>
@@ -109,6 +109,11 @@ const desktop = [
   ["discover-proxmox", "#/discover", tab("proxmox")],
   ["discover-unifi", "#/discover", tab("unifi")],
   ["ai-assist", "#/components", `await aiAssist(); ${wait(400)} ${type("#ai-reply", SAMPLE_AI)} ${click("button", "Read reply")} ${wait(800)} document.querySelector(".ai-table")?.scrollIntoView({ block: "center" });`, { settle: 1200 }],
+  ["status", "#/status"],
+  ["status-office", "#/status", `[...document.querySelectorAll(".st-group-head")].pop()?.scrollIntoView({ block: "start" }); window.scrollBy(0, -80);`],
+  ["actions", "#/actions"],
+  ["action-form", "#/actions", `editAction({ ...ACTION_TEMPLATES.find((t) => t.name.startsWith("Quiet")), device_id: ${ids.pve2}, hosts: "10.30.0.11" });`, { settle: 1200 }],
+  ["device-actions", `#/devices/${ids.pve2}`, tab("actions")],
   ["tasks", "#/tasks"],
   ["vault", "#/vault"],
   ["export", "#/export"],
@@ -152,6 +157,7 @@ const phone = [
   ["phone-scanner", "#/components", `scanDialog({ title: "Scan label", targets: [{ k: "serial", label: "Serial" }, { k: "model", label: "Model" }], onPick: () => {} }); ${wait(600)} document.querySelector(".scan-status").textContent = "";`],  // headless Chromium has no camera
   ["phone-ai-assist", "#/components", `await aiAssist();`],
   ["phone-tasks", "#/tasks"],
+  ["phone-status", "#/status"],
 ];
 for (const [name, hash, prep] of phone) shrink(await shot(name, hash, prep), 585);
 

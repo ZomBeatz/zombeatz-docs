@@ -12,7 +12,7 @@ Yes, free and open source under the MIT license. There's no paid version and no 
 
 ## Do I need an account or the internet?
 
-No account. You need the internet only to download HaRM and, if you want them, the parts library and an online AI service. Everything else works on your home network with no internet at all.
+No account. You need the internet only to download HaRM and, if you want them, the parts library, an online AI service and the new-version check. Everything else works on your home network with no internet at all.
 
 ## Where is my data stored? Does ZomBeatz Media see it?
 
@@ -29,6 +29,10 @@ Yes, as a home-screen app over your Wi‑Fi, once the phone trusts HaRM's certif
 ## Can I use it away from home?
 
 Connect to your home network with a VPN, and HaRM works as usual. Don't forward its port to the internet. See [Setting up a server](./server).
+
+## Can HaRM tell me when something goes down?
+
+Yes. The [Status](./status) page shows which devices answer, by room, with the last 24 hours, and devices that stop answering show on **Home**. HaRM doesn't send emails or phone alerts.
 
 ## Can several people use it?
 
