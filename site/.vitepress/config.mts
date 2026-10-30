@@ -122,6 +122,7 @@ export default defineConfig({
           text: "Getting started",
           items: [
             { text: "Overview", link: "/harm/" },
+            { text: "Live demo", link: "https://zombeatz.github.io/Zoms-HaRM/" },
             { text: "Quick start", link: "/harm/quick-start" },
             { text: "Set-up scenarios", link: "/harm/scenarios" },
             { text: "Installing HaRM", link: "/harm/install" },

@@ -38,7 +38,17 @@ This sets HaRM up in its folder and adds **Zom's HaRM** to your app menu (KDE, G
 
 ## Try the demo first
 
-Want to look around before entering your own gear? The demo starts a separate copy of HaRM filled with a made-up home lab (a rack with two Proxmox hosts, a NAS, VMs, spare parts, tasks). It never touches your own data.
+Want to look around before entering your own gear? **[Open the live demo](https://zombeatz.github.io/Zoms-HaRM/)**: the real HaRM, filled with a made-up home lab (a rack with two Proxmox hosts, a NAS, VMs, spare parts, tasks), running entirely in your browser.
+
+- Nothing is installed, and nothing you type leaves your device.
+- Your changes stay in that browser until you press **Start over** (bottom corner), or until a newer demo is published.
+- If you lock it, the password is `demo-password`.
+- The first visit downloads about 20 MB, so give it a few seconds.
+- Features that reach other machines (network scan, UniFi, Proxmox, Import specs, sending photos to an AI) need HaRM on your own network, so the demo says so instead.
+
+It works on phones too, so it's a quick way to see [what HaRM is like on a phone](./phones-and-tablets#when-to-grab-your-phone).
+
+**Running the demo on your own computer.** In the HaRM folder, this starts a separate copy of HaRM with the same made-up data. It never touches your own data:
 
 ```bash
 python3 scripts/demo.py

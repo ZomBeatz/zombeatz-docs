@@ -22,6 +22,16 @@ Fields like **Serial number**, **Part number**, **Model**, **MAC address** and *
 - **Scan a HaRM label (open device)**: opens the device a QR sticker belongs to.
 - **Scan text or barcode (copy it)**: reads anything and copies it.
 
+<div class="phone-shots">
+
+![The + New menu on a phone](/img/harm/phone-new-menu.png)
+![A part form with camera buttons](/img/harm/phone-part-form.png)
+![The label scanner](/img/harm/phone-scanner.png)
+
+</div>
+
+**Live camera** reads barcodes as you point; **Take or choose photo** works when the live camera can't (older phones, or the camera permission was refused).
+
 The camera needs HTTPS, so set your phone up first: [Phones and tablets](./phones-and-tablets). Photos are never stored.
 
 On the HaRM computer, installing `zbar` and `tesseract` adds server-side barcode and text reading for photos the phone can't read itself.

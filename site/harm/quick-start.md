@@ -6,6 +6,10 @@ description: "Get Zom's HaRM running and your first rack, device and phone set u
 
 This gets you from download to your first rack and device, with your phone connected, in about 15 minutes.
 
+::: tip Just looking?
+[The live demo](https://zombeatz.github.io/Zoms-HaRM/) runs HaRM in your browser with made-up data. Nothing to install.
+:::
+
 1. **Install HaRM.** On Windows, extract the zip to your user folder and double-click **Install HaRM.cmd**. On Linux, run `./install.sh`. Details: [Installing HaRM](./install).
 2. **Start it.** Open **Zom's HaRM** from the Start Menu or app menu, press **Start**, then **Open HaRM**. See [First start](./first-start).
 3. **Create your master password** and write down the recovery code. The password encrypts your stored logins.

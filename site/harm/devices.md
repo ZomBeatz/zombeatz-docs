@@ -39,6 +39,17 @@ The tabs:
 
 A **Finish setting up** box lists what's missing (serial, where it lives, CPU and memory, drives, network, a login) with a button for each; hide it when you don't need it.
 
+::: tip On a phone
+The device page fits the screen, with its tabs in a row you can swipe. The **Network** tab is handy at the rack: every port, its address and MAC.
+
+<div class="phone-shots">
+
+![A device on a phone](/img/harm/phone-device.png)
+![A device's network ports on a phone](/img/harm/phone-device-network.png)
+
+</div>
+:::
+
 ## The main address
 
 When a device has several IPs (the operating system and an iDRAC, for example), HaRM uses its **main address** for the summary, quick links, logins and lists. Management ports (iDRAC, iLO, IPMI, or interfaces named like "mgmt") are never picked automatically.

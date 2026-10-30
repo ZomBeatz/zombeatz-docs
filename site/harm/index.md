@@ -39,7 +39,7 @@ HaRM works fully without AI. **AI Assist** is optional: it either writes a promp
 
 - **Windows and Linux:** [the latest release on GitHub](https://github.com/ZomBeatz/Zoms-HaRM/releases/latest), then follow [Installing HaRM](./install).
 - **Home server or NAS:** Docker or a Linux service, see [Running on a server](./server).
-- **Try it with made-up data first:** [the demo](./install#try-the-demo-first) runs without touching anything of yours.
+- **Try it first:** [the live demo](https://zombeatz.github.io/Zoms-HaRM/) runs in your browser with a made-up home lab. Nothing to install. More in [Try the demo first](./install#try-the-demo-first).
 
 ## Related
 

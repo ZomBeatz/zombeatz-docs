@@ -10,6 +10,16 @@ Open it from **+ New > AI Assist: photos to inventory**, **Spare Parts > AI Assi
 
 ![AI Assist, with the AI's results ready to add](/img/harm/ai-assist.png)
 
+::: tip On a phone
+Open AI Assist where the hardware is (**+ New > AI Assist**, or **AI Assist here** on a location) and take the photos right there.
+
+<div class="phone-shots">
+
+![AI Assist on a phone](/img/harm/phone-ai-assist.png)
+
+</div>
+:::
+
 ## 1. Where is it?
 
 Optionally pick the location, holder and spot for the whole batch, add a hint for the AI ("drives pulled from the R515s"), and choose how new devices are marked (Spare by default).

@@ -22,6 +22,16 @@ Press `/` or click the search box at the top, and type at least two letters: a n
 
 ![Search results as you type](/img/harm/search.png)
 
+::: tip On a phone
+Search sits at the top of every page, so it's the quickest way to find a device while you're standing in front of it.
+
+<div class="phone-shots">
+
+![Search on a phone](/img/harm/phone-search.png)
+
+</div>
+:::
+
 - Results appear as you type. Use the arrow keys and Enter, or click one.
 - Picking a result opens that exact thing: an IP opens its interface on the device's **Network** tab, a login opens its **Open** window, a part opens its form.
 - Enter with nothing picked shows every result. A search with exactly one result opens it straight away.
@@ -31,6 +41,8 @@ Press `/` or click the search box at the top, and type at least two letters: a n
 **+ New** (top right) adds anything: a device, spare part, login, network, rack or shelf, or location. It can also start from a photo: **New part from label**, **New device from label**, **AI Assist: photos to inventory**, or scan a HaRM QR label to open its device.
 
 ![The + New menu](/img/harm/new-menu.png)
+
+On a phone, the scan items at the top open the camera straight away.
 
 ## Related
 

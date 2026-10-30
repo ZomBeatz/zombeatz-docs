@@ -61,6 +61,80 @@ Same as Android, except step 2: **Settings > Security and privacy > More securit
 
 - Camera buttons read serials, part numbers and MACs from labels: [Scanning and labels](./scanning-and-labels).
 
+## When to grab your phone
+
+HaRM on a computer is best for setting things up. The phone is best wherever the hardware is: at the rack, on the shelf, in the garage. Some good moments:
+
+### Standing at the rack
+
+You're behind a server with a cable in your hand. Search finds it by name, IP, serial or MAC, and the device page shows where it sits, what's plugged into it and its addresses.
+
+<div class="phone-shots">
+
+![Search on a phone](/img/harm/phone-search.png)
+![A device's network ports on a phone](/img/harm/phone-device-network.png)
+
+</div>
+
+The **Network** tab lists every port with its address and MAC, and the ★ main address is the one the quick links use. See [Devices](./devices) and [Networks](./networks).
+
+### At a console or a login prompt
+
+You're on a crash cart and need the iDRAC or switch password. On the device's **Logins** tab, **Open** shows the login and copies the password, and the management page opens with one tap. Reveals are written to the audit log. See [Logins](./logins).
+
+<div class="phone-shots">
+
+![A login's Open window on a phone](/img/harm/phone-login-open.png)
+
+</div>
+
+### Putting away parts and new arrivals
+
+A box of drives or RAM arrives, or you're sorting the spares bin. **+ New > New part from label** opens the form with the camera ready: point it at the label and tap the serial, model or part number. **Save & add another** keeps you going. See [Scanning and labels](./scanning-and-labels).
+
+<div class="phone-shots">
+
+![The + New menu on a phone](/img/harm/phone-new-menu.png)
+![Adding a part on a phone, with camera buttons](/img/harm/phone-part-form.png)
+![The label scanner](/img/harm/phone-scanner.png)
+
+</div>
+
+### Photographing a whole shelf
+
+Too much to scan one by one? **AI Assist** takes photos of a shelf or a pile and turns them into parts and devices, with prices if the AI can look them up. On a phone you take the photos right there. See [AI Assist](./ai-assist).
+
+<div class="phone-shots">
+
+![AI Assist on a phone](/img/harm/phone-ai-assist.png)
+
+</div>
+
+### Walking the garage or storage room
+
+Open a location to see what's in each holder there and what still needs doing. **Device here**, **Part here** and **AI Assist here** fill in the place for you. See [Places and racks](./places-and-racks).
+
+<div class="phone-shots">
+
+![A location on a phone](/img/harm/phone-location.png)
+![Spare parts on a phone](/img/harm/phone-parts.png)
+
+</div>
+
+### While you work
+
+Tick off tasks as you finish them, and jot down what you did ("swapped PSU 2") on the device you're touching, so the history is there next time. See [Notes and tasks](./notes-and-tasks).
+
+<div class="phone-shots">
+
+![Tasks on a phone](/img/harm/phone-tasks.png)
+
+</div>
+
+### Better on a computer
+
+The first setup, **Discover** and other bulk imports, **Import specs**, the PC builder, exports and backups, and settings. They all work on a phone, but a big screen and a keyboard make them quicker. An iPad sits in between: the full layout, with the camera.
+
 ## Related
 
 - [Troubleshooting](./troubleshooting)

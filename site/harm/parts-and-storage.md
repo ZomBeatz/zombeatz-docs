@@ -18,6 +18,17 @@ Add a part with **Add part** or **+ New > Spare part**. Pick the category first;
 - **Remove** takes an installed part out and puts it back in a holder.
 - A part's **Fits** list shows which devices have a free slot for it.
 
+::: tip On a phone
+Sort the spares bin with your phone in hand: **+ Add part** has camera buttons on the serial, model and part number, and **Scan label** reads the whole label at once. **Save & add another** keeps the form open for the next one.
+
+<div class="phone-shots">
+
+![Spare parts on a phone](/img/harm/phone-parts.png)
+![Adding a part on a phone](/img/harm/phone-part-form.png)
+
+</div>
+:::
+
 ## Inside a device: the Hardware tab
 
 ![The Hardware tab: processors, memory, storage and drive bays](/img/harm/device-hardware.png)
