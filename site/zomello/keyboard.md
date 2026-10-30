@@ -60,14 +60,16 @@ Zomello works fully with a mouse or touch; these are shortcuts for when your han
 
 ## Select several cards
 
-**Ctrl click** a card to start selecting, or choose **Select** in a card's menu (on a phone, press and hold the card). After that, a plain click or tap on more cards adds them, and clicking one again unselects it. A bucket's menu has **Select all cards**.
+**Ctrl click** a card to start selecting, or choose **Select** in a card's menu (on a phone, press and hold the card). After that, a plain click or tap on more cards adds them, and clicking one again unselects it. **Shift click** selects every card between the last one you picked and this one. **Ctrl A** selects every card on the board (or every card the filter shows), and a bucket's menu has **Select all cards**.
 
 A bar appears with changes for all the selected cards at once:
 
 - **Progress** and **Priority**: set them for every card
 - **Labels**: tick a label to add it to every card, untick it to take it off every card
+- **Dates**: a due date for all of them (today, tomorrow, next Monday or a date you pick), **A day later** or **A week later** (moves start and due dates and keeps how long each card runs), or **Remove due date**
+- **People**: tick someone to assign them to every card, untick to unassign (shown once you've added people in Settings)
 - **Move**: to another bucket, or to a bucket on another board
 - **Archive** and **Delete**
-- **⋯**: **Copy work order** (the cards as text, see [Copying and pasting cards](./copy-paste-cards)) and **Hand to AI…** (optional, see [AI tools](./ai-tools))
+- **⋯**: **Add to My Day**, **Duplicate** (the copies are selected afterwards, ready to move), **Copy work order** (the cards as text, see [Copying and pasting cards](./copy-paste-cards)) and **Hand to AI…** (optional, see [AI tools](./ai-tools))
 
 **Undo** works right after any of these. **Esc**, the **×** on the bar, or a click on an empty part of the board clears the selection.

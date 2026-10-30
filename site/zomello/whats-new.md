@@ -28,7 +28,7 @@ description: What changed in each version of Zomello.
 - **Share to Zomello (Android):** share a link or text from any app and pick **Add to Zomello**.
 
 **Changing many cards at once**
-- **Select cards, then change them together:** set progress or priority, add or remove labels, or move them to another bucket or board, all at once. Ctrl click a card (or choose **Select** in its menu, which also works on phones), then click or tap more. A bucket's menu has **Select all cards**.
+- **Select cards, then change them together:** set progress, priority, labels, people or due dates (or push them all a day or a week later), move them to another bucket or board, add them to My Day or duplicate them. Ctrl click a card (or choose **Select** in its menu, which also works on phones), then click or tap more. **Shift click** selects a range, **Ctrl A** selects everything on the board, and a bucket's menu has **Select all cards**.
 - **Click an empty part of the board** to clear the selection.
 
 **Bucket rules**
