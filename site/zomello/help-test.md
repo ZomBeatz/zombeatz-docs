@@ -21,7 +21,8 @@ Before it goes live in Google Play and the App Store, we're looking for a small 
 |---|---|
 | **Android phone or tablet** | A Google account (the one you use for Google Play) |
 | **iPhone or iPad** | The free TestFlight app from Apple, and your Apple ID email |
-| **Windows, Mac or Linux computer** (optional) | Nothing extra. Download it from the [releases page](https://github.com/ZomBeatz/Zomello/releases) |
+| **Windows or Linux computer** (optional) | Nothing extra. Download it from the [releases page](https://github.com/ZomBeatz/Zomello/releases) |
+| **A server with Docker** (optional) | A computer or home server that can run Docker. See [Setting up a server](./server) |
 
 Any experience level is welcome. People who have never used a planner app are just as helpful as people who use one every day.
 
