@@ -58,12 +58,12 @@ ZomBeatz Media makes practical tools that run on your own computers, phones and 
 | | What it's for | Runs on | |
 |---|---|---|---|
 | **Zomello** | Boards, cards, checklists, calendar and timeline, for projects, chores, school and teams | Windows, Linux, Android, iPhone and iPad (coming soon), your own server | [Guide](./zomello/) · [Download](https://github.com/ZomBeatz/Zomello/releases/latest) · [Try online](https://zombeatz.github.io/Zomello/) |
-| **Zom's HaRM** | Tracking hardware, racks, spare parts, networks, cables and logins in a home lab | Windows, Linux, Docker; phones over your Wi‑Fi | [Guide](./harm/) |
+| **Zom's HaRM** | Tracking hardware, racks, spare parts, networks, cables and logins in a home lab | Windows, Linux, Docker; phones over your Wi‑Fi | [Guide](./harm/) · [Download](https://github.com/ZomBeatz/Zoms-HaRM/releases/latest) |
 
 ## Not sure where to start?
 
 - **Planning anything:** [Zomello's quick start](./zomello/quick-start), or pick your situation in [set-up scenarios](./zomello/scenarios/).
-- **Running a home lab:** [Installing HaRM](./harm/install).
+- **Running a home lab:** [HaRM's quick start](./harm/quick-start), or pick your situation in [set-up scenarios](./harm/scenarios).
 - **Questions or ideas:** [Contact and feedback](./zomello/contact), or email [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com).
 
 </div>
