@@ -122,12 +122,12 @@ The voice is a helpful person explaining something plainly, not a marketing page
 
 ### Product README (the GitHub page)
 
-Every product's `README.md` has the same sections, order and sizes, with Zomello's as the reference. The full spec, with numbers and a template, is in [github-readme.md](github-readme.md).
+Every product's `README.md` has the same sections, order and sizes, with Zomello's as the reference. The full spec, with numbers and a template, is in [github-readme.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/github-readme.md).
 
 ### Installers and licenses
 
-- **Installers:** one file per platform that installs with a double-click, with no terminal and nothing to install first. See [installers.md](installers.md).
-- **Licenses:** which license each kind of project uses. See [licenses.md](licenses.md).
+- **Installers:** one file per platform that installs with a double-click, with no terminal and nothing to install first. See [installers.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/installers.md).
+- **Licenses:** which license each kind of project uses. See [licenses.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/licenses.md).
 
 ## 9. Accessibility
 

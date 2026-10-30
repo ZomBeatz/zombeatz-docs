@@ -7,8 +7,13 @@ Zomello is a planner for any occasion. Boards hold buckets (columns) of cards yo
 
 ![A Zomello board](/img/zomello/board.png)
 
+<a class="zb-cta" href="https://zombeatz.github.io/Zomello/" target="_blank" rel="noopener">Try the live demo</a>
+
+The demo runs in your browser with made-up boards. Nothing to install, no sign-up, and your changes stay only in your own browser.
+
 ## Start here
 
+- **Just looking?** Try the [live demo](https://zombeatz.github.io/Zomello/) in your browser.
 - **New?** [Quick start](./quick-start) gets you going in ten minutes.
 - **Your situation, step by step:** [Set-up scenarios](./scenarios/) (just a phone, computer and phone, a family, a team, switching from Trello…).
 - **Want everything?** The [advanced features](./cards-in-depth) cover every option.

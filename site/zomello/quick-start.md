@@ -5,6 +5,8 @@ description: "Everything you need for your first day with Zomello, in about ten 
 
 Everything you need for your first day with Zomello, in about ten minutes. When you want more, the [advanced features](./cards-in-depth) and [set-up scenarios](./scenarios/) are next.
 
+Want to look around first? The [live demo](https://zombeatz.github.io/Zomello/) runs in your browser with made-up boards.
+
 ## 1. Install Zomello
 
 Full details for each system, updating and uninstalling: [Installing and updating](./installing).

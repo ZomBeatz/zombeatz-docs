@@ -29,6 +29,7 @@ export default defineConfig({
           text: "Start here",
           items: [
             { text: "Overview", link: "/zomello/" },
+            { text: "Live demo", link: "https://zombeatz.github.io/Zomello/" },
             { text: "Quick start", link: "/zomello/quick-start" },
             { text: "Installing and updating", link: "/zomello/installing" },
             { text: "Questions", link: "/zomello/faq" },
