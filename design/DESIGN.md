@@ -80,8 +80,8 @@ Use the tokens, not raw hex values, in interfaces.
 |---|---|---|---|---|
 | Page title (`h1`) | One per page: "My Day", a device's name | 26 px (22 px on phones) | 700 | text |
 | Section (`h2`) | Groups on a page | 18 px | 700 | text |
-| Panel heading (`h3`) | The title of a card, panel or settings group | 14 px | 600 | text |
-| Small heading (`h4`) | Inside a panel | 13 px | 600 | text-2 |
+| Panel heading (`h3`) | The title of a card, panel or settings group | 14 px | 700 | text |
+| Small heading (`h4`) | Inside a panel | 13 px | 700 | text-2 |
 | Body | Everything else | 14 px | 400 | text |
 | Small / hint | Help under fields, counts, timestamps | 12 px | 400 | muted |
 | Field label | Above or left of a field | 12 to 13 px | 500 | text-2 |
