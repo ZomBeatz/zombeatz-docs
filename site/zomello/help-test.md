@@ -20,7 +20,7 @@ Before it goes live in Google Play and the App Store, we're looking for a small 
 | Device | What you need |
 |---|---|
 | **Android phone or tablet** | A Google account (the one you use for Google Play) |
-| **iPhone or iPad** | The free TestFlight app from Apple, and your Apple ID email |
+| **iPhone or iPad** (opening soon) | The free TestFlight app from Apple, and your Apple ID email. The iPhone and iPad test is waiting on Apple's review: sign up now and we'll email your link the day it opens |
 | **Windows or Linux computer** (optional) | Nothing extra. Download it from the [releases page](https://github.com/ZomBeatz/Zomello/releases) |
 | **A server with Docker** (optional) | A computer or home server that can run Docker. See [Setting up a server](./server) |
 
