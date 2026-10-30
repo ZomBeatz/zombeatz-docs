@@ -20,6 +20,7 @@ Send it one of these ways:
 - **In Zomello:** **Help > Send feedback** (or **Settings > About**). It starts an email with your Zomello version and device already filled in.
 - **GitHub:** [open an issue](https://github.com/ZomBeatz/Zomello/issues/new). You can see what others reported and follow the fix.
 - **Email:** [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com)
+- **Reddit:** [u/ZomBeatzMedia_Dev](https://www.reddit.com/user/ZomBeatzMedia_Dev/) is our only Reddit account.
 
 ## Suggest a feature
 
