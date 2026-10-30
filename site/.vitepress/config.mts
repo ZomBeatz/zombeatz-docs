@@ -118,15 +118,56 @@ export default defineConfig({
       ],
       "/harm/": [
         {
-          text: "Zom's HaRM",
+          text: "Getting started",
           items: [
             { text: "Overview", link: "/harm/" },
+            { text: "Quick start", link: "/harm/quick-start" },
+            { text: "Set-up scenarios", link: "/harm/scenarios" },
             { text: "Installing HaRM", link: "/harm/install" },
-            { text: "First start and your phone", link: "/harm/first-start" },
-            { text: "Everyday use", link: "/harm/everyday-use" },
+            { text: "Running on a server", link: "/harm/server" },
+            { text: "First start", link: "/harm/first-start" },
+            { text: "Phones and tablets", link: "/harm/phones-and-tablets" },
+            { text: "Desktop app", link: "/harm/desktop-app" },
+          ],
+        },
+        {
+          text: "Everyday use",
+          items: [
+            { text: "Home and search", link: "/harm/home-and-search" },
+            { text: "Places and racks", link: "/harm/places-and-racks" },
+            { text: "Devices", link: "/harm/devices" },
+            { text: "Parts and storage", link: "/harm/parts-and-storage" },
+            { text: "Networks and cables", link: "/harm/networks" },
+            { text: "Virtual machines and clusters", link: "/harm/virtual-and-clusters" },
+            { text: "Logins", link: "/harm/logins" },
+            { text: "Notes and tasks", link: "/harm/notes-and-tasks" },
+          ],
+        },
+        {
+          text: "Filling it in fast",
+          items: [
+            { text: "Import specs", link: "/harm/import-specs" },
+            { text: "Discover", link: "/harm/discover" },
+            { text: "AI Assist", link: "/harm/ai-assist" },
+            { text: "Scanning and labels", link: "/harm/scanning-and-labels" },
+          ],
+        },
+        {
+          text: "More tools",
+          items: [
+            { text: "Export and share", link: "/harm/export-and-share" },
+            { text: "PC Builder", link: "/harm/pc-builder" },
+          ],
+        },
+        {
+          text: "Reference",
+          items: [
+            { text: "Settings", link: "/harm/settings" },
             { text: "Backups, updates and uninstalling", link: "/harm/backups-and-updates" },
-            { text: "Troubleshooting", link: "/harm/troubleshooting" },
             { text: "Security", link: "/harm/security" },
+            { text: "Glossary", link: "/harm/glossary" },
+            { text: "Questions", link: "/harm/faq" },
+            { text: "Troubleshooting", link: "/harm/troubleshooting" },
           ],
         },
       ],
