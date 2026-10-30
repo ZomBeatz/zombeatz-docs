@@ -61,6 +61,19 @@ Pick the **board** and **bucket**, optionally a **due date** and **priority**, a
 
 **Type the date in the title.** End it with a day or time and Zomello sets it for you: "Dentist tomorrow 3pm", "Call Sam friday at 2:30", "Report due Oct 28", "Pay rent on the 1st", "Taxes in 3 days". It shows what it found under the title; the × keeps those words in the title instead. Only the end of the title is read, so "Plan Friday party" stays as it is. This works wherever you add a task: Quick add, **Add card** in a bucket, List, My Day and My Tasks. New in version 0.5.4.
 
+**Type a repeat in the title.** End it with how often, and Zomello sets the card's **Repeat** and its first due date:
+
+| You type | Repeats | First due |
+|---|---|---|
+| Water plants every monday | Weekly on Monday | the next Monday |
+| Gym every mon wed fri at 6pm | Weekly on Mon, Wed, Fri | the next of those days, 6 PM |
+| Rent monthly on the 1st | Monthly | the 1st |
+| Recycling every 2 weeks | Every 2 weeks | today |
+| Pay invoices every weekday | On weekdays | the next weekday |
+| Standup daily at 9:30 until Dec 20 | Daily until Dec 20 | today at 9:30 (tomorrow if that's passed) |
+
+"Every day", "every other week", "weekly" and "yearly" work too. A word like "daily" after "the" or "my" stays in the title ("Notes from the daily"). If you'd rather it didn't read repeats, turn off **Settings > Adding tasks > Read repeats in titles**. New in version 0.5.4.
+
 ## Focus timer
 
 **Focus timer** in the menu starts a countdown: 5, 10, 15, 25, 30, 45 or 60 minutes, or your own length (like `20`, `1h` or `1:15`), with an optional note of what you're focusing on. Start one from a card (**Time > Focus**, or right-click > **Focus countdown**) and it also tracks the time on that card. You get a chime and a notification at the end. The countdown shows in the menu while it runs.

@@ -33,6 +33,10 @@ The people you can assign cards to. **Me** is you: it decides what's on Home and
 - **Daily summary** of late and due-today tasks, at a time you choose.
 - **Send a test notification** to check they show up.
 
+## Adding tasks
+
+- **Read repeats in titles:** end a new task's title with how often ("every monday", "monthly on the 1st") and Zomello sets its Repeat. On unless you turn it off. Dates and times in titles are always read. See [typing dates and repeats in the title](./home-and-search#quick-add). New in version 0.5.4.
+
 ## Templates
 
 Your card templates: rename or delete them. See [Templates](./templates).

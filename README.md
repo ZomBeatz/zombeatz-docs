@@ -10,7 +10,7 @@
 
 | Folder | What it is |
 |---|---|
-| [`design/`](design/) | The ZomBeatz design system: [`DESIGN.md`](design/DESIGN.md) (style and wording rules), [`tokens.css`](design/tokens.css) and [`tokens.json`](design/tokens.json) (colors, type, spacing), and logos in [`design/brand/`](design/brand/) |
+| [`design/`](design/) | The ZomBeatz design system: [`DESIGN.md`](design/DESIGN.md) (style and wording rules), [`github-readme.md`](design/github-readme.md) (the GitHub page), [`installers.md`](design/installers.md), [`licenses.md`](design/licenses.md), [`tokens.css`](design/tokens.css) and [`tokens.json`](design/tokens.json) (colors, type, spacing), and logos in [`design/brand/`](design/brand/) |
 | [`site/`](site/) | The guides website (VitePress). One section per product: [`site/zomello/`](site/zomello/), [`site/harm/`](site/harm/) |
 
 The site is published automatically to GitHub Pages on every push to `main`.
