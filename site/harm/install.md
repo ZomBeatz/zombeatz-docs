@@ -41,7 +41,7 @@ This sets HaRM up in its folder and adds **Zom's HaRM** to your app menu (KDE, G
 Want to look around before entering your own gear? **[Open the live demo](https://zombeatz.github.io/Zoms-HaRM/)**: the real HaRM, filled with a made-up home lab (a rack with two Proxmox hosts, a NAS, VMs, spare parts, tasks), running entirely in your browser.
 
 - Nothing is installed, and nothing you type leaves your device.
-- Your changes stay in that browser until you press **Start over** (bottom corner), or until a newer demo is published.
+- Your changes stay in that browser until you press **Reset demo** (bottom corner), or until a newer demo is published.
 - If you lock it, the password is `demo-password`.
 - The first visit downloads about 20 MB, so give it a few seconds.
 - Features that reach other machines (network scan, UniFi, Proxmox, Import specs, sending photos to an AI) need HaRM on your own network, so the demo says so instead.
