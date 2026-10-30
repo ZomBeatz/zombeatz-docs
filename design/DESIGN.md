@@ -51,7 +51,21 @@ Use the tokens, not raw hex values, in interfaces.
 | Brand highlight | `--zb-orange` | Logos, a single highlight; never for body text or errors |
 | Danger / warning / success | `--zb-danger`, `--zb-warn`, `--zb-ok` | Always with an icon or word too |
 
-- **Both themes, always.** Every screen works in light and dark; dark is chosen by the system unless the person picks one. Test both.
+- **Both themes, always.** Every screen works in light and dark. Test both.
+- **The theme follows the system by default.** The choice is three buttons, in this order and with these words: **Match my computer** (or "Match my phone" / "Match my tablet"), **Light**, **Dark**. No icons or emojis on them. The choice is kept per device, and it's applied before the page draws, so there's no flash of the wrong theme.
+- **Categories the product colors for you** (device types, kinds of items, chart series): use `--zb-cat-1` to `--zb-cat-6`, in that order, never cycled. A 7th kind goes into "Other" in `--zb-cat-other`. They take white text in both themes. Always show the name next to the color, because two of them (1 and 5) are close for colorblind people.
+
+| Token | Color | Example |
+|---|---|---|
+| `--zb-cat-1` | `#2f5d7c` blue | Servers |
+| `--zb-cat-2` | `#3d6b4f` green | Network |
+| `--zb-cat-3` | `#6a4f7d` violet | Storage |
+| `--zb-cat-4` | `#7a5a33` brown | Power |
+| `--zb-cat-5` | `#3e6470` teal | Other gear |
+| `--zb-cat-6` | `#6e3f4a` wine | Accessories |
+| `--zb-cat-other` | `#5b6375` slate | Everything else |
+
+- **Drawings of real things** (a rack, drive bays, a phone outline) may use their own fixed colors so they look like the hardware: dark rack frames, grey slots. They still use the tokens for everything you interact with: `--zb-accent` for hover and selection, the status colors for problems, and `--zb-cat-*` for what's in them. Keep those fixed colors in one place in the CSS, with a comment saying what they draw.
 - **Board and label colors** (user content) may be any color; keep text on them readable (white on dark colors, dark on light).
 - Backgrounds behind boards may use the brand gradients: `#0b1020 → #1e3a8a → #2580c3` (deep blue), `#0f766e → #22c55e` (green), `#6366f1 → #a855f7` (violet), `#ec6a3f → #f5a35c` (orange).
 
@@ -59,7 +73,20 @@ Use the tokens, not raw hex values, in interfaces.
 
 - **Interface font:** `--zb-font` (Inter, then system fonts). Apps use 14 px body text, guides and websites 16 px.
 - **Brand font:** Open Sans Bold, only in logos and the biggest headings on marketing pages.
-- **Headings:** bold, sentence case ("Phone and tablet access", not "Phone And Tablet Access").
+- **Headings:** bold, sentence case ("Phone and tablet access", not "Phone And Tablet Access"). Never all caps, and no letter spacing. The only exception is the wordmark tagline.
+- **Sizes in apps:**
+
+| Level | Use | Size | Weight | Color |
+|---|---|---|---|---|
+| Page title (`h1`) | One per page: "My Day", a device's name | 26 px (22 px on phones) | 700 | text |
+| Section (`h2`) | Groups on a page | 18 px | 700 | text |
+| Panel heading (`h3`) | The title of a card, panel or settings group | 14 px | 600 | text |
+| Small heading (`h4`) | Inside a panel | 13 px | 600 | text-2 |
+| Body | Everything else | 14 px | 400 | text |
+| Small / hint | Help under fields, counts, timestamps | 12 px | 400 | muted |
+| Field label | Above or left of a field | 12 to 13 px | 500 | text-2 |
+
+A heading may have a 15 to 16 px Lucide icon before it, in the same color.
 - **Numbers that line up** (counts, times, tables): `font-variant-numeric: tabular-nums`.
 - **Code, keys, paths:** `--zb-font-mono`; keyboard keys in `<kbd>`.
 
@@ -87,6 +114,69 @@ These describe Zomello's interface, which is the reference. New tools reuse the 
 - **Lists of settings:** grouped under clear headings, each option says what it does in a short sentence.
 - **Motion:** quick and small (120 to 150 ms fades and pops). Respect "reduce motion".
 
+### Data-heavy screens
+
+Zomello is mostly cards. Tools with many records (HaRM's devices, parts and networks) use these as well:
+
+- **Tables:** a header row in 12 px, weight 600, `--zb-text-2`, and a 1 px `--zb-border` under each row. Rows are 36 to 40 px tall (44 px on touch), and hovering one turns it `--zb-surface-2`. Numbers align right and use tabular numbers. The first column is the name and links to the item. Sort by clicking a header, with an arrow showing the direction. An empty table shows the empty state, not empty rows. On phones, a table becomes a list of cards (name first, then 2 or 3 key facts).
+- **Tabs:** a row of text buttons under the page title, with the selected one underlined in the accent (2 px) and its text in the accent. 2 to 7 tabs. Show a count as a small pill ("Logins 3"). Remember the last tab per kind of page.
+- **Detail pages:** the page title (name and status), then a **summary row** of 3 to 6 key facts as label-over-value pairs (where it is, its address, its status), then the action buttons, then tabs. Things you copy often have a copy button next to them.
+- **Status pills:** a small rounded pill (999 px radius, 11 to 12 px text, weight 600) with a soft background (15% of the color) and the color for the text: `--zb-ok` (In use, Online), `--zb-warn` (Needs attention, Expiring), `--zb-danger` (Broken, Offline), muted (Retired, Archived), `--zb-accent` (For sale, New). A word every time, never a dot alone.
+- **Forms with many fields:** group them under small headings ("Hardware", "Purchase", "Network"), two columns on wide screens and one on phones. Optional groups start folded. Suggestions as you type for fields with known values (makes, models, rooms). A draft of an unsaved form is kept on the device, except for secrets.
+
+### Secrets (passwords, codes, keys)
+
+- **Hidden by default** as `••••••••`, with an eye button to show it (it hides again after 30 seconds, or when you leave the page) and a copy button. Copying says "Copied" in a toast.
+- **2FA codes:** the 6 digits in the mono font, split 3 and 3, with a ring or bar showing the seconds left. A copy button, as above.
+- **Master passwords and recovery codes:** say plainly what each one does and what happens if both are lost: "Without your password or recovery code, saved logins can't be recovered." Show a recovery code once, in the mono font in groups of 4, with **Copy** and **Print**, and ask the person to confirm they've saved it.
+- **Locking:** "Locked after 15 minutes without use" in Settings. The lock screen shows the product's wordmark and one password field. The words are **Unlock** and **Lock now**, not "log in".
+- Never put secrets in exports, drafts, logs, URLs or screenshots. Demo data has made-up ones.
+
+### Connecting a phone
+
+Every product that pairs a phone with a computer or server uses the same flow:
+
+1. On the computer: **Settings > Phones & tablets** (or **Phone setup**). It shows a QR code and a numbered checklist (open the address, trust the certificate, add to the home screen, sign in).
+2. Each step ticks itself off when the phone gets there, so the computer always shows where the phone is.
+3. The QR code holds only the address and a short pairing code that expires (10 minutes), never a password.
+4. The words: "Scan this with your phone's camera", and "Both need to be on the same Wi‑Fi" (or "connected to your home network").
+
+### Demo
+
+Every product has a demo with made-up data:
+
+- It never touches the person's own data. It's a separate copy, or it's kept in the browser, and it's thrown away when you stop it.
+- It uses made-up names and places ("Alex", "Maya", "Website Launch", "Rack A in the garage"), and made-up serials, addresses and passwords.
+- A banner across the top says: **Live demo.** Try anything. Changes are only saved in this browser. It has a **Reset demo** button, and **Get (Product)** to the downloads.
+- The same data is used for screenshots, so the pictures in the guide match what people see in the demo.
+
+### Printing
+
+- Printouts are always light, whatever the theme, with no sidebar, top bar or buttons. Use the brand blue `#2580c3` (or the product accent's light version) for headings and lines.
+- Use the product's wordmark at the top of full pages (spec sheets, sell sheets, reports), with the date printed at the bottom.
+- **Labels:** QR code on the left and the name in bold beside it, with 1 or 2 lines of key facts. Sizes for common label rolls: 62 × 29 mm, 2 × 1 in (50.8 × 25.4 mm) and 1 × 1 in, plus a full sheet of them on A4 or Letter. The QR code is at least 15 mm wide.
+
+### Desktop windows that aren't web pages
+
+A native window (such as a Qt control panel) uses `tokens.json` for the same colors, radii and spacing, follows the system theme, and uses the product's icon. It has one primary button. If an installer can do the job instead, prefer the installer (see [installers.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/installers.md)).
+
+### Keyboard shortcuts
+
+The same keys do the same thing in every product:
+
+| Keys | Does |
+|---|---|
+| **Ctrl K** (⌘K on a Mac) | Search everything |
+| **N** | Add a new item (task, device…) |
+| **Ctrl Z** / **Ctrl Shift Z** | Undo / redo |
+| **/** | Filter the list on this page |
+| **?** | Help and the shortcut list |
+| **Esc** | Close the dialog, menu or search |
+| **[** | Fold the sidebar |
+| **Ctrl +** / **Ctrl −** / **Ctrl 0** | Zoom |
+
+Single-letter keys never fire while typing in a field. Every product lists its shortcuts in Help and in **Settings > Shortcuts**. On phones and tablets, never mention keys.
+
 ## 6. Writing (in the apps, guides, READMEs and store listings)
 
 The voice is a helpful person explaining something plainly, not a marketing page.
@@ -104,6 +194,9 @@ The voice is a helpful person explaining something plainly, not a marketing page
 - **Confirmations** name the thing: "Delete the board “Garage build” and its 12 cards? You can undo this right after."
 - **Numbers:** digits for anything counted ("3 cards", "14 days"); proper plurals ("1 card", "2 cards").
 - **Curly quotes** in interface text (“Board”), straight quotes in code.
+- **Units:** a space between the number and the unit, and the unit people know: "1.92 TB", "64 GB", "2U", "450 W", "10 Gb/s". Storage uses the drive maker's decimal sizes (a "4 TB" drive is 4 TB). At most 3 significant digits ("1.92 TB", "512 GB", "12.4 GB").
+- **Dates and times** in the person's own format (from the system): "Oct 28" this year, "Oct 28, 2025" for other years, and "3:30 PM" or "15:30" as their system does. "Today", "Tomorrow" and "Yesterday" where they're clearer. Files and exports use `2026-10-28`.
+- **Money** in the person's own currency format ("$1,250", "1.250 €"), with no decimals for whole amounts.
 
 ## 7. Screenshots and images
 
@@ -123,6 +216,16 @@ The voice is a helpful person explaining something plainly, not a marketing page
 ### Product README (the GitHub page)
 
 Every product's `README.md` has the same sections, order and sizes, with Zomello's as the reference. The full spec, with numbers and a template, is in [github-readme.md](https://github.com/ZomBeatz/zombeatz-docs/blob/main/design/github-readme.md).
+
+### Versions and changelog
+
+- Versions are `major.minor.patch` (`0.5.4`), and one place in the code sets them all (the app, installers, About page, server).
+- Every product has a `CHANGELOG.md` at the top of its repository, with the newest version first:
+  - one `## 0.5.4` heading per version;
+  - **bold group names** ("Calendar", "Your devices", "Also");
+  - one bullet per change, written for the person using it: what they can do now, and where. Not how it was built.
+- The release notes on GitHub are that version's section, pasted in. The guide's "What's new" answer links to the changelog.
+- **Settings > About** shows the version, the license and a **Send feedback** button.
 
 ### Installers and licenses
 
