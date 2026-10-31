@@ -20,8 +20,10 @@ Type in **Filter cards…** at the top of a board. Cards stay on screen when the
 | **Due** | **Late** (past their due date and not completed), due **Today**, due in the **Next 7 days** (today included), or have **No date** |
 | **Progress** | Not started, In progress, Waiting, On hold or Completed |
 | **Priority** | Urgent, Important, Medium or Low |
-| **Labels** | Wearing any of the labels you tick |
+| **Blocked** | **Blocked** (waiting on an unfinished task) or **Not blocked**. Shown when Linking tasks is on in [Settings > Features](./settings#features) |
+| **Labels** | Wearing any of the labels you tick, or with **No labels**. **Not** next to a label hides cards wearing it |
 | **Assigned to** | Assigned to anyone you tick, or **Unassigned** |
+| **Custom fields** | Each of the board's [custom fields](./custom-fields): its choices, **Ticked** / **Not ticked** for a checkbox, or **Filled in** / **Empty** for the rest |
 
 **How they combine:** ticking more than one thing in the same group shows cards that match **any** of them (Urgent *or* Important). Choices in different groups must **all** match (Urgent *and* labelled "Work" *and* due this week).
 
@@ -54,6 +56,8 @@ A card's menu (right-click it, or press and hold it on a phone) has **Show relat
 - **What's stuck:** Progress *Waiting* and *On hold*.
 - **Overdue and important:** Due *Late*, Priority *Urgent* and *Important*.
 - **Nobody's doing it:** Assigned to *Unassigned*, Progress *Not started*.
+- **Ready to start:** Blocked *Not blocked*, Progress *Not started*.
+- **Everything but the chores:** **Not** on the "Chores" label.
 
 ## Across all boards
 
