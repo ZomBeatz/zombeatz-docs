@@ -183,9 +183,6 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Virtual machines and clusters", link: "/harm/virtual-and-clusters" },
-            { text: "Status", link: "/harm/status" },
-            { text: "Alerts", link: "/harm/alerts" },
-            { text: "Actions", link: "/harm/actions" },
             { text: "Export and share", link: "/harm/export-and-share" },
             { text: "PC Builder", link: "/harm/pc-builder" },
             { text: "Keyboard shortcuts", link: "/harm/keyboard" },
@@ -195,6 +192,18 @@ export default defineConfig({
             { text: "The desktop app", link: "/harm/desktop-app" },
             { text: "Phones and tablets", link: "/harm/phones-and-tablets" },
             { text: "iPhone and iPad", link: "/harm/iphone-ipad" },
+          ],
+        },
+        {
+          text: "Keeping watch",
+          collapsed: false,
+          items: [
+            { text: "Status", link: "/harm/status" },
+            { text: "Alerts", link: "/harm/alerts" },
+            { text: "Uptime report", link: "/harm/uptime" },
+            { text: "New devices on the network", link: "/harm/new-devices" },
+            { text: "Power budget", link: "/harm/power" },
+            { text: "Actions", link: "/harm/actions" },
           ],
         },
         {

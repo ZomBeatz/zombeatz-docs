@@ -21,6 +21,10 @@ HaRM can send you a message when a device or service stops answering, and when i
 | **When a device stops answering** | **Alert right away**, or wait 5, 10, 15 or 30 minutes, or an hour. Waiting skips short blips, like a restart. |
 | **Also tell me when it's back** | A second message when it answers again, with how long it was down. |
 | **Also when a service stops answering** | Alerts about the services on a device's **Network** tab too (a web page or a port), while the device itself answers. |
+| **Also when a certificate runs out soon** | One alert 14 days before an https service's certificate runs out (or as soon as HaRM sees one that already has). |
+| **Hold alerts during quiet hours** | With **From** and **Until**: see [Quiet hours](#quiet-hours). |
+
+[New devices on the network](./new-devices) send their alerts the same way, when that's turned on.
 
 Alerts only cover devices that are checked (see [Status](./status#how-a-device-is-checked)). To leave one device out, edit it and untick **Send alerts about it**.
 
@@ -64,9 +68,15 @@ HaRM posts JSON with these fields:
 | A device stops answering | **pve2 is offline**: "No answer from 10.20.0.11 since 14:30." |
 | It's back | **pve2 is back online**: "10.20.0.11 answers again, after 25 min." |
 | A service stops answering | **Proxmox VE on pve1 isn't answering**: the address and why (HTTP 502, connection refused, no answer). |
-| More than 3 changes at once | One message, like **HaRM: 6 stopped answering**, listing them. A power cut or a dead switch sends one message, not twenty. |
+| A certificate runs out soon | **The certificate for DSM on vault runs out soon**: the address and the date. |
+| A new device on a watched network | **New on Home LAN: Sams-iPhone**: its address, MAC and name. |
+| More than 3 at once | One message, like **HaRM: 6 problems**, listing them. A power cut or a dead switch sends one message, not twenty. |
 
 A service isn't reported while its device is offline: the device's own alert covers it. When you turn alerts on, things that were already down don't send an alert.
+
+## Quiet hours
+
+Tick **Hold alerts during quiet hours** and choose **From** and **Until** (in the HaRM computer's time), like 22:00 to 07:00. Alerts in that time are held, and when quiet hours end they arrive together as one message ("HaRM: 3 alerts from quiet hours") listing what happened, including things that went down and came back overnight. **Send a test** is never held.
 
 ## When they're sent
 

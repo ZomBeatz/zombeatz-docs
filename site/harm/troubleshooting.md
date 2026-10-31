@@ -176,6 +176,18 @@ HaRM checks exactly the web address or port on the device's **Network** tab. If 
 3. Email: for Gmail and Outlook, use an app password. Check **Security** matches the port (STARTTLS with 587, SSL/TLS with 465).
 4. Nothing at all after a real outage: the HaRM computer has to be on, and checks on (**Settings > Status and actions > Check**). Alerts wait as long as you chose before sending.
 
+### New devices: nothing is ever listed
+
+The first scan after turning the watch on only learns what's there. If later scans find nothing either, check the network's address range in **Networks & IPs**, and that HaRM is on that network. **Settings > Status and actions > New devices on the network** shows the last scan and any error.
+
+### New devices: the same phone keeps showing up
+
+Phones and laptops use a made-up MAC address per Wi-Fi network, and some change it now and then. Add the device once with **+ Add…**, or turn off the private Wi-Fi address for your home network on the phone.
+
+### Copy to a second place: "isn't there"
+
+The drive or share isn't connected or mounted on the HaRM computer. Connect it and press **Copy now**. In Docker, the folder must be added under `volumes:`.
+
 ### An action says the machine "only speaks an older kind of SSH"
 
 Edit the action and tick **Older SSH**. If it still fails, paste the `-o …` settings from an `ssh` command that works into **Other SSH settings** (under **More details**).

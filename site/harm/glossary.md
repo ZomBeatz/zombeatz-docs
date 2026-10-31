@@ -33,11 +33,15 @@ What HaRM's words mean, in alphabetical order. Each links to the page that expla
 | **Offline, Online** | Whether a device answered HaRM's last check, on any port or to ping ([Status](./status)) |
 | **Older SSH** | The older ways of connecting that old iLO, iDRAC and switch SSH needs, turned on per action ([Actions](./actions#older-ssh-for-old-management-ports)) |
 | **Overcommit** | When a host's VMs are given more vCPUs or memory, in total, than it has ([Virtual machines and clusters](./virtual-and-clusters)) |
+| **Power budget** | How much a UPS, PDU or rack's circuit is asked for, against what it can supply ([Power budget](./power)) |
+| **Quiet hours** | A time of day when alerts are held and sent together afterwards ([Alerts](./alerts#quiet-hours)) |
 | **RAID, RAIDZ** | Ways of combining drives for speed or safety; HaRM shows the space each gives ([Parts and storage](./parts-and-storage)) |
 | **Recovery code** | The code that gets you back in if you forget the master password ([Security and privacy](./security)) |
 | **Spot** | Free text for exactly where something is: "top shelf left" ([Places and racks](./places-and-racks)) |
 | **Task** | A note that stays on **Home** until it's ticked off ([Notes and tasks](./notes-and-tasks)) |
 | **U (rack unit)** | A rack's height unit, 1.75 in. A 2U server takes two ([Places and racks](./places-and-racks#the-rack-view)) |
+| **Uptime** | The share of the time a device or service answered HaRM's checks ([Uptime report](./uptime)) |
+| **VA and W** | A UPS's two ratings; HaRM uses watts (W), which is the lower one ([Power budget](./power)) |
 | **Vault** | Where saved logins are kept, encrypted (**Logins (Vault)** in the menu) ([Logins](./logins)) |
 | **VLAN** | A separate network on the same cables and switches, numbered (VLAN 20) ([Networks and cables](./networks)) |
 | **VM (virtual machine)** | A computer running inside a host, with its own vCPUs, memory and disk ([Virtual machines and clusters](./virtual-and-clusters)) |
