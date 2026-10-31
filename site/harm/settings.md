@@ -36,7 +36,8 @@ How it all protects your logins: [Security and privacy](./security).
 ## Status and actions
 
 - **Check**: how often HaRM checks which devices answer, from **Every minute** to **Every hour**, or **Never (only when I press Check now)**. Every 5 minutes at first. While the Status page is open, it checks every minute anyway.
-- **Alerts**: a message by ntfy, email or a webhook when a device or service stops answering, and when it's back. **Set up alerts…** chooses how and when; **Send a test** checks it works, and the list under it shows the last alerts sent. See [Alerts](./alerts).
+- **Alerts**: a message by ntfy, email or a webhook when a device or service stops answering, when it's back, and when a certificate runs out soon, with optional **quiet hours**. **Set up alerts…** chooses how and when; **Send a test** checks it works, and the list under it shows the last alerts sent. See [Alerts](./alerts).
+- **New devices on the network**: **Watch for new devices…** picks the networks to scan, how often, and whether to alert; **Scan now** scans straight away. See [New devices on the network](./new-devices).
 - **Actions** opens your saved one-click commands.
 
 To leave one device out of the checks, edit it and untick **Check if it's online**; to keep checking it without alerts, untick **Send alerts about it**. See [Status](./status) and [Actions](./actions). New in version 0.3.2.
@@ -54,6 +55,7 @@ Photos go only to the service you pick, and logins are never sent. Without a ser
 ## Data & backups
 
 - **Automatic backups**: the newest daily backups and where they're kept.
+- **Copy to a second place**: **Choose a folder…** on another disk (a NAS share or USB drive) and how many copies to keep; **Copy now** copies straight away. See [Data and backups](./data-and-backups#copying-backups-to-a-second-place). New in version 0.3.2.
 - **Download backup (.db)**: the whole database in one file. Logins stay encrypted inside.
 - **Export CSV**: a spreadsheet of each list. The logins file has names and usernames only, never passwords.
 

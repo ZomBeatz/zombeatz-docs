@@ -16,7 +16,7 @@ Everything is in the `data` folder (Docker: `./data` next to `docker-compose.yml
 | `backups/` | Daily copies of `harm.db`, the last 14 by default |
 | `tls/` | The certificate authority your phones trust. Without it, every phone has to trust HaRM again. |
 
-HaRM makes the daily backups by itself. What it can't do is put them on another disk: copy the whole `data` folder to another disk, NAS share or computer now and then, or include it in the server's own backups.
+HaRM makes the daily backups by itself, and **Settings > Data & backups > Copy to a second place** copies each one to another disk or NAS share too: see [Data and backups](./data-and-backups#copying-backups-to-a-second-place). The `tls/` folder and `alerts.key` aren't in those backups, so also copy the whole `data` folder somewhere now and then, or include it in the server's own backups.
 
 ## Restoring
 

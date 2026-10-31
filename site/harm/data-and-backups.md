@@ -39,6 +39,21 @@ Everything in the database, including your saved logins. They stay encrypted ins
 
 A backup on the same disk doesn't help if the disk dies. Copy the `backups` folder (or a downloaded backup) to another disk or computer now and then.
 
+## Copying backups to a second place
+
+A backup on the same disk as HaRM doesn't help when that disk dies. **Settings > Data & backups > Copy to a second place** copies each day's backup to another disk as well. New in version 0.3.2.
+
+1. Connect the other disk to the computer HaRM runs on: a USB drive, or a NAS share mounted as a drive or folder.
+2. Press **Choose a folder…** and enter the folder's whole path, like `D:\HaRM backups` on Windows or `/mnt/nas/harm-backups` on Linux.
+3. Choose how many copies to keep there: the last 7, 14, 30 or 90.
+4. Press **Save**. HaRM copies the newest backup straight away, then once a day.
+
+The card shows the last copy, or why it failed ("isn't there. Is the drive or share connected?"). **Copy now** copies again. Logins stay encrypted in the copies, like in every backup; `alerts.key` isn't copied.
+
+::: tip In Docker
+The folder has to be inside the container. Add it under `volumes:` in `docker-compose.yml`, like `- /mnt/nas/harm-backups:/backup-copies`, run `docker compose up -d`, and pick `/backup-copies` in HaRM. The folder must be writable by the container's user (ID 10001).
+:::
+
 ## Downloading a backup
 
 **Settings > Data & backups > Download backup (.db)** saves the whole database to your Downloads, whenever you like. It's the same kind of file as the daily ones.

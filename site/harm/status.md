@@ -50,7 +50,9 @@ Once a device answers, HaRM checks the services on its **Network** tab too, and 
 | A web address (`https://…` or `http://…`) | It sends any reply below a 500 error. A login page, a 401 or a 404 still means it's there; a 502 from a proxy in front of it means it isn't. Certificates aren't checked, since home-lab services usually have their own. |
 | A port, and no web address | The port accepts a connection. |
 
-Services marked **Stopped**, **Planned** or **Deprecated**, and UDP ones, aren't checked. A service that isn't answering also shows on **Home**, and the room's heading says how many.
+Services marked **Stopped**, **Planned** or **Deprecated**, and UDP ones, aren't checked.
+
+For an https service, HaRM also notes when its certificate runs out (self-signed ones too). The device's **Actions** tab shows the date, its tile says **Certificate runs out …** in its last 30 days, and **Home** warns too. [Alerts](./alerts) can send a message 14 days before. A service that isn't answering also shows on **Home**, and the room's heading says how many.
 
 The device's own page shows the same thing: its summary row starts with **Online** or **Offline**, and its **Actions** tab lists every address and service with its answer and the 24 bars, and the **Network** tab has an **Answering** column for services. Tap the word to check again.
 
@@ -103,6 +105,8 @@ More in [Troubleshooting](./troubleshooting#status-and-actions).
 ## Related
 
 - [Alerts](./alerts): a message by ntfy, email or webhook when something stops answering
+- [Uptime report](./uptime): how much of the last day, week or month each one answered
+- [New devices on the network](./new-devices): devices HaRM doesn't know yet, listed at the top of this page
 - [Actions](./actions): one-click commands, from a tile or a device's page
 - [Settings](./settings#status-and-actions): how often HaRM checks
 - [Networks and cables](./networks): addresses, MACs and services that the checks use

@@ -35,7 +35,7 @@ Open a rack from **Racks & Storage** to see it front and rear.
 ![A rack, front and rear](/img/harm/rack.png)
 
 - **Click an empty U** to add a device there, or to place one you already have.
-- Each device shows its name, type and status. Its color says what kind of device it is (servers and computers, network, storage, power, other gear, accessories), and a key under the rack names each color. A device that isn't answering is outlined in red and says **Offline** (see [Status](./status)). New in version 0.3.2.
+- Each device shows its name, type and status. Its color says what kind of device it is (servers and computers, network, storage, power, other gear, accessories), and a key under the rack names each color. A device that isn't answering is outlined in red and says **Offline** (see [Status](./status)). With the rack's **Power available** set, a **Power** card shows how much of it is used (see [Power budget](./power)). New in version 0.3.2.
 - Broken devices get a red outline, spares and standby devices are dimmed, and a flag shows open issues.
 - Devices can be half depth and mounted at the front or rear, so a front and a rear device can share a U.
 - HaRM refuses overlaps and positions outside the rack, and says which device is in the way.
