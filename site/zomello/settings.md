@@ -19,6 +19,31 @@ Everything in **Settings** (bottom of the menu), section by section. The buttons
 
 Each board also has its own look: [Customizing a board](./customize-board).
 
+## Features
+
+Choose how much Zomello shows, so it can start simple and grow with you. Pick a starting point, then turn single groups on or off:
+
+| Preset | What's there |
+|---|---|
+| **Simple** | Boards, buckets and cards, checklists, labels, people, due dates, reminders, the calendar, My Day and search |
+| **Standard** | Simple, plus Planning extras, Linking tasks, More views and Board looks |
+| **Everything** | Every group below |
+
+| Group | What it adds |
+|---|---|
+| **Planning extras** | Start dates and repeating tasks (also "every monday" typed in a title) |
+| **Linking tasks** | Sub-tasks, tasks that block each other, related tasks |
+| **More views** | List, Timeline and Charts (Board and Calendar are always there) |
+| **Board looks** | Backgrounds, card covers and per-bucket card display |
+| **Time tracking** | The timer, focus countdowns, estimates and tracked time |
+| **Custom fields** | Your own fields on cards |
+| **Bucket automation** | [Bucket rules](./buckets#bucket-rules) and work-in-progress limits |
+| **AI tools** | Work orders and [AI tools](./ai-tools) |
+
+**Turning a group off never deletes anything.** It hides the buttons and menu items that start it. A card that already uses a hidden feature (a start date, tracked time, a custom field) still shows it, and turning the group back on brings everything back.
+
+New installs ask in the welcome guide: Standard on computers, Simple on phones and tablets. If you've used Zomello before this setting existed, everything stays on.
+
 ## Accessibility
 
 See [Accessibility](./accessibility): zoom, high contrast, reduce motion, strong focus outline, larger click targets, readable spacing, underline links.
