@@ -36,9 +36,18 @@ Buckets are the columns on a board: steps in a process ("To do, Doing, Done"), c
 | **When a card is made here: Add labels** | New cards made in this bucket get these labels, and keep them when they move on. Handy for remembering where a card came from, like a "From testing" label on a Testing bucket |
 | **When a card is made here: Set priority** | New cards made here start with this priority |
 | **When a card is moved or made here: Set progress** | Common: "In progress" for a Doing bucket, "Completed" for Done |
+| **When a card is made here: Start from** | New cards made here start from one of your [templates](./templates): its description, checklist, labels and so on. The title you type is kept |
 | **When a card is moved or made here: Add labels** | Cards dropped here get these labels, for example "Needs review" on a Review bucket |
+| **When a card is moved or made here: Due date** | Cards without a due date get one: today, tomorrow, in a few days or a week or two. A card that already has a due date keeps it |
+| **When a card is moved or made here: Assign** | Cards get these people (added to anyone already on them) |
+| **When a card is moved or made here: My Day** | Cards go on today's [My Day](./home-and-search) |
+| **When every checklist item is ticked: Complete it** | Ticking the last item completes the card. Sub-tasks count: completing the last one does it too |
+| **When every checklist item is ticked: Move it to** | Ticking the last item moves the card to another bucket on the board, for example from Doing to Review. That bucket's own rules then apply |
+| **Tidy up: Archive** | Completed cards in this bucket are archived a day, 3, 7, 14 or 30 days after they were completed. Archived cards stay in the board's Archive, where you can restore them |
 
-Rules only add labels: moving a card out of a bucket doesn't take them off. **Turn off all rules** clears them.
+Rules only add things: moving a card out of a bucket doesn't take labels or people off. **Turn off all rules** clears them.
+
+**Example:** a "Doing" bucket that assigns you, adds the card to My Day and moves it to "Review" when its checklist is done; a "Done" bucket that completes cards and archives them after a week.
 
 ## Show completed
 

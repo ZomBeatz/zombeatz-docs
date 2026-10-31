@@ -48,9 +48,24 @@ Cards show **Sub-task** and **sub-task count** badges. Pointing at one highlight
 **Link a task** connects two cards:
 
 - **Related to:** just connected.
-- **Blocks** / **Blocked by:** one has to finish first. A blocked card shows a red **Blocked** badge until the other is done.
+- **Blocks** / **Blocked by:** one has to finish first. See [Blocked cards](#blocked-cards).
 
 Click a linked card to open it. A trail at the top shows the cards you came through; **Alt ←** goes back. Right-click > **Show related tasks** filters the board to a card and everything linked to it.
+
+### See what a card is linked to
+
+**Tap or click a link badge on a card** ("Blocks 2", "Blocked by…", the sub-task count or the parent's name) to open the **Linked** sheet. It lists everything the card is connected to, grouped into **Part of**, **Sub-tasks**, **Blocked by**, **Blocks** and **Related**, with each card's bucket, progress and due date. Tap one to open it. **Show on board** filters the board to the card and its links.
+
+On a phone the sheet slides up from the bottom. On a computer, pointing at a card also outlines its linked cards on the board. The card menu has **Linked tasks…** too.
+
+### Blocked cards
+
+A card that's **Blocked by** an unfinished card:
+
+- shows a red **Blocked by…** badge with the other card's name (or how many it's waiting on), and looks faded on the board;
+- asks before you mark it complete: "Still blocked by … Mark it complete anyway?"
+
+When the last card it waits on is completed, it goes back to normal, and Zomello says which card is no longer blocked. To find them all, use **Filter > Blocked** ([Filters](./filters)).
 
 ## Files, links and covers
 
