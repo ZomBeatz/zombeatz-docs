@@ -29,7 +29,7 @@ Buckets are the columns on a board: steps in a process ("To do, Doing, Done"), c
 
 ## Bucket rules
 
-**Bucket rules…** in the bucket menu sets what happens to cards automatically. The menu shows **(on)** when a bucket has any.
+**Bucket rules…** in the bucket menu sets what happens to cards automatically. A bucket with rules shows a small lightning icon next to its name: point at it to see what the rules do, or click it to change them.
 
 | Rule | What it does |
 |---|---|
