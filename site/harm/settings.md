@@ -17,9 +17,28 @@ The choice is kept on each device, so your phone and computer can differ. The li
 
 ![HaRM in the light look](/img/harm/home-light.png)
 
+**Find a setting…** at the top of the page shows only the settings that mention what you type.
+
+### Reading and comfort
+
+Kept on each device too, so a phone and a wall screen can differ. New in version 0.3.2.
+
+- **Text size**: **Normal**, **Large** or **Larger**. Everything grows, like zooming in, which phones' installed apps can't do otherwise.
+- **Spacing**: **Comfortable**, or **Compact** to fit more rows of a table on the screen.
+- **Dates**: `2026-11-20`, `Nov 20, 2026` (in your language), `20/11/2026` or `11/20/2026`.
+- **Clock**: like your device, `1:30 PM` or `13:30`.
+- **Lengths**: **Millimetres** or **Inches**, for rack depth and PC part sizes. Fan and radiator sizes stay in mm, as they're sold.
+- **Motion**: like your device, or **Less motion** to stop animated logos and fades.
+- **Sound when something goes offline**: two short notes (and a buzz on phones) while the Status page is open.
+
+### On every device
+
+- **Currency**: how prices and values are shown, US dollars at first. Amounts already saved aren't converted.
+- **Start on**: the page HaRM opens on: **Home**, **Status**, **Devices**, **Tasks & notes**, **Racks & storage**, or **Where I left off** (on that device). A wall display might start on Status.
+
 ## Locking and security
 
-- **Locking**: says how long HaRM waits before it locks (30 minutes without use, unless a server sets otherwise), and that it locks when the HaRM server restarts. **Lock now** locks it straight away.
+- **Locking**: **Lock when not used for** 5 minutes to 8 hours (30 minutes at first), or **Only when I lock it**; and **Sign in again after** 4 hours to a week (12 hours at first), even while in use. It always locks when the HaRM server restarts. **Lock now** locks it straight away. New in version 0.3.2: before, only a server setting could change these.
 - **Master password > Change password…**: a new master password. Saved logins are kept, and every other device is signed out.
 - **Two-factor authentication > Set up 2FA**: unlocking also asks for a 6-digit code from an authenticator app (Aegis, 2FAS, Bitwarden, 1Password, Google Authenticator and others). **Turn off 2FA** asks for the master password.
 - **Recovery code > New recovery code…**: makes a new code after asking for the master password. The old one stops working at once.
@@ -55,7 +74,7 @@ Photos go only to the service you pick, and logins are never sent. Without a ser
 
 ## Data & backups
 
-- **Automatic backups**: the newest daily backups and where they're kept.
+- **Automatic backups**: the newest daily backups, where they're kept, and how many to keep: the last 7, 14, 30 or 90 days (14 at first).
 - **Copy to a second place**: **Choose a folder…** on another disk (a NAS share or USB drive) and how many copies to keep; **Copy now** copies straight away. See [Data and backups](./data-and-backups#copying-backups-to-a-second-place). New in version 0.3.2.
 - **Download backup (.db)**: the whole database in one file. Logins stay encrypted inside.
 - **Export CSV**: a spreadsheet of each list. The logins file has names and usernames only, never passwords.

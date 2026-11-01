@@ -15,7 +15,7 @@ HaRM holds the keys to your network, so it's built to keep them safe even if som
 
 ## Signing in
 
-- HaRM is locked after 30 minutes without use, whenever the HaRM server restarts, and 12 hours after unlocking at the latest. **Lock now** (at the bottom of the menu, and in **Settings > Locking and security**) locks it straight away.
+- HaRM is locked after 30 minutes without use, whenever the HaRM server restarts, and 12 hours after unlocking at the latest. Change both in **Settings > Locking and security**. **Lock now** (at the bottom of the menu, and in **Settings > Locking and security**) locks it straight away.
 - The lock screen shows the wordmark, one password field and **Unlock**.
 - Repeated wrong passwords slow down further tries.
 - Optional **two-factor authentication** asks for a code from an authenticator app too ([Settings](./settings)).

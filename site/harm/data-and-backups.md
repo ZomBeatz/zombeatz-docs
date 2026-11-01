@@ -31,7 +31,7 @@ The app itself is somewhere else, so updating or reinstalling never touches this
 
 ## Automatic backups
 
-HaRM saves a copy of the database every day in `backups/` and keeps the last 14 (on a server, change that with `HARM_BACKUP_KEEP`). **Settings > Data & backups** lists the newest ones.
+HaRM saves a copy of the database every day in `backups/` and keeps the last 14. Keep 7, 30 or 90 instead in **Settings > Data & backups**. **Settings > Data & backups** lists the newest ones.
 
 ::: info What's in a backup
 Everything in the database, including your saved logins. They stay encrypted inside the backup and only open with your master password or recovery code, so a copied backup doesn't give them away.
