@@ -50,7 +50,7 @@ The database is upgraded by itself the first time a new version starts. A backup
 - **Turn on 2FA** in **Settings > Locking and security**, so unlocking also needs a code from your phone.
 - **Keep the `data` folder private.** It holds `tls/harm-ca.key`, which devices trust.
 - **Check the audit log** (**More > Audit log**): every sign-in, failed sign-in, login reveal, export and import, with the time and address.
-- **Locking:** HaRM locks after 30 minutes without use and when the server restarts. Change it with `HARM_IDLE_MINUTES`.
+- **Locking:** HaRM locks after 30 minutes without use and when the server restarts. Change it in **Settings > Locking and security**.
 
 More on how logins are protected: [Security and privacy](./security).
 

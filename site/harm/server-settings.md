@@ -22,8 +22,8 @@ Settings you change inside HaRM itself (appearance, the master password, 2FA, AI
 
 | Setting | Default | What it does |
 |---|---|---|
-| `HARM_IDLE_MINUTES` | `30` | Minutes without use before HaRM locks. **Settings > Locking and security** shows it. |
-| `HARM_MAX_SESSION_HOURS` | `12` | The longest an unlock lasts, even while in use. |
+| `HARM_IDLE_MINUTES` | `30` | Minutes without use before HaRM locks, until it's changed in **Settings > Locking and security**. |
+| `HARM_MAX_SESSION_HOURS` | `12` | The longest an unlock lasts, even while in use, until it's changed in **Settings > Locking and security**. |
 
 ## Data and backups
 
@@ -32,7 +32,7 @@ Settings you change inside HaRM itself (appearance, the master password, 2FA, AI
 | `HARM_DATA` | `/data` in Docker | The folder for the database, backups, certificates and logs. |
 | `HARM_DB` | `harm.db` in the data folder | The database file, if it should live somewhere else. |
 | `HARM_AUTO_BACKUP` | `1` | `0` turns the daily backups off. |
-| `HARM_BACKUP_KEEP` | `14` | How many daily backups to keep. |
+| `HARM_BACKUP_KEEP` | `14` | How many daily backups to keep, until it's changed in **Settings > Data & backups**. |
 | `TZ` | `Etc/UTC` | Your time zone, for backup names and log times (for example `Europe/London`). |
 
 ## Docker only
