@@ -42,6 +42,8 @@ Everyone who knows the master password can use it from their own browser or phon
 
 Only if you ask. **AI Assist** turns photos into inventory, either by copy and paste with any AI app, or by sending the photos you pick to the service you set up. Logins are never sent. See [AI Assist](./ai-assist).
 
+To switch AI off completely, untick **Settings > AI Assist > Use AI features**. Every AI button disappears, and HaRM refuses AI requests until you tick it again.
+
 ## What if I forget the master password?
 
 Use the recovery code on the unlock screen (**Forgot your password? Use the recovery code**). Without either, saved logins can't be recovered; the rest of your inventory isn't affected. See [Security and privacy](./security).

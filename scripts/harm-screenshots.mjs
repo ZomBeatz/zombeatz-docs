@@ -120,7 +120,7 @@ const desktop = [
   ["rack-power", `#/racks/${ids.rack}`, `[...document.querySelectorAll("h3")].find((x) => x.textContent === "Power")?.closest(".card").scrollIntoView({ block: "center" });`],
   ["new-devices", "#/status", `[...document.querySelectorAll("h3")].find((x) => x.textContent.startsWith("New on the network"))?.closest(".card").scrollIntoView({ block: "center" });`],
   ["new-devices-settings", "#/status", "await harm.editNetwatch();", { settle: 1200 }],
-  ["alerts", "#/settings", `harm.editAlerts(); ${wait(400)} for (const k of ["enabled", "ntfy_on"]) { const c = document.querySelector(\`.modal [data-k=\${k}] input\`); if (!c.checked) c.click(); } ${wait(100)} const u = document.querySelector(".modal [data-k=ntfy_url] input"); ${fill("u", "https://ntfy.sh/harm-garage-7f3k2")}`],
+  ["alerts", "#/settings", `await harm.editAlerts(); ${wait(400)} for (const k of ["enabled", "ntfy_on"]) { const c = document.querySelector(\`.modal [data-k=\${k}] input\`); if (!c.checked) c.click(); } ${wait(100)} const u = document.querySelector(".modal [data-k=ntfy_url] input"); ${fill("u", "https://ntfy.sh/harm-garage-7f3k2")}`],
   ["tasks", "#/tasks"],
   ["vault", "#/vault"],
   ["export", "#/export"],
@@ -131,7 +131,7 @@ const desktop = [
   ["help-troubleshooting", "#/help?s=trouble"],
   ["settings-about", "#/settings", `document.querySelector(".about-row")?.scrollIntoView({ block: "center" });`],
   ["setup-guide", "#/setup"],
-  ["phone-app-help", "#/settings", "harm.phoneAppHelp();"],
+  ["phone-app-help", "#/settings", "await harm.phoneAppHelp();"],
   ["unlock", "#/dashboard", "harm.showAuth();", { settle: 1200 }],
 ];
 for (const [name, hash, prep, opts] of desktop) shrink(await shot(name, hash, prep, opts), 1600);
