@@ -68,8 +68,9 @@ A bar appears with changes for all the selected cards at once:
 - **Labels**: tick a label to add it to every card, untick it to take it off every card
 - **Dates**: a due date for all of them (today, tomorrow, next Monday or a date you pick), **A day later** or **A week later** (moves start and due dates and keeps how long each card runs), or **Remove due date**
 - **People**: tick someone to assign them to every card, untick to unassign (shown once you've added people in Settings)
+- **Fields**: set a custom field on every card (shown when the board has custom fields)
 - **Move**: to another bucket, or to a bucket on another board
 - **Archive** and **Delete**
-- **⋯**: **Add to My Day**, **Duplicate** (the copies are selected afterwards, ready to move), **Copy work order** (the cards as text, see [Copying and pasting cards](./copy-paste-cards)) and **Hand to AI…** (optional, see [AI tools](./ai-tools))
+- **⋯**: **Add to My Day**, **Skip bucket rules** (see [Bucket rules](./buckets#cards-that-skip-the-rules)), **Duplicate** (the copies are selected afterwards, ready to move), **Copy work order** (the cards as text, see [Copying and pasting cards](./copy-paste-cards)) and **Hand to AI…** (optional, see [AI tools](./ai-tools))
 
 **Undo** works right after any of these. **Esc**, the **×** on the bar, or a click on an empty part of the board clears the selection.

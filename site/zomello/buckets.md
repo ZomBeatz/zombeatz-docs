@@ -43,9 +43,15 @@ Buckets are the columns on a board: steps in a process ("To do, Doing, Done"), c
 | **When a card is moved or made here: My Day** | Cards go on today's [My Day](./home-and-search) |
 | **When every checklist item is ticked: Complete it** | Ticking the last item completes the card. Sub-tasks count: completing the last one does it too |
 | **When every checklist item is ticked: Move it to** | Ticking the last item moves the card to another bucket on the board, for example from Doing to Review. That bucket's own rules then apply |
+| **When a card here is past its due date: Move it to** | Open cards that go past their due date move to another bucket on the board, for example a "Late" bucket. Checked when Zomello opens and then every hour |
+| **When a card here is past its due date: Set priority** | Late cards get this priority, for example Urgent. Completed cards are left alone |
 | **Tidy up: Archive** | Completed cards in this bucket are archived a day, 3, 7, 14 or 30 days after they were completed. Archived cards stay in the board's Archive, where you can restore them |
 
 Rules only add things: moving a card out of a bucket doesn't take labels or people off. **Turn off all rules** clears them.
+
+Rules act on cards as they arrive. When you add a rule to a bucket that already has cards, **Apply to the cards already here** at the bottom of the rules window gives them the same treatment (it won't reopen completed cards). Undo works right after.
+
+A card's **Activity** marks every change a rule made with the bucket it came from, for example "Assigned to Pat · bucket rule in Doing".
 
 **Example:** a "Doing" bucket that assigns you, adds the card to My Day and moves it to "Review" when its checklist is done; a "Done" bucket that completes cards and archives them after a week.
 

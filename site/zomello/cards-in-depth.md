@@ -96,7 +96,7 @@ Notes are a running log on the card: type, then **Save note** (or **Ctrl Enter**
 
 ## Activity
 
-**Activity** at the bottom of the card lists every change: moves, progress, dates, priority, people, renames and archiving, with when they happened.
+**Activity** at the bottom of the card lists every change: moves, progress, dates, priority, people, renames and archiving, with when they happened. Changes made by a [bucket rule](./buckets#bucket-rules) say so, and name the bucket.
 
 ## Hide what you don't use
 

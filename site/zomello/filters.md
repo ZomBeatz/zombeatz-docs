@@ -7,6 +7,10 @@ A filter shows only the cards you care about right now, and hides the rest until
 
 ![Filter menu](/img/zomello/filter.png)
 
+## Late and due today
+
+When cards on the board are late or due today, **2 late** and **3 due today** show next to **Filter**. Click one to see only those cards; click it again to see everything. Completed cards aren't counted.
+
 ## Filter by words
 
 Type in **Filter cards…** at the top of a board. Cards stay on screen when the words appear in their title, description, checklist, notes or file names. On a computer, press **/** to jump there.
