@@ -46,6 +46,7 @@ await cdp("Page.navigate", { url: APP });
 await sleep(1500);
 await ev(`await fetch("/api/auth/login", { method: "POST", headers: { "X-HaRM": "1", "Content-Type": "application/json" }, body: JSON.stringify({ password: ${JSON.stringify(PASSWORD)} }) });`);
 await theme("dark");
+await ev(`sessionStorage.setItem("harm-bat", "1");`);  // no Halloween-week bat in the pictures
 const ids = await ev(`
   const get = (p) => fetch("/api" + p, { headers: { "X-HaRM": "1" } }).then((r) => r.json());
   const [d, r, l, c, n, b] = await Promise.all(["/devices", "/racks", "/locations", "/clusters", "/networks", "/builds"].map(get));
