@@ -49,6 +49,14 @@ Rules only add things: moving a card out of a bucket doesn't take labels or peop
 
 **Example:** a "Doing" bucket that assigns you, adds the card to My Day and moves it to "Review" when its checklist is done; a "Done" bucket that completes cards and archives them after a week.
 
+### Cards that skip the rules
+
+Turn on **Skip bucket rules** in a card's menu (or inside the card) and bucket rules leave that card alone: moving it doesn't change its progress, labels, dates or people, ticking its whole checklist doesn't complete or move it, and **Tidy up** never archives it. A small crossed-out lightning icon on the card shows it's on. To set it on several cards at once, select them and use **⋯ > Skip bucket rules** in the bar that appears.
+
+A bucket's **Start from** template still applies, since that happens when a card is made. The question before completing a [blocked card](./cards-in-depth#blocked-cards) isn't a bucket rule, so it still asks.
+
+**Example:** a "Brand colors" card you keep in Done for reference, so the Done bucket never archives it.
+
 ## Show completed
 
 Completed cards fold away under **Show completed** at the bottom of each bucket, with a count. Click it to see them, or to bring one back by un-ticking it.
