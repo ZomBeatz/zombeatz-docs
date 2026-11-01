@@ -58,7 +58,9 @@ const click = (sel, text) =>
 const wait = (ms) => `await new Promise((r) => setTimeout(r, ${ms}));`;
 const waitFor = (sel) => `for (let i = 0; i < 50 && !document.querySelector(${JSON.stringify(sel)}); i++) await new Promise((r) => setTimeout(r, 100));`;
 const tab = (name) => `document.querySelector('.tabs button[data-tab="${name}"]')?.click();`;
-const type = (sel, text) => `const el = document.querySelector(${JSON.stringify(sel)}); el.value = ${JSON.stringify(text)}; el.dispatchEvent(new Event("input", { bubbles: true }));`;
+// Typing that React notices: set the value the way the browser does, then say it changed.
+const fill = (el, text) => `Object.getOwnPropertyDescriptor(Object.getPrototypeOf(${el}), "value").set.call(${el}, ${JSON.stringify(text)}); ${el}.dispatchEvent(new Event("input", { bubbles: true }));`;
+const type = (sel, text) => `const el = document.querySelector(${JSON.stringify(sel)}); ${fill("el", text)}`;
 
 async function shot(name, hash, prep = "", { settle = 900 } = {}) {
   // HaRM remembers the last tab per kind of page; every picture starts from the first tab.
@@ -108,29 +110,29 @@ const desktop = [
   ["discover-router", "#/discover", `${tab("router")} ${wait(200)} ${type("#disc-list", SAMPLE_LEASES)} ${click("button", "Read list")}`, { settle: 1500 }],
   ["discover-proxmox", "#/discover", tab("proxmox")],
   ["discover-unifi", "#/discover", tab("unifi")],
-  ["ai-assist", "#/components", `await aiAssist(); ${wait(400)} ${type("#ai-reply", SAMPLE_AI)} ${click("button", "Read reply")} ${wait(800)} document.querySelector(".ai-table")?.scrollIntoView({ block: "center" });`, { settle: 1200 }],
+  ["ai-assist", "#/components", `await harm.aiAssist(); ${wait(400)} ${type("#ai-reply", SAMPLE_AI)} ${click("button", "Read reply")} ${wait(800)} document.querySelector(".ai-table")?.scrollIntoView({ block: "center" });`, { settle: 1200 }],
   ["status", "#/status"],
   ["status-office", "#/status", `[...document.querySelectorAll(".st-group-head")].pop()?.scrollIntoView({ block: "start" }); window.scrollBy(0, -80);`],
   ["actions", "#/actions"],
-  ["action-form", "#/actions", `editAction({ ...ACTION_TEMPLATES.find((t) => t.name.startsWith("Quiet")), device_id: ${ids.pve2}, hosts: "10.30.0.11" });`, { settle: 1200 }],
+  ["action-form", "#/actions", `harm.editAction({ ...harm.ACTION_TEMPLATES.find((t) => t.name.startsWith("Quiet")), device_id: ${ids.pve2}, hosts: "10.30.0.11" });`, { settle: 1200 }],
   ["device-actions", `#/devices/${ids.pve2}`, tab("actions")],
   ["uptime", "#/uptime?days=7"],
   ["rack-power", `#/racks/${ids.rack}`, `[...document.querySelectorAll("h3")].find((x) => x.textContent === "Power")?.closest(".card").scrollIntoView({ block: "center" });`],
   ["new-devices", "#/status", `[...document.querySelectorAll("h3")].find((x) => x.textContent.startsWith("New on the network"))?.closest(".card").scrollIntoView({ block: "center" });`],
-  ["new-devices-settings", "#/status", "await editNetwatch();", { settle: 1200 }],
-  ["alerts", "#/settings", `editAlerts(); ${wait(400)} for (const k of ["enabled", "ntfy_on"]) { const c = document.querySelector(\`.modal [data-k=\${k}] input\`); c.checked = true; c.dispatchEvent(new Event("change", { bubbles: true })); } document.querySelector(".modal [data-k=ntfy_url] input").value = "https://ntfy.sh/harm-garage-7f3k2";`],
+  ["new-devices-settings", "#/status", "await harm.editNetwatch();", { settle: 1200 }],
+  ["alerts", "#/settings", `harm.editAlerts(); ${wait(400)} for (const k of ["enabled", "ntfy_on"]) { const c = document.querySelector(\`.modal [data-k=\${k}] input\`); if (!c.checked) c.click(); } ${wait(100)} const u = document.querySelector(".modal [data-k=ntfy_url] input"); ${fill("u", "https://ntfy.sh/harm-garage-7f3k2")}`],
   ["tasks", "#/tasks"],
   ["vault", "#/vault"],
   ["export", "#/export"],
   ["pc-builder", `#/builds/${ids.build}`],
   ["settings", "#/settings"],
-  ["search", "#/dashboard", `const i = document.querySelector(".topbar input[type=search]"); i.focus(); i.value = "pve"; i.dispatchEvent(new Event("input", { bubbles: true }));`],
+  ["search", "#/dashboard", `const i = document.querySelector(".topbar input[type=search]"); i.focus(); ${fill("i", "pve")}`],
   ["new-menu", "#/dashboard", `document.querySelector(".qa-btn").click();`],
   ["help-troubleshooting", "#/help?s=trouble"],
   ["settings-about", "#/settings", `document.querySelector(".about-row")?.scrollIntoView({ block: "center" });`],
   ["setup-guide", "#/setup"],
-  ["phone-app-help", "#/settings", "phoneAppHelp();"],
-  ["unlock", "#/dashboard", "showAuth();", { settle: 1200 }],
+  ["phone-app-help", "#/settings", "harm.phoneAppHelp();"],
+  ["unlock", "#/dashboard", "harm.showAuth();", { settle: 1200 }],
 ];
 for (const [name, hash, prep, opts] of desktop) shrink(await shot(name, hash, prep, opts), 1600);
 
@@ -153,14 +155,14 @@ const phone = [
   ["phone-menu", "#/dashboard", `document.querySelector(".tabbar button").click();`],
   ["phone-rack", `#/racks/${ids.rack}`],
   ["phone-new-menu", "#/dashboard", `document.querySelector(".qa-btn").click();`],
-  ["phone-search", "#/dashboard", `const i = document.querySelector(".topbar input[type=search]"); i.focus(); i.value = "pve"; i.dispatchEvent(new Event("input", { bubbles: true }));`],
+  ["phone-search", "#/dashboard", `const i = document.querySelector(".topbar input[type=search]"); i.focus(); ${fill("i", "pve")}`],
   ["phone-device-network", `#/devices/${ids.pve1}`, tab("network")],
   ["phone-login-open", `#/devices/${ids.pve1}`, `${tab("logins")} ${wait(300)} ${click("button", "Open")}`],
   ["phone-location", `#/locations/${ids.garage}`],
   ["phone-parts", "#/components"],
-  ["phone-part-form", "#/components", `editEntity("components", { status: "In Stock", quantity: 1 });`],
-  ["phone-scanner", "#/components", `scanDialog({ title: "Scan label", targets: [{ k: "serial", label: "Serial" }, { k: "model", label: "Model" }], onPick: () => {} }); ${wait(600)} document.querySelector(".scan-status").textContent = "";`],  // headless Chromium has no camera
-  ["phone-ai-assist", "#/components", `await aiAssist();`],
+  ["phone-part-form", "#/components", `harm.editEntity("components", { status: "In Stock", quantity: 1 });`],
+  ["phone-scanner", "#/components", `harm.scanDialog({ title: "Scan label", targets: [{ k: "serial", label: "Serial" }, { k: "model", label: "Model" }], onPick: () => {} }); ${wait(600)} document.querySelector(".scan-status").textContent = "";`],  // headless Chromium has no camera
+  ["phone-ai-assist", "#/components", `await harm.aiAssist();`],
   ["phone-tasks", "#/tasks"],
   ["phone-status", "#/status"],
 ];
