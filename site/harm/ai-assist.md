@@ -38,6 +38,10 @@ Each item shows what the AI found, its confidence (high, medium or low), the val
 
 Each item gets **Original price**, **Current value** and **Value checked on**, which you can update any time in its form.
 
+## Turning AI off
+
+Don't want AI in HaRM? Untick **Settings > AI Assist > Use AI features**. Every AI button disappears, and HaRM refuses AI requests until you tick it again. Your AI settings are kept.
+
 ## Setting up a service (optional)
 
 **Settings > AI Assist** lets HaRM send photos to an AI service directly:

@@ -44,6 +44,7 @@ To leave one device out of the checks, edit it and untick **Check if it's online
 
 ## AI Assist
 
+- **Use AI features**: on unless you turn it off. Untick it and every AI button disappears (from **+ New**, Spare Parts, racks, locations and Help), and HaRM refuses AI requests. The settings below are kept for if you turn it back on. New in version 0.3.2.
 - **AI service**: Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), or **Other / local** for any OpenAI-compatible service such as Ollama, LM Studio or OpenRouter. Off until you pick one.
 - **API key**: your own key for that service, kept encrypted in your vault. **Remove saved key** deletes it.
 - **Model**: which model to use. Leave it blank for the recommended one; it must be able to see images.
