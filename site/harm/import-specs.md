@@ -34,6 +34,17 @@ For machines HaRM can't reach. Copy the one-line command for the machine's syste
 
 You see a preview first. Already-recorded serials and MAC addresses are unticked, so importing twice doesn't duplicate anything. CPUs are matched to the parts library to get cores and threads, drives and memory become installed parts, and network cards become interfaces with their IPs and MACs.
 
+## Running it again
+
+Fixed something and want to read the machine again? The preview also lists the device's parts that this scan **didn't** find:
+
+- **Add to what's there** (the default) keeps them.
+- **Replace with this scan** ticks them to be deleted, so the device ends up with exactly what the scan found. Deleted parts don't go to Spare Parts.
+
+Only the kinds of parts the scan read are listed: if memory wasn't read (the Linux script without sudo), your memory stays. Network ports are never removed, because a scan can't see things like an iDRAC port.
+
+Changed your mind? Press **Undo** in the message after importing, or **⋯ > Undo last import** on the device, to remove what it added, bring back what it deleted and restore the fields it changed. New in version 0.3.2.
+
 ## Related
 
 - [Devices](./devices): the Hardware tab it fills in
