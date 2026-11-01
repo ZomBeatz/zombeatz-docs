@@ -65,7 +65,7 @@ The **⋯** button holds the less common actions: **Import specs…**, **Check i
 
 ![The ⋯ menu](/img/harm/device-menu.png)
 
-Deleting a device removes its interfaces, services, slots and cables. Parts inside go back to stock where the device was, and its virtual machines stay (just without a host).
+Deleting a device removes its interfaces, services, slots and cables, and its virtual machines stay (just without a host). If it has parts inside, HaRM asks: **parts to Spare Parts** (where the device was), or **delete it and its parts** (for a device that was added by mistake or is gone for good).
 
 ## Related
 

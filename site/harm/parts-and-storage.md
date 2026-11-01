@@ -15,7 +15,8 @@ Keep track of every drive, memory stick, card and cable: on the shelf or inside 
 Add a part with **Add part** or **+ New > Spare part**. Pick the category first; the form then offers the usual sizes and connections (4 TB, SATA, 3.5", DDR4 RDIMM…). Sizes are tidied automatically: "4tb" becomes "4 TB".
 
 - **Install** puts a spare into a device. If you have 4 and install 1, HaRM splits them: 1 installed, 3 still on the shelf.
-- **Remove** takes an installed part out and puts it back in a holder.
+- **To spares** takes an installed part out and puts it on a shelf, in a holder you pick.
+- **Delete** (on a device's Hardware tab, or **Delete it instead** when moving to spares) removes a part that was added by mistake, by hand or by a scan, without putting it in Spare Parts. The message after it has **Undo**.
 - A part's **Fits** list shows which devices have a free slot for it.
 
 ::: tip On a phone

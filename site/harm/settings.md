@@ -29,11 +29,23 @@ Kept on each device too, so a phone and a wall screen can differ. New in version
 - **Clock**: like your device, `1:30 PM` or `13:30`.
 - **Lengths**: **Millimetres** or **Inches**, for rack depth and PC part sizes. Fan and radiator sizes stay in mm, as they're sold.
 - **Motion**: like your device, or **Less motion** to stop animated logos and fades.
+- **Contrast**: **High** makes lines, secondary text and the keyboard focus easier to see.
+- **Notes and tasks**: newest or oldest first, and **Tuck finished tasks away** (a **Show finished** button brings them back).
 - **Sound when something goes offline**: two short notes (and a buzz on phones) while the Status page is open.
+
+### Menu
+
+Untick pages you don't use (PC Builder, Discover…) to shorten the sidebar on that device. They still open from search and links; Settings always stays.
+
+### Wall display
+
+**Use this computer as a wall display** turns a screen into a status board: it opens on Status without the menu and bars, fills the screen at the first tap, and doesn't lock itself while it shows. It still needs unlocking after the HaRM server restarts and after **Sign in again after** (a week suits a wall screen). **Leave wall display** is in the corner of the Status page.
 
 ### On every device
 
 - **Currency**: how prices and values are shown, US dollars at first. Amounts already saved aren't converted.
+- **Name of this HaRM**: shown on the lock screen, in the menu and in the browser tab, to tell more than one HaRM apart.
+- **New parts start in** and **New devices start in**: a room and holder for things added from **+ New** or a list (not when adding them into a device, rack or room).
 - **Start on**: the page HaRM opens on: **Home**, **Status**, **Devices**, **Tasks & notes**, **Racks & storage**, or **Where I left off** (on that device). A wall display might start on Status.
 
 ## Locking and security
