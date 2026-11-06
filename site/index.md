@@ -1,7 +1,7 @@
 ---
 layout: home
 
-description: "Guides for every ZomBeatz Media tool: Zomello, the planner for any occasion, and Zom's HaRM, the hardware and rack manager. Step by step, with pictures."
+description: "Guides for every ZomBeatz Media tool: Zomello, the planner for any occasion, and Zom's HaRM, the hardware and rack manager, and Zom's MRP, the helicopter mission planner. Step by step, with pictures."
 
 hero:
   name: ZomBeatz Docs
@@ -18,6 +18,9 @@ hero:
       text: Zom's HaRM guide
       link: /harm/
     - theme: alt
+      text: Zom's MRP guide
+      link: /mrp/
+    - theme: alt
       text: Join the Zomello beta
       link: /zomello/help-test
 
@@ -33,6 +36,12 @@ features:
     title: Zom's HaRM
     details: A hardware and rack manager for your home lab. Locations, racks, devices, parts, cables and logins in one place.
     link: /harm/
+    linkText: Open the guide
+  - icon:
+      src: /mrp-icon.svg
+    title: Zom's MRP
+    details: A helicopter mission planner. Aircraft by tail number, crews rotating through hitches, training and maintenance, with every gap checked.
+    link: /mrp/
     linkText: Open the guide
   - icon:
       src: /zombeatz-icon.svg
@@ -59,11 +68,13 @@ ZomBeatz Media makes practical tools that run on your own computers, phones and 
 |---|---|---|---|
 | **Zomello** | Boards, cards, checklists, calendar and timeline, for projects, chores, school and teams | Windows, Linux, Android, [iPhone and iPad](https://apps.apple.com/app/zomello/id6826080954), your own server | [Guide](./zomello/) · [Download](https://github.com/ZomBeatz/Zomello/releases/latest) · [Try online](https://zombeatz.github.io/Zomello/) · [Zomello beta](./zomello/help-test) · [GitHub](https://github.com/ZomBeatz/Zomello) |
 | **Zom's HaRM** | Tracking hardware, racks, spare parts, networks, cables and logins in a home lab | Windows, Linux, Docker; phones over your Wi‑Fi | [Guide](./harm/) · [Download](https://github.com/ZomBeatz/Zoms-HaRM/releases/latest) · [GitHub](https://github.com/ZomBeatz/Zoms-HaRM) |
+| **Zom's MRP** | Scheduling helicopter missions: aircraft by tail number, pilots and maintainers on rotations, training and maintenance | Windows, macOS, Linux, your own server | [Guide](./mrp/) · [Download](https://github.com/ZomBeatz/Zoms_MRP/releases/latest) · [Try online](https://zombeatz.github.io/Zoms_MRP/) · [GitHub](https://github.com/ZomBeatz/Zoms_MRP) |
 
 ## Not sure where to start?
 
 - **Planning anything:** [Zomello's quick start](./zomello/quick-start), or pick your situation in [set-up scenarios](./zomello/scenarios/).
 - **Running a home lab:** [HaRM's quick start](./harm/quick-start), or pick your situation in [set-up scenarios](./harm/scenarios/).
+- **Scheduling helicopter missions:** [Zom's MRP's quick start](./mrp/quick-start), or work out a crew in [set-up scenarios](./mrp/scenarios/).
 - **Questions or ideas:** [Contact and feedback](./zomello/contact), or email [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com).
 
 </div>
