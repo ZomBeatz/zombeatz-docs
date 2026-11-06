@@ -48,7 +48,7 @@ Zomello has no built-in AI and never sends your data anywhere. Its optional [AI 
 ## Get Zomello
 
 - **Windows, Linux, Android:** [the latest release on GitHub](https://github.com/ZomBeatz/Zomello/releases/latest)
-- **iPhone and iPad:** the App Store (coming soon). **Android:** Google Play (coming soon), or the APK from the release above.
+- **iPhone and iPad:** the [App Store](https://apps.apple.com/app/zomello/id6826080954). **Android:** Google Play (coming soon), or the APK from the release above.
 - **Try it without installing:** [the online demo](https://zombeatz.github.io/Zomello/)
 - **Zomello Server (Docker and others):** see [Setting up a Zomello Server](./server)
 - **Step by step for each system:** [Installing and updating](./installing)

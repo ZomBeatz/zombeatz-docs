@@ -1,9 +1,9 @@
 ---
-description: "Zomello on iPhone and iPad works like the Android app, with a few things done the Apple way. It's coming to the App Store soon."
+description: "Zomello on iPhone and iPad works like the Android app, with a few things done the Apple way. Get it free on the App Store."
 ---
 # iPhone and iPad
 
-Zomello on iPhone and iPad works like the Android app, with a few things done the Apple way. It's coming to the App Store soon.
+Zomello on iPhone and iPad works like the Android app, with a few things done the Apple way. Get it free on the [App Store](https://apps.apple.com/app/zomello/id6826080954).
 
 ## The basics
 

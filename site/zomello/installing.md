@@ -36,7 +36,7 @@ Pick one from the [latest release](https://github.com/ZomBeatz/Zomello/releases/
 
 ## iPhone and iPad
 
-The App Store: coming soon.
+Get Zomello free from the [App Store](https://apps.apple.com/app/zomello/id6826080954). Updates come through the App Store too.
 
 ## Zomello Server
 
