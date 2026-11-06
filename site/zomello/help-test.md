@@ -41,7 +41,7 @@ Any experience level is welcome. People who have never used a planner app are ju
 
 Whatever is easiest for you:
 
-- **In Zomello:** open **Settings > About** and tap **Send feedback**. It starts an email with your Zomello version and device already filled in, so you only write what happened.
+- **In Zomello:** open **Settings > About** and tap **Send feedback**. It starts an email with your Zomello version and device already filled in, so you only write what happened. If something broke, the last few problems from the device's log are added too.
 - **Reply** to any email from us about the test.
 - **Email** [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com).
 
