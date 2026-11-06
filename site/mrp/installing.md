@@ -1,5 +1,5 @@
 ---
-description: "Install Zom's MRP on Windows, macOS or Linux, update it to a new version, uninstall it, or try the online demo first."
+description: "Install Zom's MRP on Windows, macOS or Linux, how it updates itself, uninstalling it, or trying the online demo first."
 ---
 
 # Installing and updating
@@ -43,12 +43,25 @@ There's nothing to sign in to. The plan is saved in a file on this computer, wit
 
 ## Updating
 
-Zom's MRP doesn't update by itself yet. To update:
+From the next version on, Zom's MRP updates itself. Once a day it looks for a newer release and downloads it in the background. Then a note across the top says it's ready:
 
-1. Check your version in **Settings > About**.
-2. Download the new installer from [the latest release](https://github.com/ZomBeatz/Zoms_MRP/releases/latest) and install it over the old one, as above.
+| Button | Does |
+|---|---|
+| **Restart now** | Saves everything, keeps a copy of the plan, installs the new version and opens it again |
+| **What's new** | Opens [What's new](./whats-new) |
+| **Later** | Hides the note for a few days |
 
-Your plan is kept in its own folder, never next to the app, so updating can't touch it. A plan from an older version is converted when the new one opens it. [What's new](./whats-new) lists what changed.
+It never restarts on its own, so it can't close a form you're in. On Windows a small progress window shows while it installs.
+
+**Settings > About** has **Check for updates**, and **Download new versions by themselves** if you'd rather be asked first.
+
+| | How it updates |
+|---|---|
+| Windows, Mac, Linux AppImage | By itself, as above |
+| Linux `.deb` or `.rpm` | The note has **Download**, which opens the release; install it as before |
+| Version 0.2.4 or older | Not by itself: download the new installer from [the latest release](https://github.com/ZomBeatz/Zoms_MRP/releases/latest) and install it over the old one, once |
+
+Your plan is kept in its own folder, never next to the app, so updating can't touch it. Before installing, a copy is kept in its `backups` folder as `before-(version).json`. A plan from an older version is converted when the new one opens it.
 
 ## Uninstalling
 

@@ -70,6 +70,7 @@ See [Data and backups](./data-and-backups).
 ## About
 
 - The version, and **Send feedback**.
+- **Check for updates** and **Download new versions by themselves** (desktop app only). See [Updating](./installing#updating).
 
 ## Related
 

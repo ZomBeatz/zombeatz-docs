@@ -54,6 +54,10 @@ Yes: people, aircraft, courses and training records, from Excel or CSV. See [Imp
 
 **Guide** in the sidebar (or <kbd>?</kbd>) explains every page, with step-by-step **How do I…** answers, and each section links to its page here. **Find** (<kbd>Ctrl</kbd> <kbd>K</kbd>) finds pages and how-tos as well as people and tails. A new page shows a short note on where to start for its first few visits.
 
+## Does it update itself?
+
+Yes, from the version after 0.2.4: it downloads new versions and installs them when you press **Restart now**. See [Updating](./installing#updating).
+
 ## What's new in the latest version?
 
 See [What's new](./whats-new).

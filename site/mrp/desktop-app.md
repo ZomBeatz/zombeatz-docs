@@ -30,6 +30,10 @@ Each day the app is used, it keeps a copy of the plan in the `backups` folder ne
 
 Only the desktop app can keep an Excel copy of the plan up to date in a folder you pick, such as a Teams channel's synced folder. See [Reports and sharing](./reports#an-excel-copy-for-teams-desktop-app).
 
+## Updates
+
+The desktop app downloads new versions in the background and installs them when you press **Restart now**. See [Updating](./installing#updating).
+
 ## Moving to another computer or a server
 
 1. On the old computer, **Settings > Your data > Save a backup**.
