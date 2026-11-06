@@ -76,7 +76,15 @@ The **Why** list gives the arithmetic in plain words, for each type and its nigh
 
 Under the answer, one line per pilot shows their hitches across the job, with travel days marked. Pilots start a little apart, so the same number are on every day.
 
-When you started from a season, each line has a pilot to pick, from those rated on its type (and night qualified, for night seats). **Book on "(season)"** sets the season's pilots needed and rotation, replaces its pilot shifts with these, links the handovers, and opens the season.
+When you started from a season, each line has a pilot to pick, from those rated on its type (and night qualified, for night seats). A line warns when its pilot can't take some of its hitches, and why: time off, another job, training or currency.
+
+**Book on "(season)"** sets the season's pilots needed and rotation, replaces its pilot shifts and opens the season:
+
+- Each picked pilot gets the hitches they can take.
+- Hitches they can't take go to other pilots, picked the way [Fill the schedule](./filling-the-schedule#who-it-picks) picks them.
+- What nobody can take stays open, so it shows as an open seat instead of a booking over someone's time off.
+
+The message after it says how many hitches went to others and what's still open. Undo puts everything back.
 
 ### Night seats
 
