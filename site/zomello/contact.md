@@ -14,10 +14,11 @@ The more of these you include, the faster it can be fixed:
 3. **Your device and system:** Windows 11, Ubuntu 24.04, an Android phone (which one), iPhone or iPad, or Zomello Server with Docker.
 4. **Your Zomello version:** **Settings > About**.
 5. **A screenshot** if something looks wrong. Please use example data, not anything private.
+6. **The problem log** if Zomello crashed or showed an error: **Settings > About > Problem log > Copy** (or **Save**), then paste or attach it. It lists errors only, never your boards or cards.
 
 Send it one of these ways:
 
-- **In Zomello:** **Help > Send feedback** (or **Settings > About**). It starts an email with your Zomello version and device already filled in.
+- **In Zomello:** **Help > Send feedback** (or **Settings > About**). It starts an email with your Zomello version and device already filled in, plus the last few problems from the device's problem log, if there are any.
 - **GitHub:** [open an issue](https://github.com/ZomBeatz/Zomello/issues/new). You can see what others reported and follow the fix.
 - **Email:** [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com)
 - **Reddit:** [u/ZomBeatzMedia_Dev](https://www.reddit.com/user/ZomBeatzMedia_Dev/) is our only Reddit account.

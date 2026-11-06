@@ -4,6 +4,12 @@ description: What changed in each version of Zomello.
 
 # What's new
 
+## 0.6.1 (coming next)
+
+**Reporting problems**
+- **A problem log on each device:** errors and crashes are noted in a small file that never leaves the device. **Settings > About** shows how many lines it has and can **Copy**, **Save** or **Clear** it.
+- **Send feedback** adds the last few problems from the log to the email, so a bug report says what went wrong.
+
 ## 0.6.0
 
 **Features: as simple or as full as you like**
