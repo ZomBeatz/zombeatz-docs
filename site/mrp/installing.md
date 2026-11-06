@@ -43,7 +43,7 @@ There's nothing to sign in to. The plan is saved in a file on this computer, wit
 
 ## Updating
 
-From the next version on, Zom's MRP updates itself. Once a day it looks for a newer release and downloads it in the background. Then a note across the top says it's ready:
+From the next version on, Zom's MRP updates itself. When it opens, and every few hours while it stays open, it looks for a newer release and downloads it in the background. Then a note across the top says it's ready:
 
 | Button | Does |
 |---|---|
