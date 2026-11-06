@@ -24,7 +24,7 @@ Before it goes live in Google Play and the App Store, we're looking for a small 
 | Device | What you need |
 |---|---|
 | **Android phone or tablet** | A Google account (the one you use for Google Play) |
-| **iPhone or iPad** (opening soon) | The free TestFlight app from Apple, and your Apple ID email. The iPhone and iPad test is waiting on Apple's review: sign up now and we'll email your link the day it opens |
+| **iPhone, iPad or Mac** | The free TestFlight app from Apple, and your Apple ID email |
 | **Windows or Linux computer** (optional) | Nothing extra. Download it from the [releases page](https://github.com/ZomBeatz/Zomello/releases) |
 | **A server with Docker** (optional) | A computer or home server that can run Docker. See [Setting up a server](./server) |
 
@@ -32,7 +32,7 @@ Any experience level is welcome. People who have never used a planner app are ju
 
 ## What happens after you sign up
 
-1. You get a welcome email within a few minutes, with the links for the devices you picked: a Google Play link for Android, a TestFlight link for iPhone and iPad. If a test hasn't opened yet, we email that link as soon as it does.
+1. You get a welcome email within a few minutes, with the links for the devices you picked: a Google Play link for Android, a TestFlight link for iPhone, iPad and Mac. If a test hasn't opened yet, we email that link as soon as it does.
 2. Install Zomello from that link and use it the way you normally would.
 3. About a week in, we send one short email to ask how it's going.
 4. When testing ends, your app keeps working and updates normally from the store.
@@ -53,10 +53,10 @@ Useful things to tell us: what you tried to do, what happened instead, and anyth
 Open the link while signed in to the same Google account you gave us, and tap **Become a tester** first. If you just signed up, wait 10 to 15 minutes and try again. If you have more than one Google account on your phone, open the link in a browser signed in to the right one.
 
 **The TestFlight link says the beta isn't accepting testers.**
-The iPhone and iPad test hasn't opened yet. You don't need to do anything: we'll email you as soon as it does.
+The test may be full or paused for a new version. Try again in a day; if it still says that, email us.
 
 **TestFlight asks me to install TestFlight.**
-Install the free **TestFlight** app from the App Store, then open the link again on the same iPhone or iPad.
+Install the free **TestFlight** app from the App Store, then open the link again on the same iPhone, iPad or Mac.
 
 **I didn't get the welcome email.**
 Check your spam or promotions folder for mail from ZomBeatz Media. Still nothing? Email [info@zombeatzmedia.com](mailto:info@zombeatzmedia.com) and we'll sort it out.
