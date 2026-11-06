@@ -19,6 +19,12 @@ The installer isn't signed with a paid certificate yet. Click **More info > Run 
 
 On macOS 14 or older, right-clicking the app and choosing **Open** also works.
 
+### An update won't install, or Check for updates fails
+
+1. Check the computer is online: it asks GitHub for the latest release.
+2. Press **Check for updates** in **Settings > About** again. It says what went wrong.
+3. Still stuck? Download the installer from [the latest release](https://github.com/ZomBeatz/Zoms_MRP/releases/latest) and install it over the old one. Your plan stays.
+
 ### The AppImage won't open
 
 Right-click it, open **Properties**, and allow running it as a program.
