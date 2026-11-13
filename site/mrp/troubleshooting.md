@@ -21,9 +21,10 @@ On macOS 14 or older, right-clicking the app and choosing **Open** also works.
 
 ### An update won't install, or Check for updates fails
 
-1. Check the computer is online: it asks GitHub for the latest release.
-2. Press **Check for updates** in **Settings > About** again. It says what went wrong.
-3. Still stuck? Download the installer from [the latest release](https://github.com/ZomBeatz/Zoms_MRP/releases/latest) and install it over the old one. Your plan stays.
+1. Look under **Check for updates** in **Settings > About**: it says why the last check didn't work, even one that ran by itself. When a new version didn't download or install, the note at the top says why, with **Try again**.
+2. Check the computer is online: it asks GitHub for the latest release.
+3. Press **Check for updates** again.
+4. Still stuck? Download the installer from [the latest release](https://github.com/ZomBeatz/Zoms_MRP/releases/latest) and install it over the old one. Your plan stays.
 
 ### The AppImage won't open
 
