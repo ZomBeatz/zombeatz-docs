@@ -10,7 +10,23 @@ description: "How Fill the schedule rotates rated, current, rested people throug
 
 ## Rotations
 
-Each season has a **Pilot rotation** and a **Maintainer rotation**, like 14 on, 7 off. They can differ. Fill puts people on in stretches of the "on" days, and keeps each person off for the "off" days after.
+Each season has a **Pilot rotation** and a **Maintainer rotation**, like 14 on, 7 off. They can differ. Fill puts people on in stretches of the "on" days, and keeps each person off for the "off" days after. With no rotation, it uses the hitch rules (most days on, fewest days off).
+
+With two or more at a time, Fill staggers the hitches: someone's first hitch is shorter, so the crew don't all need their days off at once. That's how 2 at a time on 21 on, 7 off is covered by 3 people.
+
+### How many people a rotation takes
+
+The **Pilots** and **Maintainers** tabs, and the rotations on **Job requirements**, say how many people the job takes at least, and how many are rated and qualified. Each person can work at most the "on" days in every "on" plus "off" days, so:
+
+| At a time | Rotation | Takes at least |
+|---|---|---|
+| 1 | 21 on, 7 off | 2 |
+| 2 | 21 on, 7 off | 3 |
+| 1 | 14 on, 14 off | 2 |
+| 2 | 14 on, 7 off | 3 |
+| 1 | 7 on, 14 off | 3 |
+
+A job no longer than one hitch takes only the people at a time. For flight-hour limits, travel days and duty days, use the [Crew planner](./crew-planner).
 
 **New seasons start with** in **Settings > Preferences** sets the crew sizes and rotation of a mission's first season. Later seasons start from the one before.
 
@@ -32,7 +48,7 @@ The mission's own crew go first, then whoever has worked least. Someone whose ti
 |---|---|
 | **Fill the schedule** | Fills open days and keeps the shifts already there |
 | **Start over** | Clears that role's shifts and fills again |
-| **Add a pilot** / **Add a maintainer** | One shift by hand |
+| **Add a pilot** / **Add a maintainer** | One hitch by hand, from the first open day (tap an open seat to start there) |
 | **Work out the crew** | Opens the [Crew planner](./crew-planner) for this season (save first) |
 | **Show everyone** | Lists people Fill wouldn't pick, with why |
 

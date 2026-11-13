@@ -17,7 +17,7 @@ How long people may work, how much they must rest and how much pilots may fly. T
 | **Most hours on duty in a day** | A season whose **Hours on duty in a day** is longer is flagged. 0 doesn't check. |
 | **Rest between duty days** | Hours off before the next duty day. A season whose duty day leaves less is flagged. 0 doesn't check. |
 | **Most flight hours** | Flight-hour limits, below |
-| **Current on a type** | Pilots must have flown a type within this many days. 0 doesn't check. |
+| **Recency of experience** | Pilots must have flown a type within this many days to be booked on it. Untick **Check it** to turn it off. |
 | **Warn before training runs out** | Days ahead |
 
 ## Flight-hour limits

@@ -40,9 +40,9 @@ Tick **Only a preference** for days someone would rather not work. They can stil
 2. **Hand it to someone** lists who can legally take it, the mission's crew first. **Trade with someone** lists two-way trades where each can take the other's shift.
 3. Tap one. Undo is in the message.
 
-## Currency
+## Recency of experience
 
-A pilot is current on a type if they've flown it within the days set in Settings (90 to start). It comes from their shifts, or a **Last flew** date on **Ratings and missions** for flying done elsewhere. Booking someone who isn't current is a warning, and Fill won't do it.
+A pilot is current on a type if they've flown it within the days set in **Settings > Hitches and days off > Recency of experience** (90 to start; untick **Check it** to turn it off). It comes from their shifts, or a **Last flew** date on **Ratings and missions** for flying done elsewhere. Booking someone who isn't current is a warning, and Fill won't do it.
 
 ## Related
 
