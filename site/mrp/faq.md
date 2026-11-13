@@ -32,7 +32,7 @@ They must be rated on one of its aircraft types, current on the mission's traini
 
 ## How many pilots does a job need?
 
-Put the job in the [Crew planner](./crew-planner). It gives the fewest pilots for your rules and the rotation that does it.
+Each job says so on its **Pilots** and **Maintainers** tabs: 2 at a time on 21 on, 7 off takes at least 3 people ([how it's counted](./filling-the-schedule#how-many-people-a-rotation-takes)). For flight-hour limits, travel days and duty days too, put the job in the [Crew planner](./crew-planner). It gives the fewest pilots for your rules and the rotation that does it.
 
 ## Can it follow flight-hour limits like 100 hours in 30 days?
 
