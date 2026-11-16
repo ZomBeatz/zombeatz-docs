@@ -107,6 +107,7 @@ const desktop = [
   ["import-specs", `#/devices/${ids.pve1}`, `document.querySelector(".page-actions .pop > button").click(); ${wait(200)} ${click(".pop-menu button", "Import specs")}`, { settle: 1500 }],
   ["containers", `#/devices/${ids.docker}?tab=containers`, `${waitFor("#view .tab-body table")} document.querySelector("#view .tabs").scrollIntoView({ block: "start" });`],
   ["maintenance", "#/maintenance"],
+  ["services", "#/services"],
   ["health", `#/devices/${ids.pve1}?tab=health`, `${waitFor("#view .tab-body table")} [...document.querySelectorAll("#view .card h3")].find((h) => h.textContent.includes("Disks"))?.scrollIntoView({ block: "start" });`],
   ["rack", `#/racks/${ids.rack}`],
   ["location", `#/locations/${ids.garage}`],

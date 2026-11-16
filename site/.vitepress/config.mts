@@ -200,6 +200,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Status", link: "/harm/status" },
+            { text: "Services", link: "/harm/services" },
             { text: "Alerts", link: "/harm/alerts" },
             { text: "Uptime report", link: "/harm/uptime" },
             { text: "New devices on the network", link: "/harm/new-devices" },
