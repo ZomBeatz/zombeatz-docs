@@ -54,6 +54,8 @@ Services marked **Stopped**, **Planned** or **Deprecated**, and UDP ones, aren't
 
 For an https service, HaRM also notes when its certificate runs out (self-signed ones too). The device's **Actions** tab shows the date, its tile says **Certificate runs out …** in its last 30 days, and **Home** warns too. [Alerts](./alerts) can send a message 14 days before. A service that isn't answering also shows on **Home**, and the room's heading says how many.
 
+A server whose [Docker containers](./docker) HaRM has read shows them on its tile too: how many, which aren't running, and how many have updates. Tap it to open the device's **Containers** tab.
+
 The device's own page shows the same thing: its summary row starts with **Online** or **Offline**, and its **Actions** tab lists every address and service with its answer and the 24 bars, and the **Network** tab has an **Answering** column for services. Tap the word to check again.
 
 ## How often it checks

@@ -52,7 +52,7 @@ const ids = await ev(`
   const [d, r, l, c, n, b] = await Promise.all(["/devices", "/racks", "/locations", "/clusters", "/networks", "/builds"].map(get));
   const by = (list, name) => list.find((x) => x.name === name)?.id;
   return { pve1: by(d, "pve1"), pve2: by(d, "pve2"), oldR610: by(d, "Old R610"), rack: by(r, "Main rack"), garage: by(l, "Garage"),
-           cluster: by(c, "homelab"), lan: by(n, "Home LAN"), build: b[0]?.id };`);
+           cluster: by(c, "homelab"), lan: by(n, "Home LAN"), build: b[0]?.id, docker: by(d, "docker") };`);
 
 const click = (sel, text) =>
   `[...document.querySelectorAll(${JSON.stringify(sel)})].find((b) => b.textContent.trim().includes(${JSON.stringify(text)}))?.click();`;
@@ -63,7 +63,11 @@ const tab = (name) => `document.querySelector('.tabs button[data-tab="${name}"]'
 const fill = (el, text) => `Object.getOwnPropertyDescriptor(Object.getPrototypeOf(${el}), "value").set.call(${el}, ${JSON.stringify(text)}); ${el}.dispatchEvent(new Event("input", { bubbles: true }));`;
 const type = (sel, text) => `const el = document.querySelector(${JSON.stringify(sel)}); ${fill("el", text)}`;
 
+// ONLY=containers,status node scripts/harm-screenshots.mjs  takes just those pictures.
+const only = process.env.ONLY ? new Set(process.env.ONLY.split(",")) : null;
+
 async function shot(name, hash, prep = "", { settle = 900 } = {}) {
+  if (only && !only.has(name)) return null;
   // HaRM remembers the last tab per kind of page; every picture starts from the first tab.
   await ev(`Object.keys(localStorage).filter((k) => k.startsWith("harm-tab-")).forEach((k) => localStorage.removeItem(k));`);
   // A fresh page load for every picture (the same #hash twice wouldn't reload), then wait for it to draw.
@@ -80,7 +84,7 @@ async function shot(name, hash, prep = "", { settle = 900 } = {}) {
   console.log("saved", name);
   return file;
 }
-const shrink = (file, width) => execFileSync("magick", [file, "-resize", `${width}x`, "-strip", file]);
+const shrink = (file, width) => file && execFileSync("magick", [file, "-resize", `${width}x`, "-strip", file]);
 
 const SAMPLE_LEASES = "1761900000 aa:bb:cc:10:00:21 192.168.10.121 Sams-iPhone *\n1761900000 aa:bb:cc:10:00:22 192.168.10.122 Jordans-Galaxy-S25 *\n1761900000 aa:bb:cc:10:00:23 192.168.10.123 LivingRoom-Roku *\n1761900000 aa:bb:cc:10:00:24 192.168.10.124 PS5-Console *\n1761900000 aa:bb:cc:10:00:25 192.168.10.125 Nest-Thermostat *";
 const SAMPLE_AI = JSON.stringify({ harm_ai: 1, summary: "A shelf of spare server parts.", items: [
@@ -101,6 +105,7 @@ const desktop = [
   ["device-menu", `#/devices/${ids.pve1}`, `${waitFor(".page-actions .pop > button")} document.querySelector(".page-actions .pop > button").click();`],
   ["login-open", `#/devices/${ids.pve1}`, `${tab("logins")} ${wait(300)} ${click("button", "Open")}`],
   ["import-specs", `#/devices/${ids.pve1}`, `document.querySelector(".page-actions .pop > button").click(); ${wait(200)} ${click(".pop-menu button", "Import specs")}`, { settle: 1500 }],
+  ["containers", `#/devices/${ids.docker}?tab=containers`, `${waitFor("#view .tab-body table")} document.querySelector("#view .tabs").scrollIntoView({ block: "start" });`],
   ["rack", `#/racks/${ids.rack}`],
   ["location", `#/locations/${ids.garage}`],
   ["parts", "#/components"],
