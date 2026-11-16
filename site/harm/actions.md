@@ -71,6 +71,9 @@ An action uses a saved login, and logins can only be read while HaRM is unlocked
 | **Update packages (Debian, Ubuntu, Proxmox)** | Shell script, sudo | Asks first. |
 | **Restart** and **Shut down** | Shell script, sudo | Ask first. |
 | **Proxmox: list VMs and containers** | Shell script, sudo | `qm list` and `pct list`. |
+| **Update Plex (installed as a package, Debian or Ubuntu)** | Shell script, sudo | Asks first. For Plex in Docker, use the device's [Containers](./docker) tab. |
+| **Docker: update every Compose project in a folder** | Shell script, sudo | Asks first. Change `/srv` and `/opt` to where your projects live. |
+| **Docker: clean up old images** | Shell script, sudo | `docker image prune -f`. |
 | **Quiet the fans (HPE iLO 4)** | One per line, older SSH | Needs the iLO 4 fan-control ("unlocked") firmware. One line per fan; change the fan numbers and speeds (0 to 255) for your server, and watch its temperatures afterwards. Send it to the iLO address with the iLO login. |
 | **Power on (HPE iLO)** | One per line, older SSH | Send it to the iLO address. |
 | **Power on (Dell iDRAC)** | One per line, older SSH | `racadm serveraction powerup`, sent to the iDRAC address. |
@@ -84,5 +87,6 @@ Make the fan action once, with **Show a button on the Status page** ticked. Afte
 
 - [Status](./status): which devices are online, with your action buttons on each
 - [Logins](./logins): the saved logins actions connect with
+- [Docker containers](./docker): update, restart and read the logs of one container
 - [Import specs](./import-specs): the other thing HaRM does over SSH
 - [Security and privacy](./security): how logins and action results are protected

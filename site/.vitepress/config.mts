@@ -205,6 +205,7 @@ export default defineConfig({
             { text: "New devices on the network", link: "/harm/new-devices" },
             { text: "Power budget", link: "/harm/power" },
             { text: "Actions", link: "/harm/actions" },
+            { text: "Docker containers", link: "/harm/docker" },
           ],
         },
         {
