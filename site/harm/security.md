@@ -38,6 +38,8 @@ HaRM is made for your home network. Don't forward its port to the internet. To u
 - [Actions](./actions) connect with your saved logins, so they only run while HaRM is unlocked. Their results are kept encrypted, like your logins.
 - The [terminal in HaRM](./connect#the-terminal-in-harm) only works while HaRM is unlocked, closes when it locks or after 30 minutes without typing, and never stores what you type or see. Turn it off in **Settings > Locking and security**.
 - **Change on machine** sends the new password to the machine as input, never on a command line, and checks it signs in afterwards.
+- [HaRM's SSH key](./connect#harm-s-ssh-key) is encrypted with your master password. Each connection writes it to a file only HaRM can read and deletes it straight after. Signing in with it means machines don't need HaRM to keep their passwords.
+- The [screen in HaRM](./connect#the-screen-in-harm-vnc) (VNC) only goes to a device's own addresses on a VNC port, from HaRM's own page, and closes when HaRM locks.
 - Passwords reach SSH through a helper for that one connection, never on a command line. Extra SSH settings are limited to connection settings, so nothing can make SSH run a program on the HaRM computer.
 - The [Status](./status) page only contacts the addresses you've recorded, on your own network.
 - [Background checks](./maintenance#background-checks) are off unless you turn them on. They read your machines while HaRM is locked, so the logins they use (and the Proxmox token, if you choose) are encrypted with `background.key` in the data folder, not your master password, and not in backups. Give them [a limited login](./maintenance#background-checks). They only read; updates and restarts always wait for you.
