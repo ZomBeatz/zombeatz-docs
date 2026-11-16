@@ -22,6 +22,7 @@ HaRM can send you a message when a device or service stops answering, and when i
 | **Also tell me when it's back** | A second message when it answers again, with how long it was down. |
 | **Also when a service stops answering** | Alerts about the services on a device's **Network** tab too (a web page or a port), while the device itself answers. |
 | **Also when a certificate runs out soon** | One alert 14 days before an https service's certificate runs out (or as soon as HaRM sees one that already has). |
+| **Also problems found by machine checks** | A disk almost full or failing, a degraded pool or array, security updates, a late backup, or a container that stopped or keeps restarting (with the last lines of its log). Once each, when a [machine check](./maintenance) finds it. |
 | **Hold alerts during quiet hours** | With **From** and **Until**: see [Quiet hours](#quiet-hours). |
 
 [New devices on the network](./new-devices) send their alerts the same way, when that's turned on.
@@ -69,6 +70,7 @@ HaRM posts JSON with these fields:
 | It's back | **pve2 is back online**: "10.20.0.11 answers again, after 25 min." |
 | A service stops answering | **Proxmox VE on pve1 isn't answering**: the address and why (HTTP 502, connection refused, no answer). |
 | A certificate runs out soon | **The certificate for DSM on vault runs out soon**: the address and the date. |
+| A machine check finds a problem | **docker: / is 92% full (10.2 GB left)**, or **docker: Container paperless stopped**, with the last lines of its log. |
 | A new device on a watched network | **New on Home LAN: Sams-iPhone**: its address, MAC and name. |
 | More than 3 at once | One message, like **HaRM: 6 problems**, listing them. A power cut or a dead switch sends one message, not twenty. |
 
