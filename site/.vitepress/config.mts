@@ -206,6 +206,7 @@ export default defineConfig({
             { text: "Power budget", link: "/harm/power" },
             { text: "Actions", link: "/harm/actions" },
             { text: "Docker containers", link: "/harm/docker" },
+            { text: "Maintenance", link: "/harm/maintenance" },
           ],
         },
         {

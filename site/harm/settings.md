@@ -68,6 +68,7 @@ How it all protects your logins: [Security and privacy](./security).
 
 - **Check**: how often HaRM checks which devices answer, from **Every minute** to **Every hour**, or **Never (only when I press Check now)**. Every 5 minutes at first. While the Status page is open, it checks every minute anyway.
 - **Alerts**: a message by ntfy, email or a webhook when a device or service stops answering, when it's back, and when a certificate runs out soon, with optional **quiet hours**. **Set up alerts…** chooses how and when; **Send a test** checks it works, and the list under it shows the last alerts sent. See [Alerts](./alerts).
+- **Maintenance**: **Write what HaRM does in the device's notes** (on at first), **Check machines in the background** and how often, when a Proxmox VM's newest backup counts as late, and **Also read Proxmox in the background**. See [Maintenance](./maintenance).
 - **New devices on the network**: **Watch for new devices…** picks the networks to scan, how often, and whether to alert; **Scan now** scans straight away. See [New devices on the network](./new-devices).
 - **Actions** opens your saved one-click commands.
 

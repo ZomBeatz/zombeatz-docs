@@ -26,6 +26,7 @@ HaRM holds the keys to your network, so it's built to keep them safe even if som
 - HTTPS with HaRM's own certificate authority keeps logins encrypted on your Wi‑Fi.
 - Only install HaRM's certificate (`harm-ca.crt`) on **your own** devices. Keep `data/tls/harm-ca.key` private: anyone with that file could impersonate websites to devices that trust it.
 - Other tools you connect (UniFi, Proxmox, AI services) use keys stored encrypted in your vault, sent only to the address you entered.
+- UniFi consoles and Proxmox use self-signed certificates, which can't be checked against a certificate authority. HaRM remembers each one's certificate the first time it connects, and if it changes, asks before sending the key again, so a look-alike on your network can't catch it. A change is normal after a reinstall or a new certificate.
 - Import specs over SSH remembers each machine's SSH key and refuses to connect if it changes unexpectedly.
 
 ## Keep it at home
@@ -37,6 +38,7 @@ HaRM is made for your home network. Don't forward its port to the internet. To u
 - [Actions](./actions) connect with your saved logins, so they only run while HaRM is unlocked. Their results are kept encrypted, like your logins.
 - Passwords reach SSH through a helper for that one connection, never on a command line. Extra SSH settings are limited to connection settings, so nothing can make SSH run a program on the HaRM computer.
 - The [Status](./status) page only contacts the addresses you've recorded, on your own network.
+- [Background checks](./maintenance#background-checks) are off unless you turn them on. They read your machines while HaRM is locked, so the logins they use (and the Proxmox token, if you choose) are encrypted with `background.key` in the data folder, not your master password, and not in backups. Give them [a limited login](./maintenance#background-checks). They only read; updates and restarts always wait for you.
 - [Alerts](./alerts) are sent while HaRM is locked, so their secrets (email password, ntfy token, webhook address) are encrypted with a separate key in `alerts.key` in the data folder, not with your master password. Use an app password for email, and a topic name nobody could guess for ntfy.
 
 ## The audit log

@@ -22,12 +22,14 @@ HaRM connects over SSH, like [Actions](./actions), and asks Docker for its conta
 | **Container** | Its name, and its Docker Compose project. |
 | **State** | **Running**, **Stopped**, **Restarting**, **Paused**, or **Unhealthy** / **Starting** when the image has a health check. A container that keeps restarting says how often. |
 | **Up for** | How long a running container has been up. |
-| **Image** | The image and tag, with **Update available** or **up to date** after a check. |
+| **Image** | The image and tag, with **Update available** or **up to date** after a check, and the versions when the image says (for example **1.41.9 → 1.42.2**). |
 | **Ports** | Published ports. A web port opens in a new tab. |
 
 ## Updates
 
 **Check for updates** asks each image's registry for its current version and compares it with the one on the server. Nothing is downloaded. An image built on the machine itself, or a registry that can't be asked, shows nothing rather than a guess. (It needs `docker buildx`, which comes with Docker Engine.)
+
+Most images say which version they are; then the check shows the version you run and the newest one. [Maintenance](./maintenance) lists every container with an update, across all your machines.
 
 **Update** on a container (or **⋯ > Update now**) downloads the newest image and re-creates the container with Docker Compose, using its own compose file, so its settings, volumes and ports stay the same. It's down for a moment while it restarts. The message says whether it was updated or already up to date, and **Output** shows what Docker printed. With more than one update, **Update all** does them one after another.
 
@@ -51,6 +53,7 @@ For Plex installed from Plex's own package, use the **Update Plex (installed as 
 
 ## Related
 
+- [Maintenance](./maintenance): disk space, drive health, system updates and backups, and every update in one place
 - [Actions](./actions): any command, sent with one click (with examples for Docker and Plex)
 - [Status](./status): every device and service, with containers under their server
 - [Logins](./logins): the saved logins HaRM connects with
