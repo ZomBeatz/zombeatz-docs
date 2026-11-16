@@ -90,6 +90,10 @@ Reading only needs the token's **PVEAuditor** role. For the buttons, give the to
 
 **Settings > Status and actions > Maintenance** sets when a VM's newest backup counts as late (2 days at first). VMs with no backup at all show "none found" without a warning, since some are left out on purpose.
 
+## Old passwords
+
+**Maintenance** lists logins whose password hasn't changed in a year, oldest first: when it was last changed (from **Last rotated**, or when it was saved), and **🔑 Change on machine…** to set a new one on a Linux machine over SSH ([how it works](./logins#changing-a-password-on-the-machine)). **Home** links here when there are any. Pick 3 months to 2 years, or **Never remind me**, in **Settings > Status and actions > Maintenance**. New in version 0.3.2.
+
 ## The maintenance log
 
 Every update, restart, container change, Proxmox power change or snapshot, and every [action](./actions) run leaves a **Did** note on the device, like "Updated container plex to 1.42.2." or "Installed 14 updates (curl, libcurl4, …).". When something breaks, the device's notes show what changed before. Turn it off in **Settings > Status and actions > Maintenance**.
@@ -116,6 +120,8 @@ A limited login for background checks, on Debian, Ubuntu or Proxmox:
    harm-check ALL=(root) NOPASSWD: /usr/sbin/smartctl, /usr/bin/apt-get update -qq
    ```
 3. When you turn background checks on for the machine, pick that login and **sudo: Only for drive health and the update list**.
+
+**Even better: no stored password.** Make [HaRM's SSH key](./connect#harm-s-ssh-key), add it to the machine for that login (**🔌 Connect > 🗝 Add HaRM's SSH key**), and tick **Sign in with HaRM's SSH key** when you turn background checks on. HaRM then keeps a copy of the key for background checks (encrypted with `background.key`) instead of the password. With a `NOPASSWD` sudo rule like the one above, it still reads drive health.
 
 Reading containers needs the `docker` group, which is as strong as root. Leave containers to your one-click checks if you'd rather not.
 

@@ -54,7 +54,8 @@ Untick pages you don't use (PC Builder, Discover…) to shorten the sidebar on t
 - **Master password > Change password…**: a new master password. Saved logins are kept, and every other device is signed out.
 - **Two-factor authentication > Set up 2FA**: unlocking also asks for a 6-digit code from an authenticator app (Aegis, 2FAS, Bitwarden, 1Password, Google Authenticator and others). **Turn off 2FA** asks for the master password.
 - **Recovery code > New recovery code…**: makes a new code after asking for the master password. The old one stops working at once.
-- **Terminal in HaRM**: on at first. Turn it off to hide **⌨ Terminal in HaRM** from **🔌 Connect** and refuse new ones. See [Connecting to your machines](./connect).
+- **Terminal and screen in HaRM**: on at first. Turn it off to hide **⌨ Terminal in HaRM** and **🖥 Screen in HaRM** from **🔌 Connect** and refuse new ones. See [Connecting to your machines](./connect).
+- **HaRM's SSH key**: **🗝 Make a key**, then add it to machines with **🔌 Connect**. **⟳ New key…** replaces it and **Delete…** removes it. See [HaRM's SSH key](./connect#harm-s-ssh-key).
 
 How it all protects your logins: [Security and privacy](./security).
 
@@ -69,7 +70,7 @@ How it all protects your logins: [Security and privacy](./security).
 
 - **Check**: how often HaRM checks which devices answer, from **Every minute** to **Every hour**, or **Never (only when I press Check now)**. Every 5 minutes at first. While the Status page is open, it checks every minute anyway.
 - **Alerts**: a message by ntfy, email or a webhook when a device or service stops answering, when it's back, and when a certificate runs out soon, with optional **quiet hours**. **Set up alerts…** chooses how and when; **Send a test** checks it works, and the list under it shows the last alerts sent. See [Alerts](./alerts).
-- **Maintenance**: **Write what HaRM does in the device's notes** (on at first), **Check machines in the background** and how often, when a Proxmox VM's newest backup counts as late, and **Also read Proxmox in the background**. See [Maintenance](./maintenance).
+- **Maintenance**: **Write what HaRM does in the device's notes** (on at first), **Check machines in the background** and how often, when a Proxmox VM's newest backup counts as late, **Also read Proxmox in the background**, and **Remind me about passwords not changed in** (3 months to 2 years, or never). See [Maintenance](./maintenance).
 - **New devices on the network**: **Watch for new devices…** picks the networks to scan, how often, and whether to alert; **Scan now** scans straight away. See [New devices on the network](./new-devices).
 - **Actions** opens your saved one-click commands.
 

@@ -24,6 +24,10 @@ Services come from each device's **Network** tab, **+ New** on this page, or [Di
 
 The layout is kept on each device, so a wall tablet can show small cards and your computer a list. **Back to how it was at first** undoes it.
 
+### Saved layouts
+
+**⚙ Layout > 💾 Save this layout as…** keeps the layout and the filters (answering or not, a list, favorites only) under a name, like "Wall tablet" or "Media". It's kept in HaRM, so every device lists it under **⚙ Layout**: pick it to show the same thing there. **Delete a saved layout…** takes one off the list. New in version 0.3.2.
+
 ## Finding one
 
 - **Filter…** searches names, devices, addresses, lists, places, versions and notes (press <kbd>/</kbd> to jump to it).
@@ -59,6 +63,10 @@ A card with a web address already has **Open ↗**. Add more buttons, each with 
 | **Run an action** | One of your saved [Actions](./actions), like "Restart Plex" or "Update packages". |
 
 Buttons that run an action show ⚡, and say which action when you point at them.
+
+### Results on the card
+
+Tick **Show its result on the card** on an action button, and the card shows the last line the action printed, like "Plex: 2 streams" or "Newest backup: 3 h ago" (in red if it failed). It changes when you press the button: nothing runs by itself. Write the action so its last line says what you want to see, for example `echo "$(docker ps -q | wc -l) containers running"`.
 
 ::: tip Safe by design
 - A button can only open a link, copy text, or run an action you saved. It can't hold commands of its own.

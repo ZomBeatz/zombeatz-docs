@@ -12,11 +12,12 @@ Open a device and press **🔌 Connect**. Pick the address, the port and a saved
 | **↗ Open in my SSH app** | An `ssh://` link, for computers with an app that opens them. |
 | **📋 Copy SSH command** | `ssh user@host` (with `-p` for another port), to paste into your own terminal. |
 | **🖥 Remote desktop file (.rdp)** | For Windows machines, or anything with port 3389. Opens in Remote Desktop (Windows, Mac) or Remmina, which asks for the password itself. |
-| **↗ VNC** | A `vnc://` link, when the device has a VNC port (5900–5999) on its **Network** tab. |
+| **🖥 Screen in HaRM (VNC)** | The machine's screen in HaRM's page, when the device has a VNC port (5900–5999) on its **Network** tab. |
+| **↗ VNC app** | A `vnc://` link, for the VNC app on your computer. |
 | **↗ Proxmox console** | A VM's or container's screen, or a node's shell, in Proxmox's own console. Shown when HaRM is connected to Proxmox ([Discover](./discover)). |
 | **↗ Management page** | iDRAC, iLO or IPMI, which have their own remote console. |
 
-Only the terminal in HaRM uses the saved password. The others open apps on your computer, which ask for it themselves.
+Only the terminal and screen in HaRM use the saved login. The others open apps on your computer, which ask for it themselves.
 
 ## The terminal in HaRM
 
@@ -27,10 +28,35 @@ It's a full terminal: colors, `htop`, `nano`, copy and paste. It follows the win
 - At most 4 are open at once.
 - Opening and closing one is recorded in the audit log. What you type and what the machine shows are never stored.
 - If the machine's SSH key changed, HaRM won't connect until you press **Trust the new key and connect**. That's normal after reinstalling a machine, but can also mean something is intercepting the connection.
-- Don't need it? Turn it off in **Settings > Locking and security > Terminal in HaRM**.
+- Don't need it? Turn it off in **Settings > Locking and security > Terminal and screen in HaRM**.
 :::
 
 It needs the `ssh` program on the computer running HaRM (it's built into Windows 10 and 11, macOS and most Linux), and a browser that can draw with WebGL (all current ones). On Windows the terminal doesn't follow the window's size.
+
+## The screen in HaRM (VNC)
+
+HaRM relays the screen from the machine's VNC port to its page, over HaRM's own connection. If the machine asks for a VNC password, HaRM uses the password of the login you picked in **🔌 Connect** (that's recorded in the audit log), or asks you. **Ctrl+Alt+Del** sends that to the machine, **Only watch** stops your mouse and keys going to it, and **⛶ Full screen** fills the screen.
+
+- It only connects to the device's own addresses, on a VNC port (5900–5999, or a service on its **Network** tab named VNC).
+- It closes when HaRM locks or you sign out, and at most 4 are open. Opening one is in the audit log; nothing on the screen is stored.
+- VNC itself isn't encrypted between HaRM and the machine, so keep it on your home network. Turn it off with the terminal in **Settings > Locking and security**.
+- For Proxmox VMs, use **↗ Proxmox console** instead.
+
+## HaRM's SSH key
+
+Instead of a password, HaRM can sign in with a key of its own, the safer way to use SSH:
+
+1. **Settings > Locking and security > HaRM's SSH key > 🗝 Make a key.** HaRM makes one key pair (ed25519). The public key shows there, with **Copy**.
+2. On a device, **🔌 Connect**, pick the login, and **🗝 Add HaRM's SSH key**. HaRM signs in with the login's password once and adds the public key to that user's `~/.ssh/authorized_keys` (changing nothing else), then checks it can sign in with only the key.
+3. From then on HaRM tries the key first: checks, actions, the terminal, and **Change on machine**. Background checks can use it too, so they don't need a stored password ([Maintenance](./maintenance#background-checks)).
+
+::: tip Safe by design
+- The private key is encrypted with your master password, like your logins, so HaRM can only use it while unlocked. Background checks get a copy only when you tick it for a machine.
+- For each connection it's written to a file only HaRM can read, and deleted straight after (a terminal deletes it 30 seconds after connecting).
+- **Take it out** (next to **Add HaRM's SSH key**) removes it from a machine again. **⟳ New key…** in Settings replaces it everywhere in HaRM; add the new one to your machines. Making, adding and removing keys is in the audit log.
+:::
+
+You can also paste the public key into a machine's `authorized_keys` yourself, or into Proxmox, a NAS or a router that takes SSH keys.
 
 ## Related
 
