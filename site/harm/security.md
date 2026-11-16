@@ -10,7 +10,7 @@ HaRM holds the keys to your network, so it's built to keep them safe even if som
 
 - Passwords, 2FA secrets and secret notes are encrypted (AES-256-GCM) with a key that only your **master password** or **recovery code** unlocks. A copied database or backup doesn't reveal them.
 - HaRM never stores your master password, and can't recover it. Keep the recovery code somewhere safe and separate.
-- Secrets are never exported, never kept in form drafts, never cached on phones, and never sent to AI services.
+- Secrets are never kept in form drafts, never cached on phones, and never sent to AI services. They only leave HaRM in an [export for Bitwarden](./logins#bitwarden-and-vaultwarden), which asks for your master password again.
 - Every time a login is revealed or opened, it's recorded in the **Audit log**.
 
 ## Signing in
@@ -36,6 +36,8 @@ HaRM is made for your home network. Don't forward its port to the internet. To u
 ## Actions and online checks
 
 - [Actions](./actions) connect with your saved logins, so they only run while HaRM is unlocked. Their results are kept encrypted, like your logins.
+- The [terminal in HaRM](./connect#the-terminal-in-harm) only works while HaRM is unlocked, closes when it locks or after 30 minutes without typing, and never stores what you type or see. Turn it off in **Settings > Locking and security**.
+- **Change on machine** sends the new password to the machine as input, never on a command line, and checks it signs in afterwards.
 - Passwords reach SSH through a helper for that one connection, never on a command line. Extra SSH settings are limited to connection settings, so nothing can make SSH run a program on the HaRM computer.
 - The [Status](./status) page only contacts the addresses you've recorded, on your own network.
 - [Background checks](./maintenance#background-checks) are off unless you turn them on. They read your machines while HaRM is locked, so the logins they use (and the Proxmox token, if you choose) are encrypted with `background.key` in the data folder, not your master password, and not in backups. Give them [a limited login](./maintenance#background-checks). They only read; updates and restarts always wait for you.

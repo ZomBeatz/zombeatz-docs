@@ -208,6 +208,7 @@ export default defineConfig({
             { text: "Actions", link: "/harm/actions" },
             { text: "Docker containers", link: "/harm/docker" },
             { text: "Maintenance", link: "/harm/maintenance" },
+            { text: "Connecting to your machines", link: "/harm/connect" },
           ],
         },
         {

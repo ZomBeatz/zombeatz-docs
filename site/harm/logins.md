@@ -35,9 +35,26 @@ On a phone the same window fills the screen. It's useful at a console or crash c
 
 The window closes by itself after 60 seconds. Every reveal is recorded in the audit log. Devices show up to three logins in their summary row, so you can open them straight from the device.
 
+## Bitwarden and Vaultwarden
+
+On **Logins (Vault)**, the **⋯** menu has:
+
+- **Import from Bitwarden…**: in Bitwarden (or Vaultwarden) use **Tools > Export vault**, file format **.json** (not the encrypted one), then pick the file. HaRM lists each login with the device it seems to be for (by address, host name or name), before anything is saved. Untick any you don't want and change the device if it guessed wrong; logins HaRM already has start unticked. Cards, identities and secure notes stay in Bitwarden. Delete the export file afterwards: it holds every password in plain text.
+- **Export for Bitwarden…**: asks for your master password again, then saves every login in a file Bitwarden and Vaultwarden can import (**Tools > Import data**, format **Bitwarden (json)**), in a folder called HaRM. Import it, then delete it.
+
+## Changing a password on the machine
+
+On a Linux login (one with a username and password), **🔑 Change on machine…** sets a new password on the machine itself and keeps it in HaRM, so you can change old passwords without typing them anywhere:
+
+1. Pick the machine's address, and the login to connect with (this one, or another such as root).
+2. Tick **Use sudo** unless you connect as root.
+3. Keep the generated password or type your own (12 characters or more), and press **🔑 Change password**.
+
+HaRM sets it with `chpasswd`, saves it straight away, keeps the old one in the login's secret notes (as "Previous password"), then checks that the new one signs in. Anything else that uses the old password, such as a backup job, needs updating too, and so does your password manager. It's recorded in the audit log.
+
 ## How they're protected
 
-Passwords, 2FA secrets and secret notes are encrypted with a key that only your master password or recovery code unlocks. They're never exported, never kept in form drafts, and never stored on phones. See [Security and privacy](./security).
+Passwords, 2FA secrets and secret notes are encrypted with a key that only your master password or recovery code unlocks. They're never kept in form drafts or stored on phones, and only leave HaRM in an export for Bitwarden, which asks for your master password again. See [Security and privacy](./security).
 
 ## Related
 

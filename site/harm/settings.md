@@ -54,6 +54,7 @@ Untick pages you don't use (PC Builder, Discover…) to shorten the sidebar on t
 - **Master password > Change password…**: a new master password. Saved logins are kept, and every other device is signed out.
 - **Two-factor authentication > Set up 2FA**: unlocking also asks for a 6-digit code from an authenticator app (Aegis, 2FAS, Bitwarden, 1Password, Google Authenticator and others). **Turn off 2FA** asks for the master password.
 - **Recovery code > New recovery code…**: makes a new code after asking for the master password. The old one stops working at once.
+- **Terminal in HaRM**: on at first. Turn it off to hide **⌨ Terminal in HaRM** from **🔌 Connect** and refuse new ones. See [Connecting to your machines](./connect).
 
 How it all protects your logins: [Security and privacy](./security).
 
