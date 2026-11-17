@@ -54,8 +54,8 @@ Untick pages you don't use (PC Builder, Discover…) to shorten the sidebar on t
 - **Master password > Change password…**: a new master password. Saved logins are kept, and every other device is signed out.
 - **Two-factor authentication > Set up 2FA**: unlocking also asks for a 6-digit code from an authenticator app (Aegis, 2FAS, Bitwarden, 1Password, Google Authenticator and others). **Turn off 2FA** asks for the master password.
 - **Recovery code > New recovery code…**: makes a new code after asking for the master password. The old one stops working at once.
-- **Terminal and screen in HaRM**: on at first. Turn it off to hide **⌨ Terminal in HaRM** and **🖥 Screen in HaRM** from **🔌 Connect** and refuse new ones. See [Connecting to your machines](./connect).
-- **HaRM's SSH key**: **🗝 Make a key**, then **🗝 Add to my machines…** puts it on every machine with a saved SSH login (or add it to one with **🔌 Connect**). **⟳ New key…** replaces it and **Delete…** removes it. See [HaRM's SSH key](./connect#harm-s-ssh-key).
+- **Terminal and screen in HaRM**: on at first. Turn it off to hide **⌨ Terminal in HaRM**, **📁 Files** and **🖥 Screen in HaRM** from **🔌 Connect** and refuse new ones. See [Connecting to your machines](./connect).
+- **HaRM's SSH key**: **🗝 Make a key**, then **🗝 Add to my machines…** puts it on every machine with a saved SSH login (or add it to one with **🔌 Connect**). **⟳ New key…** replaces it (and can swap it on your machines) and **Delete…** removes it. See [HaRM's SSH key](./connect#harm-s-ssh-key).
 
 How it all protects your logins: [Security and privacy](./security).
 
