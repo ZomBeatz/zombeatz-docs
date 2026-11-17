@@ -94,6 +94,8 @@ Reading only needs the token's **PVEAuditor** role. For the buttons, give the to
 
 **Maintenance** lists logins whose password hasn't changed in a year, oldest first: when it was last changed (from **Last rotated**, or when it was saved), and **🔑 Change on machine…** to set a new one on a Linux machine over SSH ([how it works](./logins#changing-a-password-on-the-machine)). **Home** links here when there are any. Pick 3 months to 2 years, or **Never remind me**, in **Settings > Status and actions > Maintenance**. New in version 0.3.2.
 
+**🔑 Change them all…** does them in one go: it lists the ones on Linux devices with an address, and for each you tick, sets a new random password (24 characters) the same way, one after another, with ✓ or the reason for each. Each new password is saved in the vault straight away and the old one kept in its secret notes. Anything else using those passwords (scripts, backup jobs, a password manager) needs updating too. New in version 0.3.3.
+
 ## The maintenance log
 
 Every update, restart, container change, Proxmox power change or snapshot, and every [action](./actions) run leaves a **Did** note on the device, like "Updated container plex to 1.42.2." or "Installed 14 updates (curl, libcurl4, …).". When something breaks, the device's notes show what changed before. Turn it off in **Settings > Status and actions > Maintenance**.

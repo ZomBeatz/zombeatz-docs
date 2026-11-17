@@ -50,7 +50,7 @@ On a Linux login (one with a username and password), **🔑 Change on machine…
 2. Tick **Use sudo** unless you connect as root.
 3. Keep the generated password or type your own (12 characters or more), and press **🔑 Change password**.
 
-**Maintenance** lists old passwords with this button, so you can work through them ([Old passwords](./maintenance#old-passwords)).
+**Maintenance** lists old passwords with this button, and **🔑 Change them all…** to change them one after another ([Old passwords](./maintenance#old-passwords)).
 
 HaRM sets it with `chpasswd`, saves it straight away, keeps the old one in the login's secret notes (as "Previous password"), then checks that the new one signs in. Anything else that uses the old password, such as a backup job, needs updating too, and so does your password manager. It's recorded in the audit log.
 

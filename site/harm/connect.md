@@ -1,5 +1,5 @@
 ---
-description: "Connect to your machines from Zom's HaRM: a terminal in HaRM with a saved login, your own SSH app, Remote Desktop, VNC, the Proxmox console and iDRAC or iLO."
+description: "Connect to your machines from Zom's HaRM: a terminal and a file browser in HaRM with a saved login, your own SSH app, Remote Desktop, VNC (and setting it up), the Proxmox console and iDRAC or iLO."
 ---
 
 # Connecting to your machines
@@ -9,6 +9,7 @@ Open a device and press **🔌 Connect**. Pick the address, the port and a saved
 | Way in | What it does |
 |---|---|
 | **⌨ Terminal in HaRM** | SSH in HaRM's own window, signed in with the saved login. |
+| **📁 Files** | The machine's folders and files in HaRM: upload, download, edit, and run a command in a folder. |
 | **↗ Open in my SSH app** | An `ssh://` link, for computers with an app that opens them. |
 | **📋 Copy SSH command** | `ssh user@host` (with `-p` for another port), to paste into your own terminal. |
 | **🖥 Remote desktop file (.rdp)** | For Windows machines, or anything with port 3389. Opens in Remote Desktop (Windows, Mac) or Remmina, which asks for the password itself. |
@@ -17,7 +18,7 @@ Open a device and press **🔌 Connect**. Pick the address, the port and a saved
 | **↗ Proxmox console** | A VM's or container's screen, or a node's shell, in Proxmox's own console. Shown when HaRM is connected to Proxmox ([Discover](./discover)). |
 | **↗ Management page** | iDRAC, iLO or IPMI, which have their own remote console. |
 
-Only the terminal and screen in HaRM use the saved login. The others open apps on your computer, which ask for it themselves.
+Only the terminal, files and screen in HaRM use the saved login. The others open apps on your computer, which ask for it themselves.
 
 ## The terminal in HaRM
 
@@ -49,6 +50,42 @@ If the machine asks for a VNC password, HaRM uses the password of the login you 
 - Turn it off with the terminal in **Settings > Locking and security**.
 - For Proxmox VMs, use **↗ Proxmox console** instead.
 
+### Finding a screen, or setting one up
+
+VNC needs a program on the machine that shares its screen (a VNC server). Many Linux desktops don't run one, so there's nothing to connect to. **🔍 Find screens**, next to the screen in **🔌 Connect**, looks at the machine over SSH (it only reads) and lists the VNC servers it runs, each with **🖥 Open**, including ones that only listen on the machine itself. New in version 0.3.3.
+
+On a Linux desktop that uses X11 (Xfce, MATE, Cinnamon, LXQt, or GNOME and KDE in their X11 sessions), **🔧 Set up screen sharing** does it for you. HaRM signs in with the login and, with sudo:
+
+- installs **x11vnc** with the machine's package manager (apt, dnf, zypper, pacman or apk), if it isn't there yet,
+- runs it as a service, `zoms-harm-vnc`, that shares the desktop on the machine itself only (127.0.0.1), so it can only be reached through SSH, also at the login screen and after a restart,
+- with a new VNC password, saved in the vault as **VNC screen** and the device's name. HaRM uses it when you open the screen.
+
+**Take it out** in the same place stops and removes the service and deletes the password from the vault. x11vnc stays installed. Setting up and taking out are in the audit log and the device's notes.
+
+Machines it can't set up get directions instead:
+
+- **Wayland desktops** (GNOME, KDE Plasma and Sway, as they start by default): x11vnc can't share them. GNOME has **Settings > System > Remote Desktop**, KDE has **Krfb**, Sway has **wayvnc**. Or sign in to the X11 session and set it up here.
+- **Macs**: **System Settings > General > Sharing > Screen Sharing**, then open it on port 5900.
+- **Machines without a desktop**, like most servers: there's no screen to share. Use the terminal.
+- **Windows**: use the Remote Desktop file.
+
+## Files on a machine
+
+**📁 Files** in **🔌 Connect** (and on the terminal page) opens the machine's folders in HaRM, signed in with the saved login (or [HaRM's key](#harm-s-ssh-key)). It starts in the login's home folder. New in version 0.3.3.
+
+- Click a folder to open it; **↑** goes up, **⌂** goes home, and you can type a path. The list shows each file's size, when it changed, its permissions and its owner. **Hidden files** shows the ones starting with a dot.
+- **⬆ Upload**, or drop files on the list. **⬇** downloads one.
+- Click a text file (up to 1 MB) to open it in an editor, and **💾 Save** (or Ctrl+S). Saving keeps the file's owner and permissions. Bigger or binary files download instead.
+- **+ Folder**, **+ File**, **✎** to rename or move (type a full path to move it), and **🗑** to delete (a folder with everything in it). HaRM won't delete `/` or the home folder.
+- **Use sudo** lists, opens, saves and deletes as root, for system files like those in `/etc`. It uses the login's saved password for sudo.
+- **The command box** at the bottom runs one command in the folder you're in, as one shell, and shows what it printed and its exit code. It stops after 2 minutes, and can't take typing: for `nano`, `htop` and the like, press **⌨ Terminal**.
+
+::: tip Safe by design
+- One SSH connection per file browser, only while HaRM is unlocked. It closes when HaRM locks, after 30 minutes unused, or when you leave the page, and at most 4 are open.
+- Uploads, downloads, saves, renames, deletes and commands are in the audit log (which file, or the command). File contents are never stored in HaRM.
+- It works on Linux, macOS and NAS boxes with SSH. Windows machines don't get it.
+:::
+
 ## HaRM's SSH key
 
 Instead of a password, HaRM can sign in with a key of its own, the safer way to use SSH:
@@ -64,13 +101,20 @@ Instead of a password, HaRM can sign in with a key of its own, the safer way to 
 ::: tip Safe by design
 - The private key is encrypted with your master password, like your logins, so HaRM can only use it while unlocked. Background checks get a copy only when you tick it for a machine.
 - For each connection it's written to a file only HaRM can read, and deleted straight after (a terminal deletes it 30 seconds after connecting).
-- **Take it out** (next to **Add HaRM's SSH key**) removes it from a machine again. **⟳ New key…** in Settings replaces it everywhere in HaRM; add the new one to your machines. Making, adding and removing keys is in the audit log.
+- **Take it out** (next to **Add HaRM's SSH key**) removes it from a machine again. Making, adding and removing keys is in the audit log.
 :::
+
+### A new key
+
+**⟳ New key…** in Settings asks how:
+
+- **⟳ Swap on my machines**: HaRM makes the new key and lists every machine it added the current one to. On each, it adds the new key, checks it can sign in with only that, and then takes the old one out. When you're done, **✓ Use the new key** makes it HaRM's key. Until then the old one keeps working, so nothing stops along the way. Machines it couldn't reach keep the old key: HaRM uses their saved passwords there until you add the new one. **Stop** throws the new key away. New in version 0.3.3.
+- **Just make a new one**: replaces it in HaRM straight away. Machines with the old key stop letting HaRM in with it until you add the new one, and you take the old one out yourself.
 
 You can also paste the public key into a machine's `authorized_keys` yourself, or into Proxmox, a NAS or a router that takes SSH keys.
 
 ## Related
 
-- [Logins](./logins): saving the login the terminal uses, and changing a machine's password
+- [Logins](./logins): saving the login the terminal and files use, and changing a machine's password
 - [Actions](./actions): saved commands you run with one click
 - [Security and privacy](./security)
