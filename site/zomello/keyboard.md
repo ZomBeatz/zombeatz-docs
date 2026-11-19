@@ -62,6 +62,8 @@ Zomello works fully with a mouse or touch; these are shortcuts for when your han
 
 **Ctrl click** a card to start selecting, or choose **Select** in a card's menu (on a phone, press and hold the card). After that, a plain click or tap on more cards adds them, and clicking one again unselects it. **Shift click** selects every card between the last one you picked and this one. **Ctrl A** selects every card on the board (or every card the filter shows), and a bucket's menu has **Select all cards**.
 
+**On a phone**, press **Select** on the board (next to the filter), then tap the cards you want. Each card shows a round tick, and a bar at the top shows how many are picked, with **Select all** and **Done**.
+
 A bar appears with changes for all the selected cards at once:
 
 - **Progress** and **Priority**: set them for every card
