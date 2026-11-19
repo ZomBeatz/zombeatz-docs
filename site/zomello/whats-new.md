@@ -10,6 +10,12 @@ description: What changed in each version of Zomello.
 - **A problem log on each device:** errors and crashes are noted in a small file that never leaves the device. **Settings > About** shows how many lines it has and can **Copy**, **Save** or **Clear** it.
 - **Send feedback** adds the last few problems from the log to the email, so a bug report says what went wrong.
 
+**Fixes**
+- **The side menu keeps the logo and Settings in view:** only the boards in between scroll.
+- **New in Zomello** on a phone opens as a sheet from the bottom, with its buttons under your thumb.
+- **A new bucket stays in view** after you add it.
+- **Dragging on a phone:** while you hold a card, the board's buckets show as names at the top. Drop on one to move the card there.
+
 ## 0.6.0
 
 **Features: as simple or as full as you like**

@@ -10,7 +10,7 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 ## On the board
 
 - **Add:** **+ Add card** under a bucket. Press **Enter** to add it and start the next; **Esc** to stop.
-- **Move:** drag it to another bucket or position. On a phone, press and hold briefly, then drag.
+- **Move:** drag it to another bucket or position. On a phone, press and hold briefly, then drag: hold near the screen edge to turn to the next bucket, or drop it on a bucket name at the top.
 - **Complete:** click the circle next to its title.
 - **Right-click** (press and hold on a phone) for the card menu: progress, **Add to My Day**, priority, labels, people, due date, repeat, reminders, timers, move (to a bucket, a board, or [another device](./moving-boards#moving-cards)), link, copy, template, archive and delete.
 
