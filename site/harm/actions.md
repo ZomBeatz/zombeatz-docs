@@ -8,6 +8,8 @@ An action is a command you save once and send to a device over SSH with one clic
 
 ![The Actions page with four saved actions and the examples to start from](/img/harm/actions.png)
 
+For a one-off command, **⌨ Run on machines** at the top runs it on as many machines as you tick and shows each one's output ([A command on many machines](./connect#a-command-on-many-machines)). When it's one you'll want again, **⚡ Save as action…** there turns it into an action on each of those machines.
+
 ## Making an action
 
 1. Open **Actions** and press **+ New action**. On a device's page, use its **Actions** tab or **⋯ > New action…**, and the device is filled in.
@@ -86,6 +88,7 @@ Make the fan action once, with **Show a button on the Status page** ticked. Afte
 ## Related
 
 - [Status](./status): which devices are online, with your action buttons on each
+- [Connecting](./connect#a-command-on-many-machines): a one-off command on many machines, and saved commands
 - [Logins](./logins): the saved logins actions connect with
 - [Docker containers](./docker): update, restart and read the logs of one container
 - [Import specs](./import-specs): the other thing HaRM does over SSH

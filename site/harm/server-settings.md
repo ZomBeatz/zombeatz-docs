@@ -22,6 +22,7 @@ Settings you change inside HaRM itself (appearance, the master password, 2FA, AI
 
 | Setting | Default | What it does |
 |---|---|---|
+| `HARM_TUNNEL_PORTS` | `8078-8087` | The ports [web pages through SSH](./connect#a-web-page-on-the-machine) open on, one per page. In Docker, publish the same ones. |
 | `HARM_IDLE_MINUTES` | `30` | Minutes without use before HaRM locks, until it's changed in **Settings > Locking and security**. |
 | `HARM_MAX_SESSION_HOURS` | `12` | The longest an unlock lasts, even while in use, until it's changed in **Settings > Locking and security**. |
 
@@ -41,6 +42,7 @@ Settings you change inside HaRM itself (appearance, the master password, 2FA, AI
 |---|---|
 | `image: ghcr.io/zombeatz/zoms-harm:latest` | The image GitHub builds. Pin a version with `:0.3.2` instead of `:latest`. |
 | `ports: "8077:8077"` | The port on the server (left) and in the container (right). |
+| `ports: "8078-8087:8078-8087"` | The ports for [web pages through SSH](./connect#a-web-page-on-the-machine). Add this line if your `docker-compose.yml` is older than 0.3.3. |
 | `volumes: ./data:/data` | Where the data folder is on the server. |
 | `network_mode: host` | Lets Discover's network scan see your network (remove `ports:` when you use it). |
 

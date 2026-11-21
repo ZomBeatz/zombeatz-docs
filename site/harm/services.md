@@ -1,5 +1,5 @@
 ---
-description: "Every web page and port on your devices as cards or a list in Zom's HaRM: favorites, lists, filters, layouts, and buttons of your own on each card."
+description: "Every web page and port on your devices as cards or a list in Zom's HaRM: favorites, lists, filters, layouts, buttons of your own on each card, and pages only their machine answers on, through SSH."
 ---
 
 # Services
@@ -51,6 +51,14 @@ Tap **☆** on a card to make it a favorite. Favorites come first, and show on *
 - **Buttons**: up to 8 of your own (below).
 
 **⋯ > Edit service…** changes the service itself: its name, address, port and notes.
+
+## Pages only their machine answers on
+
+Some pages only answer on the machine itself, at an address like `http://localhost:9000` or `http://127.0.0.1:8080`. Your browser can't open those directly, so their card's **🌐 Open ↗** opens them [through SSH](./connect#a-web-page-on-the-machine) to the device instead, in a new tab. For any other service, **⋯ > 🌐 Open through SSH** does the same, for a page that's only open on the machine or its network. New in version 0.3.3.
+
+- The device needs a saved login of the kind **SSH** or **OS Account** with a username (not Windows). HaRM uses its first one.
+- A page that's open through SSH already is reused: pressing it again doesn't sign in again.
+- It closes when HaRM locks or after 30 minutes unused, like any page through SSH.
 
 ## Buttons of your own
 
