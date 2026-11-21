@@ -30,7 +30,7 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 | **Labels** | Colored tags. **Labels** at the top of the board manages them |
 | **Description** | Longer details, with formatting (see below) |
 | **Checklist** | Steps to tick off |
-| **Notes** | Comments with dates, newest first |
+| **Comments** | Comments with who wrote them (the name in **Settings > People**) and when, newest first. Called Notes before version 0.6.1 |
 
 The rest (repeating, reminders, sub-tasks, linked tasks, files, covers, time tracking, custom fields) is in [Cards in depth](./cards-in-depth).
 
@@ -46,7 +46,7 @@ Labels are colored tags (Bug, Idea, Urgent, Groceries…) that belong to a board
 
 ## Formatting text
 
-The description and notes support **Markdown**, with a toolbar: bold (**Ctrl B**), italic (**Ctrl I**), strikethrough, heading, bulleted and numbered lists, checklist, quote, inline code (**Ctrl E**), code block, link (**Ctrl K**), table and divider.
+The description and comments support **Markdown**, with a toolbar: bold (**Ctrl B**), italic (**Ctrl I**), strikethrough, heading, bulleted and numbered lists, checklist, quote, inline code (**Ctrl E**), code block, link (**Ctrl K**), table and divider.
 
 - Checklist boxes inside a description can be ticked right in the finished text.
 - Code blocks get a **Copy** button.

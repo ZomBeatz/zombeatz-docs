@@ -38,12 +38,13 @@ For each kind of detail, choose **Hidden**, **Icon** (a small symbol or count) o
 | **Checklist** | Count (2/5) | The items themselves, tickable right on the card |
 | **Assigned to** | Avatars | Avatars with names |
 | **Description** | Icon | The first lines |
-| **Notes** | Count | The latest note |
+| **Comments** | Count | The latest comment and who wrote it |
 | **Linked tasks** | Count | Linked task names |
 | **Files & links** | Count | File names |
+| **Pictures** | Count | Small previews of the card's pictures (Hidden unless you turn it on). New in version 0.6.1 |
 | **Time tracked** | Total | Total and estimate |
 
-**Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details, and **Checklist items shown on a card** sets how many show before "+3 more" (3 to 25, or All; 6 unless you change it). A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**).
+**Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details, and **Checklist items shown on a card** sets how many show before "+3 more" (3 to 25, or All; 6 unless you change it). A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**), and so can a single card: right-click it (press and hold on a phone) > **Card display…**. New for single cards in version 0.6.1.
 
 ## Card details window
 
@@ -51,7 +52,7 @@ Untick parts of the card window you don't use on this board: Labels, Custom fiel
 
 ## Card aging
 
-**Fade cards nobody has touched in a while.** Unfinished cards fade a little after 1, 2 and 4 weeks without any change, so forgotten work stands out. Editing, moving or adding a note makes a card fresh again.
+**Fade cards nobody has touched in a while.** Unfinished cards fade a little after 1, 2 and 4 weeks without any change, so forgotten work stands out. Editing, moving or adding a comment makes a card fresh again.
 
 ## Calendars
 

@@ -21,7 +21,7 @@ Click any task to open it, or a board to go there. On a computer, **H** goes Hom
 
 ![My Day](/img/zomello/my-day.png)
 
-What to do today, from every board, in one list:
+What to do today, from every board, in one list. My Day is today's plan; [My Tasks](#my-tasks) is everything assigned to you, whatever the date.
 
 - **Late:** past their due date.
 - **Today:** due today, or running across today (a start date before and a due date after). Cards with a time come first, in time order.
@@ -36,7 +36,7 @@ It shows cards assigned to you (set who you are in **Settings > People**) or to 
 
 ![My Tasks](/img/zomello/my-tasks.png)
 
-Everything assigned to you, across all boards.
+Everything assigned to you, across all boards, whatever the date. For just what to do today, use [My Day](#my-day).
 
 - Group by **Due date**, **Board**, **Progress** or **Priority**.
 - **Include unassigned** adds cards nobody has. **Show completed** adds finished ones.
