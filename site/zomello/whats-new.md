@@ -10,6 +10,9 @@ description: What changed in each version of Zomello.
 - **A problem log on each device:** errors and crashes are noted in a small file that never leaves the device. **Settings > About** shows how many lines it has and can **Copy**, **Save** or **Clear** it.
 - **Send feedback** adds the last few problems from the log to the email, so a bug report says what went wrong.
 
+**New boards**
+- **Choose how a new board starts:** Home's new board box has **Start with**: the usual three buckets, a blank board, a new **Shopping list**, or any template. See [Boards](./boards).
+
 **Phones**
 - **Select several cards at once:** press **Select** on a board, then tap cards. Change them all together from the bar at the bottom. See [Select several cards](./keyboard#select-several-cards).
 
