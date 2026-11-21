@@ -16,6 +16,7 @@ Everything in **Settings** (bottom of the menu), section by section. The buttons
 | **Density** | Compact, Normal, Comfortable |
 | **Week starts on** | Sunday or Monday (calendars and "this week") |
 | **New boards open in** | Board, List, Calendar or Timeline view |
+| **Side menu** | Show or hide the **Focus timer** and the **Archive** in the side menu, to make room. A running countdown still shows, and the Archive is also under **Data & backups**. New in version 0.6.1 |
 
 Each board also has its own look: [Customizing a board](./customize-board).
 
@@ -84,6 +85,7 @@ Let your phones and tablets use this computer's boards: turn it on, allow it thr
 ## Data & backups
 
 - Where your data is stored.
+- **Open the Archive** (archived boards, buckets and cards), also when it's hidden from the side menu.
 - **Export JSON**, **Restore from Zomello JSON**, **Import a board**, **Clean up unused files**.
 - **Automatic backups** with **Restore**.
 

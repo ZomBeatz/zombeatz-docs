@@ -13,6 +13,12 @@ description: What changed in each version of Zomello.
 **People in your home**
 - **Share boards with the people in your home, on their own phones:** in **Settings > Phones & tablets**, say whose each phone is. Then a board's menu > **People on this board…** chooses who sees it and whether they can view, check off their own tasks, or edit. Assign them cards and they show in their My Day. See [People in your home](./people-at-home).
 
+**Auto-assign and priorities**
+- **Auto-assign** (a bucket rule): cards that arrive with no one go to whoever has the most room, most important first. Cards have an **Effort**, people a capacity; what doesn't fit waits in a queue. See [Auto-assign](./auto-assign).
+- **Each board can have its own priorities**, with names, colors, icons and a colored card edge. See [Customizing a board](./customize-board#priorities).
+- **Custom permissions** for the people in your home: bucket by bucket (hidden, see, work in, in charge), what they can do, and which priorities they can set. **Can check off** gains picking up, moving and handing off cards. See [People in your home](./people-at-home#custom-permissions).
+- **Hide the Focus timer and the Archive** from the side menu in Settings > Appearance.
+
 **New boards**
 - **A new board starts blank,** with one **To do** bucket. **Start with** in Home's new board box picks something else: three buckets, a new **Shopping list**, or any template. See [Boards](./boards).
 - **Templates set up what cards show:** a trip or a shopping list shows its checklists right on the cards.

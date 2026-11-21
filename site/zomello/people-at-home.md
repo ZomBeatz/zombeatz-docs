@@ -24,6 +24,19 @@ On the computer, right-click a board (or open its **⋯** menu) > **People on th
 | **Can view** | They see the board, and nothing they change is kept |
 | **Can check off** | They add comments to any card. On the cards assigned to them, they also set the status (Not started, In progress, Done) and tick checklist items. Nothing else they change is kept: not titles, dates or labels, and not moving cards between buckets, so on boards where buckets set the status they change it on the card instead |
 | **Can edit** | They change anything on the board: cards, buckets, dates, everything except who it's shared with |
+| **Custom…** | You choose, bucket by bucket and ability by ability (see below) |
+
+**Can check off** has three extras you can tick under the person's name: **Pick up cards nobody has**, **Move their cards between buckets**, and **Hand their cards to someone else**. It covers every status: Not started, In progress, Waiting, On hold and Completed.
+
+### Custom permissions
+
+**Custom…** opens the details for that person on that board:
+
+- **Buckets:** each one **Hidden** (they don't see it or its cards at all), **See**, **Work in** (change cards there, and move cards between buckets they work in), or **In charge** (also add, remove and re-assign cards there). **Buckets added later** sets what new buckets get.
+- **What they can do:** set the status and tick checklists (on no cards, their own, or any card in buckets they work in), comment, edit what cards say, add cards, archive or delete cards, pick up cards nobody has, hand their cards to someone else.
+- **Priorities they can set:** **Any**, or only the ones you tick. They can't change a card that has a priority they may not set.
+
+For example, someone who runs the laundry: **In charge** of Laundry, **Work in** Done, **See** the rest. Their phone shows **Limited** next to the board's name.
 
 Your computer decides: it keeps only the changes each person is allowed, so a change they can't make is undone on their phone right away. Boards they can't fully change show **View only** or **Check off** next to the board's name.
 
