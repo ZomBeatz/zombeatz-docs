@@ -65,6 +65,7 @@ export default defineConfig({
           items: [
             { text: "Boards and sections", link: "/zomello/boards" },
             { text: "Buckets", link: "/zomello/buckets" },
+            { text: "Auto-assign", link: "/zomello/auto-assign" },
             { text: "Cards", link: "/zomello/cards" },
             { text: "Views", link: "/zomello/views" },
             { text: "Filters", link: "/zomello/filters" },

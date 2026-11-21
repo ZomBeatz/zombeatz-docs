@@ -46,6 +46,16 @@ For each kind of detail, choose **Hidden**, **Icon** (a small symbol or count) o
 
 **Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details, and **Checklist items shown on a card** sets how many show before "+3 more" (3 to 25, or All; 6 unless you change it). A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**), and so can a single card: tick **On card** next to Checklist, Description, Files & links or Comments in the card window, or right-click the card (press and hold on a phone) > **Card display…** for every choice. New for single cards in version 0.6.1.
 
+## Priorities
+
+**Customize > Priorities** gives the board its own priorities instead of the standard four (Urgent, Important, Medium, Low). Press **Customize priorities** to start from those four, then:
+
+- rename them, give each a color and an **icon** (an emoji or a short mark),
+- reorder them with the arrows (most important first: sorting and [Auto-assign](./auto-assign) go by this order),
+- add your own or remove some. Cards with a removed priority get the board's usual one.
+
+Two choices per priority: **Color the card's edge** (a colored stripe on the card) and **Can go over capacity** (Auto-assign gives it out even when everyone is full). Every priority picker, the filter, sorting, grouping and charts use the board's list. **Use the standard four** goes back. New in version 0.6.1.
+
 ## Card details window
 
 Untick parts of the card window you don't use on this board: Labels, Custom fields, Activity, Progress, Start date, Due date, Reminder, Repeat, Time & focus, Cover, Move to board. Nothing is deleted; tick it again to bring it back.
