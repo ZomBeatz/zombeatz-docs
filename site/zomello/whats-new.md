@@ -11,13 +11,18 @@ description: What changed in each version of Zomello.
 - **Send feedback** adds the last few problems from the log to the email, so a bug report says what went wrong.
 
 **New boards**
-- **Choose how a new board starts:** Home's new board box has **Start with**: the usual three buckets, a blank board, a new **Shopping list**, or any template. See [Boards](./boards).
+- **A new board starts blank,** with one **To do** bucket. **Start with** in Home's new board box picks something else: three buckets, a new **Shopping list**, or any template. See [Boards](./boards).
+- **Templates set up what cards show:** a trip or a shopping list shows its checklists right on the cards.
+
+**Cards**
+- **Comments:** a card's notes are now comments, each with who wrote it.
+- **Card display for one card:** right-click a card > **Card display…** sets what that card shows. A new **Pictures** choice shows previews of a card's pictures. See [Customize a board](./customize-board).
 
 **Phones**
 - **Select several cards at once:** press **Select** on a board, then tap cards. Change them all together from the bar at the bottom. See [Select several cards](./keyboard#select-several-cards).
 
 **Fixes**
-- **The side menu keeps the logo and Settings in view:** only the boards in between scroll.
+- **The side menu keeps the logo and Settings in view:** only the boards in between scroll. On Android it stays clear of the navigation buttons.
 - **New in Zomello** on a phone opens as a sheet from the bottom, with its buttons under your thumb.
 - **A new bucket stays in view** after you add it.
 - **Dragging on a phone:** while you hold a card, the board's buckets show as names at the top. Drop on one to move the card there.
