@@ -46,6 +46,17 @@ Private boards (**Private: only on this device**) are never shared.
 
 People you add this way are in every card's **Assigned to** list and in the board's **Filter**, so you can see just what's theirs. On their phone, the cards assigned to them are in **My Day** and **My Tasks**, and the comments they write carry their name.
 
+## Files from their phones
+
+Other people's phones can't attach files to cards on your computer until you allow it: **Settings > Phones & tablets > Files from other people's phones > Let them attach files to cards**. Then choose:
+
+- **Kinds of file:** pictures only; pictures and documents (PDF, Office, text, audio and video); or anything that doesn't run.
+- **Up to … MB from each person in all.** Settings shows how much each person has sent.
+
+Programs, scripts, installers, shortcuts and web pages are never taken from someone else's phone. **Check files from phones for viruses** (on unless you turn it off) uses Microsoft Defender on Windows, or ClamAV on Linux if it's installed; a file with a threat in it is removed straight away and the phone is told. macOS checks files itself when they're opened.
+
+Their phone only gets the files used on the boards and buckets shared with them, and doesn't keep backups on your computer.
+
 ## Taking it back
 
 - Set the board back to **No access** and it disappears from their phone.

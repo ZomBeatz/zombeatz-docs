@@ -13,6 +13,11 @@ description: What changed in each version of Zomello.
 **People in your home**
 - **Share boards with the people in your home, on their own phones:** in **Settings > Phones & tablets**, say whose each phone is. Then a board's menu > **People on this board…** chooses who sees it and whether they can view, check off their own tasks, or edit. Assign them cards and they show in their My Day. See [People in your home](./people-at-home).
 
+**Safety**
+- **Links can't start programs:** a program, script or shortcut (a link or an attached file) is shown in its folder instead of opened, and links to network shares don't open.
+- **Notes are plain formatting only**, and pictures from the web in a note show when you click them.
+- **Files from other people's phones** are off unless you allow them, with limits and a virus check. See [People in your home](./people-at-home#files-from-their-phones).
+
 **Auto-assign and priorities**
 - **Auto-assign** (a bucket rule): cards that arrive with no one go to whoever has the most room, most important first. Cards have an **Effort**, people a capacity; what doesn't fit waits in a queue. See [Auto-assign](./auto-assign).
 - **Each board can have its own priorities**, with names, colors, icons and a colored card edge. See [Customizing a board](./customize-board#priorities).
