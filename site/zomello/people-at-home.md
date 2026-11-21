@@ -22,7 +22,7 @@ On the computer, right-click a board (or open its **⋯** menu) > **People on th
 |---|---|
 | **No access** | They don't see the board |
 | **Can view** | They see the board, and nothing they change is kept |
-| **Can check off** | They tick off the cards and checklist items assigned to them, and add comments to any card. Nothing else they change is kept |
+| **Can check off** | They add comments to any card. On the cards assigned to them, they also set the status (Not started, In progress, Done) and tick checklist items. Nothing else they change is kept: not titles, dates or labels, and not moving cards between buckets, so on boards where buckets set the status they change it on the card instead |
 | **Can edit** | They change anything on the board: cards, buckets, dates, everything except who it's shared with |
 
 Your computer decides: it keeps only the changes each person is allowed, so a change they can't make is undone on their phone right away. Boards they can't fully change show **View only** or **Check off** next to the board's name.
