@@ -3,7 +3,7 @@ description: "Auto-assign hands out a bucket's cards to whoever has the most roo
 ---
 # Auto-assign
 
-A bucket can hand out its cards by itself. A card that arrives with no one on it goes to the person with the most room, the most important cards first. When nobody has room, the card waits its turn. New in version 0.6.1.
+A bucket can hand out its cards by itself. A card that arrives with no one on it goes to the person with the most room, the most important cards first. When nobody has room, the card waits its turn. New in version 0.7.0.
 
 Auto-assign is a [bucket rule](./buckets), so it needs **Bucket automation** turned on in **Settings > Features**.
 

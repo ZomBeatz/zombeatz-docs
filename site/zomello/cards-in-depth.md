@@ -72,12 +72,12 @@ When the last card it waits on is completed, it goes back to normal, and Zomello
 - **Attach files** (or drag files from your file manager onto the open card). Files are **copied into Zomello**, so they keep working if you move or delete the original.
 - **Paste a link** (a website or a file path) with an optional name. A file path can be copied in later with the copy button next to it.
 - Pictures show a preview; click to see them big (**←** and **→** for the next one).
-- **Programs stay closed:** a file or link that would run something (a program, script, installer or shortcut) is shown in its folder instead of opened, and links to network shares don't open, even if someone else added them. New in version 0.6.1.
+- **Programs stay closed:** a file or link that would run something (a program, script, installer or shortcut) is shown in its folder instead of opened, and links to network shares don't open, even if someone else added them. New in version 0.7.0.
 - **Cover:** a color strip, or one of the card's pictures. Choose **Strip** (a band on top) or **Full card** (the picture fills the card).
 
 ## Comments
 
-Comments are a running log on the card: type, then **Add comment** (or **Ctrl Enter**). Each one shows who wrote it (the name in **Settings > People**) and when. A comment you're typing is kept even if you close the card. Comments support the same formatting as the description, without styles or forms, and a picture from the web shows when you click it. Called Notes before version 0.6.1.
+Comments are a running log on the card: type, then **Add comment** (or **Ctrl Enter**). Each one shows who wrote it (the name in **Settings > People**) and when. A comment you're typing is kept even if you close the card. Comments support the same formatting as the description, without styles or forms, and a picture from the web shows when you click it. Called Notes before version 0.7.0.
 
 ## Time tracking and focus
 

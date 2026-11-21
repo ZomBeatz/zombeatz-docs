@@ -3,7 +3,7 @@ description: "Share some of your computer's boards with the people in your home,
 ---
 # People in your home
 
-Your computer can share some of its boards with other people on their own phones. Someone who helps around the house can see the chores board and tick off what you've given them, without seeing your other boards. New in version 0.6.1.
+Your computer can share some of its boards with other people on their own phones. Someone who helps around the house can see the chores board and tick off what you've given them, without seeing your other boards. New in version 0.7.0.
 
 It works over your home Wi‑Fi, through the same connection as [your computer's boards on your phone](./phone-and-computer). Nothing passes through the internet or ZomBeatz Media, and there are no accounts or passwords. Your computer has to be on for their phone to reach the boards.
 
