@@ -4,7 +4,7 @@ description: What changed in each version of Zomello.
 
 # What's new
 
-## 0.7.0
+## 0.6.1
 
 **Getting started**
 - **There's more when you want it:** a week after starting with Simple or Standard, Home lists the feature groups that are switched off, each with **Turn on**. **Not now** puts it away for good.
