@@ -36,7 +36,7 @@ It shows cards assigned to you (set who you are in **Settings > People**) or to 
 
 ![My Tasks](/img/zomello/my-tasks.png)
 
-Everything assigned to you, across all boards, whatever the date. For just what to do today, use [My Day](#my-day).
+Everything assigned to you, across all boards, whatever the date. For just what to do today, use [My Day](#my-day). (Both pages explain this at the top; **dismiss** at the end of that text hides it.)
 
 - Group by **Due date**, **Board**, **Progress** or **Priority**.
 - **Include unassigned** adds cards nobody has. **Show completed** adds finished ones.
