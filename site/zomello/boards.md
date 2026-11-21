@@ -10,8 +10,9 @@ A **board** is one project, area or list: "Website Launch", "Home Projects", "We
 - **+ Board** at the bottom of the menu, type a name, **Enter**.
 - Or the **+** next to a section's name, to make it inside that section.
 - Or **⋯ > New board with this layout** on an existing board to reuse its buckets, labels and settings without the cards.
-- Or start from a **template**: **Start from a template** on Home (or **Or start from a template…** under **+ Board**). There are ready-made boards for a weekly plan, moving house, a school term, a trip, a project, household chores, an event and a job search, each with buckets, labels and a few starter cards. Change anything afterwards. New in version 0.5.4.
-- **Your own templates:** in any board's menu, **Save as template** keeps its buckets, labels and open cards (titles, descriptions, labels, priority and checklist items). Dates, people, comments, files and finished cards aren't in it. Your templates show first under **Start from a template**, where you can rename or delete them. New in version 0.5.4.
+- **Start with:** Home's new board box chooses what a new board begins with: **To do, In progress, Done**, **A blank board**, or a template. Zomello remembers your choice, so **+ Board** in the side menu makes the same kind. New in version 0.6.1.
+- Or start from a **template**: pick one under **Start with**, or browse them all with **All templates** on Home (or **Or start from a template…** under **+ Board**). There are ready-made boards for a shopping list, a weekly plan, moving house, a school term, a trip, a project, household chores, an event and a job search, each with buckets, labels and a few starter cards. Change anything afterwards. New in version 0.5.4; the shopping list is new in 0.6.1.
+- **Your own templates:** in any board's menu, **Save as template** keeps its buckets, labels and open cards (titles, descriptions, labels, priority and checklist items). Dates, people, comments, files and finished cards aren't in it. Your templates show under **Start with** and first under **All templates**, where you can rename or delete them. New in version 0.5.4.
 
 New boards start with **To do**, **In progress** and **Done**, and open in the view chosen in **Settings > Appearance > New boards open in**.
 
