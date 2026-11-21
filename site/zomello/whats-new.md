@@ -4,7 +4,14 @@ description: What changed in each version of Zomello.
 
 # What's new
 
-## 0.6.1 (coming next)
+## 0.7.0
+
+**Getting started**
+- **There's more when you want it:** a week after starting with Simple or Standard, Home lists the feature groups that are switched off, each with **Turn on**. **Not now** puts it away for good.
+
+**Desktop**
+- **A portable Windows copy:** unzip and run, nothing to install; everything stays in the **Zomello Data** folder next to it. See [Installing](./installing#portable-no-installing).
+- **A Mac version** on GitHub, with a Mac App Store version on its way.
 
 **Reporting problems**
 - **A problem log on each device:** errors and crashes are noted in a small file that never leaves the device. **Settings > About** shows how many lines it has and can **Copy**, **Save** or **Clear** it.
