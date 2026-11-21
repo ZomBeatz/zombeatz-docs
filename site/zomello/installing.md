@@ -13,7 +13,7 @@ description: "How to install, update and uninstall Zomello on Windows, Linux, An
 
 ### Portable (no installing)
 
-Download `Zomello_(version)_x64-portable.zip`, unzip it anywhere (a USB stick works) and open **Zomello.exe**. Nothing is installed: while the **Zomello Data** folder sits next to Zomello.exe, your boards, attached files, backups and settings all stay in that folder and nothing is left on the computer. Move or copy the two together. It needs the Microsoft Edge WebView2 Runtime, which Windows 10 and 11 already have. New in version 0.7.0.
+Download `Zomello_(version)_x64-portable.zip`, unzip it anywhere (a USB stick works) and open **Zomello.exe**. Nothing is installed: while the **Zomello Data** folder sits next to Zomello.exe, your boards, attached files, backups and settings all stay in that folder and nothing is left on the computer. Move or copy the two together. It needs the Microsoft Edge WebView2 Runtime, which Windows 10 and 11 already have. New in version 0.6.1.
 
 The same works on Linux and Mac: make a folder named **Zomello Data** next to the `.AppImage` or next to **Zomello.app**, and Zomello keeps everything in it.
 

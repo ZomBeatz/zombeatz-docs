@@ -30,7 +30,7 @@ A card is one task. Click it to open it; everything saves as you type, and **Esc
 | **Labels** | Colored tags. **Labels** at the top of the board manages them |
 | **Description** | Longer details, with formatting (see below) |
 | **Checklist** | Steps to tick off |
-| **Comments** | Comments with who wrote them (the name in **Settings > People**) and when, newest first. Called Notes before version 0.7.0 |
+| **Comments** | Comments with who wrote them (the name in **Settings > People**) and when, newest first. Called Notes before version 0.6.1 |
 
 The rest (repeating, reminders, sub-tasks, linked tasks, files, covers, time tracking, custom fields) is in [Cards in depth](./cards-in-depth).
 
