@@ -10,13 +10,16 @@ description: What changed in each version of Zomello.
 - **A problem log on each device:** errors and crashes are noted in a small file that never leaves the device. **Settings > About** shows how many lines it has and can **Copy**, **Save** or **Clear** it.
 - **Send feedback** adds the last few problems from the log to the email, so a bug report says what went wrong.
 
+**People in your home**
+- **Share boards with the people in your home, on their own phones:** in **Settings > Phones & tablets**, say whose each phone is. Then a board's menu > **People on this board…** chooses who sees it and whether they can view, check off their own tasks, or edit. Assign them cards and they show in their My Day. See [People in your home](./people-at-home).
+
 **New boards**
 - **A new board starts blank,** with one **To do** bucket. **Start with** in Home's new board box picks something else: three buckets, a new **Shopping list**, or any template. See [Boards](./boards).
 - **Templates set up what cards show:** a trip or a shopping list shows its checklists right on the cards.
 
 **Cards**
 - **Comments:** a card's notes are now comments, each with who wrote it.
-- **Card display for one card:** right-click a card > **Card display…** sets what that card shows. A new **Pictures** choice shows previews of a card's pictures. See [Customize a board](./customize-board).
+- **Show on the card, for one card:** in the card window, **On card** next to Checklist, Description, Files & links and Comments shows that part on the board. Right-click a card > **Card display…** has every choice. A new **Pictures** choice shows previews of a card's pictures. See [Customize a board](./customize-board).
 
 **Phones**
 - **Select several cards at once:** press **Select** on a board, then tap cards. Change them all together from the bar at the bottom. See [Select several cards](./keyboard#select-several-cards).

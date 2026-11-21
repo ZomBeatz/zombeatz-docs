@@ -44,7 +44,7 @@ For each kind of detail, choose **Hidden**, **Icon** (a small symbol or count) o
 | **Pictures** | Count | Small previews of the card's pictures (Hidden unless you turn it on). New in version 0.6.1 |
 | **Time tracked** | Total | Total and estimate |
 
-**Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details, and **Checklist items shown on a card** sets how many show before "+3 more" (3 to 25, or All; 6 unless you change it). A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**), and so can a single card: right-click it (press and hold on a phone) > **Card display…**. New for single cards in version 0.6.1.
+**Hide ticked checklist items on cards** keeps finished steps out of the way when the checklist shows details, and **Checklist items shown on a card** sets how many show before "+3 more" (3 to 25, or All; 6 unless you change it). A single bucket can override all of this from its menu (**Card display…**, **Ticked checklist items**), and so can a single card: tick **On card** next to Checklist, Description, Files & links or Comments in the card window, or right-click the card (press and hold on a phone) > **Card display…** for every choice. New for single cards in version 0.6.1.
 
 ## Card details window
 

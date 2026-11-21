@@ -95,6 +95,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Your computer's boards on your phone", link: "/zomello/phone-and-computer" },
+            { text: "People in your home", link: "/zomello/people-at-home" },
             { text: "Moving boards between devices", link: "/zomello/moving-boards" },
             { text: "Sharing between your devices", link: "/zomello/sharing-between-devices" },
             { text: "Device backups", link: "/zomello/device-backups" },
