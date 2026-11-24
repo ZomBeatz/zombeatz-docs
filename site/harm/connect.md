@@ -24,6 +24,8 @@ Only the terminal, files, web pages, commands and screen in HaRM use the saved l
 
 ## The terminal in HaRM
 
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/terminal?d=4&h=10.20.0.10&p=22&c=2&u=root): a pretend pve1. Type `help`.*
+
 ![A terminal on pve1 in HaRM, after a few Proxmox commands](/img/harm/terminal.png)
 
 It's a full terminal: colors, `htop`, `nano`, copy and paste. It follows the window's size. **⧉ New window** opens another one beside it.
@@ -95,6 +97,8 @@ Machines it can't set up get directions instead:
 
 ## Files on a machine
 
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/files?d=4&h=10.20.0.10&p=22&c=2).*
+
 **📁 Files** in **🔌 Connect** (and on the terminal page) opens the machine's folders in HaRM, signed in with the saved login (or [HaRM's key](#harm-s-ssh-key)). It starts in the login's home folder. New in version 0.3.3.
 
 ![Files on pve1: folders with size, date, permissions and owner, and what a command printed](/img/harm/files.png)
@@ -148,6 +152,8 @@ HaRM signs in once with the login (or [its key](#harm-s-ssh-key)), checks someth
 :::
 
 ## A command on many machines
+
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/run?cmd=uptime): six pretend machines answer.*
 
 **⌨ Run on machines**, on **Devices** and **Actions** (or **⌨ Run a command** in a device's **🔌 Connect**), runs one command on every machine you tick and shows each one's output side by side. New in version 0.3.3.
 

@@ -10,6 +10,8 @@ The **Status** page shows which of your devices are answering right now, grouped
 
 ## Reading the page
 
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/status): pve2 dropped off overnight.*
+
 Every device with an IP address gets a tile, grouped under its location and in rack order, top of the rack first. Virtual machines and containers sit with their host's location, after the hardware. Devices without an address aren't shown; the bottom of the page says how many.
 
 | On a tile | What it means |

@@ -6,6 +6,15 @@ description: "What changed in each version of Zom's HaRM, newest first."
 
 What changed in each version of HaRM, newest first. It's the same list as [CHANGELOG.md](https://github.com/ZomBeatz/Zoms-HaRM/blob/main/CHANGELOG.md) on GitHub, and each version's [release page](https://github.com/ZomBeatz/Zoms-HaRM/releases) has its files. To update, see [Installing and updating](./installing#updating).
 
+## Unreleased
+
+**An easier demo**
+- The demo opens with a choice: **Show me around**, a guided tour of 13 pages (Home, a rack, a device, its drives, a terminal, Files, Run on machines, Status, Docker, the IP map, spare parts and logins), or **Let me explore**.
+- Exploring puts a **What to try** list on Home that ticks itself off as you go. **🧭 Tour** at the top of the online demo starts the tour again.
+- The demo's machines are pretend instead of out of reach: the terminal, Files (on Linux and Windows), Run on machines, actions, Docker, Health and Wake-on-LAN all answer, from a small made-up machine for each device. Type `help` in a terminal to see what it knows.
+- Six machines have SSH logins now (and Alex's desktop a Windows one), so Run on machines and Files have more to show.
+- A link to one demo page (like the guide's *Try it in the demo*) opens that page without the welcome.
+
 ## 0.3.3
 
 **A machine's web page, through SSH**

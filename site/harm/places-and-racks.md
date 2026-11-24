@@ -30,6 +30,8 @@ When you pick a location on a form, the holder list shows only holders in that l
 
 ## The rack view
 
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/racks/1): the made-up Main rack.*
+
 Open a rack from **Racks & Storage** to see it front and rear.
 
 ![A rack, front and rear](/img/harm/rack.png)

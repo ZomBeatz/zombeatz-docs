@@ -12,11 +12,11 @@ Open the [latest release](https://github.com/ZomBeatz/zoms-modzilla/releases/lat
 
 | Your system | File | How to install |
 |---|---|---|
-| **Ubuntu, Linux Mint, Pop!_OS, Debian, Zorin** | `zoms-modzilla_(version)_amd64.deb` | Double-click it: your software installer opens it. Press **Install**. |
-| **Fedora, Nobara, openSUSE** | `zoms-modzilla-(version)-1.x86_64.rpm` | Double-click it and press **Install**. |
-| **Steam Deck, Arch, CachyOS, Manjaro, Bazzite, anything else** | `Zoms-Modzilla_(version)_amd64.AppImage` | Right-click it › **Properties** › **Permissions** › allow running it as a program, then double-click it. |
+| **Ubuntu, Linux Mint, Pop!_OS, Debian, Zorin** | `Zom.s.Modzilla_(version)_amd64.deb` | Double-click it: your software installer opens it. Press **Install**. |
+| **Fedora, Nobara, openSUSE** | `Zom.s.Modzilla-(version)-1.x86_64.rpm` | Double-click it and press **Install**. |
+| **Steam Deck, Arch, CachyOS, Manjaro, Bazzite, anything else** | `Zom.s.Modzilla_(version)_amd64.AppImage` | Right-click it › **Properties** › **Permissions** › allow running it as a program, then double-click it. |
 
-From a terminal it's `sudo apt install ./zoms-modzilla_*.deb`, `sudo dnf install ./zoms-modzilla-*.rpm` (`sudo zypper install` on openSUSE), or `chmod +x Zoms-Modzilla_*.AppImage`.
+From a terminal it's `sudo apt install ./Zom.s.Modzilla_*.deb`, `sudo dnf install ./Zom.s.Modzilla-*.rpm` (`sudo zypper install` on openSUSE), or `chmod +x Zom.s.Modzilla_*.AppImage`. (GitHub writes the apostrophe in "Zom's" as a dot.)
 
 The `.deb` and `.rpm` add Zom's Modzilla to your app menu. The AppImage runs from wherever you keep it: put it in a folder like `~/Applications` so it doesn't get deleted with your downloads.
 
@@ -49,6 +49,6 @@ Zom's Modzilla checks GitHub once a day and shows a banner when a newer version 
 
 ## Uninstalling
 
-Uninstall it like any other app: your software center, `sudo apt remove zoms-modzilla`, `sudo dnf remove zoms-modzilla`, or delete the AppImage.
+Uninstall it like any other app: from your software center or package manager, or by deleting the AppImage.
 
 **Before uninstalling**, take each game's mods out (**Settings › Before uninstalling**), so every game goes back to how it came. Uninstalling keeps your mods and settings; to remove them too, delete the folders listed in [Data and backups](./data-and-backups).

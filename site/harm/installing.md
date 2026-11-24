@@ -83,11 +83,13 @@ To remove the data too, delete the data folder above. Download a backup first if
 
 **[Open the live demo](https://zombeatz.github.io/Zoms-HaRM/)**: the real HaRM with a made-up home lab (a rack with two Proxmox hosts, a NAS, VMs, spare parts and tasks), running entirely in your browser.
 
+- It starts with a choice. **Show me around** is a guided tour of 13 pages, about 3 minutes, and you can leave it any time. **Let me explore** puts a *What to try* list on Home that ticks itself off as you go. **🧭 Tour** at the top starts the tour again.
+- The machines are pretend, so the terminal, Files, Run on machines, actions and Docker work too. Type `help` in a terminal to see what it knows.
 - Nothing is installed, and nothing you type leaves your device.
 - Your changes stay in that browser until you press **Reset demo** at the top, or until a newer demo is published.
 - If you lock it, the password is `demo-password`.
 - The first visit downloads about 20 MB, so give it a few seconds.
-- Features that reach other machines (network scan, UniFi, Proxmox, Import specs, sending photos to an AI) need HaRM on your own network, so the demo says so instead.
+- Scanning the network, UniFi, Proxmox, Import specs, the VNC screen and sending photos to an AI need HaRM on your own network, so the demo says so instead.
 
 It works on phones too, so it's a quick way to see [what HaRM is like on a phone](./phones-and-tablets#when-to-grab-your-phone).
 

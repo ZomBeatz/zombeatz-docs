@@ -8,6 +8,8 @@ Record your subnets and VLANs, which device has which address, what each runs, a
 
 ## Networks and the IP map
 
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/networks/1): the made-up Home LAN.*
+
 **Networks & IPs** lists your networks: name, VLAN, subnet, gateway, DHCP pool, DNS and domain.
 
 ![Networks & IPs](/img/harm/networks.png)

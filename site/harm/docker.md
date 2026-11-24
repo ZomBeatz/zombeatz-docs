@@ -27,6 +27,8 @@ HaRM connects over SSH, like [Actions](./actions), and asks Docker for its conta
 
 ## Updates
 
+*[Try it in the demo](https://zombeatz.github.io/Zoms-HaRM/#/devices/16?tab=containers): Nextcloud and Plex have newer images.*
+
 **Check for updates** asks each image's registry for its current version and compares it with the one on the server. Nothing is downloaded. An image built on the machine itself, or a registry that can't be asked, shows nothing rather than a guess. (It needs `docker buildx`, which comes with Docker Engine.)
 
 Most images say which version they are; then the check shows the version you run and the newest one. [Maintenance](./maintenance) lists every container with an update, across all your machines.
