@@ -23,6 +23,26 @@ Zom's Modzilla notices a game that closes within a minute, and shows what change
 
 A profile that keeps its own saves empties the save folder for the others, and Steam Cloud fills it again. Turn off Steam Cloud for that game in Steam (Properties › General), or let the profile share the usual saves.
 
+## Downloads are stuck or slow
+
+- **Waiting** with a reason (download hours, a game running, the battery): it says which setting is holding it.
+- **Needs your click** (free accounts): the file is waiting for **Slow download** on its page. **Open page**, or walk through them one after another.
+- **The link ran out**: Mod manager download links only last a while. Click the button on the website again.
+- **Out of requests**: the sidebar shows what's left of your Nexus Mods allowance. Downloads pick up again when it refills.
+- **Slow**: free accounts are slowed by Nexus Mods; check **Speed limit** in Settings isn't set lower than you meant.
+
+## The website's buttons don't open the app
+
+**Settings › Nexus Mods links** says whether Zom's Modzilla handles `nxm://` links, and fixes it in one click. Another manager (Vortex, MO2 under Wine) may have taken them over; clicking there takes them back. In a browser in a Flatpak or Snap, the browser may ask the first time which app to open the link with.
+
+## The window is blank
+
+On some NVIDIA setups the window stays white. Zom's Modzilla already turns off the WebKit setting that usually causes it; if it still happens, start it from a terminal with `WEBKIT_DISABLE_COMPOSITING_MODE=1 zoms-modzilla` (or the AppImage's name).
+
+## Nothing moves with the controller in Game Mode
+
+Set Zom's Modzilla's controller layout in Steam to a **Gamepad** layout (the controller button on its page in your library). Controller input is ignored while a game is running and when the window isn't in front.
+
 ## Asking for help
 
 - **Ask AI** (optional, off until you set it up) gets the check, the logs and the last runs, with your home folder and names taken out, and only when you press Send.
