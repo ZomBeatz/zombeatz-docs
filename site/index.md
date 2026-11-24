@@ -1,7 +1,7 @@
 ---
 layout: home
 
-description: "Guides for every ZomBeatz Media tool: Zomello, the planner that stays on your own computer, and Zom's HaRM, the hardware and rack manager, and Zom's MRP, the helicopter mission planner. Step by step, with pictures."
+description: "Guides for every ZomBeatz Media tool: Zomello, the planner that stays on your own computer; Zom's HaRM, the hardware and rack manager; Zom's MRP, the helicopter mission planner; and Zom's Modzilla, the mod manager for Linux. Step by step, with pictures."
 
 hero:
   name: ZomBeatz Docs
@@ -20,6 +20,9 @@ hero:
     - theme: alt
       text: Zom's MRP guide
       link: /mrp/
+    - theme: alt
+      text: Zom's Modzilla guide
+      link: /modzilla/
     - theme: alt
       text: Join the Zomello beta
       link: /zomello/help-test
@@ -42,6 +45,12 @@ features:
     title: Zom's MRP
     details: A helicopter mission planner. Aircraft by tail number, crews rotating through hitches, training and maintenance, with every gap checked.
     link: /mrp/
+    linkText: Open the guide
+  - icon:
+      src: /modzilla-icon.svg
+    title: Zom's Modzilla
+    details: A mod manager for Linux and the Steam Deck. Nexus Mods and Thunderstore, collections, profiles with a conflict check, and help when a game won't start.
+    link: /modzilla/
     linkText: Open the guide
   - icon:
       src: /zombeatz-icon.svg

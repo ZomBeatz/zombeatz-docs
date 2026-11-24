@@ -17,3 +17,4 @@ fetch() {
 }
 fetch https://raw.githubusercontent.com/ZomBeatz/Zomello/main/CHANGELOG.md site/zomello/whats-new.md Zomello Zomello
 fetch https://raw.githubusercontent.com/ZomBeatz/Zoms_MRP/main/CHANGELOG.md site/mrp/whats-new.md "Zom's MRP" Zoms_MRP
+fetch https://raw.githubusercontent.com/ZomBeatz/zoms-modzilla/main/CHANGELOG.md site/modzilla/whats-new.md "Zom's Modzilla" zoms-modzilla

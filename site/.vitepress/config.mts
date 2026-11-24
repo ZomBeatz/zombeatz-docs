@@ -8,7 +8,7 @@ export default defineConfig({
   base,
   lang: "en-US",
   title: "ZomBeatz Docs",
-  description: "Guides for Zomello, Zom's HaRM, Zom's MRP and every ZomBeatz Media tool.",
+  description: "Guides for Zomello, Zom's HaRM, Zom's MRP, Zom's Modzilla and every ZomBeatz Media tool.",
   cleanUrls: true,
   lastUpdated: true,
   head: [
@@ -44,6 +44,7 @@ export default defineConfig({
       { text: "Zomello beta", link: "/zomello/help-test" },
       { text: "Zom's HaRM", link: "/harm/", activeMatch: "/harm/" },
       { text: "Zom's MRP", link: "/mrp/", activeMatch: "/mrp/" },
+      { text: "Zom's Modzilla", link: "/modzilla/", activeMatch: "/modzilla/" },
       { text: "Design", link: "/design/", activeMatch: "/design/" },
     ],
     sidebar: {
@@ -257,6 +258,31 @@ export default defineConfig({
             { text: "Words used in HaRM", link: "/harm/glossary" },
             { text: "Contact and feedback", link: "/harm/contact" },
           ],
+        },
+      ],
+      "/modzilla/": [
+        {
+          text: "Start here",
+          items: [
+            { text: "Overview", link: "/modzilla/" },
+            { text: "Live demo", link: "https://zombeatz.github.io/zoms-modzilla/" },
+            { text: "GitHub", link: "https://github.com/ZomBeatz/zoms-modzilla" },
+            { text: "Quick start", link: "/modzilla/quick-start" },
+            { text: "Questions", link: "/modzilla/faq" },
+          ],
+        },
+        {
+          text: "Using it",
+          items: [
+            { text: "Profiles and Play", link: "/modzilla/profiles-and-play" },
+            { text: "Game tools", link: "/modzilla/game-tools" },
+            { text: "Steam Deck", link: "/modzilla/steam-deck" },
+            { text: "When a game won't start", link: "/modzilla/troubleshooting" },
+          ],
+        },
+        {
+          text: "More",
+          items: [{ text: "What's new", link: "/modzilla/whats-new" }],
         },
       ],
       "/mrp/": [
