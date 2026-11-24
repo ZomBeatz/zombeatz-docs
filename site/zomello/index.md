@@ -2,11 +2,11 @@
 next:
   text: Quick start
   link: /zomello/quick-start
-description: "Zomello is a planner for any occasion. Boards hold buckets (columns) of cards you drag along as work moves, like Trello, with the task details of Microsoft…"
+description: "Zomello is your planner, on your own computer: free kanban boards like Trello and Microsoft Planner, with calendar, timeline, charts, auto-assign and sharing built in. No account, no cloud."
 ---
 # Zomello
 
-Zomello is a planner for any occasion. Boards hold buckets (columns) of cards you drag along as work moves, like Trello, with the task details of Microsoft Planner. It runs on Windows, Linux, Android, iPhone and iPad, keeps your boards on your own devices, and has no ads, no tracking and no account.
+**Your planner, on your own computer.** Zomello is a free kanban planner like Trello and Microsoft Planner, with much more built in: calendar, timeline, charts, auto-assign and sharing with the people at home. Boards hold buckets (columns) of cards you drag along as work moves, each with dates, checklists, files and comments. It runs on Windows, Linux, Android, iPhone and iPad, keeps your boards on your own devices, and has no ads, no tracking and no account.
 
 ![A Zomello board](/img/zomello/board.png)
 

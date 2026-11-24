@@ -1,7 +1,7 @@
 ---
 layout: home
 
-description: "Guides for every ZomBeatz Media tool: Zomello, the planner for any occasion, and Zom's HaRM, the hardware and rack manager, and Zom's MRP, the helicopter mission planner. Step by step, with pictures."
+description: "Guides for every ZomBeatz Media tool: Zomello, the planner that stays on your own computer, and Zom's HaRM, the hardware and rack manager, and Zom's MRP, the helicopter mission planner. Step by step, with pictures."
 
 hero:
   name: ZomBeatz Docs
@@ -28,7 +28,7 @@ features:
   - icon:
       src: /zomello-icon.svg
     title: Zomello
-    details: A planner for any occasion. Boards, cards, calendar and timeline on Windows, Linux, Android, iPhone and iPad, or your own server.
+    details: Your planner, on your own computer. Boards like Trello and Planner, with calendar and timeline on Windows, Linux, Android, iPhone and iPad, or your own server.
     link: /zomello/
     linkText: Open the guide
   - icon:
