@@ -20,7 +20,7 @@ On a Steam Deck, use the AppImage in Desktop Mode, then see [Steam Deck](./steam
 
 The app opens with a short checklist at the top:
 
-1. **Connect your Nexus Mods account** ([more](./nexus-account)). Paste your personal API key from nexusmods.com › **Settings › API keys**. On a Deck, **Sign in with your phone** shows a QR code so you can paste it on your phone instead.
+1. **Connect your Nexus Mods account** ([more](./nexus-account)). Paste your personal API key from nexusmods.com › **Settings › API keys**. On a Deck, it's easiest in Desktop Mode, with copy and paste.
 2. **Let the website's download buttons open Zom's Modzilla**, so **Mod manager download** sends files to the app.
 3. **Find your games.** Steam games are found by themselves (Heroic and Lutris too); add others by hand.
 4. **Get your first mod**, from **Browse** or the website.

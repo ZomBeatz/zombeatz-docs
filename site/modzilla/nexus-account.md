@@ -14,7 +14,7 @@ Zom's Modzilla talks to Nexus Mods with your personal **API key**. It's how the 
 
 The key stays on your computer, in a file only you can read (or in your desktop's keyring, if you tick that). It's never in reports, logs or anything the app shares. **Remove key** takes it off this computer.
 
-**On a Steam Deck**, typing a long key with a controller is painful: **Sign in with your phone** shows a QR code, and you paste the key on your phone instead. See [Send from your phone](./steam-deck#typing).
+**On a Steam Deck**, typing a long key with a controller is painful: do this step in Desktop Mode, where you can copy the key in the browser and paste it. (Send from your phone takes download links, but never the key: its page isn't encrypted, which is fine for links that run out, not for a key that doesn't.)
 
 ## Free and Premium accounts
 

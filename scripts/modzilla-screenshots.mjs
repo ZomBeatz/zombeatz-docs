@@ -72,7 +72,7 @@ await shot("games", "games");
 await shot("game-tools", "games", `${wait(300)} document.querySelectorAll("[aria-label='Game tools']")[1]?.click(); ${wait(500)}`);
 await shot("look-inside", "library", click("[aria-label='Look inside']", "Look inside"));
 await shot("help", "guide");
-await shot("phone", "settings", click("button", "Paste it on your phone"));
+await shot("phone", "settings", `${wait(300)} window.dispatchEvent(new KeyboardEvent("keydown", { key: "F4", bubbles: true })); ${wait(600)}`);
 // The Steam Deck's screen, in Deck mode.
 await cdp("Emulation.setDeviceMetricsOverride", { width: 1280, height: 800, deviceScaleFactor: 1, mobile: false });
 await shot("deck-mode", "profiles", "", { deck: true });

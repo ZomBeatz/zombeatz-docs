@@ -12,7 +12,7 @@ Zom's Modzilla is made to work in Game Mode with the controller, after a few min
 
 1. In Desktop Mode, download the **AppImage** and open it. A first-run setup opens by itself on a Deck.
 2. Press **Add to Steam**. Zom's Modzilla appears in your library in Game Mode, with its artwork. Steam has to be closed while it's added; the app offers to close and reopen it, and keeps a backup of Steam's shortcuts first.
-3. **Sign in with your phone:** scan the QR code, then paste your API key on your phone.
+3. **Sign in:** paste your API key in Settings. It's easiest here in Desktop Mode, with copy and paste.
 4. **Games on the SD card:** press each one listed, so its mods are kept on the card too and linked, not copied.
 
 ## The controller
@@ -31,7 +31,7 @@ For the back buttons and the trackpads, press the controller button on Zom's Mod
 
 ## Typing
 
-Choosing a text box with **A**, or tapping it, opens Steam's keyboard (**STEAM + X** opens it any time). For long things, like an API key or a download link, use **Send from your phone** (Settings, or **F4**): scan the QR code, and paste on your phone. The page only works while that dialog is open, and only on your home network.
+Choosing a text box with **A**, or tapping it, opens Steam's keyboard (**STEAM + X** opens it any time). For a long download link, use **Send from your phone** (**F4**, or Help › Typing in Game Mode): scan the QR code, and paste a Mod manager download link, or a mod's or collection's address, on your phone. The page only works while that dialog is open, only on your home network, and never takes your API key.
 
 ![Send from your phone](/img/modzilla/phone.png)
 
