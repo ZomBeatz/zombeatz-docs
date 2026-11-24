@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { fileURLToPath, URL } from "node:url";
 
 // Served from https://zombeatz.github.io/zombeatz-docs/ until a custom domain is set up; then the
 // deploy workflow builds with DOCS_BASE=/ (see .github/workflows/deploy.yml).
@@ -6,6 +7,18 @@ const base = process.env.DOCS_BASE ?? "/zombeatz-docs/";
 
 export default defineConfig({
   base,
+  // Our own copy of the search box: each result says which guide it's in, and the search can
+  // stay in one guide (theme/components/ZbLocalSearchBox.vue).
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPLocalSearchBox\.vue$/,
+          replacement: fileURLToPath(new URL("./theme/components/ZbLocalSearchBox.vue", import.meta.url)),
+        },
+      ],
+    },
+  },
   lang: "en-US",
   title: "ZomBeatz Docs",
   description: "Guides for Zomello, Zom's HaRM, Zom's MRP, Zom's Modzilla and every ZomBeatz Media tool.",
