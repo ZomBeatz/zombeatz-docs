@@ -24,6 +24,8 @@ Only the terminal, files, web pages, commands and screen in HaRM use the saved l
 
 ## The terminal in HaRM
 
+![A terminal on pve1 in HaRM, after a few Proxmox commands](/img/harm/terminal.png)
+
 It's a full terminal: colors, `htop`, `nano`, copy and paste. It follows the window's size. **⧉ New window** opens another one beside it.
 
 ::: tip Safe by design
@@ -94,6 +96,8 @@ Machines it can't set up get directions instead:
 ## Files on a machine
 
 **📁 Files** in **🔌 Connect** (and on the terminal page) opens the machine's folders in HaRM, signed in with the saved login (or [HaRM's key](#harm-s-ssh-key)). It starts in the login's home folder. New in version 0.3.3.
+
+![Files on pve1: folders with size, date, permissions and owner, and what a command printed](/img/harm/files.png)
 
 - Click a folder to open it; **↑** goes up, **⌂** goes home, and you can type a path. The list shows each file's size, when it changed, its permissions and its owner. **Hidden files** shows the ones starting with a dot. **Find in this folder** narrows the list by name.
 - Tick the box in front of several files and folders (or **All**) to **⬇ .zip** them as one download, **⇄ Copy** them to another machine, or **🗑 Delete** them together.

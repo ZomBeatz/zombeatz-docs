@@ -4,6 +4,10 @@
 //   2. Here:                node scripts/harm-screenshots.mjs
 //   3. Desktop-app pictures: in the HaRM folder, python3 scripts/launcher-screenshots.py ../zombeatz-docs/site/public/img/harm
 //
+// Files and Terminal (files.png, terminal.png) need a real SSH machine at pve1's address: run HaRM on the
+// demo database without HARM_DEMO (it blocks connections), with a throwaway container answering on
+// 10.20.0.10 as root / demo-pve-pass, and set SSH_SHOTS=1. Without it, those two are skipped.
+//
 // Needs Chromium (or Chrome: set CHROME=/path/to/chrome) and ImageMagick's `magick` for resizing.
 // Writes site/public/img/harm/*.png. Run it again after a release so the pictures stay current.
 import { spawn, execFileSync } from "node:child_process";
@@ -49,10 +53,11 @@ await theme("dark");
 await ev(`sessionStorage.setItem("harm-bat", "1");`);  // no Halloween-week bat in the pictures
 const ids = await ev(`
   const get = (p) => fetch("/api" + p, { headers: { "X-HaRM": "1" } }).then((r) => r.json());
-  const [d, r, l, c, n, b] = await Promise.all(["/devices", "/racks", "/locations", "/clusters", "/networks", "/builds"].map(get));
+  const [d, r, l, c, n, b, v] = await Promise.all(["/devices", "/racks", "/locations", "/clusters", "/networks", "/builds", "/credentials"].map(get));
   const by = (list, name) => list.find((x) => x.name === name)?.id;
   return { pve1: by(d, "pve1"), pve2: by(d, "pve2"), oldR610: by(d, "Old R610"), rack: by(r, "Main rack"), garage: by(l, "Garage"),
-           cluster: by(c, "homelab"), lan: by(n, "Home LAN"), build: b[0]?.id, docker: by(d, "docker") };`);
+           cluster: by(c, "homelab"), lan: by(n, "Home LAN"), build: b[0]?.id, docker: by(d, "docker"),
+           pveRoot: v.find((x) => x.label === "Proxmox root")?.id };`);
 
 const click = (sel, text) =>
   `[...document.querySelectorAll(${JSON.stringify(sel)})].find((b) => b.textContent.trim().includes(${JSON.stringify(text)}))?.click();`;
@@ -66,8 +71,10 @@ const type = (sel, text) => `const el = document.querySelector(${JSON.stringify(
 // ONLY=containers,status node scripts/harm-screenshots.mjs  takes just those pictures.
 const only = process.env.ONLY ? new Set(process.env.ONLY.split(",")) : null;
 
-async function shot(name, hash, prep = "", { settle = 900 } = {}) {
+async function shot(name, hash, prep = "", { settle = 900, keys = "", flat = false } = {}) {
   if (only && !only.has(name)) return null;
+  // flat: at 1× (the terminal's WebGL drawing comes out twice too big at 2× in headless Chromium).
+  if (flat) await size(1600, 1000, 1, false);
   // HaRM remembers the last tab per kind of page; every picture starts from the first tab.
   await ev(`Object.keys(localStorage).filter((k) => k.startsWith("harm-tab-")).forEach((k) => localStorage.removeItem(k));`);
   // A fresh page load for every picture (the same #hash twice wouldn't reload), then wait for it to draw.
@@ -78,7 +85,14 @@ async function shot(name, hash, prep = "", { settle = 900 } = {}) {
     await ev(prep);
     await sleep(settle);
   }
+  // Typed into what has focus (a terminal), each line ended with Enter.
+  for (const line of keys ? keys.split("\n") : []) {
+    await cdp("Input.insertText", { text: line });
+    for (const type of ["keyDown", "keyUp"]) await cdp("Input.dispatchKeyEvent", { type, key: "Enter", code: "Enter", windowsVirtualKeyCode: 13, text: type === "keyDown" ? "\r" : undefined });
+    await sleep(settle);
+  }
   const { result } = await cdp("Page.captureScreenshot", { format: "png" });
+  if (flat) await size(1440, 900, 2, false);
   const file = join(OUT, `${name}.png`);
   writeFileSync(file, Buffer.from(result.data, "base64"));
   console.log("saved", name);
@@ -143,6 +157,13 @@ const desktop = [
   ["phone-app-help", "#/settings", "await harm.phoneAppHelp();"],
   ["unlock", "#/dashboard", "harm.showAuth();", { settle: 1200 }],
 ];
+if (process.env.SSH_SHOTS === "1") {
+  const ssh = `d=${ids.pve1}&h=10.20.0.10&p=22&c=${ids.pveRoot}`;
+  desktop.push(
+    ["files", `#/files?${ssh}`, `${waitFor("#view table tbody tr")} const c = document.querySelector("#view input[placeholder^='Run a command']"); ${fill("c", "du -sh *")} ${wait(100)} ${click("#view button", "Run")}`, { settle: 1500 }],
+    ["terminal", `#/terminal?${ssh}`, `${waitFor(".xterm-helper-textarea")} ${wait(1500)} document.querySelector(".xterm-helper-textarea").focus();`, { keys: "clear\npveversion\nqm list\npvesm status\nls -lh /var/lib/vz/template/iso", settle: 1500, flat: true }],
+  );
+}
 for (const [name, hash, prep, opts] of desktop) shrink(await shot(name, hash, prep, opts), 1600);
 
 // Light theme, for the Appearance and overview pages. (Signing back in after the unlock shot.)
