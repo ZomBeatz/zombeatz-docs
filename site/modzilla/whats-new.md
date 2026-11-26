@@ -7,6 +7,7 @@ description: "What changed in each version of Zom's Modzilla."
 ## Next version
 
 - **Send from your phone** takes download links and mod or collection addresses only, never your API key: its page isn't encrypted, which is fine for links that run out but not for a key that doesn't.
+- A new icon: mods in layers inside the ZomBeatz headphones, the newest going in on top. The Steam artwork from **Add to Steam** has the new name and icon (it still said Zom's Nexus).
 - The browser demo has a made-up Unreal Engine game (for UE4SS) and made-up loaders for each game, with the launch options they need.
 
 ## 0.0.1

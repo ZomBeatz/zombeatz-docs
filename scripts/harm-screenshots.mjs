@@ -4,9 +4,7 @@
 //   2. Here:                node scripts/harm-screenshots.mjs
 //   3. Desktop-app pictures: in the HaRM folder, python3 scripts/launcher-screenshots.py ../zombeatz-docs/site/public/img/harm
 //
-// Files and Terminal (files.png, terminal.png) need a real SSH machine at pve1's address: run HaRM on the
-// demo database without HARM_DEMO (it blocks connections), with a throwaway container answering on
-// 10.20.0.10 as root / demo-pve-pass, and set SSH_SHOTS=1. Without it, those two are skipped.
+// The terminal, Files and the screen answer from the demo's pretend machines, so no real machine is needed.
 //
 // Needs Chromium (or Chrome: set CHROME=/path/to/chrome) and ImageMagick's `magick` for resizing.
 // Writes site/public/img/harm/*.png. Run it again after a release so the pictures stay current.
@@ -157,10 +155,11 @@ const desktop = [
   ["phone-app-help", "#/settings", "await harm.phoneAppHelp();"],
   ["unlock", "#/dashboard", "harm.showAuth();", { settle: 1200 }],
 ];
-if (process.env.SSH_SHOTS === "1") {
+{
   const ssh = `d=${ids.pve1}&h=10.20.0.10&p=22&c=${ids.pveRoot}`;
   desktop.push(
     ["files", `#/files?${ssh}`, `${waitFor("#view table tbody tr")} const c = document.querySelector("#view input[placeholder^='Run a command']"); ${fill("c", "du -sh *")} ${wait(100)} ${click("#view button", "Run")}`, { settle: 1500 }],
+    ["demo-tour", `#/racks/${ids.rack}`, `window.harmTour(); ${wait(600)} [...document.querySelectorAll(".tour button")].find((b) => b.textContent.includes("Next")).click();`, { settle: 1800 }],
     ["terminal", `#/terminal?${ssh}`, `${waitFor(".xterm-helper-textarea")} ${wait(1500)} document.querySelector(".xterm-helper-textarea").focus();`, { keys: "clear\npveversion\nqm list\npvesm status\nls -lh /var/lib/vz/template/iso", settle: 1500, flat: true }],
   );
 }
